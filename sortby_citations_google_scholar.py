@@ -44,10 +44,8 @@ def get_year(content):
 keyword = "'non intrusive load monitoring'" # the double quote will look for the exact keyword,
                                             # the simple quote will also look for similar keywords
 number_of_results = 100 # number of results to look for on Google Scholar
-                        # if you choose a very high number, the rank might
-                        # show some unrelated queries
 save_database = False # choose if you would like to save the database to .csv
-path = 'C:/_wittmann/data.csv' # path to save the data
+path = 'C:/_wittmann/nilm_100_exact.csv' # path to save the data
 
 # Start new session
 session = requests.Session()
@@ -103,6 +101,5 @@ plt.title('Keyword: '+keyword)
 
 # Save results
 if save_database:
-    data = pd.DataFrame(zip(title, links, citations, year), index = rank[1:])
-    data.to_csv(path, encoding='utf-8') # Change the path
+    data_ranked.to_csv(path, encoding='utf-8') # Change the path
         
