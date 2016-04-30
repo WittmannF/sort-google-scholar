@@ -24,8 +24,8 @@ import pandas as pd
 def get_citations(content):
     out = 0
     for char in range(0,len(content)):
-        if content[char:char+9] == 'Cited by ': # Change to Cited by if you are at EN locale,
-            init = char+9                         #  also update the number 11 to the number of characters of 'Cited by' i.e. 8 
+        if content[char:char+9] == 'Cited by ':
+            init = char+9                          
             for end in range(init+1,init+6):
                 if content[end] == '<':
                     break
