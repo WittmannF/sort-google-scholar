@@ -41,8 +41,11 @@ def get_year(content):
     return int(out)
 
 # Update these variables according to your requirement
-keyword = "non intrusive load monitoring" # keep quotes in the variables
+keyword = "'non intrusive load monitoring'" # the double quote will look for the exact keyword,
+                                            # the simple quote will also look for similar keywords
 number_of_results = 100 # number of results to look for on Google Scholar
+                        # if you choose a very high number, the rank might
+                        # show some unrelated queries
 save_database = False # choose if you would like to save the database to .csv
 path = 'C:/_wittmann/data.csv' # path to save the data
 
