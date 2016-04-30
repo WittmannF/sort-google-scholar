@@ -41,7 +41,7 @@ def get_year(content):
     return int(out)
 
 # Update these variables according to your requirement
-keyword = "load disaggregation" # keep quotes in the variables
+keyword = "non intrusive load monitoring" # keep quotes in the variables
 number_of_results = 100 # number of results to look for on Google Scholar
 save_database = False
 path = 'C:/_wittmann/data.csv' # path to save the data
