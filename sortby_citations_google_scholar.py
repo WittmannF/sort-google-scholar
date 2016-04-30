@@ -3,9 +3,9 @@
 This program creates a database with a list of publications data from Google 
 Scholar.
 The data acquired from GS is Title, Citations, Links and Rank.
-It is useful for finding relevant papers by sorting by number of citations
+It is useful for finding relevant papers by sorting by the number of citations
 This example will look for the top 100 papers related to the keyword 
-'non intrusive load monitoring', so that you can rank them by number of citations
+'non intrusive load monitoring', so that you can rank them by the number of citations
 
 As output this program will plot the number of citations in the Y axis and the 
 rank of the result in the X axis. It also, optionally, export the database to
@@ -43,7 +43,7 @@ def get_year(content):
 # Update these variables according to your requirement
 keyword = "non intrusive load monitoring" # keep quotes in the variables
 number_of_results = 100 # number of results to look for on Google Scholar
-save_database = False
+save_database = False # choose if you would like to save the database to .csv
 path = 'C:/_wittmann/data.csv' # path to save the data
 
 # Start new session
