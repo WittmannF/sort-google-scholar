@@ -40,12 +40,19 @@ def get_year(content):
         out = 0
     return int(out)
 
+def get_author(content):
+    for char in range(0,len(content)):
+        if content[char] == '-':
+            out = content[2:char-1]
+            break
+    return out
+
 # Update these variables according to your requirement
 keyword = "'non intrusive load monitoring'" # the double quote will look for the exact keyword,
                                             # the simple quote will also look for similar keywords
 number_of_results = 100 # number of results to look for on Google Scholar
 save_database = False # choose if you would like to save the database to .csv
-path = 'C:/_wittmann/nilm_100_exact.csv' # path to save the data
+path = 'C:/_wittmann/nilm_100_exact_author.csv' # path to save the data
 
 # Start new session
 session = requests.Session()
@@ -56,6 +63,7 @@ title = list()
 citations = list()
 year = list()
 rank = list()
+author = list()
 rank.append(0) # initialization necessary for incremental purposes
 
 # Get content from 1000 URLs
@@ -83,11 +91,12 @@ for n in range(0, number_of_results, 10):
             
         citations.append(get_citations(str(div.format_string)))
         year.append(get_year(div.find('div',{'class' : 'gs_a'}).text))
+        author.append(get_author(div.find('div',{'class' : 'gs_a'}).text))
         rank.append(rank[-1]+1)
 
 # Create a dataset and sort by the number of citations
-data = pd.DataFrame(zip(title, citations, year, links), index = rank[1:], 
-                    columns=['Title', 'Citations', 'Year', 'Source'])
+data = pd.DataFrame(zip(author, title, citations, year, links), index = rank[1:], 
+                    columns=['Author', 'Title', 'Citations', 'Year', 'Source'])
 data.index.name = 'Rank'
 
 data_ranked = data.sort(columns='Citations', ascending=False)
