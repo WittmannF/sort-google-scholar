@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This program creates a database with a list of publications data from Google 
+This code creates a database with a list of publications data from Google 
 Scholar.
 The data acquired from GS is Title, Citations, Links and Rank.
 It is useful for finding relevant papers by sorting by the number of citations
