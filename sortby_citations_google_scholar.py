@@ -99,7 +99,7 @@ data = pd.DataFrame(zip(author, title, citations, year, links), index = rank[1:]
                     columns=['Author', 'Title', 'Citations', 'Year', 'Source'])
 data.index.name = 'Rank'
 
-data_ranked = data.sort(columns='Citations', ascending=False)
+data_ranked = data.sort_values(by='Citations', ascending=False)
 print data_ranked
 
 # Plot by citation number
