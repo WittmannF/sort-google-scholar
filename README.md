@@ -37,7 +37,7 @@ Options:
                                  NOTE: don't include path between quotes
 ```
 
-####Example
+#### Example
 
 **Retrieving the best 200 results about _"Bioinformatics"_ and saving the output inside _"results"_ file on the desktop
 
