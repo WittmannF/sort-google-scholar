@@ -3,11 +3,11 @@
 Sorting Google Scholar
 
 Usage:
-    docopt_sortby.py <keywords>
-    docopt_sortby.py <keywords> [--results=<numberOfResults>] [--output=<path>]
-    docopt_sortby.py <keywords> [--results=<numberOfResults>]
-    docopt_sortby.py <keywords> [--output=<path>]
-    docopt_sortby.py <keywords> [--output=<path>] [--results=<numberOfResults>]
+    google_scholar_sort.py <keywords>
+    google_scholar_sort.py <keywords> [--results=<numberOfResults>] [--output=<path>]
+    google_scholar_sort.py <keywords> [--results=<numberOfResults>]
+    google_scholar_sort.py <keywords> [--output=<path>]
+    google_scholar_sort.py <keywords> [--output=<path>] [--results=<numberOfResults>]
 
 Options:
     <keywords>                   This is the search term that will be used as a keyword for search
