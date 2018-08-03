@@ -12,12 +12,12 @@ a .csv file.
 ## Update: Command-Line Interface
 The python code is now available via command-line interface for easier usage and control.
 
-** To get started you can view the full help guide using the following command
+**To get started you can view the full help guide using the following command**
 ```
 ~ python google_scholar_sort.py --help
 ```
 
-** Sample output
+**Sample output**
 ```
 
 Sorting Google Scholar
@@ -39,7 +39,7 @@ Options:
 
 #### Example
 
-** Retrieving the best 200 results about _"Bioinformatics"_ and saving the output inside _"results"_ file on the desktop
+**Retrieving the best 200 results about _"Bioinformatics"_ and saving the output inside _"results"_ file on the desktop**
 
 ```
 ~ python google_scholar_sort.py "Bioinformatics" --results=200 --output=C:/Users/Mahmoud/Desktop/Results
