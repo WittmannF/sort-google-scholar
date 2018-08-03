@@ -20,6 +20,7 @@ Options:
 
 from docopt import docopt
 import os
+from time import sleep
 
 if __name__ == '__main__':
     args = docopt(__doc__, help=True)
@@ -78,6 +79,7 @@ year = list()
 rank = list()
 author = list()
 rank.append(0) # initialization necessary for incremental purposes
+abstract = list()
 
 # Get content
 for n in range(0, number_of_results, 10):
@@ -90,10 +92,15 @@ for n in range(0, number_of_results, 10):
 
     # Get stuff
     mydivs = soup.findAll("div", { "class" : "gs_r" })
-
     for div in mydivs:
         try:
             links.append(div.find('h3').find('a').get('href'))
+        except: # catch *all* exceptions
+            links.append('Look manually at: https://scholar.google.com/scholar?start='\
+                         +str(n)+'&q'+keyword.replace(' ','+'))
+
+        try:
+            abstract.append(div.find('div',{'class' : 'gs_rs'}).text)
         except: # catch *all* exceptions
             links.append('Look manually at: https://scholar.google.com/scholar?start='\
                          +str(n)+'&q'+keyword.replace(' ','+'))
@@ -107,11 +114,13 @@ for n in range(0, number_of_results, 10):
         year.append(get_year(div.find('div',{'class' : 'gs_a'}).text))
         author.append(get_author(div.find('div',{'class' : 'gs_a'}).text))
         rank.append(rank[-1]+1)
+        sleep(0.5)
+
 
 
 save_database=True
 # Create a dataset and sort by the number of citations
-data = pd.DataFrame(list(zip(author, title, citations, year, links)), index = rank[1:], columns=['Author', 'Title', 'Citations', 'Year', 'Source'])
+data = pd.DataFrame(list(zip(author, title, citations, year, links,abstract)), index = rank[1:], columns=['Author', 'Title', 'Citations', 'Year', 'Source', 'Abstract'])
 data = data.rename_axis('Rank', axis="columns")
 
 data_ranked = data.sort_values('Citations', ascending=False)
