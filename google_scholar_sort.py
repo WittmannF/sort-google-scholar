@@ -68,6 +68,12 @@ def get_author(content):
             break
     return out
 
+def get_publication(content):
+    for char in range(0,len(content)):
+        temp = content.split("-")
+        out = temp[2]
+    return out
+
 # Start new session
 session = requests.Session()
 
@@ -80,6 +86,7 @@ rank = list()
 author = list()
 rank.append(0) # initialization necessary for incremental purposes
 abstract = list()
+publication = list()
 
 # Get content
 for n in range(0, number_of_results, 10):
@@ -113,6 +120,7 @@ for n in range(0, number_of_results, 10):
         citations.append(get_citations(str(div.format_string)))
         year.append(get_year(div.find('div',{'class' : 'gs_a'}).text))
         author.append(get_author(div.find('div',{'class' : 'gs_a'}).text))
+        publication.append(get_publication(div.find('div',{'class' : 'gs_a'}).text))
         rank.append(rank[-1]+1)
         sleep(0.5)
 
@@ -120,7 +128,7 @@ for n in range(0, number_of_results, 10):
 
 save_database=True
 # Create a dataset and sort by the number of citations
-data = pd.DataFrame(list(zip(author, title, citations, year, links,abstract)), index = rank[1:], columns=['Author', 'Title', 'Citations', 'Year', 'Source', 'Abstract'])
+data = pd.DataFrame(list(zip(author, title, citations, year, links,publication,abstract)), index = rank[1:], columns=['Author', 'Title', 'Citations', 'Year', 'Source', 'Publication','Abstract'])
 data = data.rename_axis('Rank', axis="columns")
 
 data_ranked = data.sort_values('Citations', ascending=False)
