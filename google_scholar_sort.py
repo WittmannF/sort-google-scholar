@@ -71,7 +71,10 @@ def get_author(content):
 def get_publication(content):
     for char in range(0,len(content)):
         temp = content.split("-")
-        out = temp[2]
+        try:
+            out = temp[2]
+        except: # catch *all* exceptions
+            out = "Couldn't retrieve publication"
     return out
 
 # Start new session
@@ -85,8 +88,8 @@ year = list()
 rank = list()
 author = list()
 rank.append(0) # initialization necessary for incremental purposes
-abstract = list()
 publication = list()
+abstract = list()
 
 # Get content
 for n in range(0, number_of_results, 10):
@@ -107,28 +110,27 @@ for n in range(0, number_of_results, 10):
                          +str(n)+'&q'+keyword.replace(' ','+'))
 
         try:
-            abstract.append(div.find('div',{'class' : 'gs_rs'}).text)
-        except: # catch *all* exceptions
-            links.append('Look manually at: https://scholar.google.com/scholar?start='\
-                         +str(n)+'&q'+keyword.replace(' ','+'))
-
-        try:
             title.append(div.find('h3').find('a').text)
         except:
             title.append('Could not catch title')
 
+        try:
+            abstract.append(div.find('div',{'class' : 'gs_rs'}).text)
+        except:
+            abstract.append('Could not catch abstract')
+
         citations.append(get_citations(str(div.format_string)))
         year.append(get_year(div.find('div',{'class' : 'gs_a'}).text))
         author.append(get_author(div.find('div',{'class' : 'gs_a'}).text))
-        publication.append(get_publication(div.find('div',{'class' : 'gs_a'}).text))
         rank.append(rank[-1]+1)
+        publication.append(get_publication(div.find('div',{'class' : 'gs_a'}).text))
         sleep(0.5)
 
 
 
 save_database=True
 # Create a dataset and sort by the number of citations
-data = pd.DataFrame(list(zip(author, title, citations, year, links,publication,abstract)), index = rank[1:], columns=['Author', 'Title', 'Citations', 'Year', 'Source', 'Publication','Abstract'])
+data = pd.DataFrame(list(zip(author, title, citations, year, links,publication, abstract)), index = rank[1:], columns=['Author', 'Title', 'Citations', 'Year', 'Source', 'Publication', 'Abstract'])
 data = data.rename_axis('Rank', axis="columns")
 
 data_ranked = data.sort_values('Citations', ascending=False)
