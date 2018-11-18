@@ -27,3 +27,7 @@ proxies = {
 3. Add `proxies` as an attribute in `session.get`. In other words, change the line with `page = session.get(url)` to `page = session.get(url, proxies=proxies)`.
 
 4. I hope that works! For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
+
+If this project was helpful to you in any way, feel free to buy me a cup of coffee :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ4YJFQVXLMA&source=url)
