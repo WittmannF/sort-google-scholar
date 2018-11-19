@@ -3,22 +3,19 @@ of citations.
 It is useful for finding relevant papers in a specific field. 
 
 The data acquired from Google Scholar is Title, Citations, Links and Rank.
-The example of the code will look for the top 100 papers related to the keyword 
-'non intrusive load monitoring', and rank them by the number of citations
-As output this program will plot the number of citations in the Y axis and the 
-rank of the result in the X axis. It also, optionally, export the database to
-a .csv file.
-Please update the keyword and other initialization variables
+The example of the code will look for the top 100 papers related to the keyword, 
+and rank them by the number of citations
+As output the file will return a .csv file ranked by the number of citations.
 
 ### Usage
 ```
-usage: google_scholar_sort.py [-h] [--sortby SORTBY] [--nresults NRESULTS]
+usage: python sortgs.py [-h] [--sortby SORTBY] [--nresults NRESULTS]
                               [--csvpath CSVPATH] [--notsavecsv]
                               [--plotresults] [--startyear STARTYEAR]
                               [--endyear ENDYEAR]
                               keyword
 
-Arguments
+Example: python sortgs.py "machine learning"
 
 positional arguments:
   keyword               Keyword to be searched. Use double quote followed by
@@ -27,26 +24,27 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
-  --sortby SORTBY       Column to be sorted by. Default is by the number of
+  --sortby SORTBY       String. Column to be sorted by. Default is by the number of
                         citations. If you want to sort by the number of
                         citations per year, use --sortby "cit/year"
-  --nresults NRESULTS   Number of articles to search on Google Scholar.
+  --nresults NRESULTS   Int. Number of articles to search on Google Scholar.
                         Default is 100. (carefull with robot checking if value
                         is too high)
-  --csvpath CSVPATH     Path to save the exported csv file. By default it is
+  --csvpath CSVPATH     String. Path to save the exported csv file. By default it is
                         the current folder
-  --notsavecsv          By default results are going to be exported to a csv
+  --notsavecsv          Flag. By default results are going to be exported to a csv
                         file. Select this option to just print results but not
                         store them
-  --plotresults         Use this flag in order to plot the results with the
+  --plotresults         Flag. Use this flag in order to plot the results with the
                         original rank in the x-axis and the number of citaions
                         in the y-axis. Default is False
-  --startyear STARTYEAR
-                        Start year when searching. Default is None
-  --endyear ENDYEAR     End year when searching. Default is current year
+  --startyear STARTYEAR Int. Start year when searching. Default is None
+  --endyear ENDYEAR     Int. End year when searching. Default is current year
 ```
 
-### Examples
+### Example
+
+
 
 ### Requirements
 If you install anaconda, all of those requirements will be met:
