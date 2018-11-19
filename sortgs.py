@@ -27,15 +27,14 @@ if sys.version[0]=="3": raw_input=input
 
 # Parameters
 #GSCHOLAR_URL = 'https://scholar.google.com/scholar?start={}&q={}'
-GSCHOLAR_URL = 'https://scholar.google.co.uk/scholar?start={}&q={}&hl=en&as_sdt=0,5'
+GSCHOLAR_URL = 'https://scholar.google.com/scholar?start={}&q={}&hl=en&as_sdt=0,5'
 YEAR_RANGE = '&as_ylo={start_year}&as_yhi={end_year}'
 GSCHOLAR_URL_YEAR = GSCHOLAR_URL+YEAR_RANGE
 
 now = datetime.datetime.now()
 CURRENT_YEAR = now.year
 
-ROBOT_KW='unusual traffic from your computer network'
-ROBOT_KW2='perform the operation now. Try again'
+ROBOT_KW=['unusual traffic from your computer network', 'not a robot']
 
 def get_command_line_args():
     # Command line arguments
@@ -145,14 +144,17 @@ def get_content_with_selenium(url):
 
     # Get element from page
     el = get_element(driver, "/html/body")
-
     c = el.get_attribute('innerHTML')
 
-    if ROBOT_KW in c.decode("utf-8") or ROBOT_KW2 in c.decode("utf-8"):
+    if any(kw in el.text for kw in ROBOT_KW):
         raw_input("Solve captcha manually and press enter here to continue...")
         c = el.get_attribute('innerHTML')
 
-    return c
+
+    print(c)
+
+
+    return c.encode('utf-8')
 
 
 def main():
@@ -181,9 +183,7 @@ def main():
         print("Loading next {} results".format(n+10))
         page = session.get(url, headers=headers)
         c = page.content
-        print(type(ROBOT_KW))
-        print(type(c))
-        if ROBOT_KW in c.decode("utf-8") or ROBOT_KW2 in c.decode("utf-8"):
+        if any(kw in c.decode("utf-8") for kw in ROBOT_KW):
             print("Robot checking detected, handling with selenium (if installed)")
             try:
                 c = get_content_with_selenium(url)

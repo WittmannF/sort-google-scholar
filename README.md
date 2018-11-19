@@ -10,6 +10,51 @@ rank of the result in the X axis. It also, optionally, export the database to
 a .csv file.
 Please update the keyword and other initialization variables
 
+### Usage
+```
+usage: google_scholar_sort.py [-h] [--sortby SORTBY] [--nresults NRESULTS]
+                              [--csvpath CSVPATH] [--notsavecsv]
+                              [--plotresults] [--startyear STARTYEAR]
+                              [--endyear ENDYEAR]
+                              keyword
+
+Arguments
+
+positional arguments:
+  keyword               Keyword to be searched. Use double quote followed by
+                        simple quote to search for an exact keyword. Example:
+                        "'exact keyword'"
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --sortby SORTBY       Column to be sorted by. Default is by the number of
+                        citations. If you want to sort by the number of
+                        citations per year, use --sortby "cit/year"
+  --nresults NRESULTS   Number of articles to search on Google Scholar.
+                        Default is 100. (carefull with robot checking if value
+                        is too high)
+  --csvpath CSVPATH     Path to save the exported csv file. By default it is
+                        the current folder
+  --notsavecsv          By default results are going to be exported to a csv
+                        file. Select this option to just print results but not
+                        store them
+  --plotresults         Use this flag in order to plot the results with the
+                        original rank in the x-axis and the number of citaions
+                        in the y-axis. Default is False
+  --startyear STARTYEAR
+                        Start year when searching. Default is None
+  --endyear ENDYEAR     End year when searching. Default is current year
+```
+
+### Examples
+
+### Requirements
+If you install anaconda, all of those requirements will be met:
+- Python 2.7 or Python 3
+- Requests: `pip install requests`
+- Beautiful Soup: `pip install beautifulsoup4`
+- Pandas: `pip install pandas`
+- Matplotlib: `pip install matplotlib`
 
 ### Update: Google Robot Checking
 If you are having problems with Google robot checking, as a suggestion, you can try using a proxy. Follow those steps:
