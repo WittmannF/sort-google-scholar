@@ -8,7 +8,7 @@ The example of the code will look for the top 100 papers related to the keyword,
 and rank them by the number of citations
 As output the file will return a .csv file ranked by the number of citations.
 
-### Updated Code: Usage
+### New Updated Code: `sortgs.py`
 ```
 usage: python sortgs.py [-h] [--sortby SORTBY] [--nresults NRESULTS]
                               [--csvpath CSVPATH] [--notsavecsv]
