@@ -92,10 +92,10 @@ If you install anaconda, all of those requirements (except s) are going to be me
 - Pandas: `pip install pandas`
 - Matplotlib: `pip install matplotlib`
 
-The following instalations are optional, if having problems with robot checking:
+Highly suggested, if having problems with robot checking:
 - Selenium: `pip install selenium`
 - ChromeDriver: http://chromedriver.chromium.org/
-    - After downloading chromedriver, make sure to add it in a folder accessible from the PATH
+    - After downloading chromedriver, rename it to `chromedriver` and add it in a folder accessible by the PATH (Example: your python directory. Mine is at `/Users/.../anaconda/bin/`)
 
 
 ### LICENSE
