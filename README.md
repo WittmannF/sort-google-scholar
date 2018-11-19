@@ -1,4 +1,4 @@
-## Sort Google Scholar by the Number of Citations
+## Sort Google Scholar by the Number of Citations V2.0b
 This Python code ranks publications data from Google Scholar by the number 
 of citations. It is useful for finding relevant papers in a specific field. 
 
@@ -11,7 +11,12 @@ the original file.
 As output, a .csv file will be returned with the name of the chosen keyword
 ranked by the number of citations.
 
-### New Updated Code: `sortgs.py`
+### New Features
+- Command line arguments. Ex: `$python sortgs.py --kw "deep learning"`
+- Handling robot checking with selenium.
+    - OBS: You might be asked to manually solve captcha for retrieving content of the pages
+
+### Usage of `sortgs.py`
 ```
 usage: sortgs.py [-h] [--kw KEYWORD] [--sortby SORTBY] [--nresults NRESULTS]
                  [--csvpath CSVPATH] [--notsavecsv] [--plotresults]
