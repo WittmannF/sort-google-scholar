@@ -1,0 +1,102 @@
+Rank,Author,Title,Citations,Year,Source,cit/year
+37,Breiman,Random forests,40779,2001,https://link.springer.com/article/10.1023/A:1010933404324,2266
+24," Witten, E Frank, MA Hall, CJ Pal",Data Mining: Practical machine learning tools and techniques,35295,2016,https://books.google.com/books?hl=en&lr=&id=1SylCgAAQBAJ&oi=fnd&pg=PP1&dq=machine+learning&ots=8IDKwenwyc&sig=z8yfAy5gisyYnlSxfoeJQXNRcMs,11765
+26, Quinlan,C4. 5: programs for machine learning,34380,2014,https://books.google.com/books?hl=en&lr=&id=b3ujBQAAQBAJ&oi=fnd&pg=PP1&dq=machine+learning&ots=sQ5oXMHmE6&sig=DDXawjqNz2O4p8njQ9995l1ULvE,6876
+4, Nasrabadi,Pattern recognition and machine learning,33296,2007,https://www.spiedigitallibrary.org/journals/Journal-of-Electronic-Imaging/volume-16/issue-4/049901/Pattern-Recognition-and-Machine-Learning/10.1117/1.2819119.short,2775
+12,"Cortes, V Vapnik",Support-vector networks,32551,1995,https://link.springer.com/article/10.1007/BF00994018,1356
+19, Quinlan,Induction of decision trees,20068,1986,https://link.springer.com/article/10.1007/BF00116251,608
+8, Rasmussen,Gaussian processes in machine learning,13095,2004,https://link.springer.com/chapter/10.1007/978-3-540-28650-9_4,873
+6,"Pedregosa, G Varoquaux, A Gramfort…",Scikit-learn: Machine learning in Python,12998,2011,http://www.jmlr.org/papers/v12/pedregosa11a.html,1625
+9,Sebastiani,Machine learning in automated text categorization,9040,2002,https://dl.acm.org/citation.cfm?id=505283,532
+7,"CH Watkins, P Dayan",Q-learning,8072,1992,https://link.springer.com/article/10.1007/BF00992698,299
+15,"Pang, L Lee, S Vaithyanathan",Thumbs up?: sentiment classification using machine learning techniques,7815,2002,https://dl.acm.org/citation.cfm?id=1118704,460
+28,"Abadi, P Barham, J Chen, Z Chen, A Davis, J Dean…",Tensorflow: a system for large-scale machine learning.,7220,2016,https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf,2407
+14," Aha, D Kibler, MK Albert",Instance-based learning algorithms,5561,1991,https://link.springer.com/article/10.1007/BF00153759,199
+27, Tipping,Sparse Bayesian learning and the relevance vector machine,5252,2001,http://www.jmlr.org/papers/v1/tipping01a.html,292
+33, Sutton,Learning to predict by the methods of temporal differences,5040,1988,https://link.springer.com/article/10.1007/BF00115009,163
+21, Dietterich,Ensemble methods in machine learning,4801,2000,https://link.springer.com/chapter/10.1007/3-540-45014-9_1,253
+83,"Friedman, D Geiger, M Goldszmidt",Bayesian network classifiers,4679,1997,https://link.springer.com/article/10.1023/A:1007465528199,213
+39,Alpaydin,Introduction to machine learning,4626,2009,https://books.google.com/books?hl=en&lr=&id=TtrxCwAAQBAJ&oi=fnd&pg=PR7&dq=machine+learning&ots=T5dlQF_6nY&sig=WJXsT8cwTsAEswn6qYZ7QS-zOsg,463
+93,"Scholkopf, AJ Smola","Learning with kernels: support vector machines, regularization, optimization, and beyond",4418,2001,https://dl.acm.org/citation.cfm?id=559923,245
+13,Robert,"Machine learning, a probabilistic perspective",4080,2014,https://amstat.tandfonline.com/doi/full/10.1080/09332480.2014.914768,816
+73,"Domingos, M Pazzani",On the optimality of the simple Bayesian classifier under zero-one loss,4005,1997,https://link.springer.com/article/10.1023/A:1007413511361,182
+25,"Asuncion, D Newman",UCI machine learning repository,3999,2007,https://ergodicity.net/2013/07/,333
+34, Bradley,The use of the area under the ROC curve in the evaluation of machine learning algorithms,3747,1997,https://www.sciencedirect.com/science/article/pii/S0031320396001422,170
+29,"Rosten, T Drummond",Machine learning for high-speed corner detection,3617,2006,https://link.springer.com/10.1007/11744023_34,278
+31,"Auer, N Ces",Finite-time analysis of the multiarmed bandit problem,3443,2002,https://link.springer.com/article/10.1023/A:1013689704352,203
+32,Caruana,Multitask learning,3292,1997,https://link.springer.com/article/10.1023/A:1007379606734,150
+38," Blum, P Langley",Selection of relevant features and examples in machine learning,3210,1997,https://www.sciencedirect.com/science/article/pii/S0004370297000635,146
+50,Lichman,Could not catch title,2979,2013,"Look manually at: https://scholar.google.com/scholar?start=40&q=machine+learning&hl=en&as_sdt=0,5",496
+41, Michalski,A theory and methodology of inductive learning,2841,1983,https://link.springer.com/chapter/10.1007/978-3-662-12405-5_4,79
+54, Fisher,Knowledge acquisition via incremental conceptual clustering,2799,1987,https://link.springer.com/article/10.1007/BF00114265,87
+62, Hall,Correlation-based feature selection for machine learning,2770,1999,https://www.lri.fr/~pierres/donn%E9es/save/these/articles/lpr-queue/hall99correlationbased.pdf,138
+36,Hofmann,Unsupervised learning by probabilistic latent semantic analysis,2647,2001,https://link.springer.com/article/10.1023/A:1007617005950,147
+46," Kotsiantis, I Zaharakis…",Supervised machine learning: A review of classification techniques,2602,2007,https://books.google.com/books?hl=en&lr=&id=vLiTXDHr_sYC&oi=fnd&pg=PA3&dq=machine+learning&ots=CYotzu2Clj&sig=pVusLIcLNHdAPYjndg5FeR_MrFY,217
+51, Samuel,Some studies in machine learning using the game of checkers,2543,1959,https://ieeexplore.ieee.org/abstract/document/5392560/,42
+95, Williams,Simple statistical gradient-following algorithms for connectionist reinforcement learning,2519,1992,https://link.springer.com/article/10.1007/BF00992696,93
+17," Michalski, JG Carbonell, TM Mitchell",Machine learning: An artificial intelligence approach,2513,2013,https://books.google.com/books?hl=en&lr=&id=-eqpCAAAQBAJ&oi=fnd&pg=PA2&dq=machine+learning&ots=Wl3NQy8Bk1&sig=Qw80NurHHSyRXn6EWvdq9VeNe54,419
+70," Shipp, KN Ross, P Tamayo, AP Weng, JL Kutok…",Diffuse large B-cell lymphoma outcome prediction by gene-expression profiling and supervised machine learning,2511,2002,https://www.nature.com/articles/nm0102-68,148
+16," Weiss, CA Kulikowski","Computer systems that learn: classification and prediction methods from statistics, neural nets, machine learning, and expert systems",2498,1991,https://dl.acm.org/citation.cfm?id=102700,89
+22, Quinlan,Learning logical definitions from relations,2424,1990,https://link.springer.com/article/10.1007/BF00117105,84
+59,"Bache, M Lichman",Could not catch title,2392,0,"Look manually at: https://scholar.google.com/scholar?start=50&q=machine+learning&hl=en&as_sdt=0,5",1
+49, Dietterich,"An experimental comparison of three methods for constructing ensembles of decision trees: Bagging, boosting, and randomization",2382,2000,https://link.springer.com/article/10.1023/A:1007607513941,125
+61, McCallum,Mallet: A machine learning for language toolkit,2264,2002,http://www.citeulike.org/group/3030/article/1062263,133
+44,"Tong, D Koller",Support vector machine active learning with applications to text classification,2240,2001,http://www.jmlr.org/papers/v2/tong01a.html,124
+45,Angluin,Queries and concept learning,2215,1988,https://link.springer.com/article/10.1023/A:1022821128753,71
+2,"Andrieu, N De Freitas, A Doucet, MI Jordan",An introduction to MCMC for machine learning,2037,2003,https://link.springer.com/article/10.1023/A:1020281327116,127
+76, Holte,Very simple classification rules perform well on most commonly used datasets,2034,1993,https://link.springer.com/article/10.1023/A:1022631118932,78
+48,Bottou,Large-scale machine learning with stochastic gradient descent,1899,2010,https://link.springer.com/chapter/10.1007/978-3-7908-2604-3_16,211
+71," Farmer, NH Packard, AS Perelson","The immune system, adaptation, and machine learning",1870,1986,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.122.6614&rep=rep1&type=pdf,57
+1," Goldberg, JH Holland",Genetic algorithms and machine learning,1850,1988,http://www.springerlink.com/index/rw3572714v41q507.pdf,60
+53, Schapire,The boosting approach to machine learning: An overview,1823,2003,https://link.springer.com/10.1007/978-0-387-21579-2_9,114
+35, Quinlan,Learning efficient classification procedures and their application to chess end games,1755,1983,https://link.springer.com/chapter/10.1007/978-3-662-12405-5_15,49
+98, Dietterich,Machine-learning research,1717,1997,http://www.aaai.org/ojs/index.php/aimagazine/article/view/1324,78
+56, Hall,Correlation-based feature selection of discrete and numeric class machine learning,1705,2000,https://waikato.researchgateway.ac.nz/handle/10289/1024,90
+68,"Snoek, H Larochelle, RP Adams",Practical bayesian optimization of machine learning algorithms,1688,2012,http://papers.nips.cc/paper/4522-practical-bayesian-optimization,241
+23,"Pazzani, D Billsus",Learning and revising user profiles: The identification of interesting web sites,1650,1997,https://link.springer.com/article/10.1023/A:1007369909943,75
+69,"Tong, E Chang",Support vector machine active learning for image retrieval,1621,2001,https://dl.acm.org/citation.cfm?id=500159,90
+78," Batista, RC Prati, MC Monard",A study of the behavior of several methods for balancing machine learning training data,1559,2004,https://dl.acm.org/citation.cfm?id=1007735,104
+87,"Low, D Bickson, J Gonzalez, C Guestrin…",Distributed GraphLab: a framework for machine learning and data mining in the cloud,1485,2012,https://dl.acm.org/citation.cfm?id=2212354,212
+65,"Tsochantaridis, T Hofmann, T Joachims…",Support vector machine learning for interdependent and structured output spaces,1469,2004,https://dl.acm.org/citation.cfm?id=1015341,98
+60," Chu, SK Kim, YA Lin, YY Yu, G Bradski…",Map-reduce for machine learning on multicore,1456,2007,http://papers.nips.cc/paper/3150-map-reduce-for-machine-learning-on-multicore.pdf,121
+100,"Rosten, R Porter, T Drummond",Faster and better: A machine learning approach to corner detection,1433,2010,https://ieeexplore.ieee.org/abstract/document/4674368/,159
+75,Soderland,Learning information extraction rules for semi-structured and free text,1408,1999,https://link.springer.com/article/10.1023/A:1007562322031,70
+74,"Stone, M Veloso",Multiagent systems: A survey from a machine learning perspective,1385,2000,https://link.springer.com/article/10.1023/A:1008942012299,73
+42,"DeJong, R Mooney",Explanation-based learning: An alternative view,1369,1986,https://link.springer.com/article/10.1007/BF00114116,41
+55,"Cauwenberghs, T Poggio",Incremental and decremental support vector machine learning,1328,2001,http://papers.nips.cc/paper/1814-incremental-and-decremental-support-vector-machine-learning.pdf,74
+85,Domingos,A few useful things to know about machine learning,1304,2012,https://dl.acm.org/citation.cfm?id=2347755,186
+64," Wilson, TR Martinez",Reduction techniques for instance-based learning algorithms,1256,2000,https://link.springer.com/article/10.1023/A:1007626913721,66
+40," Fung, OL Mangasarian",Multicategory proximal support vector machine classifiers,1165,2005,https://link.springer.com/article/10.1007/s10994-005-0463-6,83
+91,"Collobert, K Kavukcuoglu…",Torch7: A matlab-like environment for machine learning,1163,2011,https://infoscience.epfl.ch/record/192376/files/Collobert_NIPSWORKSHOP_2011.pdf,145
+97,"Argyriou, T Evgeniou, M Pontil",Convex multi-task feature learning,1119,2008,https://link.springer.com/article/10.1007/s10994-007-5040-8,102
+3,"Kubat, RC Holte, S Matwin",Machine learning for the detection of oil spills in satellite radar images,1097,1998,https://link.springer.com/article/10.1023/A:1007452223027,52
+57, Rivest,Learning decision lists,1072,1987,https://link.springer.com/article/10.1007/BF00058680,34
+43,"Cost, S Salzberg",A weighted nearest neighbor algorithm for learning with symbolic features,984,1993,https://link.springer.com/article/10.1007/BF00993481,38
+80, Lin,"Self-improving reactive agents based on reinforcement learning, planning and teaching",982,1992,https://link.springer.com/article/10.1007/BF00992699,36
+82," Fayyad, KB Irani",On the handling of continuous-valued attributes in decision tree generation,961,1992,https://link.springer.com/article/10.1007/BF00994007,36
+67," Moore, CG Atkeson",Prioritized sweeping: Reinforcement learning with less data and less time,929,1993,https://link.springer.com/article/10.1007/BF00993104,36
+66,"Holmes, A Donkin, IH Witten",Weka: A machine learning workbench,858,1994,https://ieeexplore.ieee.org/abstract/document/396988/,34
+92,Langley,Selection of relevant features in machine learning,803,1994,http://www.aaai.org/Papers/Symposia/Fall/1994/FS-94-02/FS94-02-034.pdf,32
+81, King,Dlib-ml: A machine learning toolkit,774,2009,http://www.jmlr.org/papers/v10/king09a.html,77
+88,"Meng, J Bradley, B Yavuz, E Sparks…",Mllib: Machine learning in apache spark,757,2016,http://www.jmlr.org/papers/volume17/15-237/15-237.pdf,252
+96," Mitchell, R Hutchinson, RS Niculescu, F Pereira…",Learning to decode cognitive states from brain images,729,2004,https://link.springer.com/article/10.1023/b:mach.0000035475.85309.1b,49
+79," Witten, E Frank, LE Trigg, MA Hall, G Holmes…",Weka: Practical machine learning tools and techniques with Java implementations,711,1999,https://waikato.researchgateway.ac.nz/handle/10289/1040,36
+86,"Kearns, S Singh",Near-optimal reinforcement learning in polynomial time,707,2002,https://link.springer.com/article/10.1023/A:1017984413808,42
+101,"Van Gestel, JAK Suykens, B Baesens, S Viaene…",Benchmarking least squares support vector machine classifiers,701,2004,https://link.springer.com/article/10.1023/B:MACH.0000008082.80494.e0,47
+99, Tsitsiklis,Asynchronous stochastic approximation and Q-learning,682,1994,https://link.springer.com/article/10.1007/BF00993306,27
+89," Smola, B Schölkopf",Sparse greedy matrix approximation for machine learning,673,2000,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3153,35
+58,De Jong,Learning with genetic algorithms: An overview,647,1988,https://link.springer.com/article/10.1007/BF00113894,21
+77,"Adeli, SL Hung","Machine learning: neural networks, genetic algorithms, and fuzzy systems",555,1994,https://dl.acm.org/citation.cfm?id=184216,22
+94,"Demšar, B Zupan, G Leban, T Curk",Orange: From experimental machine learning to interactive data mining,469,2004,https://link.springer.com/chapter/10.1007/978-3-540-30116-5_58,31
+11,Freitag,Machine learning for information extraction in informal domains,458,2000,https://link.springer.com/article/10.1023/A:1007601113994,24
+10," Goldberg, H John",Could not catch title,399,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=machine+learning&hl=en&as_sdt=0,5",0
+20,"Barreno, B Nelson, AD Joseph, JD Tygar",The security of machine learning,326,2010,https://link.springer.com/article/10.1007/s10994-010-5188-5,36
+18, Salzberg,"C4. 5: Programs for machine learning by j. ross quinlan. morgan kaufmann publishers, inc., 1993",312,1994,http://www.springerlink.com/index/v986m1562062hk51.pdf,12
+30, Michalski,Learnable evolution model: Evolutionary processes guided by machine learning,244,2000,https://link.springer.com/article/10.1023/A:1007677805582,13
+63,Bottou,From machine learning to machine reasoning,160,2014,https://link.springer.com/article/10.1007/s10994-013-5335-x,32
+52,Be,Monotonicity maintenance in information-theoretic machine learning algorithms,160,1995,https://link.springer.com/article/10.1023/A:1022655006810,7
+47,"Provost, R Kohavi",Guest editors' introduction: On applied research in machine learning,147,1998,http://www.springerlink.com/index/QJ78NM8831T443K8.pdf,7
+72," Gordon, M Desjardins",Evaluation and selection of biases in machine learning,137,1995,https://link.springer.com/article/10.1007/BF00993472,6
+90,Langley,Machine learning as an experimental science,93,1988,http://www.springerlink.com/index/T73G473236562458.pdf,3
+84,Learning,Could not catch title,24,0,"Look manually at: https://scholar.google.com/scholar?start=80&q=machine+learning&hl=en&as_sdt=0,5",0
+5,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=machine+learning&hl=en&as_sdt=0,5",0

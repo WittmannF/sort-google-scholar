@@ -1,0 +1,102 @@
+Rank,Author,Title,Citations,Year,Source,cit/year
+11,Haykin,Neural networks: a comprehensive foundation,48157,1994,https://dl.acm.org/citation.cfm?id=541500,1926
+30,"Krizhevsky, I Sutskever, GE Hinton",Imagenet classification with deep convolutional neural networks,31347,2012,http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks,4478
+71, Bishop,Neural networks for pattern recognition,28627,1995,https://books.google.com/books?hl=en&lr=&id=T0S0BgAAQBAJ&oi=fnd&pg=PP1&dq=neural+networks&ots=jM6VwG4ykg&sig=LhxK2mYddRr29Dnd_wsprosOV_Y,1193
+39, Hopfield,Neural networks and physical systems with emergent collective computational abilities,19580,1982,http://www.pnas.org/content/79/8/2554.short,529
+13,"Hornik, M Stinchcombe, H White",Multilayer feedforward networks are universal approximators,16091,1989,https://www.sciencedirect.com/science/article/pii/0893608089900208,536
+58,"Hertz, A Krogh, RG Palmer",Introduction to the theory of neural computation.,9951,1991,http://psycnet.apa.org/record/1991-97470-000,355
+45," Narendra, K Parthasarathy",Identification and control of dynamical systems using neural networks,9433,1990,https://ieeexplore.ieee.org/abstract/document/80202/,325
+60,"Srivastava, G Hinton, A Krizhevsky…",Dropout: a simple way to prevent neural networks from overfitting,8929,2014,http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf?utm_content=buffer79b43&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer,1786
+20," Hagan, HB Demuth, MH Beale, O De Jesús",Could not catch title,8472,1996,"Look manually at: https://scholar.google.com/scholar?start=10&q=neural+networks&hl=en&as_sdt=0,5",368
+38," Hinton, RR Salakhutdinov",Reducing the dimensionality of data with neural networks,8073,2006,http://science.sciencemag.org/content/313/5786/504.short,621
+83, Ripley,Pattern recognition and neural networks,7777,2007,https://books.google.com/books?hl=en&lr=&id=m12UR8QmLqoC&oi=fnd&pg=PR9&dq=neural+networks&ots=aOLmlFVGVm&sig=gdLesvnjzBtxZ-QuIjUkU8WOO7M,648
+19,Kosko,Could not catch title,7341,0,"Look manually at: https://scholar.google.com/scholar?start=10&q=neural+networks&hl=en&as_sdt=0,5",4
+12, Fausett,Could not catch title,6351,0,"Look manually at: https://scholar.google.com/scholar?start=10&q=neural+networks&hl=en&as_sdt=0,5",3
+56," Chua, L Yang",Cellular neural networks: Applications,6290,1988,https://ieeexplore.ieee.org/abstract/document/7601/,203
+72,"Sutskever, O Vinyals, QV Le",Sequence to sequence learning with neural networks,5060,2014,http://papers.nips.cc/paper/5346-sequence-to-sequence-learnin,1012
+24," Haykin, SS Haykin, SS Haykin, SS Haykin",Neural networks and learning machines,5029,2009,http://plaza.ufl.edu/angelbar/courses/CAP6615_SPRING2012.pdf,503
+100,"Hinton, L Deng, D Yu, GE Dahl…",Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups,4866,2012,https://ieeexplore.ieee.org/abstract/document/6296526/,695
+1, Funahashi,On the approximate realization of continuous mappings by neural networks,4695,1989,http://www.academia.edu/download/47721709/0893-6080_2889_2990003-820160802-14248-1orp0y5.pdf,156
+66, Zurada,Introduction to artificial neural systems,4295,1992,http://www.jaicobooks.com/j/pdf%20hed/j-878%20artificial%20neural%20systems.pdf,159
+2, Specht,Probabilistic neural networks,4143,1990,https://www.sciencedirect.com/science/article/pii/089360809090049Q,143
+3,Schmidhuber,Deep learning in neural networks: An overview,4118,2015,https://www.sciencedirect.com/science/article/pii/S0893608014002135,1030
+82,"Glorot, Y Bengio",Understanding the difficulty of training deep feedforward neural networks,4108,2010,http://www.jmlr.org/proceedings/papers/v9/glorot10a/glorot10a.pdf?hc_location=ufi,456
+97, Møller,A scaled conjugate gradient algorithm for fast supervised learning,3569,1993,https://www.sciencedirect.com/science/article/pii/S0893608005800565,137
+22,Hornik,Approximation capabilities of multilayer feedforward networks,3213,1991,https://www.sciencedirect.com/science/article/pii/089360809190009T,115
+61,Pao,Adaptive pattern recognition and neural networks,3087,1989,https://www.osti.gov/biblio/5238955,103
+89,"Graves, A Mohamed, G Hinton",Speech recognition with deep recurrent neural networks,2910,2013,https://ieeexplore.ieee.org/abstract/document/6638947/,485
+93," Hunt, D Sbarbaro, R Żbikowski, PJ Gawthrop",Neural networks for control systems—a survey,2311,1992,https://www.sciencedirect.com/science/article/pii/000510989290053I,86
+74,Haykin,Kalman filtering and neural networks,2212,2004,https://books.google.com/books?hl=en&lr=&id=6dHEojwXU6MC&oi=fnd&pg=PR5&dq=neural+networks&ots=Z0j0MO1a2p&sig=jdBoNUcJ3tFFAlifFTvNeJmrVLI,147
+34,"Cochocki, R Unbehauen",Neural networks for optimization and signal processing,2152,1993,https://dl.acm.org/citation.cfm?id=562697,83
+98," Tsoukalas, RE Uhrig",Fuzzy and neural approaches in engineering,1945,1997,http://115.127.115.77:8080/xmlui/handle/123456789/909,88
+68," Hippert, CE Pedreira…",Neural networks for short-term load forecasting: A review and evaluation,1893,2001,https://ieeexplore.ieee.org/abstract/document/910780/,105
+4,Grossberg,"Nonlinear neural networks: Principles, mechanisms, and architectures",1830,1988,https://www.sciencedirect.com/science/article/pii/0893608088900214,59
+70, Sanger,Optimal unsupervised learning in a single-layer linear feedforward neural network,1776,1989,https://www.sciencedirect.com/science/article/pii/0893608089900440,59
+81,"Hornik, M Stinchcombe, H White",Universal approximation of an unknown mapping and its derivatives using multilayer feedforward networks,1662,1990,http://robotics.caltech.edu/wiki/images/5/53/HSH.pdf,57
+52,"Norgaard, O Ravn, NK Poulsen, LK Hansen",Could not catch title,1480,2000,"Look manually at: https://scholar.google.com/scholar?start=50&q=neural+networks&hl=en&as_sdt=0,5",78
+92, Patterson,Artificial neural networks: theory and applications,1392,1998,https://dl.acm.org/citation.cfm?id=521611,66
+84,"Lapedes, R Farber",Nonlinear signal processing using neural networks: Prediction and system modelling,1333,1987,https://www.osti.gov/biblio/5470451,42
+69," Diamantaras, SY Kung",Could not catch title,1315,1996,"Look manually at: https://scholar.google.com/scholar?start=60&q=neural+networks&hl=en&as_sdt=0,5",57
+8,Maass,Networks of spiking neurons: the third generation of neural network models,1297,1997,https://www.sciencedirect.com/science/article/pii/S0893608097000117,59
+37,Kohonen,An introduction to neural computing,1201,1988,https://www.sciencedirect.com/science/article/pii/0893608088900202,39
+9,"Baldi, K Hornik",Neural networks and principal component analysis: Learning from examples without local minima,1186,1989,https://www.sciencedirect.com/science/article/pii/0893608089900142,40
+77,"Graves, J Schmidhuber",Framewise phoneme classification with bidirectional LSTM and other neural network architectures,1128,2005,https://www.sciencedirect.com/science/article/pii/S0893608005001206,81
+73,"Zupan, J Gasteiger",Neural networks for chemists: an introduction,1110,1993,https://dl.acm.org/citation.cfm?id=562576,43
+62,"Leshno, VY Lin, A Pinkus, S Schocken",Multilayer feedforward networks with a nonpolynomial activation function can approximate any function,1092,1993,https://www.sciencedirect.com/science/article/pii/S0893608005801315,42
+55, Schalkoff,Could not catch title,1076,0,"Look manually at: https://scholar.google.com/scholar?start=50&q=neural+networks&hl=en&as_sdt=0,5",1
+10,Oja,"Principal components, minor components, and linear neural networks",996,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800899,37
+78, Looney,Could not catch title,904,1997,"Look manually at: https://scholar.google.com/scholar?start=70&q=neural+networks&hl=en&as_sdt=0,5",41
+16,White,Connectionist nonparametric regression: Multilayer feedforward networks can learn arbitrary mappings,811,1990,https://www.sciencedirect.com/science/article/pii/0893608090900045,28
+14,"Funahashi, Y Nakamura",Approximation of dynamical systems by continuous time recurrent neural networks,737,1993,https://www.sciencedirect.com/science/article/pii/S089360800580125X,28
+32,"Haykin, N Network",A comprehensive foundation,736,2004,https://ieeexplore.ieee.org/iel4/91/8807/x0153119.pdf,49
+49," Musavi, W Ahmed, KH Chan, KB Faris…",On the training of radial basis function classifiers,707,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800383,26
+88," Kung, SY Kung, SY Kung",Could not catch title,695,1993,"Look manually at: https://scholar.google.com/scholar?start=80&q=neural+networks&hl=en&as_sdt=0,5",27
+18," Pershin, M Di Ventra",Experimental demonstration of associative memory with memristive neural networks,682,2010,https://www.sciencedirect.com/science/article/pii/S0893608010000948,76
+7,"Sietsma, RJF Dow",Creating artificial neural networks that generalize,663,1991,https://www.sciencedirect.com/science/article/pii/0893608091900332,24
+95,Masters,Could not catch title,656,1995,"Look manually at: https://scholar.google.com/scholar?start=90&q=neural+networks&hl=en&as_sdt=0,5",27
+6,Kůrková,Kolmogorov's theorem and multilayer neural networks,614,1992,https://www.sciencedirect.com/science/article/pii/0893608092900128,23
+25,Hashem,Optimal linear combinations of neural networks,575,1997,https://www.sciencedirect.com/science/article/pii/S0893608096000986,26
+21,"Liu, Z Wang, X Liu",Global exponential stability of generalized recurrent neural networks with discrete and distributed delays,564,2006,https://www.sciencedirect.com/science/article/pii/S0893608005000833,43
+85,Hornik,Some new results on neural network approximation,540,1993,https://www.sciencedirect.com/science/article/pii/S089360800980018X,21
+15,Tsuda,Dynamic link of memory—chaotic memory map in nonequilibrium neural networks,538,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800292,20
+57," Amari, K Maginu",Statistical neurodynamics of associative memory,534,1988,https://www.sciencedirect.com/science/article/pii/0893608088900226,17
+40,Hech,Applications of counterpropagation networks,508,1988,https://www.sciencedirect.com/science/article/pii/0893608088900159,16
+26,"Chakraborty, K Mehrotra, CK Mohan, S Ranka",Forecasting the behavior of multivariate time series using neural networks,497,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800929,18
+41,G Lisboa,A review of evidence of health benefit from artificial neural networks in medical intervention,474,2002,https://www.sciencedirect.com/science/article/pii/S0893608001001113,28
+28,"Liao, G Chen, EN Sanchez",Delay-dependent exponential stability analysis of delayed neural networks: an LMI approach,460,2002,https://www.sciencedirect.com/science/article/pii/S0893608002000412,27
+67,"Matsuoka, M Ohoya, M Kawamoto",A neural net for blind separation of nonstationary signals,444,1995,https://www.sciencedirect.com/science/article/pii/089360809400083X,18
+42,"Scarselli, AC Tsoi","Universal approximation using feedforward neural networks: A survey of some existing methods, and some new results",440,1998,https://www.sciencedirect.com/science/article/pii/S089360809700097X,21
+33," Lisboa, AFG Taktak",The use of artificial neural networks in decision support in cancer: a systematic review,430,2006,https://www.sciencedirect.com/science/article/pii/S0893608005002844,33
+36," Blum, LK Li",Approximation theory and feedforward networks,429,1991,https://www.sciencedirect.com/science/article/pii/0893608091900479,15
+46,Ishikawa,Structural learning with forgetting,400,1996,https://www.sciencedirect.com/science/article/pii/0893608096836963,17
+54,"Battiti, AM Colla",Democracy in neural nets: Voting schemes for classification,391,1994,https://www.sciencedirect.com/science/article/pii/0893608094900469,16
+53, Amari,Information geometry of the EM and em algorithms for neural networks,385,1995,https://www.sciencedirect.com/science/article/pii/0893608095000038,16
+47,"Karhunen, J Joutsensalo","Generalizations of principal component analysis, optimization problems, and neural networks",358,1995,https://www.sciencedirect.com/science/article/pii/0893608094000987,15
+31,"Cao, D Zhou",Stability analysis of delayed cellular neural networks,356,1998,https://www.sciencedirect.com/science/article/pii/S089360809800080X,17
+48,"Anders, O Korn",Model selection in neural networks,346,1999,https://www.sciencedirect.com/science/article/pii/S0893608098001178,17
+23,Baba,A new approach for finding the global minimum of error function of neural networks,344,1989,https://www.sciencedirect.com/science/article/pii/089360808990021X,11
+17," Refenes, A Zapranis, G Francis",Stock performance modeling using neural networks: a comparative study with regression models,341,1994,https://www.sciencedirect.com/science/article/pii/0893608094900302,14
+51, Van Der Smagt,Minimisation methods for training feedforward neural networks,322,1994,https://www.sciencedirect.com/science/article/pii/0893608094900523,13
+65,Ghos,A new supervised learning algorithm for multiple spiking neural networks with application in epilepsy and seizure detection,311,2009,https://www.sciencedirect.com/science/article/pii/S0893608009000653,31
+43,Chen,Global exponential stability of delayed Hopfield neural networks,294,2001,https://www.researchgate.net/profile/Tianping_Chen/publication/285828588_Global_exponential_stability_of_delayed_Hopfield_neural_networks/links/567892f908ae0ad265c836aa.pdf,16
+91,Kohonen,Physiological interpretation of the self-organizing map algorithm,288,1993,https://www.sciencedirect.com/science/article/pii/S0893608009800014,11
+87,"Finnoff, F Hergert, HG Zimmermann",Improving model selection by nonconvergent methods,278,1993,https://www.sciencedirect.com/science/article/pii/S0893608005801224,11
+75," Nageswaran, N Dutt, JL Krichmar, A Nicolau…",A configurable simulation environment for the efficient simulation of large-scale spiking neural networks on graphics processors,273,2009,https://www.sciencedirect.com/science/article/pii/S0893608009001373,27
+64,"Wang, X Zou",Exponential stability of Cohen–Grossberg neural networks,268,2002,https://www.sciencedirect.com/science/article/pii/S0893608002000254,16
+29,Zak,Terminal attractors in neural networks,263,1989,https://www.sciencedirect.com/science/article/pii/0893608089900361,9
+59,Arik,An analysis of exponential stability of delayed neural networks with time varying delays,260,2004,https://www.sciencedirect.com/science/article/pii/S0893608004000267,17
+80,"Lampinen, A Vehtari",Bayesian approach for neural networks—review and case studies,260,2001,https://www.sciencedirect.com/science/article/pii/S0893608000000988,14
+76,"Blanco, M Delgado, MC Pegalajar",A real-coded genetic algorithm for training recurrent neural networks,256,2001,https://www.sciencedirect.com/science/article/pii/S0893608000000812,14
+86,"Chen, Z Zeng, P Jiang",Global Mittag-Leffler stability and synchronization of memristor-based fractional-order neural networks,239,2014,https://www.sciencedirect.com/science/article/pii/S089360801300292X,48
+79,"Wang, Y Liu, X Liu",State estimation for jumping recurrent neural networks with discrete and distributed delays,238,2009,https://www.sciencedirect.com/science/article/pii/S0893608008002359,24
+27,Matsuoka,Stability conditions for nonlinear continuous neural networks with asymmetric connection weights,232,1992,https://www.sciencedirect.com/science/article/pii/0893608092900117,9
+99,"Kaslik, S Sivasundaram",Nonlinear dynamics and chaos in fractional-order neural networks,226,2012,https://www.sciencedirect.com/science/article/pii/S0893608012000597,32
+90,"Cao, J Wang",Absolute exponential stability of recurrent neural networks with Lipschitz-continuous activation functions and time delays,222,2004,https://www.sciencedirect.com/science/article/pii/S0893608003002533,15
+35,"Shah, F Palmieri, M Datum",Optimal filtering algorithms for fast learning in feedforward neural networks,221,1992,https://www.sciencedirect.com/science/article/pii/S089360800580139X,8
+44,"Bornholdt, D Graudenz",General asymmetric neural networks and structure design by genetic algorithms,207,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800309,8
+101,"Cao, L Li",Cluster synchronization in an array of hybrid coupled neural networks with delay,203,2009,https://www.sciencedirect.com/science/article/pii/S0893608009000355,20
+50,"Beaufays, Y Abde",Application of neural networks to load-frequency control in power systems,184,1994,https://www.sciencedirect.com/science/article/pii/0893608094900671,7
+94,Joy,Results concerning the absolute stability of delayed neural networks,182,2000,https://www.sciencedirect.com/science/article/pii/S0893608000000423,10
+63, Kreinovich,Arbitrary nonlinearity is sufficient to represent all functions by neural networks: a theorem,175,1991,https://www.sciencedirect.com/science/article/pii/089360809190074F,6
+96,"Baba, Y Mogami, M Kohzaki, Y Shiraishi, Y Yoshida",A hybrid algorithm for finding the global minimum of error function of neural networks and its applications,125,1994,https://www.sciencedirect.com/science/article/pii/089360809490006X,5
+5,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=neural+networks&hl=en&as_sdt=0,5",0
