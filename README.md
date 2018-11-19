@@ -1,16 +1,19 @@
-### Sort Google Scholar by the Number of Citations
+## Sort Google Scholar by the Number of Citations
 This Python code ranks publications data from Google Scholar by the number 
-of citations.
-It is useful for finding relevant papers in a specific field. 
+of citations. It is useful for finding relevant papers in a specific field. 
 
-The data acquired from Google Scholar is Title, Citations, Links and Rank.
+The data acquired from Google Scholar is Title, Citations, Links and Rank. A new
+columns with the number of citations per year is also included.
 The example of the code will look for the top 100 papers related to the keyword, 
-and rank them by the number of citations
-As output the file will return a .csv file ranked by the number of citations.
+and rank them by the number of citations. This keyword can eiter be included in 
+the command line terminal (`$python sortgs.py --kw 'my keyword'`) or edited in 
+the original file.
+As output, a .csv file will be returned with the name of the chosen keyword
+ranked by the number of citations.
 
 ### New Updated Code: `sortgs.py`
 ```
-usage: sortgs.py [-h] [--kw KW] [--sortby SORTBY] [--nresults NRESULTS]
+usage: sortgs.py [-h] [--kw KEYWORD] [--sortby SORTBY] [--nresults NRESULTS]
                  [--csvpath CSVPATH] [--notsavecsv] [--plotresults]
                  [--startyear STARTYEAR] [--endyear ENDYEAR]
 
@@ -18,7 +21,7 @@ Example: $python sortgs.py --kw 'deep learning'
 
 optional arguments:
   -h, --help            show this help message and exit
-  --kw KW               Keyword to be searched. Default is 'machine learning'
+  --kw KEYWORD          Keyword to be searched. Default is 'machine learning'
                         Use double quote followed by simple quote to search 
 			for an exact keyword. Example: "'exact keyword'"
   --sortby SORTBY       Column to be sorted by. Default is by the columns
