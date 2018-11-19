@@ -68,6 +68,10 @@ $python sortgs.py --kw "machine learning" --startyear 2005 --endyear 2015
 Save results under a subfolder called 'examples'
 ```
 $ python sortgs.py --kw 'neural networks' --csvpath './examples/'
+```
+
+Example of output while running:
+```
 Loading next 10 results
 Robot checking detected, handling with selenium (if installed)
 Loading...
