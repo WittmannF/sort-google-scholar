@@ -10,55 +10,67 @@ As output the file will return a .csv file ranked by the number of citations.
 
 ### New Updated Code: `sortgs.py`
 ```
-usage: python sortgs.py [-h] [--sortby SORTBY] [--nresults NRESULTS]
-                              [--csvpath CSVPATH] [--notsavecsv]
-                              [--plotresults] [--startyear STARTYEAR]
-                              [--endyear ENDYEAR]
-                              keyword
+usage: sortgs.py [-h] [--kw KW] [--sortby SORTBY] [--nresults NRESULTS]
+                 [--csvpath CSVPATH] [--notsavecsv] [--plotresults]
+                 [--startyear STARTYEAR] [--endyear ENDYEAR]
 
-Example: python sortgs.py "machine learning"
-
-positional arguments:
-  keyword               Keyword to be searched. Use double quote followed by
-                        simple quote to search for an exact keyword. Example:
-                        "'exact keyword'"
+Example: $python sortgs.py --kw 'deep learning'
 
 optional arguments:
   -h, --help            show this help message and exit
-  --sortby SORTBY       String. Column to be sorted by. Default is by the number of
-                        citations. If you want to sort by the number of
-                        citations per year, use --sortby "cit/year"
-  --nresults NRESULTS   Int. Number of articles to search on Google Scholar.
+  --kw KW               Keyword to be searched. Default is 'machine learning'
+                        Use double quote followed by simple quote to search 
+			for an exact keyword. Example: "'exact keyword'"
+  --sortby SORTBY       Column to be sorted by. Default is by the columns
+                        "Citations", i.e., it will be sorted by the number of
+                        citations. If you want to sort by citations per year,
+                        use --sortby "cit/year"
+  --nresults NRESULTS   Number of articles to search on Google Scholar.
                         Default is 100. (carefull with robot checking if value
                         is too high)
-  --csvpath CSVPATH     String. Path to save the exported csv file. By default it is
+  --csvpath CSVPATH     Path to save the exported csv file. By default it is
                         the current folder
-  --notsavecsv          Flag. By default results are going to be exported to a csv
+  --notsavecsv          By default results are going to be exported to a csv
                         file. Select this option to just print results but not
                         store them
-  --plotresults         Flag. Use this flag in order to plot the results with the
+  --plotresults         Use this flag in order to plot the results with the
                         original rank in the x-axis and the number of citaions
                         in the y-axis. Default is False
-  --startyear STARTYEAR Int. Start year when searching. Default is None
-  --endyear ENDYEAR     Int. End year when searching. Default is current year
+  --startyear STARTYEAR
+                        Start year when searching. Default is None
+  --endyear ENDYEAR     End year when searching. Default is current year
 ```
 
 ### Example
 The following code will search for the top 100 results, rank by number of citations and save as a .csv file (same name of the keyword):
 ```
-$python sortgs.py "machine learning"
+$python sortgs.py --kw "machine learning"
 ```
 
 Sorted by number of citations per year:
 ```
-$python sortgs.py "machine learning" --sortby "cit/year"
+$python sortgs.py --kw "machine learning" --sortby "cit/year"
 ```
 
 From 2005 to 2015:
 ```
-$python sortgs.py "machine learning" --startyear 2005 --endyear 2015
+$python sortgs.py --kw "machine learning" --startyear 2005 --endyear 2015
 ```
 
+Save results under a subfolder called 'examples'
+```
+$ python sortgs.py --kw 'neural networks' --csvpath './examples/'
+Loading next 10 results
+Robot checking detected, handling with selenium (if installed)
+Loading...
+Solve captcha manually and press enter here to continue...
+year not found, appending 0
+Loading next 20 results
+Robot checking detected, handling with selenium (if installed)
+Loading next 30 results
+Robot checking detected, handling with selenium (if installed)
+Loading next 40 results
+```
 
 ### Requirements
 If you install anaconda, all of those requirements (except s) are going to be met:

@@ -19,27 +19,37 @@ from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 import pandas as pd
 from time import sleep
+import warnings
 
 # Solve conflict between raw_input and input on Python 2 and Python 3
 import sys
 if sys.version[0]=="3": raw_input=input
 
-
-# Parameters
-#GSCHOLAR_URL = 'https://scholar.google.com/scholar?start={}&q={}'
-GSCHOLAR_URL = 'https://scholar.google.com/scholar?start={}&q={}&hl=en&as_sdt=0,5'
-YEAR_RANGE = '&as_ylo={start_year}&as_yhi={end_year}'
-GSCHOLAR_URL_YEAR = GSCHOLAR_URL+YEAR_RANGE
-
+# Default Parameters
+KEYWORD = 'machine learning' # Default argument if command line is empty
+NRESULTS = 100 # Fetch 100 articles
+CSVPATH = '.' # Current folder
+SAVECSV = True
+SORTBY = 'Citations'
+PLOT_RESULTS = False
+STARTYEAR = None
 now = datetime.datetime.now()
-CURRENT_YEAR = now.year
+ENDYEAR = now.year # Current year
 
+
+
+# Websession Parameters
+GSCHOLAR_URL = 'https://scholar.google.com/scholar?start={}&q={}&hl=en&as_sdt=0,5'
+YEAR_RANGE = '' #&as_ylo={start_year}&as_yhi={end_year}'
+#GSCHOLAR_URL_YEAR = GSCHOLAR_URL+YEAR_RANGE
+STARTYEAR_URL = '&as_ylo={}'
+ENDYEAR_URL = '&as_yhi={}'
 ROBOT_KW=['unusual traffic from your computer network', 'not a robot']
 
 def get_command_line_args():
     # Command line arguments
     parser = argparse.ArgumentParser(description='Arguments')
-    parser.add_argument('keyword', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """)
+    parser.add_argument('--kw', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """)
     parser.add_argument('--sortby', type=str, help='Column to be sorted by. Default is by the columns "Citations", i.e., it will be sorted by the number of citations. If you want to sort by citations per year, use --sortby "cit/year"')
     parser.add_argument('--nresults', type=int, help='Number of articles to search on Google Scholar. Default is 100. (carefull with robot checking if value is too high)')
     parser.add_argument('--csvpath', type=str, help='Path to save the exported csv file. By default it is the current folder')
@@ -51,21 +61,23 @@ def get_command_line_args():
     # Parse and read arguments and assign them to variables if exists
     args, _ = parser.parse_known_args()
 
-    keyword = args.keyword
+    keyword = KEYWORD
+    if args.kw:
+        keyword = args.kw
 
-    nresults = 100
+    nresults = NRESULTS
     if args.nresults:
         top_k = args.nresults
 
-    csvpath = '.'
+    csvpath = CSVPATH
     if args.csvpath:
         csvpath = args.csvpath
 
-    save_csv = True
+    save_csv = SAVECSV
     if args.notsavecsv:
         save_csv = False
 
-    sortby = 'Citations'
+    sortby = SORTBY
     if args.sortby:
         sortby=args.sortby
 
@@ -73,11 +85,11 @@ def get_command_line_args():
     if args.plotresults:
         plot_results = True
 
-    start_year = None
+    start_year = STARTYEAR
     if args.startyear:
         start_year=args.startyear
 
-    end_year = CURRENT_YEAR
+    end_year = ENDYEAR
     if args.endyear:
         end_year=args.endyear
 
@@ -148,10 +160,8 @@ def get_content_with_selenium(url):
 
     if any(kw in el.text for kw in ROBOT_KW):
         raw_input("Solve captcha manually and press enter here to continue...")
+        el = get_element(driver, "/html/body")
         c = el.get_attribute('innerHTML')
-
-
-    print(c)
 
 
     return c.encode('utf-8')
@@ -161,9 +171,18 @@ def main():
     # Get command line arguments
     keyword, number_of_results, save_database, path, sortby_column, plot_results, start_year, end_year = get_command_line_args()
 
+    # Create main URL based on command line arguments
+    if start_year:
+        GSCHOLAR_MAIN_URL = GSCHOLAR_URL + STARTYEAR_URL.format(start_year)
+    else:
+        GSCHOLAR_MAIN_URL = GSCHOLAR_URL
+
+    if end_year != now.year:
+        GSCHOLAR_MAIN_URL = GSCHOLAR_MAIN_URL + ENDYEAR_URL.format(end_year)
+
     # Start new session
     session = requests.Session()
-    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    #headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
     # Variables
     links = []
@@ -175,13 +194,13 @@ def main():
 
     # Get content from number_of_results URLs
     for n in range(0, number_of_results, 10):
-        if start_year is None:
-            url = GSCHOLAR_URL.format(str(n), keyword.replace(' ','+'))
-        else:
-            url=GSCHOLAR_URL_YEAR.format(str(n), keyword.replace(' ','+'), start_year=start_year, end_year=end_year)
+        #if start_year is None:
+        url = GSCHOLAR_MAIN_URL.format(str(n), keyword.replace(' ','+'))
+        #else:
+        #    url=GSCHOLAR_URL_YEAR.format(str(n), keyword.replace(' ','+'), start_year=start_year, end_year=end_year)
 
         print("Loading next {} results".format(n+10))
-        page = session.get(url, headers=headers)
+        page = session.get(url)#, headers=headers)
         c = page.content
         if any(kw in c.decode("utf-8") for kw in ROBOT_KW):
             print("Robot checking detected, handling with selenium (if installed)")
@@ -200,28 +219,31 @@ def main():
         for div in mydivs:
             try:
                 links.append(div.find('h3').find('a').get('href'))
-            except: # catch *all* exceptionsstart_year, end_year
+            except: # catch *all* exceptions
                 links.append('Look manually at: '+url)
 
             try:
                 title.append(div.find('h3').find('a').text)
             except:
                 title.append('Could not catch title')
+
             try:
                 citations.append(get_citations(str(div.format_string)))
             except:
-                print("Number of citations not found. Appending 0")
+                warnings.warn("Number of citations not found for {}. Appending 0".format(title[-1]))
                 citations.append(0)
 
             try:
                 year.append(get_year(div.find('div',{'class' : 'gs_a'}).text))
             except:
-                print("year not found, appending 0")
+                warnings.warn("Year not found for {}, appending 0".format(title[-1]))
                 year.append(0)
+
             try:
                 author.append(get_author(div.find('div',{'class' : 'gs_a'}).text))
             except:
                 author.append("Author not found")
+
             rank.append(rank[-1]+1)
 
         # Delay 
