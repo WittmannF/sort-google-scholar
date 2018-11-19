@@ -7,7 +7,7 @@ The example of the code will look for the top 100 papers related to the keyword,
 and rank them by the number of citations
 As output the file will return a .csv file ranked by the number of citations.
 
-### Usage
+### Updated Code: Usage
 ```
 usage: python sortgs.py [-h] [--sortby SORTBY] [--nresults NRESULTS]
                               [--csvpath CSVPATH] [--notsavecsv]
@@ -43,34 +43,43 @@ optional arguments:
 ```
 
 ### Example
+The following code will search for the top 100 results, rank by number of citations and save as a .csv file (same name of the keyword):
+```
+$python sortgs.py "machine learning"
+```
 
+Sorted by number of citations per year:
+```
+$python sortgs.py "machine learning" --sortby "cit/year"
+```
+
+From 2005 to 2015:
+```
+$python sortgs.py "machine learning" --startyear 2005 --endyear 2015
+```
 
 
 ### Requirements
-If you install anaconda, all of those requirements will be met:
+If you install anaconda, all of those requirements (except s) are going to be met:
 - Python 2.7 or Python 3
 - Requests: `pip install requests`
 - Beautiful Soup: `pip install beautifulsoup4`
 - Pandas: `pip install pandas`
 - Matplotlib: `pip install matplotlib`
 
-### Update: Google Robot Checking
-If you are having problems with Google robot checking, as a suggestion, you can try using a proxy. Follow those steps:
+The following instalations are optional, if having problems with robot checking:
+- Selenium: `pip install selenium`
+- ChromeDriver: http://chromedriver.chromium.org/
+    - After downloading chromedriver, make sure to add it in a folder accessible from the PATH
 
-1. Go to the website https://free-proxy-list.net/ and pick one proxy (example: 200.162.142.178). 
 
-2. Add a new line with the chosen proxy, for example: 
-```
-proxies = {
-  'http': 'http://200.162.142.178:3128',
-  'https': 'http://200.162.142.178:3128',
-}
-```
+### LICENSE
+- MIT
 
-3. Add `proxies` as an attribute in `session.get`. In other words, change the line with `page = session.get(url)` to `page = session.get(url, proxies=proxies)`.
-
-4. I hope that works! For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
-
+### Misc
 If this project was helpful to you in any way, feel free to buy me a cup of coffee :)
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ4YJFQVXLMA&source=url)
+
+For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
+
