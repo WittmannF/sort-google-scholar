@@ -1,0 +1,112 @@
+Rank,Author,Title,Citations,Year,Source,cit/year
+62,"He, X Zhang, S Ren, J Sun",Deep residual learning for image recognition,18458,2016,http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html,4614
+1,"LeCun, Y Bengio, G Hinton",Deep learning,13142,2015,https://www.nature.com/articles/nature14539,2628
+68," Hinton, S Osindero, YW Teh",A fast learning algorithm for deep belief nets,9883,2006,https://www.mitpressjournals.org/doi/abs/10.1162/neco.2006.18.7.1527,706
+2,"Goodfellow, Y Bengio, A Courville",Deep learning,6615,2016,https://books.google.com/books?hl=en&lr=&id=omivDQAAQBAJ&oi=fnd&pg=PR5&dq=deep+learning&ots=MMR_iorIOX&sig=wHAl1WnrksxOnqR3LWsuMvjaQ0o,1654
+57,Bengio,Learning deep architectures for AI,6352,2009,http://www.nowpublishers.com/article/Details/MAL-006,577
+3,Schmidhuber,Deep learning in neural networks: An overview,4866,2015,https://www.sciencedirect.com/science/article/pii/S0893608014002135,973
+6,"Mnih, K Kavukcuoglu, D Silver, A Graves…",Playing atari with deep reinforcement learning,2021,2013,https://arxiv.org/abs/1312.5602,289
+110,"Dean, G Corrado, R Monga, K Chen…",Large scale distributed deep networks,1798,2012,http://papers.nips.cc/paper/4687-large-scale-distributed-deep-networks,225
+8,"Erhan, Y Bengio, A Courville, PA Manzagol…",Why does unsupervised pre-training help deep learning?,1598,2010,http://www.jmlr.org/papers/v11/erhan10a.html,160
+9,"Sutskever, J Martens, GE Dahl, GE Hinton",On the importance of initialization and momentum in deep learning.,1532,2013,http://www.jmlr.org/proceedings/papers/v28/sutskever13.pdf,219
+4,"Ngiam, A Khosla, M Kim, J Nam, H Lee…",Multimodal deep learning,1477,2011,http://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf,164
+7,"Deng, D Yu",Deep learning: methods and applications,1399,2014,http://www.nowpublishers.com/article/Details/SIG-039,233
+11,"Dong, CC Loy, K He, X Tang",Learning a deep convolutional network for image super-resolution,1257,2014,https://link.springer.com/chapter/10.1007/978-3-319-10593-2_13,210
+10,"Liu, P Luo, X Wang, X Tang",Deep learning face attributes in the wild,1133,2015,http://openaccess.thecvf.com/content_iccv_2015/html/Liu_Deep_Learning_Face_ICCV_2015_paper.html,227
+15,"Sun, X Wang, X Tang","Deep learning face representation from predicting 10,000 classes",1064,0,https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Sun_Deep_Learning_Face_2014_CVPR_paper.html,1
+14,"Sun, Y Chen, X Wang, X Tang",Deep learning face representation by joint identification-verification,1040,2014,http://papers.nips.cc/paper/5416-deep-learning-face-representation-by-joint-identification-verification,173
+19,"Glorot, A Bordes, Y Bengio",Domain adaptation for large-scale sentiment classification: A deep learning approach,1037,2011,http://www.iro.umontreal.ca/~lisa/bib/pub_subject/language/pointeurs/ICML2011_sentiment.pdf,115
+28,"Litjens, T Kooi, BE Bejnordi, AAA Setio, F Ciompi…",A survey on deep learning in medical image analysis,1024,2017,https://www.sciencedirect.com/science/article/pii/S1361841517301135,341
+17, Nielsen,Neural networks and deep learning,1007,2015,http://static.latexstudio.net/article/2018/0912/neuralnetworksanddeeplearning.pdf,201
+22,"Lee, P Pham, Y Largman, AY Ng",Unsupervised feature learning for audio classification using convolutional deep belief networks,908,2009,http://papers.nips.cc/paper/3674-unsupervised-feature-learning-for,83
+61,"Gulshan, L Peng, M Coram, MC Stumpe, D Wu…",Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs,859,2016,https://jamanetwork.com/journals/jama/fullarticle/2588763?guestAccessKey=e95d1518-94df-41f3-a32c-f5ee30e7f3b1,215
+18,"Zhang, S Bengio, M Hardt, B Recht…",Understanding deep learning requires rethinking generalization,746,2016,https://arxiv.org/abs/1611.03530,186
+38,"Gal, Z Ghahramani",Dropout as a bayesian approximation: Representing model uncertainty in deep learning,744,2016,http://www.jmlr.org/proceedings/papers/v48/gal16.pdf,186
+35,"Lv, Y Duan, W Kang, Z Li…",Traffic flow prediction with big data: a deep learning approach,721,2015,https://ieeexplore.ieee.org/abstract/document/6894591/,144
+53,"Alipanahi, A Delong, MT Weirauch, BJ Frey",Predicting the sequence specificities of DNA-and RNA-binding proteins by deep learning,710,2015,https://www.nature.com/articles/nbt.3300,142
+33,"Arel, DC Rose, TP Karnowski",Deep machine learning-a new frontier in artificial intelligence research,680,2010,https://www.researchgate.net/profile/Thomas_Karnowski/publication/224183837_Deep_Machine_Learning_-_A_New_Frontier_in_Artificial_Intelligence_Research_Research_Frontier/links/570bb11b08aee06603519bf8/Deep-Machine-Learning-A-New-Frontier-in-Artificial-Intelligence-Research-Research-Frontier.pdf,68
+31,"Papernot, P McDaniel, S Jha…",The limitations of deep learning in adversarial settings,665,2016,https://ieeexplore.ieee.org/abstract/document/7467366/,166
+24,Chollet,Xception: Deep learning with depthwise separable convolutions,659,2017,http://openaccess.thecvf.com/content_cvpr_2017/html/Chollet_Xception_Deep_Learning_CVPR_2017_paper.html,220
+27,"Long, Y Cao, J Wang, MI Jordan",Learning transferable features with deep adaptation networks,647,2015,http://www.jmlr.org/proceedings/papers/v37/long15.pdf,129
+37,"Ahmed, M Jones, TK Marks",An improved deep learning architecture for person re-identification,643,2015,http://openaccess.thecvf.com/content_cvpr_2015/html/Ahmed_An_Improved_Deep_2015_CVPR_paper.html,129
+44," Huang, X He, J Gao, L Deng, A Acero…",Learning deep structured semantic models for web search using clickthrough data,635,2013,https://dl.acm.org/citation.cfm?id=2505665,91
+13," Le, J Ngiam, A Coates, A Lahiri…",On optimization methods for deep learning,631,2011,https://dl.acm.org/citation.cfm?id=3104516,70
+51," Qi, H Su, K Mo, LJ Guibas",Pointnet: Deep learning on point sets for 3d classification and segmentation,617,2017,http://openaccess.thecvf.com/content_cvpr_2017/html/Qi_PointNet_Deep_Learning_CVPR_2017_paper.html,206
+20,"Chetlur, C Woolley, P Vandermersch…",cudnn: Efficient primitives for deep learning,616,2014,https://arxiv.org/abs/1410.0759,103
+40,"Wang, DY Yeung",Learning a deep compact image representation for visual tracking,594,2013,http://papers.nips.cc/paper/5192-learning-a-deep-compact-image-representation-for-visual-tracking,85
+21,"Weston, F Ratle, H Mobahi, R Collobert",Deep learning via semi-supervised embedding,593,2012,https://link.springer.com/chapter/10.1007/978-3-642-35289-8_34,74
+25,Martens,Deep learning via Hessian-free optimization.,588,2010,http://www.cs.toronto.edu/~asamir/cifar/HFO_James.pdf,59
+26,"Gupta, A Agrawal, K Gopalakrishnan…",Deep learning with limited numerical precision,578,2015,http://www.jmlr.org/proceedings/papers/v37/gupta15.pdf,116
+36,"Chen, Z Lin, X Zhao, G Wang…",Deep learning-based classification of hyperspectral data,575,2014,https://ieeexplore.ieee.org/abstract/document/6844831/,96
+58," Chan, K Jia, S Gao, J Lu, Z Zeng…",PCANet: A simple deep learning baseline for image classification?,566,2015,https://ieeexplore.ieee.org/abstract/document/7234886/,113
+16,"Bengio, IJ Goodfellow, A Courville",Deep learning,546,2015,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.672.7118&rep=rep1&type=pdf,109
+41,"Lenz, H Lee, A Saxena",Deep learning for detecting robotic grasps,538,2015,https://journals.sagepub.com/doi/abs/10.1177/0278364914549607,108
+32,Bengio,Deep learning of representations for unsupervised and transfer learning,517,2012,http://www.jmlr.org/proceedings/papers/v27/bengio12a/bengio12a.pdf,65
+43,"Wang, Y Song, T Leung, C Rosenberg…",Learning fine-grained image similarity with deep ranking,507,0,https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Wang_Learning_Fine-grained_Image_2014_CVPR_paper.html,0
+39,"Wang, N Wang, DY Yeung",Collaborative deep learning for recommender systems,503,2015,https://dl.acm.org/citation.cfm?id=2783273,101
+30,"Coates, B Huval, T Wang, D Wu, B Catanzaro…",Deep learning with COTS HPC systems,493,2013,http://www.jmlr.org/proceedings/papers/v28/coates13.pdf,70
+69,"Zhou, OG Troyanskaya",Predicting effects of noncoding variants with deep learning–based sequence model,486,2015,https://www.nature.com/nmeth/journal/v12/n10/abs/nmeth.3547.html,97
+83,"Deng, G Hinton, B Kingsbury",New types of deep neural network learning for speech recognition and related applications: An overview,483,2013,https://ieeexplore.ieee.org/abstract/document/6639344/,69
+46,"Tokui, K Oono, S Hido, J Clayton",Chainer: a next-generation open source framework for deep learning,475,2015,http://learningsys.org/papers/LearningSys_2015_paper_33.pdf,95
+29,"Denil, B Shakibi, L Dinh, N De Freitas",Predicting parameters in deep learning,465,2013,http://papers.nips.cc/paper/5025-predicting-parameters-in-deep-learning,66
+54,"Greenspan, B Van Ginneken…",Guest editorial deep learning in medical imaging: Overview and future promise of an exciting new technique,460,2016,https://ieeexplore.ieee.org/abstract/document/7463094/,115
+73,Entwistle,Promoting deep learning through teaching and assessment: conceptual frameworks and educational contexts,455,2003,http://www.leeds.ac.uk/educol/documents/00003220.htm,27
+52,"Socher, B Huval, B Bath, CD Manning…",Convolutional-recursive deep learning for 3d object classification,451,2012,http://papers.nips.cc/paper/4773-convolutional-recursive-deep-learning-for-3d-object-classification.pdf,56
+71,"Wan, D Wang, SCH Hoi, P Wu, J Zhu…",Deep learning for content-based image retrieval: A comprehensive study,449,2014,https://dl.acm.org/citation.cfm?id=2654948,75
+70," Najafabadi, F Villanustre…",Deep learning applications and challenges in big data analytics,442,2015,https://journalofbigdata.springeropen.com/articles/10.1186/s40537-014-0007-7,88
+85,"Levine, P Pastor, A Krizhevsky…",Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection,438,2018,https://journals.sagepub.com/doi/abs/10.1177/0278364917710318,219
+42,"Ouyang, X Wang",Joint deep learning for pedestrian detection,437,2013,http://openaccess.thecvf.com/content_iccv_2013/html/Ouyang_Joint_Deep_Learning_2013_ICCV_paper.html,62
+63,"Deng, J Li, JT Huang, K Yao, D Yu…",Recent advances in deep learning for speech research at Microsoft,430,2013,https://ieeexplore.ieee.org/abstract/document/6639345/,61
+66,"Madry, A Makelov, L Schmidt, D Tsipras…",Towards deep learning models resistant to adversarial attacks,426,2017,https://arxiv.org/abs/1706.06083,142
+75, Weigel,Deep learning for a digital age: Technology's untapped potential to enrich higher education.,420,2002,https://eric.ed.gov/?id=ED457787,23
+48,"Baccouche, F Mamalet, C Wolf, C Garcia…",Sequential deep learning for human action recognition,419,2011,https://link.springer.com/chapter/10.1007/978-3-642-25446-8_4,47
+81,"Baldi, P Sadowski, D Whiteson",Searching for exotic particles in high-energy physics with deep learning,418,2014,https://www.nature.com/articles/ncomms5308,70
+72,"Hu, J Lu, YP Tan",Discriminative deep metric learning for face verification in the wild,411,2014,http://openaccess.thecvf.com/content_cvpr_2014/html/Hu_Discriminative_Deep_Metric_2014_CVPR_paper.html,68
+55,"Zhao, W Ouyang, H Li…",Saliency detection by multi-context deep learning,404,2015,http://openaccess.thecvf.com/content_cvpr_2015/html/Zhao_Saliency_Detection_by_2015_CVPR_paper.html,81
+64," Chen, X Lin",Big data deep learning: challenges and perspectives,398,2014,https://ieeexplore.ieee.org/abstract/document/6817512/,66
+93," Keskar, D Mudigere, J Nocedal…",On large-batch training for deep learning: Generalization gap and sharp minima,393,2016,https://arxiv.org/abs/1609.04836,98
+47,Warburton,Deep learning and education for sustainability,392,2003,https://www.emeraldinsight.com/doi/pdf/10.1108/14676370310455332,23
+50,"Abadi, A Chu, I Goodfellow, HB McMahan…",Deep learning with differential privacy,380,2016,https://dl.acm.org/citation.cfm?id=2978318,95
+49,Tang,Deep learning using linear support vector machines,373,2013,https://arxiv.org/abs/1306.0239,53
+86,"Längkvist, L Karlsson, A Loutfi",A review of unsupervised feature learning and deep learning for time-series modeling,368,2014,https://www.sciencedirect.com/science/article/pii/S0167865514000221,61
+97,"Chilimbi, Y Suzue, J Apacible…",Project adam: Building an efficient and scalable deep learning training system,359,2014,https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chilimbi,60
+79,"Shen, G Wu, HI Suk",Deep learning in medical image analysis,359,2017,https://www.annualreviews.org/doi/abs/10.1146/annurev-bioeng-071516-044442,120
+87,"Guo, Y Liu, A Oerlemans, S Lao, S Wu, MS Lew",Deep learning for visual understanding: A review,358,2016,https://www.sciencedirect.com/science/article/pii/S0925231215017634,90
+102,"Severyn, A Moschitti",Learning to rank short text pairs with convolutional deep neural networks,357,2015,https://dl.acm.org/citation.cfm?id=2767738,71
+80,Bengio,Deep learning of representations: Looking forward,344,2013,https://link.springer.com/chapter/10.1007/978-3-642-39593-2_1,49
+103," Huang, H Lee…",Learning hierarchical representations for face verification with convolutional deep belief networks,330,2012,https://ieeexplore.ieee.org/abstract/document/6247968/,41
+60," Cheng, L Koc, J Harmsen, T Shaked…",Wide & deep learning for recommender systems,328,2016,https://dl.acm.org/citation.cfm?id=2988454,82
+105,"Bengio, AC Courville, P Vincent",Unsupervised feature learning and deep learning: A review and new perspectives,323,2012,https://docs.huihoo.com/deep-learning/Representation-Learning-A-Review-and-New-Perspectives-v1.pdf,40
+109,"K Yamins, JJ DiCarlo",Using goal-driven deep learning models to understand sensory cortex,316,2016,https://www.nature.com/articles/nn.4244,79
+59,"Hoffer, N Ailon",Deep metric learning using triplet network,316,2015,https://link.springer.com/chapter/10.1007/978-3-319-24261-3_7,63
+91," Bronstein, J Bruna, Y LeCun…",Geometric deep learning: going beyond euclidean data,316,2017,https://ieeexplore.ieee.org/abstract/document/7974879/,105
+90,"Sohn, H Lee, X Yan",Learning structured output representation using deep conditional generative models,311,2015,http://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional,62
+65,"Shokri, V Shmatikov",Privacy-preserving deep learning,299,2015,https://dl.acm.org/citation.cfm?id=2813687,60
+99,"Dumoulin, F Visin",A guide to convolution arithmetic for deep learning,295,2016,https://arxiv.org/abs/1603.07285,74
+77,"Angermueller, T Pärnamaa, L Parts…",Deep learning for computational biology,293,2016,http://msb.embopress.org/content/12/7/878.abstract,73
+76,Kawaguchi,Deep learning without poor local minima,286,2016,http://papers.nips.cc/paper/6111-deep-learning-without-poor-local-minima,72
+98,Barrett,Researching and evaluating digital storytelling as a deep learning tool,282,2006,https://www.learntechlib.org/p/22117/,20
+88,"Erin Liong, J Lu, G Wang, P Moulin…",Deep hashing for compact binary codes learning,277,0,https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Liong_Deep_Hashing_for_2015_CVPR_paper.html,0
+108,"Huang, G Song, H Hong, K Xie",Deep architecture for traffic flow prediction: deep belief networks with multitask learning,274,2014,https://ieeexplore.ieee.org/abstract/document/6786503/,46
+84,"Min, B Lee, S Yoon",Deep learning in bioinformatics,271,2017,https://academic.oup.com/bib/article-abstract/18/5/851/2562808,90
+74,"Cho, LK Saul",Kernel methods for deep learning,269,2009,http://papers.nips.cc/paper/3628-kernel-methods-for-deep-learning,24
+94,"Mobahi, R Collobert, J Weston",Deep learning from temporal coherence in video,250,2009,https://dl.acm.org/citation.cfm?id=1553469,23
+107,"Hamel, D Eck",Learning features from music audio with deep belief networks.,248,2010,http://musicweb.ucsd.edu/~sdubnov/Mu270d/DeepLearning/FeaturesAudioEck.pdf,25
+95,Rushton,Formative assessment: a key to deep learning?,241,2005,https://www.tandfonline.com/doi/abs/10.1080/01421590500129159,16
+92,"Sun, X Wang, X Tang",Hybrid deep learning for face verification,241,0,https://www.cv-foundation.org/openaccess/content_iccv_2013/html/Sun_Hybrid_Deep_Learning_2013_ICCV_paper.html,0
+104,"Yu, KM Hermann, P Blunsom, S Pulman",Deep learning for answer sentence selection,239,2014,https://arxiv.org/abs/1412.1632,40
+106,"Zhu, P Luo, X Wang, X Tang",Deep learning identity-preserving face space,224,0,https://www.cv-foundation.org/openaccess/content_iccv_2013/html/Zhu_Deep_Learning_Identity-Preserving_2013_ICCV_paper.html,0
+96," Huang, M Kim…",Deep learning for monaural speech separation,217,2014,https://ieeexplore.ieee.org/abstract/document/6853860/,36
+82,"Bergstra, F Bastien, O Breuleux, P Lamblin…",Theano: Deep learning on gpus with python,177,2011,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.678.1889&rep=rep1&type=pdf,20
+101,Yang,Deep learning,150,2016,http://home.sogang.ac.kr/sites/gsinfotech/study/yjh160724/Lists/b8/Attachments/9/DeepLearning.pdf,38
+56,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=40&q=deep+learning&hl=en&as_sdt=0,5",0
+100,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=80&q=deep+learning&hl=en&as_sdt=0,5",0
+89,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=70&q=deep+learning&hl=en&as_sdt=0,5",0
+78,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=60&q=deep+learning&hl=en&as_sdt=0,5",0
+67,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=50&q=deep+learning&hl=en&as_sdt=0,5",0
+45,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=30&q=deep+learning&hl=en&as_sdt=0,5",0
+34,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=20&q=deep+learning&hl=en&as_sdt=0,5",0
+23,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=10&q=deep+learning&hl=en&as_sdt=0,5",0
+12,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=deep+learning&hl=en&as_sdt=0,5",0
+5,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=deep+learning&hl=en&as_sdt=0,5",0
+111,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=90&q=deep+learning&hl=en&as_sdt=0,5",0
