@@ -202,7 +202,7 @@ def main():
         print("Loading next {} results".format(n+10))
         page = session.get(url)#, headers=headers)
         c = page.content
-        if any(kw in c.decode("utf-8") for kw in ROBOT_KW):
+        if any(kw in c.decode('ISO-8859-1') for kw in ROBOT_KW):
             print("Robot checking detected, handling with selenium (if installed)")
             try:
                 c = get_content_with_selenium(url)
