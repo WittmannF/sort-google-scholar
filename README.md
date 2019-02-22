@@ -55,7 +55,7 @@ The following code will search for the top 100 results, rank by number of citati
 $python sortgs.py --kw "machine learning"
 ```
 
-Sorted by number of citations per year:
+Sorted by number of citations per year (**HIGHLY RECOMMENDED**):
 ```
 $python sortgs.py --kw "machine learning" --sortby "cit/year"
 ```
