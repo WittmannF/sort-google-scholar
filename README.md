@@ -84,8 +84,20 @@ Robot checking detected, handling with selenium (if installed)
 Loading next 40 results
 ```
 
+### Installation
+SortGS is not available (yet) on PyPa. The most straight foward way to use it is the following:
+1. Install Python 3 and its dependencies from **Requirements** (suggestion: use Ananconda https://www.anaconda.com/distribution/)
+2. Download the repository. Two ways to do this:
+    - Use the command `git clone https://github.com/WittmannF/sort-google-scholar.git` in your terminal (if linux/MAC) or CMD (if windows)
+    - Or download using this link: https://github.com/WittmannF/sort-google-scholar/archive/master.zip and unzip
+3. Open the folder of sortgs on your terminal (if linux/MAC) or CMD (if windows)
+4. Use the command `python sortgs.py --kw "your keyword"` (replace "your keyword" to any keyword that you'd like to search)
+5. A CSV file with the name `your_keyword.csv` should be created. 
+
+If those steps are too complicated for you, send me an email with a list of keyworks that you'd like them ranked to: fernando [dot] wittmann [at] gmail [dot] com
+
 ### Requirements
-If you install anaconda, all of those requirements (except s) are going to be met:
+If you install anaconda, all of those requirements (except selenium) are going to be met:
 - Python 2.7 or Python 3
 - Requests: `pip install requests`
 - Beautiful Soup: `pip install beautifulsoup4`
