@@ -11,6 +11,13 @@ the original file.
 As output, a .csv file will be returned with the name of the chosen keyword
 ranked by the number of citations.
 
+### UPDATES
+- Try running the code [here](https://github.com/WittmannF/sort-google-scholar/blob/master/Test_sortgs_py_on_Colab.ipynb) using Google Colab! No install requirements! Limitations: Can't handle robot checking, so use it carefully.
+- Command line arguments. Ex: `$python sortgs.py --kw "deep learning"` (results saved in `deep_learning.csv`)
+- Handling robot checking with selenium.
+    - OBS: You might be asked to manually solve the first captcha for retrieving the content of the pages
+
+
 ### Citation
 This code was originally developed and mentioned in my [MS Dissertation](http://repositorio.unicamp.br/jspui/handle/REPOSIP/330610). For referencing this tool, you can use the following:
 
@@ -19,11 +26,6 @@ WITTMANN, Fernando Marcos. Optimization applied to residential non-intrusive loa
 Dissertation (Masters) - University of Campinas, School of Electrical and Computer Engineering, Campinas, SP. 
 Available in: <http://www.repositorio.unicamp.br/handle/REPOSIP/330610>.
 ```
-
-### New Features
-- Command line arguments. Ex: `$python sortgs.py --kw "deep learning"` (results saved in `deep_learning.csv`)
-- Handling robot checking with selenium.
-    - OBS: You might be asked to manually solve the first captcha for retrieving the content of the pages
 
 ### Usage of `sortgs.py`
 ```
