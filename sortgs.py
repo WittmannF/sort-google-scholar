@@ -67,7 +67,7 @@ def get_command_line_args():
 
     nresults = NRESULTS
     if args.nresults:
-        top_k = args.nresults
+        nresults = args.nresults
 
     csvpath = CSVPATH
     if args.csvpath:
