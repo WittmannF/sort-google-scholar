@@ -112,13 +112,9 @@ If those steps are too complicated for you, send me an email with a list of keyw
 ### Requirements
 If you install anaconda, all of those requirements (except selenium) are going to be met:
 - Python 2.7 or Python 3
-- Requests: `pip install requests`
-- Beautiful Soup: `pip install beautifulsoup4`
-- Pandas: `pip install pandas`
-- Matplotlib: `pip install matplotlib`
+- Install from the requirements file: `pip install -r requirements.txt`
 
 Highly suggested, if having problems with robot checking:
-- Selenium: `pip install selenium`
 - ChromeDriver: http://chromedriver.chromium.org/
     - After downloading chromedriver, rename it to `chromedriver` and add it in a folder accessible by the PATH (Example: your python directory. Mine is at `/Users/.../anaconda/bin/`)
 
