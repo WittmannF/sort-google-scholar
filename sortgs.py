@@ -256,6 +256,11 @@ def main():
                         columns=['Author', 'Title', 'Citations', 'Year', 'Source'])
     data.index.name = 'Rank'
 
+    # Add columns with number of citations per year
+    data['cit/year']=data['Citations']/(end_year + 1 - data['Year'])
+    data['cit/year']=data['cit/year'].round(0).astype(int)
+
+    # Sort by the selected columns, if exists
     try:
         data_ranked = data.sort_values(by=sortby_column, ascending=False)
     except Exception as e:
@@ -263,10 +268,7 @@ def main():
         data_ranked = data.sort_values(by='Citations', ascending=False)
         print(e)
 
-    # Add columns with number of citations per year
-    data_ranked['cit/year'] = data_ranked['Citations']/(end_year + 1 - data_ranked['Year'])
-    data_ranked['cit/year']=data_ranked['cit/year'].round(0).astype(int)
-
+    # Print data
     print(data_ranked)
 
     # Plot by citation number
