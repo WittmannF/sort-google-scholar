@@ -115,6 +115,11 @@ Highly suggested, if having problems with robot checking:
 - ChromeDriver: http://chromedriver.chromium.org/
     - After downloading chromedriver, rename it to `chromedriver` and add it in a folder accessible by the PATH (Example: your python directory. Mine is at `/Users/.../anaconda/bin/`)
 
+### Contributing
+In order to make contributions, all of the tests must be passed. In order to test the code, we will be using the DEBUG mode which is going to use a URL from web archive. Please make sure to save the URL you want to test on web archive in case it is different from the one I already saved. By default it only works in debug mode when using the keywords 'machine learning'. There are 6 tests and all of them are testing different aspects that should match when using SortGS. In order to run the test cases, just run:
+```
+$python -m unittest
+```
 
 ### LICENSE
 - MIT
