@@ -17,16 +17,12 @@ ranked by the number of citations.
 - Handling robot checking with selenium.
     - OBS: You might be asked to manually solve the first captcha for retrieving the content of the pages
 
+### Misc
+If this project was helpful to you in any way, feel free to buy me a cup of coffee :)
 
-### Citation
-This code was originally developed for my [MS Dissertation](http://repositorio.unicamp.br/jspui/handle/REPOSIP/330610). For referencing this tool, you can use the following:
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ4YJFQVXLMA&source=url)
 
-```
-WITTMANN, Fernando Marcos. Optimization applied to residential non-intrusive load monitoring. 2017. 
-Dissertation (Masters) - University of Campinas, School of Electrical and Computer Engineering, Campinas, SP. 
-Available in: <http://www.repositorio.unicamp.br/handle/REPOSIP/330610>.
-```
-
+For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
 
 
 ### Usage of `sortgs.py`
@@ -122,10 +118,12 @@ Highly suggested, if having problems with robot checking:
 ### LICENSE
 - MIT
 
-### Misc
-If this project was helpful to you in any way, feel free to buy me a cup of coffee :)
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ4YJFQVXLMA&source=url)
+### Citation
+This code was originally developed for my [MS Dissertation](http://repositorio.unicamp.br/jspui/handle/REPOSIP/330610). For referencing this tool, you can use the following:
 
-For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
-
+```
+WITTMANN, Fernando Marcos. Optimization applied to residential non-intrusive load monitoring. 2017. 
+Dissertation (Masters) - University of Campinas, School of Electrical and Computer Engineering, Campinas, SP. 
+Available in: <http://www.repositorio.unicamp.br/handle/REPOSIP/330610>.
+```
