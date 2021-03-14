@@ -12,7 +12,8 @@ As output, a .csv file will be returned with the name of the chosen keyword
 ranked by the number of citations.
 
 ### UPDATES
-- GOOGLE COLAB: Try [running the code using Google Colab](https://colab.research.google.com/github/WittmannF/sort-google-scholar/blob/master/Test_sortgs_py_on_Colab.ipynb)! No install requirements! Limitations: Can't handle robot checking, so use it carefully.
+- Try running the code using Google Colab -> [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/WittmannF/sort-google-scholar/blob/master/Test_sortgs_py_on_Colab.ipynb)
+    - No install requirements! Limitations: Can't handle robot checking, so use it carefully.
 - Command line arguments. Ex: `$python sortgs.py --kw "deep learning"` (results saved in `deep_learning.csv`)
 - Handling robot checking with selenium.
     - OBS: You might be asked to manually solve the first captcha for retrieving the content of the pages
