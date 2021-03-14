@@ -37,6 +37,7 @@ PLOT_RESULTS = False
 STARTYEAR = None
 now = datetime.datetime.now()
 ENDYEAR = now.year # Current year
+DEBUG=False # debug mode
 
 
 
@@ -59,6 +60,7 @@ def get_command_line_args():
     parser.add_argument('--plotresults', action='store_true', help='Use this flag in order to plot the results with the original rank in the x-axis and the number of citaions in the y-axis. Default is False')
     parser.add_argument('--startyear', type=int, help='Start year when searching. Default is None')
     parser.add_argument('--endyear', type=int, help='End year when searching. Default is current year')
+    parser.add_argument('--debug', action='store_true', help='Debug mode. Used for unit testing. It will get pages stored on web archive')
 
     # Parse and read arguments and assign them to variables if exists
     args, _ = parser.parse_known_args()
@@ -94,8 +96,12 @@ def get_command_line_args():
     end_year = ENDYEAR
     if args.endyear:
         end_year=args.endyear
+    
+    debug = DEBUG
+    if args.debug:
+        debug = True
 
-    return keyword, nresults, save_csv, csvpath, sortby, plot_results, start_year, end_year
+    return keyword, nresults, save_csv, csvpath, sortby, plot_results, start_year, end_year, debug
 
 def get_citations(content):
     out = 0
@@ -171,7 +177,7 @@ def get_content_with_selenium(url):
 
 def main():
     # Get command line arguments
-    keyword, number_of_results, save_database, path, sortby_column, plot_results, start_year, end_year = get_command_line_args()
+    keyword, number_of_results, save_database, path, sortby_column, plot_results, start_year, end_year, debug = get_command_line_args()
 
     # Create main URL based on command line arguments
     if start_year:
@@ -181,6 +187,9 @@ def main():
 
     if end_year != now.year:
         GSCHOLAR_MAIN_URL = GSCHOLAR_MAIN_URL + ENDYEAR_URL.format(end_year)
+
+    if debug:
+        GSCHOLAR_MAIN_URL='https://web.archive.org/web/20210314203256/'+GSCHOLAR_URL
 
     # Start new session
     session = requests.Session()
@@ -198,6 +207,8 @@ def main():
     for n in range(0, number_of_results, 10):
         #if start_year is None:
         url = GSCHOLAR_MAIN_URL.format(str(n), keyword.replace(' ','+'))
+        if debug:
+            print("Opening URL:", url)
         #else:
         #    url=GSCHOLAR_URL_YEAR.format(str(n), keyword.replace(' ','+'), start_year=start_year, end_year=end_year)
 
