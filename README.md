@@ -77,7 +77,12 @@ $python sortgs.py --kw "machine learning" --startyear 2005 --endyear 2015
 
 Save results under a subfolder called 'examples'
 ```
-$ python sortgs.py --kw 'neural networks' --csvpath './examples/'
+$python sortgs.py --kw 'neural networks' --csvpath './examples/'
+```
+
+You can also add multiple keywords by fencing them with a single quote:
+```
+$python sortgs.py --kw '"deep learning" OR "neural networks" OR "machine learning"' --sortby "cit/year"
 ```
 
 Example of output while running:
