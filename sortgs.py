@@ -16,12 +16,14 @@ a .csv file.
 
 """
 
-import requests, os, datetime, argparse
-from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
-import pandas as pd
+import requests, os, datetime, argparse
 from time import sleep
 import warnings
+
+from bs4 import BeautifulSoup
+import pandas as pd
+
 
 # Solve conflict between raw_input and input on Python 2 and Python 3
 import sys
@@ -48,6 +50,7 @@ YEAR_RANGE = '' #&as_ylo={start_year}&as_yhi={end_year}'
 STARTYEAR_URL = '&as_ylo={}'
 ENDYEAR_URL = '&as_yhi={}'
 ROBOT_KW=['unusual traffic from your computer network', 'not a robot']
+
 
 def get_command_line_args():
     # Command line arguments
@@ -127,6 +130,7 @@ def setup_driver():
         from selenium import webdriver
         from selenium.webdriver.chrome.options import Options
         from selenium.common.exceptions import StaleElementReferenceException
+        from webdriver_manager.chrome import ChromeDriverManager
     except Exception as e:
         print(e)
         print("Please install Selenium and chrome webdriver for manual checking of captchas")
@@ -134,7 +138,8 @@ def setup_driver():
     print('Loading...')
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    # driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     return driver
 
 def get_author(content):
