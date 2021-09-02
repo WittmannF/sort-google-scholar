@@ -233,6 +233,11 @@ def main():
         mydivs = soup.findAll("div", { "class" : "gs_or" })
 
         for div in mydivs:
+            if div.find("h2") and div.find("h2").text == "Related searches":
+                continue
+            if div.find("span", { "class" : "gs_lbl" }) and div.find("span", { "class" : "gs_lbl" }).text == "Create alert":
+                continue
+
             try:
                 links.append(div.find('h3').find('a').get('href'))
             except: # catch *all* exceptions
