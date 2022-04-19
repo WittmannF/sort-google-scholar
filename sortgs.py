@@ -38,6 +38,7 @@ STARTYEAR = None
 now = datetime.datetime.now()
 ENDYEAR = now.year # Current year
 DEBUG=False # debug mode
+MAX_CSV_FNAME = 255
 
 
 
@@ -292,7 +293,9 @@ def main():
 
     # Save results
     if save_database:
-        data_ranked.to_csv(os.path.join(path,keyword.replace(' ','_')+'.csv'), encoding='utf-8') # Change the path
+        fpath_csv = os.path.join(path,keyword.replace(' ','_')+'.csv')
+        fpath_csv = fpath_csv[:MAX_CSV_FNAME]
+        data_ranked.to_csv(fpath_csv, encoding='utf-8')
 
 if __name__ == '__main__':
         main()
