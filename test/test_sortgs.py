@@ -18,10 +18,10 @@ class TestSortGS(unittest.TestCase):
         self.df_top_sorted_cit_per_year=pd.read_csv('machine_learning.csv')
     
     def test_get_10_results(self):
-        self.assertEqual(len(self.df_top_10), 12) # Two extra unwanted elements were captured
+        self.assertEqual(len(self.df_top_10), 10)
     
     def test_get_20_results(self):
-        self.assertEqual(len(self.df_top_20), 23) # Three extra unwanted elements were captured
+        self.assertEqual(len(self.df_top_20), 20)
     
     def test_is_sorted(self):
         df=self.df_top_20
@@ -34,7 +34,7 @@ class TestSortGS(unittest.TestCase):
         top_citation = int(df.Citations.values[0])
         top_cit_per_year = int(df['cit/year'].values[0])
         top_results = [top_author, top_citation, top_cit_per_year]
-        self.assertEqual(top_results, [' Bishop', 49230, 3077])
+        self.assertEqual(top_results, [' Bishop', 49230, 2896])
 
     def test_cit_per_year_sorted(self):
         df=self.df_top_sorted_cit_per_year
@@ -42,7 +42,7 @@ class TestSortGS(unittest.TestCase):
         top_cit_per_year = list(df['cit/year'].values[:5])
         top_results = [top_citations, top_cit_per_year]
         self.assertEqual(top_results, [[49230, 8603, 2853, 3166, 2416],
-                                        [3077,  860,  713,  396,  345]])
+                                        [2896, 782, 571, 352, 302]])
 
     def test_csv_exists(self):
         os.system("python sortgs.py --debug --kw 'machine learning' --nresults 10")
