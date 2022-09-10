@@ -202,6 +202,8 @@ def main():
     citations = []
     year = []
     author = []
+    venue = []
+    publisher = []
     rank = [0]
 
     # Get content from number_of_results URLs
@@ -225,10 +227,10 @@ def main():
                 print(e)
 
         # Create parser
-        soup = BeautifulSoup(c, 'html.parser')
+        soup = BeautifulSoup(c, 'html.parser', from_encoding='utf-8')
 
         # Get stuff
-        mydivs = soup.findAll("div", { "class" : "gs_r" })
+        mydivs = soup.findAll("div", { "class" : "gs_or" })
 
         for div in mydivs:
             try:
@@ -258,14 +260,24 @@ def main():
             except:
                 author.append("Author not found")
 
+            try:
+                publisher.append(div.find('div',{'class' : 'gs_a'}).text.split("-")[-1])
+            except:
+                publisher.append("Publisher not found")
+
+            try:
+                venue.append(" ".join(div.find('div',{'class' : 'gs_a'}).text.split("-")[-2].split(",")[:-1]))
+            except:
+                venue.append("Venue not fount")
+
             rank.append(rank[-1]+1)
 
         # Delay 
         sleep(0.5)
 
     # Create a dataset and sort by the number of citations
-    data = pd.DataFrame(list(zip(author, title, citations, year, links)), index = rank[1:],
-                        columns=['Author', 'Title', 'Citations', 'Year', 'Source'])
+    data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, links)), index = rank[1:],
+                        columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Source'])
     data.index.name = 'Rank'
 
     # Add columns with number of citations per year
