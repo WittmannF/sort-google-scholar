@@ -128,6 +128,7 @@ def setup_driver():
         from selenium import webdriver
         from selenium.webdriver.chrome.options import Options
         from selenium.common.exceptions import StaleElementReferenceException
+        from webdriver_manager.chrome import ChromeDriverManager
     except Exception as e:
         print(e)
         print("Please install Selenium and chrome webdriver for manual checking of captchas")
@@ -135,7 +136,8 @@ def setup_driver():
     print('Loading...')
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver = webdriver.Chrome(ChromeDriverManager().install()) # https://stackoverflow.com/questions/29858752/error-message-chromedriver-executable-needs-to-be-available-in-the-path
+    #driver = webdriver.Chrome(options=chrome_options)
     return driver
 
 def get_author(content):
@@ -273,8 +275,9 @@ def main():
             rank.append(rank[-1]+1)
 
         # Delay 
-        sleep(0.5)
-
+        import random
+        sleep(random.uniform(0.5, 3))
+        
     # Create a dataset and sort by the number of citations
     data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, links)), index = rank[1:],
                         columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Source'])
