@@ -75,6 +75,11 @@ From 2005 to 2015:
 $python sortgs.py --kw "machine learning" --startyear 2005 --endyear 2015
 ```
 
+Search for an exact keywork:
+```
+$python sortgs.py --kw "'machine learning'"
+```
+
 Save results under a subfolder called 'examples'
 ```
 $python sortgs.py --kw 'neural networks' --csvpath './examples/'
@@ -130,7 +135,7 @@ $python -m unittest
 - MIT
 
 
-### Citation
+#### Citation
 This code was originally developed for my [MS Dissertation](http://repositorio.unicamp.br/jspui/handle/REPOSIP/330610). For referencing this tool, you can use the following:
 
 ```
