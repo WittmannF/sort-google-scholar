@@ -280,8 +280,8 @@ def main():
                         columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Source'])
     data.index.name = 'Rank'
 
-    # Add columns with number of citations per year
-    data['cit/year']=data['Citations']/(end_year + 1 - data['Year'])
+    # Avoid years that are higher than the current year by clipping it to end_year
+    data['cit/year']=data['Citations']/(end_year + 1 - data['Year'].clip(upper=end_year))
     data['cit/year']=data['cit/year'].round(0).astype(int)
 
     # Sort by the selected columns, if exists
