@@ -21,3 +21,6 @@ ipython_config.py
 # Other variables
 .DS_Store
 .vscode/
+
+# Ignore egg-info
+*.egg-info
