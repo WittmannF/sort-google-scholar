@@ -21,3 +21,8 @@ ipython_config.py
 # Other variables
 .DS_Store
 .vscode/
+
+# Ignore egg-info, dist folders and build
+*.egg-info
+dist
+build
