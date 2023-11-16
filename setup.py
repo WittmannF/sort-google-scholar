@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='sortgs',
-    version='0.0.1',
+    version='0.0.2',
     author='Fernando Marcos Wittmann',
     #author_email='fernando.wittmann[at]gmail[dot]com',
     description='A Python tool to rank Google Scholar publications by citations.',
