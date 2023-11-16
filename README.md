@@ -1,4 +1,4 @@
-## Sort Google Scholar by the Number of Citations V2.0b
+# Sort Google Scholar by the Number of Citations V2.0b
 This Python code ranks publications data from Google Scholar by the number 
 of citations. It is useful for finding relevant papers in a specific field. 
 
