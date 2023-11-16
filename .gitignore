@@ -22,5 +22,7 @@ ipython_config.py
 .DS_Store
 .vscode/
 
-# Ignore egg-info
+# Ignore egg-info, dist folders and build
 *.egg-info
+dist
+build

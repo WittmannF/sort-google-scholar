@@ -4,7 +4,7 @@ setup(
     name='sortgs',
     version='0.1',
     author='Fernando Marcos Wittmann',
-    author_email='fernando.wittmann[at]gmail[dot]com',
+    #author_email='fernando.wittmann[at]gmail[dot]com',
     description='A Python tool to rank Google Scholar publications by citations.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
