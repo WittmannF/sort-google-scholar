@@ -30,4 +30,4 @@ jobs:
     - name: Test with unittest
       run: python -m unittest
     - name: Test CLI Command
-      run: sortgs 'machine learning' --nresults 10 # Replace with an appropriate CLI test command
+      run: sortgs 'machine learning' --nresults 10
