@@ -17,3 +17,7 @@ ipython_config.py
 # Environments
 .env
 .venv
+
+# Other variables
+.DS_Store
+.vscode/
