@@ -27,10 +27,6 @@ sortgs "your keyword"
 Replace `"your keyword"` with any keyword you'd like to search for. A CSV file with the name `your_keyword.csv` will be created in your current directory.
 
 ## Misc
-If this project was helpful to you in any way, feel free to buy me a cup of coffee :)
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QAQ4YJFQVXLMA&source=url)
-
 For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
 
 ### Command Line Arguments
