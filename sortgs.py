@@ -250,7 +250,10 @@ def main():
             try:
                 title.append(div.find('h3').find('a').text)
             except:
-                title.append('Could not catch title')
+                try:
+                    title.append(' '.join(div.find('h3').find_all('span')[-1].stripped_strings))
+                except:
+                    title.append('Could not catch title')
 
             try:
                 citations.append(get_citations(str(div.format_string)))
