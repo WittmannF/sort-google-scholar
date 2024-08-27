@@ -8,13 +8,13 @@ class TestSortGS(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         '''run once before all tests'''
-        os.system("python sortgs.py --debug --kw 'machine learning' --nresults 10 --endyear 2022")
+        os.system("sortgs --debug --kw 'machine learning' --nresults 10 --endyear 2022")
         self.df_top_10=pd.read_csv('machine_learning.csv')
 
-        os.system("python sortgs.py --debug --kw 'machine learning' --nresults 20 --endyear 2022")
+        os.system("sortgs --debug --kw 'machine learning' --nresults 20 --endyear 2022")
         self.df_top_20=pd.read_csv('machine_learning.csv')
 
-        os.system("python sortgs.py --debug --kw 'machine learning' --nresults 20 --endyear 2022 --sortby 'cit/year'")
+        os.system("sortgs --debug --kw 'machine learning' --nresults 20 --endyear 2022 --sortby 'cit/year'")
         self.df_top_sorted_cit_per_year=pd.read_csv('machine_learning.csv')
 
         # Repeat the above, but testing the cli command
@@ -55,7 +55,7 @@ class TestSortGS(unittest.TestCase):
                                         [2896, 782, 571, 352, 302]])
 
     def test_csv_exists(self):
-        os.system("python sortgs.py --debug --kw 'machine learning' --nresults 10")
+        os.system("sortgs --debug --kw 'machine learning' --nresults 10")
         self.assertTrue(os.path.exists('machine_learning.csv'))
     
     def test_cli_get_10_results(self):
