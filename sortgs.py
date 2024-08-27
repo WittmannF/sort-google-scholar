@@ -259,17 +259,19 @@ def main():
 
         for div in mydivs:
             try:
-                links.append(div.find('h3').find('a').get('href'))
-            except: # catch *all* exceptions
-                links.append('Look manually at: '+url)
-
-            try:
                 title.append(div.find('h3').find('a').text)
+                try:
+                    links.append(div.find('h3').find('a').get('href'))
+                except: # catch *all* exceptions
+                    links.append('No URL')
             except:
                 try:
                     title.append(' '.join(div.find('h3').find_all('span')[-1].stripped_strings))
+                    links.append('No URL')
                 except:
                     title.append('Could not catch title')
+                    links.append('Look manually at: '+url)
+                    print(div.find('h3'))
 
             try:
                 citations.append(get_citations(str(div.format_string)))
