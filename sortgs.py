@@ -40,6 +40,7 @@ now = datetime.datetime.now()
 ENDYEAR = now.year # Current year
 DEBUG=False # debug mode
 MAX_CSV_FNAME = 255
+LANG = 'None'
 
 
 
@@ -49,6 +50,7 @@ YEAR_RANGE = '' #&as_ylo={start_year}&as_yhi={end_year}'
 #GSCHOLAR_URL_YEAR = GSCHOLAR_URL+YEAR_RANGE
 STARTYEAR_URL = '&as_ylo={}'
 ENDYEAR_URL = '&as_yhi={}'
+LANG_URL = '&lr={}'
 ROBOT_KW=['unusual traffic from your computer network', 'not a robot']
 
 def get_command_line_args():
@@ -56,6 +58,7 @@ def get_command_line_args():
     parser = argparse.ArgumentParser(description='Arguments')
     parser.add_argument('kw', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """, default=KEYWORD)
     parser.add_argument('--sortby', type=str, help='Column to be sorted by. Default is by the columns "Citations", i.e., it will be sorted by the number of citations. If you want to sort by citations per year, use --sortby "cit/year"')
+    parser.add_argument('--langfilter', nargs='+', help='Languages to filter out. List of supported language codes: zh-CN, zh-TW, nl, en, fr, de, it, ja, ko, pl, pt, es, tr')
     parser.add_argument('--nresults', type=int, help='Number of articles to search on Google Scholar. Default is 100. (carefull with robot checking if value is too high)')
     parser.add_argument('--csvpath', type=str, help='Path to save the exported csv file. By default it is the current folder')
     parser.add_argument('--notsavecsv', action='store_true', help='By default results are going to be exported to a csv file. Select this option to just print results but not store them')
@@ -91,6 +94,10 @@ def get_command_line_args():
     sortby = SORTBY
     if args.sortby:
         sortby=args.sortby
+    
+    langfilter = LANG
+    if args.langfilter:
+        langfilter = args.langfilter
 
     plot_results = False
     if args.plotresults:
@@ -108,7 +115,7 @@ def get_command_line_args():
     if args.debug:
         debug = True
 
-    return keyword, nresults, save_csv, csvpath, sortby, plot_results, start_year, end_year, debug
+    return keyword, nresults, save_csv, csvpath, sortby, langfilter, plot_results, start_year, end_year, debug
 
 def get_citations(content):
     out = 0
@@ -181,13 +188,18 @@ def get_content_with_selenium(url):
 
     return c.encode('utf-8')
 
+def format_strings(strings):
+    if len(strings) == 1:
+        return f'lang_{strings[0]}'
+    else:
+        return '%7C'.join(f'lang_{s}' for s in strings)
 
 def main():
     # Get command line arguments
-    keyword, number_of_results, save_database, path, sortby_column, plot_results, start_year, end_year, debug = get_command_line_args()
+    keyword, number_of_results, save_database, path, sortby_column, langfilter, plot_results, start_year, end_year, debug = get_command_line_args()
 
     print("Running with the following parameters:")
-    print(f"Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}")
+    print(f"Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Language Filter: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}")
 
     # Create main URL based on command line arguments
     if start_year:
@@ -197,6 +209,10 @@ def main():
 
     if end_year != now.year:
         GSCHOLAR_MAIN_URL = GSCHOLAR_MAIN_URL + ENDYEAR_URL.format(end_year)
+
+    if langfilter != 'None':
+        formatted_filters = format_strings(langfilter)
+        GSCHOLAR_MAIN_URL = GSCHOLAR_MAIN_URL + LANG_URL.format(formatted_filters)
 
     if debug:
         GSCHOLAR_MAIN_URL='https://web.archive.org/web/20210314203256/'+GSCHOLAR_URL
