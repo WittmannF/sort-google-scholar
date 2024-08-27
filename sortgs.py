@@ -22,7 +22,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from time import sleep
 import warnings
+import random
 import os
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # Solve conflict between raw_input and input on Python 2 and Python 3
 import sys
@@ -58,7 +66,7 @@ def get_command_line_args():
     parser = argparse.ArgumentParser(description='Arguments')
     parser.add_argument('kw', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """, default=KEYWORD)
     parser.add_argument('--sortby', type=str, help='Column to be sorted by. Default is by the columns "Citations", i.e., it will be sorted by the number of citations. If you want to sort by citations per year, use --sortby "cit/year"')
-    parser.add_argument('--langfilter', nargs='+', help='Only languages listed are permitted to pass the filter. List of supported language codes: zh-CN, zh-TW, nl, en, fr, de, it, ja, ko, pl, pt, es, tr')
+    parser.add_argument('--langfilter', nargs='+', type=str, help='Only languages listed are permitted to pass the filter. List of supported language codes: zh-CN, zh-TW, nl, en, fr, de, it, ja, ko, pl, pt, es, tr')
     parser.add_argument('--nresults', type=int, help='Number of articles to search on Google Scholar. Default is 100. (carefull with robot checking if value is too high)')
     parser.add_argument('--csvpath', type=str, help='Path to save the exported csv file. By default it is the current folder')
     parser.add_argument('--notsavecsv', action='store_true', help='By default results are going to be exported to a csv file. Select this option to just print results but not store them')
@@ -137,18 +145,10 @@ def get_year(content):
     return int(out)
 
 def setup_driver():
-    try:
-        from selenium import webdriver
-        from selenium.webdriver.chrome.options import Options
-        from selenium.common.exceptions import StaleElementReferenceException
-    except Exception as e:
-        print(e)
-        print("Please install Selenium and chrome webdriver for manual checking of captchas")
-
     print('Loading...')
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     return driver
 
 def get_author(content):
@@ -165,7 +165,7 @@ def get_element(driver, xpath, attempts=5, _count=0):
         return element
     except Exception as e:
         if _count<attempts:
-            sleep(1)
+            sleep(random.uniform(0.5, 3))
             get_element(driver, xpath, attempts=attempts, _count=_count+1)
         else:
             print("Element not found")
@@ -176,15 +176,21 @@ def get_content_with_selenium(url):
         driver = setup_driver()
     driver.get(url)
 
-    # Get element from page
-    el = get_element(driver, "/html/body")
-    c = el.get_attribute('innerHTML')
 
-    if any(kw in el.text for kw in ROBOT_KW):
-        raw_input("Solve captcha manually and press enter here to continue...")
-        el = get_element(driver, "/html/body")
+    while True:
+        # Wait for a specific element that indicates the page has loaded
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        )
+
+        # Get the body element
+        el = driver.find_element(By.TAG_NAME, "body")
+
         c = el.get_attribute('innerHTML')
-
+        if any(kw in el.text for kw in ROBOT_KW):
+            raw_input("Solve captcha manually and press enter here to continue...")
+        else:
+            break
 
     return c.encode('utf-8')
 
@@ -256,6 +262,8 @@ def main():
 
         # Get stuff
         mydivs = soup.findAll("div", { "class" : "gs_or" })
+        if len(mydivs) == 0:
+            break
 
         for div in mydivs:
             try:
@@ -301,9 +309,9 @@ def main():
                 venue.append("Venue not fount")
 
             rank.append(rank[-1]+1)
-
+        
         # Delay 
-        sleep(0.5)
+        sleep(random.uniform(0.5, 3))
 
     # Create a dataset and sort by the number of citations
     data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, links)), index = rank[1:],
@@ -335,7 +343,7 @@ def main():
 
     # Save results
     if save_database:
-        fpath_csv = os.path.join(path,keyword.replace(' ','_')+'.csv')
+        fpath_csv = os.path.join(path, keyword.replace(' ', '_').replace(':', '_') + '.csv')
         fpath_csv = fpath_csv[:MAX_CSV_FNAME]
         data_ranked.to_csv(fpath_csv, encoding='utf-8')
         print('Results saved to', fpath_csv)
