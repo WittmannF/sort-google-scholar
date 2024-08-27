@@ -154,7 +154,7 @@ def setup_driver():
 def get_author(content):
     for char in range(0,len(content)):
         if content[char] == '-':
-            out = content[2:char-1]
+            out = content[:char-1]
             break
     return out
 
