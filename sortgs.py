@@ -343,7 +343,16 @@ def main():
 
     # Save results
     if save_database:
-        fpath_csv = os.path.join(path, keyword.replace(' ', '_').replace(':', '_') + '.csv')
+        keyword = keyword.replace('"', "'")
+        keyword = keyword.replace('<', "《")
+        keyword = keyword.replace('>', "》")
+        keyword = keyword.replace('?', "？")
+        keyword = keyword.replace('|', "∥")
+        keyword = keyword.replace('/', "_")
+        keyword = keyword.replace(':', "：")
+        keyword = keyword.replace('\\', "_")
+
+        fpath_csv = os.path.join(path, keyword + '.csv')
         fpath_csv = fpath_csv[:MAX_CSV_FNAME]
         data_ranked.to_csv(fpath_csv, encoding='utf-8')
         print('Results saved to', fpath_csv)
