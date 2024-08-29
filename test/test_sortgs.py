@@ -1,7 +1,5 @@
-import unittest
-from unittest.mock import patch
-import sortgs
 import os
+import unittest
 import pandas as pd
 
 class TestSortGS(unittest.TestCase):
