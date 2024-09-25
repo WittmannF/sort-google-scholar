@@ -3,12 +3,20 @@
 
 sortgs is a Python tool for ranking Google Scholar publications by the number of citations. It is useful for finding relevant papers in a specific field. The data acquired from Google Scholar includes Title, Citations, Links, Rank, and a new column with the number of citations per year. In the background, it first try to fetch results using python requests. If it fails, it will use selenium to fetch the results. 
 
-## Try on Google Colab: [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/WittmannF/sort-google-scholar/blob/master/examples/run_sortgs_on_colab.ipynb)
-  - No install requirements! Limitations: Can't handle robot checking, so use it carefully.
+## 🚀 Run it on Google Colab
+- **No-Code Version (new!)**:  [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/WittmannF/sort-google-scholar/blob/master/examples/Sort_Google_Scholar_No_Code_Version.ipynb)  — *No coding required! Perfect for a quick start!* ⚡  
+- **Code Version:** [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/WittmannF/sort-google-scholar/blob/master/examples/run_sortgs_on_colab.ipynb)— *For developers who want full control of what's behind the scenes!* 💻
+
+> 💡 **All you need** is a Google Account to get started.  
+> ⚠️ **Note**: Google Scholar may block access after too many repetitive requests due to CAPTCHA checks, so proceed mindfully!
+
+## 📚 Colab No-Code Instructions
+https://github.com/user-attachments/assets/25de7bad-2a5d-4bcf-b486-faa1d7a29eb3
+
 
 ## Installation
 
-You can now install `sortgs` directly using `pip`:
+You can install `sortgs` directly using `pip`:
 
 ```bash
 pip install sortgs
