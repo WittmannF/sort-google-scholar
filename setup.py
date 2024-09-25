@@ -10,9 +10,14 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/WittmannF/sort-google-scholar',
     py_modules=['sortgs'],  # Assuming your script is named sortgs.py
-    install_requires=[
-        # your dependencies here
+    
+    install_requires=['requests',
+        'beautifulsoup4',
+        'pandas',
+        'matplotlib',
+        'selenium',
     ],
+        
     entry_points={
         'console_scripts': [
             'sortgs=sortgs:main',  # This line sets up the command line tool
