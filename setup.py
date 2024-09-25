@@ -17,6 +17,7 @@ setup(
         'matplotlib',
         'selenium',
     ],
+        
     entry_points={
         'console_scripts': [
             'sortgs=sortgs:main',  # This line sets up the command line tool
