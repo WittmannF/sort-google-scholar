@@ -1,6 +1,6 @@
 [project]
 name='sortgs'
-version='1.0.4'
+version='1.0.5'
 authors=[{name='Fernando Marcos Wittmann'}]
 description='A Python tool to rank Google Scholar publications by citations.'
 readme = 'README.md'
