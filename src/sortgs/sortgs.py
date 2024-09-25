@@ -52,6 +52,7 @@ LANG = 'All'
 
 
 
+
 # Websession Parameters
 GSCHOLAR_URL = 'https://scholar.google.com/scholar?start={}&q={}&hl=en&as_sdt=0,5'
 YEAR_RANGE = '' #&as_ylo={start_year}&as_yhi={end_year}'
@@ -59,6 +60,7 @@ YEAR_RANGE = '' #&as_ylo={start_year}&as_yhi={end_year}'
 STARTYEAR_URL = '&as_ylo={}'
 ENDYEAR_URL = '&as_yhi={}'
 LANG_URL = '&lr={}'
+
 ROBOT_KW=['unusual traffic from your computer network', 'not a robot']
 
 def get_command_line_args():
@@ -67,6 +69,7 @@ def get_command_line_args():
     parser.add_argument('kw', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """, default=KEYWORD)
     parser.add_argument('--sortby', type=str, help='Column to be sorted by. Default is by the columns "Citations", i.e., it will be sorted by the number of citations. If you want to sort by citations per year, use --sortby "cit/year"')
     parser.add_argument('--langfilter', nargs='+', type=str, help='Only languages listed are permitted to pass the filter. List of supported language codes: zh-CN, zh-TW, nl, en, fr, de, it, ja, ko, pl, pt, es, tr')
+
     parser.add_argument('--nresults', type=int, help='Number of articles to search on Google Scholar. Default is 100. (carefull with robot checking if value is too high)')
     parser.add_argument('--csvpath', type=str, help='Path to save the exported csv file. By default it is the current folder')
     parser.add_argument('--notsavecsv', action='store_true', help='By default results are going to be exported to a csv file. Select this option to just print results but not store them')
@@ -125,6 +128,7 @@ def get_command_line_args():
 
     return keyword, nresults, save_csv, csvpath, sortby, langfilter, plot_results, start_year, end_year, debug
 
+
 def get_citations(content):
     out = 0
     for char in range(0,len(content)):
@@ -175,7 +179,6 @@ def get_content_with_selenium(url):
         global driver
         driver = setup_driver()
     driver.get(url)
-
 
     while True:
         # Wait for a specific element that indicates the page has loaded
@@ -262,24 +265,16 @@ def main():
 
         # Get stuff
         mydivs = soup.findAll("div", { "class" : "gs_or" })
-        if len(mydivs) == 0:
-            break
-
         for div in mydivs:
             try:
+                links.append(div.find('h3').find('a').get('href'))
+            except: # catch *all* exceptions
+                links.append('Look manually at: '+url)
+
+            try:
                 title.append(div.find('h3').find('a').text)
-                try:
-                    links.append(div.find('h3').find('a').get('href'))
-                except: # catch *all* exceptions
-                    links.append('No URL')
             except:
-                try:
-                    title.append(' '.join(div.find('h3').find_all('span')[-1].stripped_strings))
-                    links.append('No URL')
-                except:
-                    title.append('Could not catch title')
-                    links.append('Look manually at: '+url)
-                    print(div.find('h3'))
+                title.append('Could not catch title')
 
             try:
                 citations.append(get_citations(str(div.format_string)))
@@ -343,16 +338,7 @@ def main():
 
     # Save results
     if save_database:
-        keyword = keyword.replace('"', "'")
-        keyword = keyword.replace('<', "《")
-        keyword = keyword.replace('>', "》")
-        keyword = keyword.replace('?', "？")
-        keyword = keyword.replace('|', "∥")
-        keyword = keyword.replace('/', "_")
-        keyword = keyword.replace(':', "：")
-        keyword = keyword.replace('\\', "_")
-
-        fpath_csv = os.path.join(path, keyword + '.csv')
+        fpath_csv = os.path.join(path,keyword.replace(' ','_')+'.csv')
         fpath_csv = fpath_csv[:MAX_CSV_FNAME]
         data_ranked.to_csv(fpath_csv, encoding='utf-8')
         print('Results saved to', fpath_csv)
