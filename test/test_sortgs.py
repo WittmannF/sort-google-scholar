@@ -40,6 +40,11 @@ class TestSortGS(unittest.TestCase):
         df = self.df_top_sorted_cit_per_year_cli
         top_citations = list(df.Citations.values[:5])
         top_cit_per_year = list(df['cit/year'].values[:5])
+        
+        # Convert np.int64 values to Python int
+        top_citations = [int(c) for c in top_citations]
+        top_cit_per_year = [int(c) for c in top_cit_per_year]
+
         top_results = [top_citations, top_cit_per_year]
         self.assertEqual(top_results, [
             [2853, 3166, 2416, 948, 830],
