@@ -1,10 +1,5 @@
 from setuptools import setup
 
-# Function to read the requirements.txt file
-def parse_requirements(filename):
-    with open(filename, 'r') as file:
-        return file.read().splitlines()
-
 setup(
     name='sortgs',
     version='1.0.4',
@@ -17,7 +12,13 @@ setup(
     py_modules=['sortgs'],  # Assuming your script is named sortgs.py
     
     # Dynamically fetch dependencies from requirements.txt
-    install_requires=parse_requirements('requirements.txt'),
+    install_requires=[
+        'requests',
+        'beautifulsoup4',
+        'pandas',
+        'matplotlib',
+        'selenium',
+    ]
     
     entry_points={
         'console_scripts': [
