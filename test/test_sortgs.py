@@ -26,7 +26,7 @@ class TestSortGS(unittest.TestCase):
         top_citation = int(df.Citations.values[0])
         top_cit_per_year = int(df['cit/year'].values[0])
         top_results = [top_author, top_citation, top_cit_per_year]
-        self.assertEqual(top_results, ['Shale', 3166, 352])
+        self.assertEqual(top_results, ['S Shalev-Shwartz, S Ben-David', 3166, 352])
 
     def test_cit_per_year_sorted(self):
         df = self.df_top_sorted_cit_per_year_cli
@@ -50,6 +50,32 @@ class TestSortGS(unittest.TestCase):
             [2853, 3166, 2416, 598, 948],
             [571, 352, 302, 85, 79]
         ])
+    
+    def test_top_5_authors(self):
+        '''Check if the top 5 authors match the expected authors.'''
+        df = self.df_top_10_cli
+        top_5_authors = list(df.Author.values[:5])
+        expected_authors = [
+            'S Shalev-Shwartz, S Ben-David', 
+            'M Mohri, A Rostamizadeh, A Talwalkar', 
+            'MI Jordan, TM Mitchell', 
+            'C Sammut, GI Webb', 
+            'P Langley'
+        ]
+        self.assertEqual(top_5_authors, expected_authors)
+
+    def test_top_5_titles(self):
+        '''Check if the top 5 titles match the expected titles.'''
+        df = self.df_top_10_cli
+        top_5_titles = list(df.Title.values[:5])
+        expected_titles = [
+            'Understanding machine learning: From theory to algorithms',
+            'Foundations of machine learning',
+            'Machine learning: Trends, perspectives, and prospects',
+            'Encyclopedia of machine learning',
+            'Elements of machine learning'
+        ]
+        self.assertEqual(top_5_titles, expected_titles)
 
 if __name__=='__main__':
     unittest.main()
