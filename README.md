@@ -53,6 +53,10 @@ optional arguments:
   -h, --help            show this help message and exit
   --sortby SORTBY       Column to be sorted by. Default is "Citations". To sort
                         by citations per year, use --sortby "cit/year"
+  --langfilter LANGFILTER [LANGFILTER ...]
+                        Only languages listed are permitted to pass the filter. 
+                        List of supported language codes: zh-CN, zh-TW, nl, en, fr,
+                        de, it, ja, ko, pl, pt, es, tr
   --nresults NRESULTS   Number of articles to search on Google Scholar. Default
                         is 100. (careful with robot checking if value is high)
   --csvpath CSVPATH     Path to save the exported csv file. Default is the 
@@ -105,6 +109,12 @@ optional arguments:
    sortgs '"deep learning" OR "neural networks" OR "machine learning"' --sortby "cit/year"
    ```
 
+7. **Language Filter**:
+   ```bash
+   sortgs "machine learning" --langfilter pt es fr de
+   ```
+   This will only include articles in Portuguese, Spanish, French, and German.
+
 ### Output Example
 
 While running, `sortgs` will provide updates in the terminal:
@@ -125,6 +135,25 @@ Loading next 20 results
 4. A CSV file with the name `your_keyword.csv` should be created. 
 
 If those steps are too complicated for you, send me an email with a list of keyworks that you'd like them ranked to: fernando [dot] wittmann [at] gmail [dot] com
+
+## Conda Environment Setup
+
+### Creating the Environment
+```
+conda env create -f conda_environment.yml
+```
+
+### Reset the environment
+```
+conda deactivate
+conda remove --name sortgs --all
+conda env create -f environment.yml
+```
+
+### Activate the environment
+```
+conda activate sortgs
+```
 
 ## Running Project Using Docker
 

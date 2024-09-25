@@ -1,0 +1,8 @@
+name: sortgs
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - -e . # Install the package in editable mode
