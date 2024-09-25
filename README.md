@@ -201,6 +201,9 @@ $python -m unittest
 ```
 And check if all tests passes. Alternativelly send a PR, github actions will run the tests for you.
 
+## About Robot Check
+Google Scholar may block access after too many repetitive requests due to CAPTCHA checks. If this issue arrises, selenium will be used to attempt to fetch the results. You might be asked to solve a CAPTCHA manually. Ideally, you should use a VPN to avoid this issue. When using selenium, you might need to install chromedriver. You can download it from https://developer.chrome.com/docs/chromedriver/downloads and add it to your PATH.
+
 ## LICENSE
 - MIT
 
