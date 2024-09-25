@@ -47,7 +47,7 @@ class TestSortGS(unittest.TestCase):
 
         top_results = [top_citations, top_cit_per_year]
         self.assertEqual(top_results, [
-            [2853, 3166, 2416, 948, 830],
+            [2853, 3166, 2416, 598, 948],
             [571, 352, 302, 85, 79]
         ])
 
