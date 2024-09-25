@@ -26,7 +26,7 @@ class TestSortGS(unittest.TestCase):
         top_citation = int(df.Citations.values[0])
         top_cit_per_year = int(df['cit/year'].values[0])
         top_results = [top_author, top_citation, top_cit_per_year]
-        self.assertEqual(top_results, ['Shale', 3166, 352])
+        self.assertEqual(top_results, ['S Shalev-Shwartz, S Ben-David', 3166, 352])
 
     def test_cit_per_year_sorted(self):
         df = self.df_top_sorted_cit_per_year_cli

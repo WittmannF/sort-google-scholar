@@ -156,10 +156,9 @@ def setup_driver():
     return driver
 
 def get_author(content):
-    for char in range(0,len(content)):
-        if content[char] == '-':
-            out = content[2:char-1]
-            break
+    content = content.replace('\xa0', ' ')  # Replaces the non-breaking space with a regular space
+    if len(content)>0:
+        out = content.split(" - ")[0]
     return out
 
 def get_element(driver, xpath, attempts=5, _count=0):
