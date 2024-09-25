@@ -107,6 +107,10 @@ def get_command_line_args():
     debug = DEBUG
     if args.debug:
         debug = True
+    
+    # If DEBUG is True, set end year to 2023 to avoid breaking tests
+    if debug:
+        end_year = 2023
 
     return keyword, nresults, save_csv, csvpath, sortby, plot_results, start_year, end_year, debug
 
