@@ -1,10 +1,11 @@
 name: Test SortGS
-
 on:
   push:
     branches: [ master, dev ]
   pull_request:
     branches: [ master, dev ]
+  schedule:
+    - cron: '0 0 1 * *' # Run at 00:00 on the first of every month
 
 jobs:
   build:
