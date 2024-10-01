@@ -184,13 +184,13 @@ This guide will walk you through the process of installing Docker, pulling the `
 
 ### Step 3: Run the Project
 
-1. **Run the Docker Container**: Use the following command to run the container. This command mounts your results directory to the `/results` directory (it will be created automatically) in the container and starts the sorting process for Google Scholar results based on your specified parameters.
+1. **Run the Docker Container**: Use the following command to run the container:
 
    ```bash
-   docker run -v "$PWD/results:/app" fernandowittmann/sort-google-scholar "machine learning" 
+   docker run -v "$PWD/sortgs-results:/app" fernandowittmann/sort-google-scholar "machine learning" 
    ```
 
-   Replace `$PWD/results` with the absolute path to your results directory if you are not in the parent directory of `results`.
+   Replace `$PWD` with the absolute path to your results directory if you are not in the parent directory of `sortgs-results`.
 
 
 ## Contributing
