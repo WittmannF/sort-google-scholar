@@ -29,3 +29,11 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/sort-google-scholar:latest
+
+      # Pull the image from Docker Hub
+      - name: Pull the image from Docker Hub
+        run: docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/sort-google-scholar:latest
+
+      # Run a test example using the pulled image
+      - name: Test Docker Image
+        run: docker run --rm ${{ secrets.DOCKER_HUB_USERNAME }}/sort-google-scholar:latest "deep learning" --nresults 20
