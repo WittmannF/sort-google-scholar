@@ -1,11 +1,17 @@
-FROM python:3.10-slim
+# Use a lightweight Python base image
+FROM python:3.11-slim
 
-WORKDIR /usr/src/app
+# Set environment variables to ensure Python doesn't buffer outputs
+ENV PYTHONUNBUFFERED=1
 
-COPY requirements.txt ./
-RUN python -m pip install --upgrade pip \
-  && pip install --no-cache-dir -r requirements.txt
+# Set the working directory in the container
+WORKDIR /app
 
-COPY . .
+# Install sortgs from pip
+RUN pip install sortgs
 
-CMD [ './sortgs.py' ]
+# Set the entry point to use sortgs as the default command
+ENTRYPOINT ["sortgs"]
+
+# By default, run sortgs with an example search keyword
+CMD ["--help"]
