@@ -206,3 +206,9 @@ Google Scholar may block access after too many repetitive requests due to CAPTCH
 ## LICENSE
 - MIT
 
+## 💖 Support the Project
+
+If you find this project helpful and would like to support its development, consider making a donation. Your support is greatly appreciated!
+
+[Donate via Wise](https://wise.com/pay/me/fernandow21)
+
