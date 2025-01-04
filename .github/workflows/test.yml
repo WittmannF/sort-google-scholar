@@ -25,6 +25,6 @@ jobs:
     - name: Install the package
       run: pip install -e .
     - name: Test with pytest
-      run: pytest -s
+      run: pip install pytest & pytest -s
     - name: Test CLI Command
       run: sortgs 'machine learning' --nresults 10
