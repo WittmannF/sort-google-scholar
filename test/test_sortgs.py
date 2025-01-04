@@ -1,6 +1,18 @@
 import unittest
 import os
 import pandas as pd
+import glob
+
+def get_latest_file(directory=''):
+    # Use glob to find all CSV files in the directory
+    csv_files = glob.glob(os.path.join(directory, "*"))
+    if not csv_files:
+        return None  # Return None if no CSV files are found
+
+    # Find the latest file by modification time
+    latest_file = max(csv_files, key=os.path.getmtime)
+    return latest_file
+
 
 class TestSortGS(unittest.TestCase):
     @classmethod
@@ -76,6 +88,14 @@ class TestSortGS(unittest.TestCase):
             'Elements of machine learning'
         ]
         self.assertEqual(top_5_titles, expected_titles)
+    def test_long_string_input(self):
+        '''Test with a long string input.'''
+        os.system("sortgs '\"Brazil\" AND (agriculture* OR farming OR agronomy OR \"crop production\" OR horticulture OR \"agricultural systems\" OR \"food production\" OR agroecology) AND (resilien* OR adaptation OR recovery OR sustainab* OR robust* OR \"coping mechanism*\" OR \"adaptive strategies\" OR \"food security\") AND (\"food production\" OR \"food systems\" OR \"food security\" OR \"food supply\" OR \"agricultural yield\" OR \"crop yield\" OR \"food availability\") AND (soil OR \"soil health\" OR \"soil quality\" OR \"soil fertility\" OR \"soil management\" OR \"soil degradation\" OR \"soil erosion\") AND (water OR \"water resources\" OR \"water management\" OR irrigation OR \"water scarcity\" OR \"water availability\" OR \"water quality\")' --debug --nresults 10 --endyear 2022")
+    latest_file=get_latest_file()
+    print(latest_file)
+    assert "AND_(agriculture*_OR_farming_OR_agronomy" in latest_file
+    assert ".csv" in latest_file
+  
 
 if __name__=='__main__':
     unittest.main()
