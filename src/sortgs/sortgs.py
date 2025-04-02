@@ -2,14 +2,14 @@
 
 # -*- coding: utf-8 -*-
 """
-This code creates a database with a list of publications data from Google 
+This code creates a database with a list of publications data from Google
 Scholar.
 The data acquired from GS is Title, Citations, Links and Rank.
 It is useful for finding relevant papers by sorting by the number of citations
-This example will look for the top 100 papers related to the keyword, 
+This example will look for the top 100 papers related to the keyword,
 so that you can rank them by the number of citations
 
-As output this program will plot the number of citations in the Y axis and the 
+As output this program will plot the number of citations in the Y axis and the
 rank of the result in the X axis. It also, optionally, export the database to
 a .csv file.
 
@@ -105,7 +105,7 @@ def get_command_line_args():
     sortby = SORTBY
     if args.sortby:
         sortby=args.sortby
-    
+
     langfilter = LANG
     if args.langfilter:
         langfilter = args.langfilter
@@ -121,7 +121,7 @@ def get_command_line_args():
     end_year = ENDYEAR
     if args.endyear:
         end_year=args.endyear
-    
+
     debug = DEBUG
     if args.debug:
         debug = True
@@ -237,6 +237,7 @@ def main():
     author = []
     venue = []
     publisher = []
+    content = []  # Add new list for content
     rank = [0]
 
     # Get content from number_of_results URLs
@@ -302,14 +303,20 @@ def main():
             except:
                 venue.append("Venue not fount")
 
+            try:
+                content_div = div.find('div', {'class': 'gs_rs'})
+                content.append(content_div.text if content_div else "Content not found")
+            except:
+                content.append("Content not found")
+
             rank.append(rank[-1]+1)
-        
-        # Delay 
+
+        # Delay
         sleep(random.uniform(0.5, 3))
 
     # Create a dataset and sort by the number of citations
-    data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, links)), index = rank[1:],
-                        columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Source'])
+    data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, content, links)), index = rank[1:],
+                        columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Content', 'Source'])
     data.index.name = 'Rank'
 
     # Avoid years that are higher than the current year by clipping it to end_year
