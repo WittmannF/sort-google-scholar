@@ -211,6 +211,14 @@ Google Scholar may block access after too many repetitive requests due to CAPTCH
 ## LICENSE
 - MIT
 
+## Updates
+Main branch has been renamed from master. Update it locally by running:
+```sh
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
 ## 💖 Support the Project
 
 If you find this project helpful and would like to support its development, consider making a donation. Your support is greatly appreciated!
