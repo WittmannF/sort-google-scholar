@@ -262,6 +262,19 @@ def format_strings(strings):
         return "%7C".join(f"lang_{s}" for s in strings)
 
 
+def get_pdf_link(div):
+    """Extract PDF link from the Google Scholar result if available"""
+    try:
+        pdf_div = div.find("div", {"class": "gs_ggs gs_fl"})
+        if pdf_div:
+            a_tag = pdf_div.find("a")
+            if a_tag:
+                return a_tag.get("href")
+    except:
+        pass
+    return None
+
+
 def main():
     # Get command line arguments
     (
@@ -311,6 +324,7 @@ def main():
     venue = []
     publisher = []
     content = []  # Add new list for content
+    pdf_links = []  # New list for PDF links
     rank = [0]
 
     # Get content from number_of_results URLs
@@ -392,6 +406,9 @@ def main():
             except:
                 content.append("Content not found")
 
+            # Extract PDF link
+            pdf_links.append(get_pdf_link(div) or "No PDF link")
+
             rank.append(rank[-1] + 1)
 
         # Delay
@@ -399,7 +416,19 @@ def main():
 
     # Create a dataset and sort by the number of citations
     data = pd.DataFrame(
-        list(zip(author, title, citations, year, publisher, venue, content, links)),
+        list(
+            zip(
+                author,
+                title,
+                citations,
+                year,
+                publisher,
+                venue,
+                content,
+                links,
+                pdf_links,
+            )
+        ),
         index=rank[1:],
         columns=[
             "Author",
@@ -410,6 +439,7 @@ def main():
             "Venue",
             "Content",
             "Source",
+            "PDF",
         ],
     )
     data.index.name = "Rank"
