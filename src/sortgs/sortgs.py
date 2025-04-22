@@ -17,15 +17,17 @@ a .csv file.
 """
 
 import requests
-import os
 import datetime
 import argparse
 from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 import pandas as pd
 from time import sleep
-import warnings
 import random
+import re
+import logging
+import sys
+from pathlib import Path
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -33,16 +35,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Solve conflict between raw_input and input on Python 2 and Python 3
-import sys
-
-if sys.version[0] == "3":
-    raw_input = input
+# Removed Python 2 compatibility for raw_input; using input() directly
 
 # Default Parameters
 KEYWORD = "machine learning"  # Default argument if command line is empty
 NRESULTS = 100  # Fetch 100 articles
-CSVPATH = os.getcwd()  # Current folder as default path
+CSVPATH = Path.cwd()  # Default path as current working directory
 SAVECSV = True
 SORTBY = "Citations"
 PLOT_RESULTS = False
@@ -63,6 +61,12 @@ ENDYEAR_URL = "&as_yhi={}"
 LANG_URL = "&lr={}"
 
 ROBOT_KW = ["unusual traffic from your computer network", "not a robot"]
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+
+# Initialize module logger
+logger = logging.getLogger(__name__)
 
 
 def get_command_line_args():
@@ -180,55 +184,42 @@ def get_command_line_args():
     )
 
 
-def get_citations(content):
-    out = 0
-    for char in range(0, len(content)):
-        if content[char : char + 9] == "Cited by ":
-            init = char + 9
-            for end in range(init + 1, init + 6):
-                if content[end] == "<":
-                    break
-            out = content[init:end]
-    return int(out)
+def get_citations(content: str) -> int:
+    """Extract number of citations from content using regex."""
+    match = re.search(r"Cited by (\d+)", content)
+    return int(match.group(1)) if match else 0
 
 
-def get_year(content):
-    for char in range(0, len(content)):
-        if content[char] == "-":
-            out = content[char - 5 : char - 1]
-    if not out.isdigit():
-        out = 0
-    return int(out)
+def get_year(content: str) -> int:
+    """Extract publication year from content using regex."""
+    match = re.search(r"\b(19|20)\d{2}\b", content)
+    return int(match.group(0)) if match else 0
 
 
-def setup_driver():
-    print("Loading...")
+def setup_driver() -> webdriver.Chrome:
+    logger.info("Initializing WebDriver")
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
     driver = webdriver.Chrome(options=chrome_options)
     return driver
 
 
-def get_author(content):
-    content = content.replace(
-        "\xa0", " "
-    )  # Replaces the non-breaking space with a regular space
-    if len(content) > 0:
-        out = content.split(" - ")[0]
-    return out
+def get_author(content: str) -> str:
+    """Extract the author string from content."""
+    clean_content = content.replace("\xa0", " ")
+    return clean_content.split(" - ")[0] if clean_content else ""
 
 
-def get_element(driver, xpath, attempts=5, _count=0):
-    """Safe get_element method with multiple attempts"""
+def get_element(driver, xpath: str, attempts: int = 5, _count: int = 0):
+    """Safely find an element by xpath with retries using updated selenium API."""
     try:
-        element = driver.find_element_by_xpath(xpath)
-        return element
-    except Exception as e:
+        return driver.find_element(By.XPATH, xpath)
+    except Exception:
         if _count < attempts:
             sleep(random.uniform(0.5, 3))
-            get_element(driver, xpath, attempts=attempts, _count=_count + 1)
-        else:
-            print("Element not found")
+            return get_element(driver, xpath, attempts=attempts, _count=_count + 1)
+        logger.error("Element not found after %s attempts: %s", attempts, xpath)
+        return None
 
 
 def get_content_with_selenium(url):
@@ -248,7 +239,7 @@ def get_content_with_selenium(url):
 
         c = el.get_attribute("innerHTML")
         if any(kw in el.text for kw in ROBOT_KW):
-            raw_input("Solve captcha manually and press enter here to continue...")
+            input("Solve captcha manually and press enter here to continue...")
         else:
             break
 
@@ -290,9 +281,8 @@ def main():
         debug,
     ) = get_command_line_args()
 
-    print("Running with the following parameters:")
-    print(
-        f"Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Permitted Languages: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}"
+    logger.info(
+        f"Running with parameters: Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Permitted Languages: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}"
     )
 
     # Create main URL based on command line arguments
@@ -332,20 +322,21 @@ def main():
         # if start_year is None:
         url = GSCHOLAR_MAIN_URL.format(str(n), keyword.replace(" ", "+"))
         if debug:
-            print("Opening URL:", url)
+            logger.debug("Opening URL: %s", url)
         # else:
         #    url=GSCHOLAR_URL_YEAR.format(str(n), keyword.replace(' ','+'), start_year=start_year, end_year=end_year)
 
-        print("Loading next {} results".format(n + 10))
+        logger.info("Loading next %d results", n + 10)
         page = session.get(url)  # , headers=headers)
         c = page.content
         if any(kw in c.decode("ISO-8859-1") for kw in ROBOT_KW):
-            print("Robot checking detected, handling with selenium (if installed)")
+            logger.warning("Robot check detected, using Selenium fallback")
             try:
                 c = get_content_with_selenium(url)
             except Exception as e:
-                print("No success. The following error was raised:")
-                print(e)
+                logger.exception(
+                    "Failed to fetch content with Selenium for URL: %s", url
+                )
 
         # Create parser
         soup = BeautifulSoup(c, "html.parser", from_encoding="utf-8")
@@ -366,17 +357,15 @@ def main():
             try:
                 citations.append(get_citations(str(div.format_string)))
             except:
-                warnings.warn(
-                    "Number of citations not found for {}. Appending 0".format(
-                        title[-1]
-                    )
+                logger.warning(
+                    "Number of citations not found for %s. Appending 0", title[-1]
                 )
                 citations.append(0)
 
             try:
                 year.append(get_year(div.find("div", {"class": "gs_a"}).text))
             except:
-                warnings.warn("Year not found for {}, appending 0".format(title[-1]))
+                logger.warning("Year not found for %s, appending 0", title[-1])
                 year.append(0)
 
             try:
@@ -454,14 +443,14 @@ def main():
     try:
         data_ranked = data.sort_values(by=sortby_column, ascending=False)
     except Exception as e:
-        print(
-            "Column name to be sorted not found. Sorting by the number of citations..."
+        logger.warning(
+            "Sort column '%s' not found. Falling back to 'Citations'", sortby_column
         )
         data_ranked = data.sort_values(by="Citations", ascending=False)
-        print(e)
+        logger.debug("Sorting error details: %s", e)
 
     # Print data
-    print(data_ranked)
+    logger.info("Results:\n%s", data_ranked.to_string())
 
     # Plot by citation number
     if plot_results:
@@ -473,12 +462,13 @@ def main():
 
     # Save results
     if save_database:
-        fpath_csv = os.path.join(
-            path, keyword.replace(" ", "_").replace(":", "_") + ".csv"
-        )
-        fpath_csv = fpath_csv[:MAX_CSV_FNAME]
-        data_ranked.to_csv(fpath_csv, encoding="utf-8")
-        print("Results saved to", fpath_csv)
+        csv_file_name = f"{keyword.replace(' ', '_').replace(':', '_')}.csv"
+        csv_path = Path(path) / csv_file_name
+        # Truncate filename if too long
+        if len(csv_path.name) > MAX_CSV_FNAME:
+            csv_path = csv_path.with_name(csv_path.name[:MAX_CSV_FNAME])
+        data_ranked.to_csv(csv_path, encoding="utf-8")
+        logger.info("Results saved to %s", csv_path)
 
 
 if __name__ == "__main__":
