@@ -1,102 +1,199 @@
-Rank,Author,Title,Citations,Year,Source,cit/year
-37,Breiman,Random forests,40779,2001,https://link.springer.com/article/10.1023/A:1010933404324,2266
-24," Witten, E Frank, MA Hall, CJ Pal",Data Mining: Practical machine learning tools and techniques,35295,2016,https://books.google.com/books?hl=en&lr=&id=1SylCgAAQBAJ&oi=fnd&pg=PP1&dq=machine+learning&ots=8IDKwenwyc&sig=z8yfAy5gisyYnlSxfoeJQXNRcMs,11765
-26, Quinlan,C4. 5: programs for machine learning,34380,2014,https://books.google.com/books?hl=en&lr=&id=b3ujBQAAQBAJ&oi=fnd&pg=PP1&dq=machine+learning&ots=sQ5oXMHmE6&sig=DDXawjqNz2O4p8njQ9995l1ULvE,6876
-4, Nasrabadi,Pattern recognition and machine learning,33296,2007,https://www.spiedigitallibrary.org/journals/Journal-of-Electronic-Imaging/volume-16/issue-4/049901/Pattern-Recognition-and-Machine-Learning/10.1117/1.2819119.short,2775
-12,"Cortes, V Vapnik",Support-vector networks,32551,1995,https://link.springer.com/article/10.1007/BF00994018,1356
-19, Quinlan,Induction of decision trees,20068,1986,https://link.springer.com/article/10.1007/BF00116251,608
-8, Rasmussen,Gaussian processes in machine learning,13095,2004,https://link.springer.com/chapter/10.1007/978-3-540-28650-9_4,873
-6,"Pedregosa, G Varoquaux, A Gramfort…",Scikit-learn: Machine learning in Python,12998,2011,http://www.jmlr.org/papers/v12/pedregosa11a.html,1625
-9,Sebastiani,Machine learning in automated text categorization,9040,2002,https://dl.acm.org/citation.cfm?id=505283,532
-7,"CH Watkins, P Dayan",Q-learning,8072,1992,https://link.springer.com/article/10.1007/BF00992698,299
-15,"Pang, L Lee, S Vaithyanathan",Thumbs up?: sentiment classification using machine learning techniques,7815,2002,https://dl.acm.org/citation.cfm?id=1118704,460
-28,"Abadi, P Barham, J Chen, Z Chen, A Davis, J Dean…",Tensorflow: a system for large-scale machine learning.,7220,2016,https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf,2407
-14," Aha, D Kibler, MK Albert",Instance-based learning algorithms,5561,1991,https://link.springer.com/article/10.1007/BF00153759,199
-27, Tipping,Sparse Bayesian learning and the relevance vector machine,5252,2001,http://www.jmlr.org/papers/v1/tipping01a.html,292
-33, Sutton,Learning to predict by the methods of temporal differences,5040,1988,https://link.springer.com/article/10.1007/BF00115009,163
-21, Dietterich,Ensemble methods in machine learning,4801,2000,https://link.springer.com/chapter/10.1007/3-540-45014-9_1,253
-83,"Friedman, D Geiger, M Goldszmidt",Bayesian network classifiers,4679,1997,https://link.springer.com/article/10.1023/A:1007465528199,213
-39,Alpaydin,Introduction to machine learning,4626,2009,https://books.google.com/books?hl=en&lr=&id=TtrxCwAAQBAJ&oi=fnd&pg=PR7&dq=machine+learning&ots=T5dlQF_6nY&sig=WJXsT8cwTsAEswn6qYZ7QS-zOsg,463
-93,"Scholkopf, AJ Smola","Learning with kernels: support vector machines, regularization, optimization, and beyond",4418,2001,https://dl.acm.org/citation.cfm?id=559923,245
-13,Robert,"Machine learning, a probabilistic perspective",4080,2014,https://amstat.tandfonline.com/doi/full/10.1080/09332480.2014.914768,816
-73,"Domingos, M Pazzani",On the optimality of the simple Bayesian classifier under zero-one loss,4005,1997,https://link.springer.com/article/10.1023/A:1007413511361,182
-25,"Asuncion, D Newman",UCI machine learning repository,3999,2007,https://ergodicity.net/2013/07/,333
-34, Bradley,The use of the area under the ROC curve in the evaluation of machine learning algorithms,3747,1997,https://www.sciencedirect.com/science/article/pii/S0031320396001422,170
-29,"Rosten, T Drummond",Machine learning for high-speed corner detection,3617,2006,https://link.springer.com/10.1007/11744023_34,278
-31,"Auer, N Ces",Finite-time analysis of the multiarmed bandit problem,3443,2002,https://link.springer.com/article/10.1023/A:1013689704352,203
-32,Caruana,Multitask learning,3292,1997,https://link.springer.com/article/10.1023/A:1007379606734,150
-38," Blum, P Langley",Selection of relevant features and examples in machine learning,3210,1997,https://www.sciencedirect.com/science/article/pii/S0004370297000635,146
-50,Lichman,Could not catch title,2979,2013,"Look manually at: https://scholar.google.com/scholar?start=40&q=machine+learning&hl=en&as_sdt=0,5",496
-41, Michalski,A theory and methodology of inductive learning,2841,1983,https://link.springer.com/chapter/10.1007/978-3-662-12405-5_4,79
-54, Fisher,Knowledge acquisition via incremental conceptual clustering,2799,1987,https://link.springer.com/article/10.1007/BF00114265,87
-62, Hall,Correlation-based feature selection for machine learning,2770,1999,https://www.lri.fr/~pierres/donn%E9es/save/these/articles/lpr-queue/hall99correlationbased.pdf,138
-36,Hofmann,Unsupervised learning by probabilistic latent semantic analysis,2647,2001,https://link.springer.com/article/10.1023/A:1007617005950,147
-46," Kotsiantis, I Zaharakis…",Supervised machine learning: A review of classification techniques,2602,2007,https://books.google.com/books?hl=en&lr=&id=vLiTXDHr_sYC&oi=fnd&pg=PA3&dq=machine+learning&ots=CYotzu2Clj&sig=pVusLIcLNHdAPYjndg5FeR_MrFY,217
-51, Samuel,Some studies in machine learning using the game of checkers,2543,1959,https://ieeexplore.ieee.org/abstract/document/5392560/,42
-95, Williams,Simple statistical gradient-following algorithms for connectionist reinforcement learning,2519,1992,https://link.springer.com/article/10.1007/BF00992696,93
-17," Michalski, JG Carbonell, TM Mitchell",Machine learning: An artificial intelligence approach,2513,2013,https://books.google.com/books?hl=en&lr=&id=-eqpCAAAQBAJ&oi=fnd&pg=PA2&dq=machine+learning&ots=Wl3NQy8Bk1&sig=Qw80NurHHSyRXn6EWvdq9VeNe54,419
-70," Shipp, KN Ross, P Tamayo, AP Weng, JL Kutok…",Diffuse large B-cell lymphoma outcome prediction by gene-expression profiling and supervised machine learning,2511,2002,https://www.nature.com/articles/nm0102-68,148
-16," Weiss, CA Kulikowski","Computer systems that learn: classification and prediction methods from statistics, neural nets, machine learning, and expert systems",2498,1991,https://dl.acm.org/citation.cfm?id=102700,89
-22, Quinlan,Learning logical definitions from relations,2424,1990,https://link.springer.com/article/10.1007/BF00117105,84
-59,"Bache, M Lichman",Could not catch title,2392,0,"Look manually at: https://scholar.google.com/scholar?start=50&q=machine+learning&hl=en&as_sdt=0,5",1
-49, Dietterich,"An experimental comparison of three methods for constructing ensembles of decision trees: Bagging, boosting, and randomization",2382,2000,https://link.springer.com/article/10.1023/A:1007607513941,125
-61, McCallum,Mallet: A machine learning for language toolkit,2264,2002,http://www.citeulike.org/group/3030/article/1062263,133
-44,"Tong, D Koller",Support vector machine active learning with applications to text classification,2240,2001,http://www.jmlr.org/papers/v2/tong01a.html,124
-45,Angluin,Queries and concept learning,2215,1988,https://link.springer.com/article/10.1023/A:1022821128753,71
-2,"Andrieu, N De Freitas, A Doucet, MI Jordan",An introduction to MCMC for machine learning,2037,2003,https://link.springer.com/article/10.1023/A:1020281327116,127
-76, Holte,Very simple classification rules perform well on most commonly used datasets,2034,1993,https://link.springer.com/article/10.1023/A:1022631118932,78
-48,Bottou,Large-scale machine learning with stochastic gradient descent,1899,2010,https://link.springer.com/chapter/10.1007/978-3-7908-2604-3_16,211
-71," Farmer, NH Packard, AS Perelson","The immune system, adaptation, and machine learning",1870,1986,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.122.6614&rep=rep1&type=pdf,57
-1," Goldberg, JH Holland",Genetic algorithms and machine learning,1850,1988,http://www.springerlink.com/index/rw3572714v41q507.pdf,60
-53, Schapire,The boosting approach to machine learning: An overview,1823,2003,https://link.springer.com/10.1007/978-0-387-21579-2_9,114
-35, Quinlan,Learning efficient classification procedures and their application to chess end games,1755,1983,https://link.springer.com/chapter/10.1007/978-3-662-12405-5_15,49
-98, Dietterich,Machine-learning research,1717,1997,http://www.aaai.org/ojs/index.php/aimagazine/article/view/1324,78
-56, Hall,Correlation-based feature selection of discrete and numeric class machine learning,1705,2000,https://waikato.researchgateway.ac.nz/handle/10289/1024,90
-68,"Snoek, H Larochelle, RP Adams",Practical bayesian optimization of machine learning algorithms,1688,2012,http://papers.nips.cc/paper/4522-practical-bayesian-optimization,241
-23,"Pazzani, D Billsus",Learning and revising user profiles: The identification of interesting web sites,1650,1997,https://link.springer.com/article/10.1023/A:1007369909943,75
-69,"Tong, E Chang",Support vector machine active learning for image retrieval,1621,2001,https://dl.acm.org/citation.cfm?id=500159,90
-78," Batista, RC Prati, MC Monard",A study of the behavior of several methods for balancing machine learning training data,1559,2004,https://dl.acm.org/citation.cfm?id=1007735,104
-87,"Low, D Bickson, J Gonzalez, C Guestrin…",Distributed GraphLab: a framework for machine learning and data mining in the cloud,1485,2012,https://dl.acm.org/citation.cfm?id=2212354,212
-65,"Tsochantaridis, T Hofmann, T Joachims…",Support vector machine learning for interdependent and structured output spaces,1469,2004,https://dl.acm.org/citation.cfm?id=1015341,98
-60," Chu, SK Kim, YA Lin, YY Yu, G Bradski…",Map-reduce for machine learning on multicore,1456,2007,http://papers.nips.cc/paper/3150-map-reduce-for-machine-learning-on-multicore.pdf,121
-100,"Rosten, R Porter, T Drummond",Faster and better: A machine learning approach to corner detection,1433,2010,https://ieeexplore.ieee.org/abstract/document/4674368/,159
-75,Soderland,Learning information extraction rules for semi-structured and free text,1408,1999,https://link.springer.com/article/10.1023/A:1007562322031,70
-74,"Stone, M Veloso",Multiagent systems: A survey from a machine learning perspective,1385,2000,https://link.springer.com/article/10.1023/A:1008942012299,73
-42,"DeJong, R Mooney",Explanation-based learning: An alternative view,1369,1986,https://link.springer.com/article/10.1007/BF00114116,41
-55,"Cauwenberghs, T Poggio",Incremental and decremental support vector machine learning,1328,2001,http://papers.nips.cc/paper/1814-incremental-and-decremental-support-vector-machine-learning.pdf,74
-85,Domingos,A few useful things to know about machine learning,1304,2012,https://dl.acm.org/citation.cfm?id=2347755,186
-64," Wilson, TR Martinez",Reduction techniques for instance-based learning algorithms,1256,2000,https://link.springer.com/article/10.1023/A:1007626913721,66
-40," Fung, OL Mangasarian",Multicategory proximal support vector machine classifiers,1165,2005,https://link.springer.com/article/10.1007/s10994-005-0463-6,83
-91,"Collobert, K Kavukcuoglu…",Torch7: A matlab-like environment for machine learning,1163,2011,https://infoscience.epfl.ch/record/192376/files/Collobert_NIPSWORKSHOP_2011.pdf,145
-97,"Argyriou, T Evgeniou, M Pontil",Convex multi-task feature learning,1119,2008,https://link.springer.com/article/10.1007/s10994-007-5040-8,102
-3,"Kubat, RC Holte, S Matwin",Machine learning for the detection of oil spills in satellite radar images,1097,1998,https://link.springer.com/article/10.1023/A:1007452223027,52
-57, Rivest,Learning decision lists,1072,1987,https://link.springer.com/article/10.1007/BF00058680,34
-43,"Cost, S Salzberg",A weighted nearest neighbor algorithm for learning with symbolic features,984,1993,https://link.springer.com/article/10.1007/BF00993481,38
-80, Lin,"Self-improving reactive agents based on reinforcement learning, planning and teaching",982,1992,https://link.springer.com/article/10.1007/BF00992699,36
-82," Fayyad, KB Irani",On the handling of continuous-valued attributes in decision tree generation,961,1992,https://link.springer.com/article/10.1007/BF00994007,36
-67," Moore, CG Atkeson",Prioritized sweeping: Reinforcement learning with less data and less time,929,1993,https://link.springer.com/article/10.1007/BF00993104,36
-66,"Holmes, A Donkin, IH Witten",Weka: A machine learning workbench,858,1994,https://ieeexplore.ieee.org/abstract/document/396988/,34
-92,Langley,Selection of relevant features in machine learning,803,1994,http://www.aaai.org/Papers/Symposia/Fall/1994/FS-94-02/FS94-02-034.pdf,32
-81, King,Dlib-ml: A machine learning toolkit,774,2009,http://www.jmlr.org/papers/v10/king09a.html,77
-88,"Meng, J Bradley, B Yavuz, E Sparks…",Mllib: Machine learning in apache spark,757,2016,http://www.jmlr.org/papers/volume17/15-237/15-237.pdf,252
-96," Mitchell, R Hutchinson, RS Niculescu, F Pereira…",Learning to decode cognitive states from brain images,729,2004,https://link.springer.com/article/10.1023/b:mach.0000035475.85309.1b,49
-79," Witten, E Frank, LE Trigg, MA Hall, G Holmes…",Weka: Practical machine learning tools and techniques with Java implementations,711,1999,https://waikato.researchgateway.ac.nz/handle/10289/1040,36
-86,"Kearns, S Singh",Near-optimal reinforcement learning in polynomial time,707,2002,https://link.springer.com/article/10.1023/A:1017984413808,42
-101,"Van Gestel, JAK Suykens, B Baesens, S Viaene…",Benchmarking least squares support vector machine classifiers,701,2004,https://link.springer.com/article/10.1023/B:MACH.0000008082.80494.e0,47
-99, Tsitsiklis,Asynchronous stochastic approximation and Q-learning,682,1994,https://link.springer.com/article/10.1007/BF00993306,27
-89," Smola, B Schölkopf",Sparse greedy matrix approximation for machine learning,673,2000,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3153,35
-58,De Jong,Learning with genetic algorithms: An overview,647,1988,https://link.springer.com/article/10.1007/BF00113894,21
-77,"Adeli, SL Hung","Machine learning: neural networks, genetic algorithms, and fuzzy systems",555,1994,https://dl.acm.org/citation.cfm?id=184216,22
-94,"Demšar, B Zupan, G Leban, T Curk",Orange: From experimental machine learning to interactive data mining,469,2004,https://link.springer.com/chapter/10.1007/978-3-540-30116-5_58,31
-11,Freitag,Machine learning for information extraction in informal domains,458,2000,https://link.springer.com/article/10.1023/A:1007601113994,24
-10," Goldberg, H John",Could not catch title,399,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=machine+learning&hl=en&as_sdt=0,5",0
-20,"Barreno, B Nelson, AD Joseph, JD Tygar",The security of machine learning,326,2010,https://link.springer.com/article/10.1007/s10994-010-5188-5,36
-18, Salzberg,"C4. 5: Programs for machine learning by j. ross quinlan. morgan kaufmann publishers, inc., 1993",312,1994,http://www.springerlink.com/index/v986m1562062hk51.pdf,12
-30, Michalski,Learnable evolution model: Evolutionary processes guided by machine learning,244,2000,https://link.springer.com/article/10.1023/A:1007677805582,13
-63,Bottou,From machine learning to machine reasoning,160,2014,https://link.springer.com/article/10.1007/s10994-013-5335-x,32
-52,Be,Monotonicity maintenance in information-theoretic machine learning algorithms,160,1995,https://link.springer.com/article/10.1023/A:1022655006810,7
-47,"Provost, R Kohavi",Guest editors' introduction: On applied research in machine learning,147,1998,http://www.springerlink.com/index/QJ78NM8831T443K8.pdf,7
-72," Gordon, M Desjardins",Evaluation and selection of biases in machine learning,137,1995,https://link.springer.com/article/10.1007/BF00993472,6
-90,Langley,Machine learning as an experimental science,93,1988,http://www.springerlink.com/index/T73G473236562458.pdf,3
-84,Learning,Could not catch title,24,0,"Look manually at: https://scholar.google.com/scholar?start=80&q=machine+learning&hl=en&as_sdt=0,5",0
-5,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=machine+learning&hl=en&as_sdt=0,5",0
+Rank,Author,Title,Citations,Year,Publisher,Venue,Content,Source,cit/year
+71,"CM Bishop, NM Nasrabadi",Pattern recognition and machine learning,79162,2006, Springer,,"… There are no other books that apply graphical models to machine learning. … Pattern 
+recognition has its origins in engineering, whereas machine learning grew out of computer science. …",https://link.springer.com/book/9780387310732,3958
+6,"TM Mitchell, TM Mitchell",Machine learning,40483,1997, pachecoj.com,,"… What is machine learning? … • Traditional AI: you encode the knowledge (eg, logic 
+statements), and the machine executes it, with some more ‘inference’ like if a -> b and b-> c …",http://www.pachecoj.com/courses/csc380_fall21/lectures/mlintro.pdf,1396
+60,KP Murphy,Machine learning: a probabilistic perspective,17889,2012, books.google.com,,"… 14 1.4 Some basic concepts in machine learning … In machine learning, uncertainty comes 
+in many forms: what is the … to machine learning. For any given model, a variety of algorithms …",https://books.google.com/books?hl=en&lr=&id=RC43AgAAQBAJ&oi=fnd&pg=PR7&dq=Machine+Learning&ots=unjzczTu56&sig=kUyFan3rKoW2DsIJLc8yKWRyTLw,1278
+51,E Alpaydin,Introduction to machine learning,15619,2020, books.google.com,,"… and Machine Learning series appears at the back of this book. … some learning components; 
+actually most such systems would not have been possible today if not for machine learning. …",https://books.google.com/books?hl=en&lr=&id=uZnSDwAAQBAJ&oi=fnd&pg=PR7&dq=Machine+Learning&ots=xOuWtuNnAQ&sig=uAkg-JcsQJzcnrISwSdmf2oI_SU,2603
+4,"MI Jordan, TM Mitchell","Machine learning: Trends, perspectives, and prospects",11245,2015, science.org, Science,"… Machine learning addresses the question of how to build computers that improve … Recent 
+progress in machine learning has been driven both by the development of new learning …",https://www.science.org/doi/abs/10.1126/science.aaa8415,1022
+35,"S Shalev-Shwartz, S Ben-David",Could not catch title,9003,2014, Cambridge university press,,,"Look manually at: https://scholar.google.com/scholar?start=30&q=Machine+Learning&hl=en&as_sdt=0,5",750
+32,"V Goar, NS Yadav",Foundations of machine learning,7254,0,global.com,,"… Machine learning is a rapidly evolving domain with wide-ranging … Machine learning is a 
+pivotal technology that has revolutionized … on their journey into the world of machine learning. …",https://www.igi-global.com/chapter/foundations-of-machine-learning/344516,4
+76,JJ Grefenstette,Genetic algorithms and machine learning,5191,1993, dl.acm.org, … the sixth annual conference on Computational learning …,"One approach to the design of learning systems is to extract heuristics from existing adaptive 
+systems. Genetic algorithms are heuristic learning models based on principles drawn from …",https://dl.acm.org/doi/pdf/10.1145/168304.168305,157
+49,DE King,Dlib-ml: A machine learning toolkit,4534,2009, jmlr.org, The Journal of Machine Learning Research,"… provide support for developing machine learning software in … rich environment for developing 
+machine learning software in the … components, linear algebra and machine learning tools. …",http://www.jmlr.org/papers/volume10/king09a/king09a.pdf,267
+69,"KT Butler, DW Davies, H Cartwright, O Isayev, A Walsh",Machine learning for molecular and materials science,3988,2018, nature.com, Nature,"… Here we summarize recent progress in machine learning for the chemical sciences. We 
+outline machine-learning techniques that are suitable for addressing research questions in this …",https://www.nature.com/articles/s41586-018-0337-2,498
+54,"IH Witten, E Frank, MA Hall, CJ Pal, M Data",Practical machine learning tools and techniques,3470,2005, alvarestech.com, Data mining,"… Machine learning provides the technical basis of data mining. … tools and techniques of 
+machine learning that are used in … attention, the use of machine learning is surrounded by a great …","http://alvarestech.com/temp/Industria4.0/2019/(Morgan%20Kaufmann%20Series%20in%20Data%20Management%20Systems)%20Ian%20H.%20Witten,%20Eibe%20Frank,%20Mark%20A.%20Hall,%20Christopher%20J.%20Pal%20-%20Data%20Mining_%20Practical%20Machine%20Learning%20Tools%20and%20Techniques-Morgan%20Kaufmann%20Publisher.pdf",165
+1,B Mahesh,Machine learning algorithms-a review,3426,2020, researchgate.net, International Journal of Science and Research …,"… Here‟sa quick look at some of the commonly used algorithms in machine learning (ML) 
+Supervised Learning Supervised learning is the machine learning task of learning a function …",https://www.researchgate.net/profile/Batta-Mahesh/publication/344717762_Machine_Learning_Algorithms_-A_Review/links/5f8b2365299bf1b53e2d243a/Machine-Learning-Algorithms-A-Review.pdf?eid=5082902844932096t,571
+48,"KG Liakos, P Busato, D Moshou, S Pearson, D Bochtis",Machine learning in agriculture: A review,3080,2018, mdpi.com, Sensors,"… research dedicated to applications of machine learning in agricultural production systems. … 
+will benefit from machine learning technologies. By applying machine learning to sensor data, …",https://www.mdpi.com/1424-8220/18/8/2674,385
+95,S Marsland,Machine learning: an algorithmic perspective,3072,2011, taylorfrancis.com,,"… advances and applications in machine learning and pattern recognition … of machine learning, 
+pattern recognition, computational intelligence, robotics, computational/statistical learning …",https://www.taylorfrancis.com/books/mono/10.1201/9781420067194/machine-learning-stephen-marsland,205
+44,"C Janiesch, P Zschech, K Heinrich",Machine learning and deep learning,3041,2021, Springer, Electronic markets,"… Machine learning … Deep learning is a machine learning concept based on artificial neural 
+networks. For many applications, deep learning models outperform shallow machine learning …",https://link.springer.com/article/10.1007/s12525-021-00475-2,608
+2,ZH Zhou,Machine learning,3022,2021, books.google.com,,"… from data is called learning or training. The … machine learning is to find or approximate 
+ground-truth. In this book, models are sometimes called learners, which are machine learning …",https://books.google.com/books?hl=en&lr=&id=ctM-EAAAQBAJ&oi=fnd&pg=PR6&dq=Machine+Learning&ots=o_MmW3Yw3t&sig=Ru-lOPa4uRDU8FejLLcHKKK7724,604
+65,"SL Brunton, BR Noack…",Machine learning for fluid mechanics,2859,2020, annualreviews.org, Annual review of fluid …,"… At the beginning of a new millennium, with increasingly powerful tools in machine 
+learning and data-driven optimization, we are again learning how to learn from experience. …",https://www.annualreviews.org/content/journals/10.1146/annurev-fluid-010719-060214,476
+15,"G Carleo, I Cirac, K Cranmer, L Daudet, M Schuld…",Machine learning and the physical sciences,2632,2019, APS, Reviews of Modern …,"… II, where the interaction with machine learning has a long history, drawing on methods in … 
+in machine learning. We then turn the wheel in the other direction of using machine learning for …",https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.91.045002,376
+90,"S Mullainathan, J Spiess",Machine learning: an applied econometric approach,2568,2017, aeaweb.org, Journal of Economic Perspectives,"… machine learning that gives it its own place in the econometric toolbox. Central to our 
+understanding is that machine learning … Machine learning (or rather “supervised” machine …",https://www.aeaweb.org/articles?id=10.1257%2Fjep.31.2.87&ref=ds-econ,285
+14,"C Sammut, GI Webb",Encyclopedia of machine learning,2447,2011, books.google.com,,"… Machine Learning came to be identified as a research field in its … machine learning appeared. 
+Although the field coalesced in the 1980s, research on what we now call machine learning …",https://books.google.com/books?hl=en&lr=&id=i8hQhp1a62UC&oi=fnd&pg=PA3&dq=Machine+Learning&ots=92mcAtkEeL&sig=YDd2FFQPcwnFWOlWeCMlHOnaZ4Q,163
+12,"W Li, C Wang, G Cheng, Q Song",International conference on machine learning,2423,2023, par.nsf.gov, Transactions on machine learning …,"In this paper, we make the key delineation on the roles of resolution and statistical uncertainty 
+in hierarchical bandits-based black-box optimization algorithms, guiding a more general …",https://par.nsf.gov/servlets/purl/10418406,808
+53,TG Dietterich,Machine-learning research,2182,1997, ojs.aaai.org, AI magazine,"… in symbolic machine learning, computational learning theory, … Second, machine-learning 
+techniques are being applied to … In this article, I selected four topics within machine learning …",https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1324,75
+86,"P Baldi, S Brunak",Bioinformatics: the machine learning approach,2078,2001, books.google.com,,"… Machine learning approaches (eg, neural networks, hidden … The goal in machine learning 
+is to extract useful information … present the key machine learning approaches and apply them …",https://books.google.com/books?hl=en&lr=&id=pxSM7R1sdeQC&oi=fnd&pg=PR9&dq=Machine+Learning&ots=SOHHJ71Z3w&sig=rRjEwZLSrYgdDXTk2J5b6OBLy0U,83
+9,"H Wang, Z Lei, X Zhang, B Zhou, J Peng",Machine learning basics,1920,2016, whdeng.cn, Deep learning,"… To obtain theoretical guarantees about generalization of a machine learning algorithm, we 
+… Why does deep learning have different behavior than other machine learning methods for …",http://whdeng.cn/Teaching/PPT_01_Machine%20learning%20Basics.pdf,192
+5,"I El Naqa, MJ Murphy",What is machine learning?,1740,2015, Springer, Machine learning in radiation oncology: theory and …,"… A machine learning algorithm is a computational process that … This training is the “learning” 
+part of machine learning. The … can practice “lifelong” learning as it processes new data and …",https://link.springer.com/chapter/10.1007/978-3-319-18305-3_1,158
+64,H Ij,Statistics versus machine learning,1580,2018, nature.com, Nat Methods,"… Many methods from statistics and machine learning (ML) may, in principle, be used for both 
+… By contrast, ML concentrates on prediction by using general-purpose learning algorithms to …",https://www.nature.com/articles/nmeth.4642.pdf,198
+25,P Harrington,Machine learning in action,1506,2012, books.google.com,,"… uses of machine learning algorithms so that the reader can build better applications. … 
+machine learning to massive datasets that cannot be adequately addressed on a single machine…",https://books.google.com/books?hl=en&lr=&id=XTozEAAAQBAJ&oi=fnd&pg=PT19&dq=Machine+Learning&ots=px-hM3POjl&sig=RpF_IWSg0HjcqLhWCbq9p_AMvDg,108
+42,"JG Greener, SM Kandathil, L Moffat…",A guide to machine learning for biologists,1482,2022, nature.com, Nature reviews Molecular …,"… A machine learning task is an objective specification for what we want a machine learning 
+model to accomplish. For example, for an experiment investigating the expression of genes …",https://www.nature.com/articles/s41580-021-00407-0,370
+52,S Ray,A quick review of machine learning algorithms,1390,2019, ieeexplore.ieee.org, 2019 International conference on machine learning …,"… begin with the fundamental concept of Machine Learning. In Machine Learning a computer 
+program is assigned to perform some tasks and it is said that the machine has learnt from its …",https://ieeexplore.ieee.org/abstract/document/8862451/,199
+62,KP Murphy,Probabilistic machine learning: an introduction,1386,2022, books.google.com,,"… Almost all of machine learning can be viewed in probabilistic terms, making probabilistic … 
+But it is through this view that we can connect what we do in machine learning to every other …",https://books.google.com/books?hl=en&lr=&id=wrZNEAAAQBAJ&oi=fnd&pg=PR27&dq=Machine+Learning&ots=LapgMAfnWk&sig=jWVGkCom_TePEW8rNukug05qoXM,346
+3,E Alpaydin,Machine learning,1285,2021, books.google.com,,"MIT presents a concise primer on machine learning—computer programs that learn from 
+data and the basis of applications like voice recognition and driverless cars. No in-depth …",https://books.google.com/books?hl=en&lr=&id=Eyk5EAAAQBAJ&oi=fnd&pg=PR9&dq=Machine+Learning&ots=WRwOec1lvQ&sig=RXkwe_NqLhX10Ck43g8QS6Di7ls,257
+81,"A Singh, N Thakur, A Sharma",A review of supervised machine learning algorithms,1263,2016, ieeexplore.ieee.org, 2016 3rd international …,"… of supervised machine learning algorithms in terms of the accuracy, speed of learning, … 
+this paper is to provide a general comparison with state of art machine learning algorithms. …",https://ieeexplore.ieee.org/abstract/document/7724478/,126
+91,G Bonaccorso,Machine Learning Algorithms: Popular algorithms for data science and machine learning,1231,2018, books.google.com,,"… This book is for machine learning engineers, data engineers, and data scientists who 
+want to build a strong foundation in the field of predictive analytics and machine learning. …",https://books.google.com/books?hl=en&lr=&id=_EZsDwAAQBAJ&oi=fnd&pg=PP1&dq=Machine+Learning&ots=cJSm1Uf6-C&sig=wyq5QQGivH-0whB9SWNpR76128g,154
+21,A Burkov,The hundred-page machine learning book,1228,0,papers.com,,"The book is divided into a three chapters and one that got the time. Because it dreamed of a 
+dog i would be very proud to the actual story. When you get knowing you do n't listen to what …",https://order-papers.com/sites/default/files/tmp/webform/order_download/pdf-the-hundred-page-machine-learning-book-andriy-burkov-pdf-download-free-book-d835289.pdf,1
+30,TO Ayodele,Types of machine learning algorithms,1223,2010, books.google.com, New advances in machine learning,"… Inductive machine learning is the process of learning a set of rules from instances (examples 
+in a … In this chapter, we shall explain three main machine learning techniques with their …",https://books.google.com/books?hl=en&lr=&id=XAqhDwAAQBAJ&oi=fnd&pg=PA19&dq=Machine+Learning&ots=r3JnaUFjPo&sig=MOnCHVsS-JcRj5roV7LtzrQlj1E,76
+84,"N Burkart, MF Huber",A survey on the explainability of supervised machine learning,1221,2021, jair.org, Journal of Artificial Intelligence Research,"… In the following sections, we structure the area of explainable supervised machine learning. 
+First, we describe the problem definitions and dimensions. Next, we introduce interpretable …",https://www.jair.org/index.php/jair/article/view/12228,244
+92,M Kubat,An introduction to machine learning,1154,2017, Springer,,"Machine learning has come of age. And just in case you might think this is a mere platitude, … 
+Machine learning remained an underdog, condemned to live in the shadow of more …",https://link.springer.com/content/pdf/10.1007/978-3-319-63913-0.pdf,128
+36,"PP Shinde, S Shah",A review of machine learning and deep learning applications,1146,2018, ieeexplore.ieee.org, 2018 Fourth international conference on …,"… learning. A review of these past and future application domains, sub-domains, and applications 
+of machine learning and deep learning … to study machine learning and deep learning. It …",https://ieeexplore.ieee.org/abstract/document/8697857/,143
+94,P Langley,Selection of relevant features in machine learning,1126,1994, cdn.aaai.org, Proceedings of the AAAI Fall symposium on relevance,"… In this paper, we review the problem of selecting relevant features for use in machine learning. 
+We describe this problem in terms of heuristic search through a space of feature sets, and …",https://cdn.aaai.org/Symposia/Fall/1994/FS-94-02/FS94-02-034.pdf,35
+40,"J Alzubi, A Nayyar, A Kumar",Machine learning from theory to algorithms: an overview,1090,2018, iopscience.iop.org, Journal of physics: conference …,"… The primary intent of this work is to give insight into why machine learning is the future. … 
+of development of Machine Learning to the present day, various machine learning algorithms, …",https://iopscience.iop.org/article/10.1088/1742-6596/1142/1/012012/meta,136
+24,S Athey,The impact of machine learning on economics,1082,2018, nber.org, The economics of artificial intelligence: An agenda,"… I believe that machine learning (ML) will have a dramatic impact on the field of economics … 
+literature in econometrics and statistics combining machine learning and causal inference, a …",https://www.nber.org/system/files/chapters/c14009/c14009.pdf,135
+20,"S Sra, S Nowozin, SJ Wright",Optimization for machine learning,1059,2011, books.google.com,,"… The intersection of interests between machine learning and … workshops on Optimization 
+and Machine Learning, held at the … who introduced him to machine learning, especially Partha …",https://books.google.com/books?hl=en&lr=&id=PNTxCwAAQBAJ&oi=fnd&pg=PR5&dq=Machine+Learning&ots=VZnus_vr4V&sig=vpFUNeSHjFycQikaQnPA3uIQ7IQ,71
+37,TM Mitchell,The discipline of machine learning,1034,2006, cs.cmu.edu,,"… Over the past 50 years the study of Machine Learning has … theories of learning processes, 
+has designed learning algorithms … that has emerged as Machine Learning, the fundamental …",https://www.cs.cmu.edu/afs/cs/usr/mitchell/ftp/pubs/MachineLearningTR.pdf,52
+72,"MP Deisenroth, AA Faisal, CS Ong",Mathematics for machine learning,993,2020, books.google.com,,"… learning algorithms and methodologies and assume that the reader is … machine learning 
+methods who struggle with the mathematical knowledge required to read a machine learning …",https://books.google.com/books?hl=en&lr=&id=pFjPDwAAQBAJ&oi=fnd&pg=PR9&dq=Machine+Learning&ots=VMjr5GN9Ig&sig=vNikWpmiMsRDaKcvMXCVjDlDRjE,166
+79,"K Lee, J Caverlee, S Webb",Uncovering social spammers: social honeypots+ machine learning,987,2010, dl.acm.org, Proceedings of the 33rd international ACM …,"… Based on these profile features, we develop machine learning based classifiers for 
+identifying previously unknown spammers with high precision and a low rate of false positives. …",https://dl.acm.org/doi/abs/10.1145/1835449.1835522,62
+8,H Surden,Machine learning and law: An overview,972,2021, elgaronline.com, Research handbook on big data law,"… , machine learning has only recently started to develop. This chapter explores machine 
+learning’s … The first section describes what machine learning is, highlighting its central principles. …",https://www.elgaronline.com/abstract/edcoll/9781788972819/9781788972819.00014.xml,194
+33,P Langley,Elements of machine learning,971,1996, books.google.com,,"… the goals that motivate researchers to study machine learning. After this, we present a 
+framework for machine learning that serves as an organization for the later sections in the chapter. …",https://books.google.com/books?hl=en&lr=&id=TNg5qVoqRtUC&oi=fnd&pg=PR9&dq=Machine+Learning&ots=Q5or_tx_Rq&sig=Ex9PMv_v_71R-HKX5lRtZQ62rDM,32
+46,V Nasteski,An overview of the supervised machine learning methods,951,2017, researchgate.net, Horizons. b,"… machine learning and provide machine learning techniques. … into relative difficulty of 
+learning in different environments. … Data, machine learning is not like machine learning was in …",https://www.researchgate.net/profile/Vladimir-Nasteski/publication/328146111_An_overview_of_the_supervised_machine_learning_methods/links/5c1025194585157ac1bba147/An-overview-of-the-supervised-machine-learning-methods.pdf,106
+78,"S Sun, Z Cao, H Zhu, J Zhao",A survey of optimization methods from a machine learning perspective,948,2019, ieeexplore.ieee.org, IEEE transactions on cybernetics,"… methods from the perspective of machine learning are of great significance, … machine 
+learning research. In this article, we first describe the optimization problems in machine learning. …",https://ieeexplore.ieee.org/abstract/document/8903465/,135
+63,NJ Nilson,Introduction to machine learning,941,1998, bafflerbach.github.io, AN EARLY DRAFT OF A PROPOSED TEXTBOOK …,"Machine learning is a field of computing that has recently seen an explosion in applications 
+and household recognition. A loose definition of machine learning … behind machine learning …",https://bafflerbach.github.io/test_software_carpentry/files/Module%201%20Lecture%20Notes.pdf,34
+80,D Michie,“Memo” functions and machine learning,906,1968, nature.com, Nature,"… Here I outline proposals* for enabling the programmer to “Samuelize” any functions he 
+pleases, and so endow his program with self-improving powers–both of “rotelearning” and “learning …",https://www.nature.com/articles/218019a0,16
+47,"J Wei, X Chu, XY Sun, K Xu, HX Deng, J Chen, Z Wei…",Machine learning in materials science,883,2019, Wiley Online Library, InfoMat,"… cost and short development cycle, machine learning is coupled with powerful data … 
+properties via machine learning, summarize recent applications of machine learning algorithms to …",https://onlinelibrary.wiley.com/doi/abs/10.1002/inf2.12028,126
+41,"M Mohammed, MB Khan, EBM Bashier",Machine learning: algorithms and applications,876,2016, taylorfrancis.com,,"… machine learning and you do not know which book to start from, then the answer is this book. 
+If you know some of the theories in machine learning, … and unsupervised machine learning …",https://www.taylorfrancis.com/books/mono/10.1201/9781315371658/machine-learning-mohssen-mohammed-muhammad-badruddin-khan-eihab-bashier-mohammed-bashier,88
+39,"AL Tarca, VJ Carey, X Chen, R Romero…",Machine learning and its applications to biology,861,2007, journals.plos.org, PLoS computational …,"… and/or supervised machine learning techniques abound in the … Continuous variable prediction 
+with machine learning … both supervised and unsupervised machine learning methods, we …",https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0030116,45
+83,ML De Prado,Advances in financial machine learning,856,2018, books.google.com,,"Learn to understand and implement the latest machine learning innovations to improve your 
+investment performance Machine learning (ML) is changing virtually every aspect of our …",https://books.google.com/books?hl=en&lr=&id=oU9KDwAAQBAJ&oi=fnd&pg=PR21&dq=Machine+Learning&ots=7VHIVZADfA&sig=n3qjApR5DdvpzAo8ItrY3kdrviI,107
+38,A Dey,Machine learning algorithms: a review,809,2016, researchgate.net, International Journal of Computer Science and …,"… In that case, we apply machine learning [1]. With the abundance of datasets available, the … 
+machine learning is in rise. Many industries from medicine to military apply machine learning …",https://www.researchgate.net/profile/Sindayigaya-Laurent/publication/362711297_Machine_Learning_Algorithms_A_Review/links/62fb5a51e3c7de4c345efb09/Machine-Learning-Algorithms-A-Review.pdf,81
+66,"T Jiang, JL Gradus, AJ Rosellini",Supervised machine learning: a brief primer,794,2020, Elsevier, Behavior therapy,"… Machine learning offers new tools to overcome challenges for which traditional statistical … 
+provides an overview of machine learning with a specific focus on supervised learning (ie, …",https://www.sciencedirect.com/science/article/pii/S0005789420300678,132
+10,"Q Bi, KE Goodman, J Kaminsky…",What is machine learning? A primer for the epidemiologist,704,2019, academic.oup.com, American journal of …,"… We provide a brief introduction to 5 common machine learning … of machine learning 
+techniques in the published literature. We recommend approaches to incorporate machine learning …",https://academic.oup.com/aje/article-abstract/188/12/2222/5567515,101
+97,"A Paleyes, RG Urma, ND Lawrence",Challenges in deploying machine learning: a survey of case studies,616,2022, dl.acm.org, ACM computing surveys,"… This survey reviews published reports of deploying machine learning … of the machine 
+learning deployment workflow. By mapping found challenges to the steps of the machine learning …",https://dl.acm.org/doi/abs/10.1145/3533378,154
+89,"D Kreuzberger, N Kühl, S Hirschl","Machine learning operations (mlops): Overview, definition, and architecture",589,2023, ieeexplore.ieee.org, IEEE access,"… ABSTRACT The final goal of all industrial machine learning (ML) projects is to develop 
+ML … The paradigm of Machine Learning Operations (MLOps) addresses this issue. MLOps …",https://ieeexplore.ieee.org/abstract/document/10081336/,196
+18,"JW Shavlik, TG Dietterich",Readings in machine learning,581,1990, books.google.com,,"… in machine learning. We have taught from these readings in our own machine learning … 
+Furthermore, we in machine learning believe that learning techniques provide important con…",https://books.google.com/books?hl=en&lr=&id=UgC33U2KMCsC&oi=fnd&pg=PA1&dq=Machine+Learning&ots=TijiigaIu5&sig=2_3ppk44jX-rbPKV__le73IoqDE,16
+73,"Y Baştanlar, M Özuysal",Introduction to machine learning,574,2013, Springer, miRNomics: MicroRNA biology and …,"… to the development of sophisticated machine learning approaches for this application area. 
+… of machine learning such as feature assessment, unsupervised versus supervised learning …",https://link.springer.com/protocol/10.1007/978-1-62703-748-8_7,44
+34,P Dangeti,Statistics for machine learning,573,2017, books.google.com,,"… I believe that any machine learning practitioner should … machine learning problem in an 
+efficient manner. In this book, we will cover the fundamentals of statistics and machine learning, …",https://books.google.com/books?hl=en&lr=&id=C-dDDwAAQBAJ&oi=fnd&pg=PP1&dq=Machine+Learning&ots=j36w1qv12v&sig=UHzN41WqQCtU4f2XG4XbW10EKeM,64
+85,"S Badillo, B Banfai, F Birzele, II Davydov…",An introduction to machine learning,572,2020, Wiley Online Library, Clinical …,"… , combined with the arrival of novel learning methods, has led to a … However, the idea of a 
+computer learning some abstract … On the left, we indicate the machine learning terminology and…",https://ascpt.onlinelibrary.wiley.com/doi/abs/10.1002/cpt.1796,95
+31,"M Ribeiro, K Grolinger…",Mlaas: Machine learning as a service,534,2015, ieeexplore.ieee.org, … on machine learning and …,"… own machine learning solutions. … learning curve of how machine learning works and when 
+building their own solutions or integrating with third-party ones. In addition, machine learning …",https://ieeexplore.ieee.org/abstract/document/7424435/,49
+88,BK Natarajan,Machine learning: A theoretical approach,523,2014, books.google.com,,"… The field of machine learning concerns computer programs that can imitate the learning … 
+algorithm, we must be able to measure the error of the hypotheses conjectured by the learning …",https://books.google.com/books?hl=en&lr=&id=cnyjBQAAQBAJ&oi=fnd&pg=PP1&dq=Machine+Learning&ots=5e6CLwhU2u&sig=iYoxRPE2xmmYOTiYtNITbVZwUbU,44
+59,TM Mitchell,Does machine learning really work?,506,1997, ojs.aaai.org, AI magazine,"… s Does machine learning really work? Yes. Over the past decade, machine learning has … 
+Machine-learning algorithms have now learned to detect credit card fraud by mining data on …",https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1303,17
+27,"TM Mitchell, JG Carbonell, RS Michalski",Machine learning: a guide to current research,476,1986, books.google.com,,"… Machine Learning, which involves the study and development of computational models of 
+learning … As such, this book is intended to complement the two volumes of Machine Learning: …",https://books.google.com/books?hl=en&lr=&id=I5GcpyPx3RwC&oi=fnd&pg=PR13&dq=Machine+Learning&ots=ocu3Iqvv3h&sig=X1ZK-jOY4lbdWwajT_zWoyprHyU,12
+23,K Wagstaff,Machine learning that matters,443,2012, arxiv.org, arXiv preprint arXiv:1206.4656,"… Many machine learning problems are phrased … machine learning innovations? This short 
+position paper argues for a change in how we view the relationship between machine learning …",https://arxiv.org/abs/1206.4656,32
+99,"D Morgan, R Jacobs",Opportunities and challenges for machine learning in materials science,439,2020, annualreviews.org, Annual Review of Materials Research,"… Machine learning (ML) is playing an increasing role in our … : unsupervised and supervised 
+learning. Unsupervised ML learns … This type of learning includes traditional regression [eg, …",https://www.annualreviews.org/content/journals/10.1146/annurev-matsci-070218-010015,73
+75,"S Sonnenburg, G Rätsch, S Henschel, C Widmer…",The SHOGUN machine learning toolbox,389,2010, jmlr.org, … of Machine Learning …,"… We have developed a machine learning toolbox, called SHOGUN, … learning for a broad 
+range of feature types and learning settings. It offers a considerable number of machine learning …",https://www.jmlr.org/papers/volume11/sonnenburg10a/sonnenburg10a.pdf,24
+98,A Blum,On-line algorithms in machine learning,366,2005, Springer, Online algorithms: the state of the art,"… The areas of On-Line Algorithms and Machine Learning are … of results in Computational 
+Learning Theory that fit nicely into the ""… problems from Computational Learning Theory that seem …",https://link.springer.com/content/pdf/10.1007/BFb0029575.pdf,17
+11,"F Provost, R Kohavi",On applied research in machine learning,336,1998, ai.stanford.edu,,"… Much of the \science"" of Machine Learning is a … er learning research, that misclassi cation 
+errors have equal costs. The vast majority of classi er learning research in Machine Learning …",https://ai.stanford.edu/~ronnyk/editorial.pdf,12
+68,AL Fradkov,Early history of machine learning,317,2020, Elsevier,PapersOnLine,"… The results of the paper by Gubin et al (1967) are also used by many authors in machine 
+learning and related areas of optimization: it has about 500 citations in Scopus. …",https://www.sciencedirect.com/science/article/pii/S2405896320325027,53
+28,"L Graves, V Nagisetty, V Ganesh",Amnesiac machine learning,313,2021, ojs.aaai.org, … of the AAAI Conference on Artificial …,"… It gives EU residents the ability to request deletion of their personal data, including training 
+records used to train machine learning models. Unfortunately, Deep Neural Network models …",https://ojs.aaai.org/index.php/AAAI/article/view/17371,63
+56,CM Bishop,Model-based machine learning,312,2013, royalsocietypublishing.org, … Transactions of the Royal Society A …,"… machine learning. We therefore turn to an alternative paradigm for the creation of machine 
+learning … After summarizing the goals of model-based machine learning in §2, we show how …",https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2012.0222,24
+74,"H Brink, J Richards, M Fetherolf",Real-world machine learning,306,2016, books.google.com,,"… the day-to-day practice of machine learning, preparing you to successfully build and deploy 
+… About the Technology Machine learning systems help you find valuable insights and …",https://books.google.com/books?hl=en&lr=&id=zTczEAAAQBAJ&oi=fnd&pg=PP14&dq=Machine+Learning&ots=LUCxsjHGrm&sig=lsArx6_lOw0Fhh2AFglJC0Q9HU8,31
+70,"Z Gong, P Zhong, W Hu",Diversity in machine learning,304,2019, ieeexplore.ieee.org, Ieee Access,"… the machine learning process, among which the diversity of the machine learning process 
+is … The diversity can help each procedure to guarantee a totally good machine learning: …",https://ieeexplore.ieee.org/abstract/document/8717641/,43
+50,"M Vartak, H Subramanyam, WE Lee…",ModelDB: a system for machine learning model management,300,2016, dl.acm.org, Proceedings of the …,"… , storing and indexing large numbers of machine learning models so they may subsequently 
+… manage machine learning models. ModelDB automatically tracks machine learning models …",https://dl.acm.org/doi/abs/10.1145/2939502.2939516,30
+19,"H Wang, C Ma, L Zhou",A brief review of machine learning and its application,289,2009, ieeexplore.ieee.org, 2009 international conference on …,"… Machine learning is the core issue of artificial intelligence research… machine learning and 
+its basic structure, and describes a variety of machine learning methods, including rote learning…",https://ieeexplore.ieee.org/abstract/document/5362936/,17
+7,TG Dietterich,Machine learning,267,1990, Citeseer, Annual review of computer science,"The study of machine learning methods has progressed greatly in the past few years. This 
+progress has taken many directions. First, in the area of inductive learning, a new formal de …",https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=417f55320080fea71d491a18318dad6572b2fa8c,7
+93,"J Bertomeu, E Cheynel, E Floyd, W Pan",Using machine learning to detect misstatements,251,2021, Springer, Review of Accounting Studies,"… Intuitively, a machine learning algorithm can be taught to … Machine learning algorithms 
+capture the relationship … We also examine a number of alternative machine learning approaches …",https://link.springer.com/article/10.1007/s11142-020-09563-8,50
+67,T Jo,Machine learning foundations,243,2021, Springer, Supervised  Unsupervised  and Advanced Learning …,"… knowledge about machine learning by exploring learning theories, … of machine learning 
+algorithms: the supervised, the unsupervised, the reinforced, and the semi-supervised learning. …",https://link.springer.com/content/pdf/10.1007/978-3-030-65900-4.pdf,49
+87,"S Schelter, F Biessmann, T Januschowski, D Salinas…",On challenges in machine learning model management,241,2015, amazon.science,,"… Our work is broad and deep: we train machine learning models to automate routing and 
+find signals to optimize re-use; we invent new channels to give products a second life; we …",https://www.amazon.science/publications/on-challenges-in-machine-learning-model-management,22
+45,"ZT Wilson, NV Sahinidis",The ALAMO approach to machine learning,230,2017, Elsevier, Computers & Chemical Engineering,"ALAMO is a computational methodology for learning algebraic functions from data. Given a 
+data set, the approach begins by building a low-complexity, linear model composed of …",https://www.sciencedirect.com/science/article/pii/S0098135417300662,26
+17,S Gollapudi,Practical machine learning,228,2016, books.google.com,,"… learning algorithms Machine learning tools and frameworks Summary Chapter 2: Machine 
+learning and Large-scale datasets Big data and the context of large-scale Machine learning …",https://books.google.com/books?hl=en&lr=&id=WmsdDAAAQBAJ&oi=fnd&pg=PP1&dq=Machine+Learning&ots=1By6BuRlcV&sig=BdoZ4cx6uZBbpz_nmQlBCu4XKks,23
+29,ZH Zhou,Learnware: on the future of machine learning.,216,2016, lamda.nju.edu.cn, Frontiers Comput. Sci.,"… Current machine learning techniques have achieved great … be shared in most current machine 
+learning studies if one hopes … Thus, it is hard for people to build their learning tasks based …",https://www.lamda.nju.edu.cn/publication/fcs16learnware.pdf,22
+16,CM Bishop,Machine learning,215,2006, toc.library.ethz.ch, Mach. Learn,… and Machine Learning … Computational learning theory … Learning the graph structure …,https://toc.library.ethz.ch/objects/pdf/e01_978-0387-31073-2_01.pdf,11
+13,"D Bzdok, M Krzywinski, N Altman",Machine learning: a primer,214,2017, pmc.ncbi.nlm.nih.gov, Nature methods,"… learning methods—for example, clustering and principal component analysis—as well as 
+supervised learning … This process is called machine learning (ML), a rapidly developing …",https://pmc.ncbi.nlm.nih.gov/articles/PMC5905345/,24
+58,H Daumé,A course in machine learning,197,2023, academia.edu,,"… This is in contrast to most existing machine learning texts, which tend to organize things … 
+A second goal of this book is to provide a view of machine learning that focuses on ideas and …",https://www.academia.edu/download/37276995/Course_in_Machine_Learning.pdf,66
+26,A Jung,Machine learning: the basics,194,2022, books.google.com,,"Machine learning (ML) has become a commonplace element in our everyday lives and a 
+standard tool for many fields of science and engineering. To make optimal use of ML, it is …",https://books.google.com/books?hl=en&lr=&id=1IBaEAAAQBAJ&oi=fnd&pg=PR8&dq=Machine+Learning&ots=XTaNzkuDZW&sig=0KJAGZxaTeaPg7Thvcg6yUN5M5c,48
+82,"Y Singh, PK Bhatia, O Sangwan",A review of studies on machine learning techniques,191,2007, books.google.com, International Journal of …,"… Machine learning system effectively “learns” how to estimate from training set of … using 
+machine-learning techniques. This paper presents the most commonly used machine learning …",https://books.google.com/books?hl=en&lr=&id=7xRB3hRaR2sC&oi=fnd&pg=PA70&dq=Machine+Learning&ots=J2p4ueE0gO&sig=-_q0zOjUPTCmnm5xszP-taMcrg8,10
+57,ZH Zhou,Open-environment machine learning,166,2022, academic.oup.com, National Science Review,"… open learning or open ML for short. Note that the name ‘open-world machine learning’ was 
+used to refer to machine learning with unseen class [1] or outof-distribution (OOD) data [2]. In …",https://academic.oup.com/nsr/article-pdf/doi/10.1093/nsr/nwac123/45957092/nwac123.pdf,42
+43,"M Paluszek, S Thomas",MATLAB machine learning,161,2016, books.google.com,,"… of machine learning than is normally done. We expand machine learning to include adaptive 
+and learning … from machine learning. Figure 1.3 shows how we organize the technology of …",https://books.google.com/books?hl=en&lr=&id=3kXODQAAQBAJ&oi=fnd&pg=PR6&dq=Machine+Learning&ots=ZNKvXJdesJ&sig=kcGI2kYGwOiE0QK8exJwqf0p3Ow,16
+22,TO Ayodele,Machine learning overview,156,2010, books.google.com, New Advances in Machine Learning,"… to machine learning as a means to overcome the knowledge acquisition bottleneck. This 
+book presents a taxonomic analysis of machine learning organized primarily by learning …",https://books.google.com/books?hl=en&lr=&id=XAqhDwAAQBAJ&oi=fnd&pg=PA9&dq=Machine+Learning&ots=r3JnaUFjPo&sig=7errP7izJLL93Nfg4dtrmNStxUE,10
+100,"JG Carbonell, RS Michalski, TM Mitchell",Machine learning: A historical and methodological analysis,155,1983, ojs.aaai.org, AI Magazine,"… of learning … constitutes the subject matter of machine learning Although machine learning 
+has been a … in machine lcwrning research This article examines some basic methodological …",https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/406,4
+77,A Burkov,Machine learning engineering,151,0,gobain.co.in,,"… Machine Learning Engineering Download PDF, Read Machine Learning Engineering Full 
+Collection Andriy Burkov, Read Best Book Online Machine Learning Engineering, Download …",https://www.saint-gobain.co.in/sites/saint-gobain.co.in/files/webform/apply_for_indec/_sid_/machine-learning-engineering-andriy-burkov-pdf-download-free-book-c6498c8.pdf,0
+96,"M Kubat, I Bratko, RS Michalski",A review of machine learning methods,127,1998, Citeseer, Machine learning and data mining …,"… many practical domains the application of machine learning leads to useful practical results. 
+… machine learning is to bear fruits: those that are acquainted with existing machine learning …",https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=e2f9cf5e6c13fe4244b0359c852747c1393c30ca,5
+61,AL Samuel,Machine learning,124,1959, cs.unh.edu, The Technology Review,"… The rise of machine learning ICML: International Conference on Machine Learning … 
+Linear algebra for machine learning: review Mar 16 …",https://www.cs.unh.edu/~mpetrik/teaching/intro_ml_17_files/class1.pdf,2
+55,"B Kelly, D Xiu",Financial machine learning,107,2023, nowpublishers.com, Foundations and Trends® in Finance,"… We survey the nascent literature on machine learning in the study of financial markets. We … 
+This survey is designed for both financial economists interested in grasping machine learning …",https://www.nowpublishers.com/article/Details/FIN-064,36

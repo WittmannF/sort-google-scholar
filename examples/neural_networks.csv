@@ -1,102 +1,201 @@
-Rank,Author,Title,Citations,Year,Source,cit/year
-11,Haykin,Neural networks: a comprehensive foundation,48157,1994,https://dl.acm.org/citation.cfm?id=541500,1926
-30,"Krizhevsky, I Sutskever, GE Hinton",Imagenet classification with deep convolutional neural networks,31347,2012,http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks,4478
-71, Bishop,Neural networks for pattern recognition,28627,1995,https://books.google.com/books?hl=en&lr=&id=T0S0BgAAQBAJ&oi=fnd&pg=PP1&dq=neural+networks&ots=jM6VwG4ykg&sig=LhxK2mYddRr29Dnd_wsprosOV_Y,1193
-39, Hopfield,Neural networks and physical systems with emergent collective computational abilities,19580,1982,http://www.pnas.org/content/79/8/2554.short,529
-13,"Hornik, M Stinchcombe, H White",Multilayer feedforward networks are universal approximators,16091,1989,https://www.sciencedirect.com/science/article/pii/0893608089900208,536
-58,"Hertz, A Krogh, RG Palmer",Introduction to the theory of neural computation.,9951,1991,http://psycnet.apa.org/record/1991-97470-000,355
-45," Narendra, K Parthasarathy",Identification and control of dynamical systems using neural networks,9433,1990,https://ieeexplore.ieee.org/abstract/document/80202/,325
-60,"Srivastava, G Hinton, A Krizhevsky…",Dropout: a simple way to prevent neural networks from overfitting,8929,2014,http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf?utm_content=buffer79b43&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer,1786
-20," Hagan, HB Demuth, MH Beale, O De Jesús",Could not catch title,8472,1996,"Look manually at: https://scholar.google.com/scholar?start=10&q=neural+networks&hl=en&as_sdt=0,5",368
-38," Hinton, RR Salakhutdinov",Reducing the dimensionality of data with neural networks,8073,2006,http://science.sciencemag.org/content/313/5786/504.short,621
-83, Ripley,Pattern recognition and neural networks,7777,2007,https://books.google.com/books?hl=en&lr=&id=m12UR8QmLqoC&oi=fnd&pg=PR9&dq=neural+networks&ots=aOLmlFVGVm&sig=gdLesvnjzBtxZ-QuIjUkU8WOO7M,648
-19,Kosko,Could not catch title,7341,0,"Look manually at: https://scholar.google.com/scholar?start=10&q=neural+networks&hl=en&as_sdt=0,5",4
-12, Fausett,Could not catch title,6351,0,"Look manually at: https://scholar.google.com/scholar?start=10&q=neural+networks&hl=en&as_sdt=0,5",3
-56," Chua, L Yang",Cellular neural networks: Applications,6290,1988,https://ieeexplore.ieee.org/abstract/document/7601/,203
-72,"Sutskever, O Vinyals, QV Le",Sequence to sequence learning with neural networks,5060,2014,http://papers.nips.cc/paper/5346-sequence-to-sequence-learnin,1012
-24," Haykin, SS Haykin, SS Haykin, SS Haykin",Neural networks and learning machines,5029,2009,http://plaza.ufl.edu/angelbar/courses/CAP6615_SPRING2012.pdf,503
-100,"Hinton, L Deng, D Yu, GE Dahl…",Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups,4866,2012,https://ieeexplore.ieee.org/abstract/document/6296526/,695
-1, Funahashi,On the approximate realization of continuous mappings by neural networks,4695,1989,http://www.academia.edu/download/47721709/0893-6080_2889_2990003-820160802-14248-1orp0y5.pdf,156
-66, Zurada,Introduction to artificial neural systems,4295,1992,http://www.jaicobooks.com/j/pdf%20hed/j-878%20artificial%20neural%20systems.pdf,159
-2, Specht,Probabilistic neural networks,4143,1990,https://www.sciencedirect.com/science/article/pii/089360809090049Q,143
-3,Schmidhuber,Deep learning in neural networks: An overview,4118,2015,https://www.sciencedirect.com/science/article/pii/S0893608014002135,1030
-82,"Glorot, Y Bengio",Understanding the difficulty of training deep feedforward neural networks,4108,2010,http://www.jmlr.org/proceedings/papers/v9/glorot10a/glorot10a.pdf?hc_location=ufi,456
-97, Møller,A scaled conjugate gradient algorithm for fast supervised learning,3569,1993,https://www.sciencedirect.com/science/article/pii/S0893608005800565,137
-22,Hornik,Approximation capabilities of multilayer feedforward networks,3213,1991,https://www.sciencedirect.com/science/article/pii/089360809190009T,115
-61,Pao,Adaptive pattern recognition and neural networks,3087,1989,https://www.osti.gov/biblio/5238955,103
-89,"Graves, A Mohamed, G Hinton",Speech recognition with deep recurrent neural networks,2910,2013,https://ieeexplore.ieee.org/abstract/document/6638947/,485
-93," Hunt, D Sbarbaro, R Żbikowski, PJ Gawthrop",Neural networks for control systems—a survey,2311,1992,https://www.sciencedirect.com/science/article/pii/000510989290053I,86
-74,Haykin,Kalman filtering and neural networks,2212,2004,https://books.google.com/books?hl=en&lr=&id=6dHEojwXU6MC&oi=fnd&pg=PR5&dq=neural+networks&ots=Z0j0MO1a2p&sig=jdBoNUcJ3tFFAlifFTvNeJmrVLI,147
-34,"Cochocki, R Unbehauen",Neural networks for optimization and signal processing,2152,1993,https://dl.acm.org/citation.cfm?id=562697,83
-98," Tsoukalas, RE Uhrig",Fuzzy and neural approaches in engineering,1945,1997,http://115.127.115.77:8080/xmlui/handle/123456789/909,88
-68," Hippert, CE Pedreira…",Neural networks for short-term load forecasting: A review and evaluation,1893,2001,https://ieeexplore.ieee.org/abstract/document/910780/,105
-4,Grossberg,"Nonlinear neural networks: Principles, mechanisms, and architectures",1830,1988,https://www.sciencedirect.com/science/article/pii/0893608088900214,59
-70, Sanger,Optimal unsupervised learning in a single-layer linear feedforward neural network,1776,1989,https://www.sciencedirect.com/science/article/pii/0893608089900440,59
-81,"Hornik, M Stinchcombe, H White",Universal approximation of an unknown mapping and its derivatives using multilayer feedforward networks,1662,1990,http://robotics.caltech.edu/wiki/images/5/53/HSH.pdf,57
-52,"Norgaard, O Ravn, NK Poulsen, LK Hansen",Could not catch title,1480,2000,"Look manually at: https://scholar.google.com/scholar?start=50&q=neural+networks&hl=en&as_sdt=0,5",78
-92, Patterson,Artificial neural networks: theory and applications,1392,1998,https://dl.acm.org/citation.cfm?id=521611,66
-84,"Lapedes, R Farber",Nonlinear signal processing using neural networks: Prediction and system modelling,1333,1987,https://www.osti.gov/biblio/5470451,42
-69," Diamantaras, SY Kung",Could not catch title,1315,1996,"Look manually at: https://scholar.google.com/scholar?start=60&q=neural+networks&hl=en&as_sdt=0,5",57
-8,Maass,Networks of spiking neurons: the third generation of neural network models,1297,1997,https://www.sciencedirect.com/science/article/pii/S0893608097000117,59
-37,Kohonen,An introduction to neural computing,1201,1988,https://www.sciencedirect.com/science/article/pii/0893608088900202,39
-9,"Baldi, K Hornik",Neural networks and principal component analysis: Learning from examples without local minima,1186,1989,https://www.sciencedirect.com/science/article/pii/0893608089900142,40
-77,"Graves, J Schmidhuber",Framewise phoneme classification with bidirectional LSTM and other neural network architectures,1128,2005,https://www.sciencedirect.com/science/article/pii/S0893608005001206,81
-73,"Zupan, J Gasteiger",Neural networks for chemists: an introduction,1110,1993,https://dl.acm.org/citation.cfm?id=562576,43
-62,"Leshno, VY Lin, A Pinkus, S Schocken",Multilayer feedforward networks with a nonpolynomial activation function can approximate any function,1092,1993,https://www.sciencedirect.com/science/article/pii/S0893608005801315,42
-55, Schalkoff,Could not catch title,1076,0,"Look manually at: https://scholar.google.com/scholar?start=50&q=neural+networks&hl=en&as_sdt=0,5",1
-10,Oja,"Principal components, minor components, and linear neural networks",996,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800899,37
-78, Looney,Could not catch title,904,1997,"Look manually at: https://scholar.google.com/scholar?start=70&q=neural+networks&hl=en&as_sdt=0,5",41
-16,White,Connectionist nonparametric regression: Multilayer feedforward networks can learn arbitrary mappings,811,1990,https://www.sciencedirect.com/science/article/pii/0893608090900045,28
-14,"Funahashi, Y Nakamura",Approximation of dynamical systems by continuous time recurrent neural networks,737,1993,https://www.sciencedirect.com/science/article/pii/S089360800580125X,28
-32,"Haykin, N Network",A comprehensive foundation,736,2004,https://ieeexplore.ieee.org/iel4/91/8807/x0153119.pdf,49
-49," Musavi, W Ahmed, KH Chan, KB Faris…",On the training of radial basis function classifiers,707,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800383,26
-88," Kung, SY Kung, SY Kung",Could not catch title,695,1993,"Look manually at: https://scholar.google.com/scholar?start=80&q=neural+networks&hl=en&as_sdt=0,5",27
-18," Pershin, M Di Ventra",Experimental demonstration of associative memory with memristive neural networks,682,2010,https://www.sciencedirect.com/science/article/pii/S0893608010000948,76
-7,"Sietsma, RJF Dow",Creating artificial neural networks that generalize,663,1991,https://www.sciencedirect.com/science/article/pii/0893608091900332,24
-95,Masters,Could not catch title,656,1995,"Look manually at: https://scholar.google.com/scholar?start=90&q=neural+networks&hl=en&as_sdt=0,5",27
-6,Kůrková,Kolmogorov's theorem and multilayer neural networks,614,1992,https://www.sciencedirect.com/science/article/pii/0893608092900128,23
-25,Hashem,Optimal linear combinations of neural networks,575,1997,https://www.sciencedirect.com/science/article/pii/S0893608096000986,26
-21,"Liu, Z Wang, X Liu",Global exponential stability of generalized recurrent neural networks with discrete and distributed delays,564,2006,https://www.sciencedirect.com/science/article/pii/S0893608005000833,43
-85,Hornik,Some new results on neural network approximation,540,1993,https://www.sciencedirect.com/science/article/pii/S089360800980018X,21
-15,Tsuda,Dynamic link of memory—chaotic memory map in nonequilibrium neural networks,538,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800292,20
-57," Amari, K Maginu",Statistical neurodynamics of associative memory,534,1988,https://www.sciencedirect.com/science/article/pii/0893608088900226,17
-40,Hech,Applications of counterpropagation networks,508,1988,https://www.sciencedirect.com/science/article/pii/0893608088900159,16
-26,"Chakraborty, K Mehrotra, CK Mohan, S Ranka",Forecasting the behavior of multivariate time series using neural networks,497,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800929,18
-41,G Lisboa,A review of evidence of health benefit from artificial neural networks in medical intervention,474,2002,https://www.sciencedirect.com/science/article/pii/S0893608001001113,28
-28,"Liao, G Chen, EN Sanchez",Delay-dependent exponential stability analysis of delayed neural networks: an LMI approach,460,2002,https://www.sciencedirect.com/science/article/pii/S0893608002000412,27
-67,"Matsuoka, M Ohoya, M Kawamoto",A neural net for blind separation of nonstationary signals,444,1995,https://www.sciencedirect.com/science/article/pii/089360809400083X,18
-42,"Scarselli, AC Tsoi","Universal approximation using feedforward neural networks: A survey of some existing methods, and some new results",440,1998,https://www.sciencedirect.com/science/article/pii/S089360809700097X,21
-33," Lisboa, AFG Taktak",The use of artificial neural networks in decision support in cancer: a systematic review,430,2006,https://www.sciencedirect.com/science/article/pii/S0893608005002844,33
-36," Blum, LK Li",Approximation theory and feedforward networks,429,1991,https://www.sciencedirect.com/science/article/pii/0893608091900479,15
-46,Ishikawa,Structural learning with forgetting,400,1996,https://www.sciencedirect.com/science/article/pii/0893608096836963,17
-54,"Battiti, AM Colla",Democracy in neural nets: Voting schemes for classification,391,1994,https://www.sciencedirect.com/science/article/pii/0893608094900469,16
-53, Amari,Information geometry of the EM and em algorithms for neural networks,385,1995,https://www.sciencedirect.com/science/article/pii/0893608095000038,16
-47,"Karhunen, J Joutsensalo","Generalizations of principal component analysis, optimization problems, and neural networks",358,1995,https://www.sciencedirect.com/science/article/pii/0893608094000987,15
-31,"Cao, D Zhou",Stability analysis of delayed cellular neural networks,356,1998,https://www.sciencedirect.com/science/article/pii/S089360809800080X,17
-48,"Anders, O Korn",Model selection in neural networks,346,1999,https://www.sciencedirect.com/science/article/pii/S0893608098001178,17
-23,Baba,A new approach for finding the global minimum of error function of neural networks,344,1989,https://www.sciencedirect.com/science/article/pii/089360808990021X,11
-17," Refenes, A Zapranis, G Francis",Stock performance modeling using neural networks: a comparative study with regression models,341,1994,https://www.sciencedirect.com/science/article/pii/0893608094900302,14
-51, Van Der Smagt,Minimisation methods for training feedforward neural networks,322,1994,https://www.sciencedirect.com/science/article/pii/0893608094900523,13
-65,Ghos,A new supervised learning algorithm for multiple spiking neural networks with application in epilepsy and seizure detection,311,2009,https://www.sciencedirect.com/science/article/pii/S0893608009000653,31
-43,Chen,Global exponential stability of delayed Hopfield neural networks,294,2001,https://www.researchgate.net/profile/Tianping_Chen/publication/285828588_Global_exponential_stability_of_delayed_Hopfield_neural_networks/links/567892f908ae0ad265c836aa.pdf,16
-91,Kohonen,Physiological interpretation of the self-organizing map algorithm,288,1993,https://www.sciencedirect.com/science/article/pii/S0893608009800014,11
-87,"Finnoff, F Hergert, HG Zimmermann",Improving model selection by nonconvergent methods,278,1993,https://www.sciencedirect.com/science/article/pii/S0893608005801224,11
-75," Nageswaran, N Dutt, JL Krichmar, A Nicolau…",A configurable simulation environment for the efficient simulation of large-scale spiking neural networks on graphics processors,273,2009,https://www.sciencedirect.com/science/article/pii/S0893608009001373,27
-64,"Wang, X Zou",Exponential stability of Cohen–Grossberg neural networks,268,2002,https://www.sciencedirect.com/science/article/pii/S0893608002000254,16
-29,Zak,Terminal attractors in neural networks,263,1989,https://www.sciencedirect.com/science/article/pii/0893608089900361,9
-59,Arik,An analysis of exponential stability of delayed neural networks with time varying delays,260,2004,https://www.sciencedirect.com/science/article/pii/S0893608004000267,17
-80,"Lampinen, A Vehtari",Bayesian approach for neural networks—review and case studies,260,2001,https://www.sciencedirect.com/science/article/pii/S0893608000000988,14
-76,"Blanco, M Delgado, MC Pegalajar",A real-coded genetic algorithm for training recurrent neural networks,256,2001,https://www.sciencedirect.com/science/article/pii/S0893608000000812,14
-86,"Chen, Z Zeng, P Jiang",Global Mittag-Leffler stability and synchronization of memristor-based fractional-order neural networks,239,2014,https://www.sciencedirect.com/science/article/pii/S089360801300292X,48
-79,"Wang, Y Liu, X Liu",State estimation for jumping recurrent neural networks with discrete and distributed delays,238,2009,https://www.sciencedirect.com/science/article/pii/S0893608008002359,24
-27,Matsuoka,Stability conditions for nonlinear continuous neural networks with asymmetric connection weights,232,1992,https://www.sciencedirect.com/science/article/pii/0893608092900117,9
-99,"Kaslik, S Sivasundaram",Nonlinear dynamics and chaos in fractional-order neural networks,226,2012,https://www.sciencedirect.com/science/article/pii/S0893608012000597,32
-90,"Cao, J Wang",Absolute exponential stability of recurrent neural networks with Lipschitz-continuous activation functions and time delays,222,2004,https://www.sciencedirect.com/science/article/pii/S0893608003002533,15
-35,"Shah, F Palmieri, M Datum",Optimal filtering algorithms for fast learning in feedforward neural networks,221,1992,https://www.sciencedirect.com/science/article/pii/S089360800580139X,8
-44,"Bornholdt, D Graudenz",General asymmetric neural networks and structure design by genetic algorithms,207,1992,https://www.sciencedirect.com/science/article/pii/S0893608005800309,8
-101,"Cao, L Li",Cluster synchronization in an array of hybrid coupled neural networks with delay,203,2009,https://www.sciencedirect.com/science/article/pii/S0893608009000355,20
-50,"Beaufays, Y Abde",Application of neural networks to load-frequency control in power systems,184,1994,https://www.sciencedirect.com/science/article/pii/0893608094900671,7
-94,Joy,Results concerning the absolute stability of delayed neural networks,182,2000,https://www.sciencedirect.com/science/article/pii/S0893608000000423,10
-63, Kreinovich,Arbitrary nonlinearity is sufficient to represent all functions by neural networks: a theorem,175,1991,https://www.sciencedirect.com/science/article/pii/089360809190074F,6
-96,"Baba, Y Mogami, M Kohzaki, Y Shiraishi, Y Yoshida",A hybrid algorithm for finding the global minimum of error function of neural networks and its applications,125,1994,https://www.sciencedirect.com/science/article/pii/089360809490006X,5
-5,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=neural+networks&hl=en&as_sdt=0,5",0
+Rank,Author,Title,Citations,Year,Publisher,Venue,Content,Source,cit/year
+41,S Haykin,Neural networks: a comprehensive foundation,64341,1994, dl.acm.org,,"… available of neural networks from an … networks, self-organizing systems, modular networks, 
+temporal processing and neurodynamics, and VLSI implementation of neural networks. …",https://dl.acm.org/doi/abs/10.5555/541500,2011
+83,CM Bishop,Neural networks for pattern recognition,38287,1995, books.google.com,,"… neural networks than previously available, which reflects these developments. By deliberately 
+concentrating on the pattern recognition aspects of neural networks, … , neural networks can …",https://books.google.com/books?hl=en&lr=&id=T0S0BgAAQBAJ&oi=fnd&pg=PP1&dq=Neural+Networks&ots=jO6YtHbBoj&sig=sQfWeBStJ_lkdre9S3QtlYQQGEc,1235
+66,"C Szegedy, W Zaremba, I Sutskever, J Bruna…",Intriguing properties of neural networks,19040,2013, arxiv.org, arXiv preprint arXiv …,"… high layers of neural networks. Second, we find that deep neural networks learn input-output 
+mappings that are fairly discontinuous to a significant extent. We can cause the network to …",https://arxiv.org/abs/1312.6199,1465
+78,RP Lippmann,An introduction to computing with neural nets,13180,1988, dl.acm.org, ACM SIGARCH Computer Architecture News,"… neural nets caused … neural nets by reviewing six important neural net models that can be 
+used for pattern classification. These nets are highly parallel building blocks that illustrate neural…",https://dl.acm.org/doi/abs/10.1145/44571.44572,347
+88,"N Carlini, D Wagner",Towards evaluating the robustness of neural networks,11007,2017, ieeexplore.ieee.org, 2017 ieee symposium on security and …,"… Unfortunately, neural networks are vulnerable to … neural networks in security-critical areas. 
+Defensive distillation is a recently proposed approach that can take an arbitrary neural network…",https://ieeexplore.ieee.org/abstract/document/7958570/,1223
+100,"J Gu, Z Wang, J Kuen, L Ma, A Shahroudy, B Shuai…",Recent advances in convolutional neural networks,7406,2018, Elsevier, Pattern recognition,"… of deep neural networks, convolutional neural networks have … research on convolutional 
+neural networks has been emerged … applications of convolutional neural networks in computer …",https://www.sciencedirect.com/science/article/pii/S0031320317304120,926
+68,"C Guo, G Pleiss, Y Sun…",On calibration of modern neural networks,7174,2017, proceedings.mlr.press, … conference on machine …,"… neural networks today are undoubtedly more accurate than they were a decade ago, we 
+discover with great surprise that modern neural networks … understand why neural networks have …",http://proceedings.mlr.press/v70/guo17a.html,797
+73,MA Nielsen,Neural networks and deep learning,6099,2015, aliosmangokcan.com,,"… artificial neurons – in this book, and in much modern work on neural networks, the main 
+neuron model used is one called the sigmoid neuron. We’ll get to sigmoid neurons shortly. But to …",http://aliosmangokcan.com/images/notes/yapay_sinir_agi_derin_ogrenme_pdf_ders_notu_e-book.pdf,554
+82,"AK Jain, J Mao, KM Mohiuddin",Artificial neural networks: A tutorial,5646,1996, ieeexplore.ieee.org, Computer,"Artificial neural nets (ANNs) are massively parallel systems with large numbers of … the basic 
+biological neuron and the artificial computational model. It outlines network architectures and …",https://ieeexplore.ieee.org/abstract/document/485891/,188
+28,"K O'shea, R Nash",An introduction to convolutional neural networks,5610,2015, arxiv.org, arXiv preprint arXiv:1511.08458,"… This paper has outlined the basic concepts of Convolutional Neural Networks, … the network 
+in most image analysis tasks. Research in the field of image analysis using neural networks …",https://arxiv.org/abs/1511.08458,510
+44,R Rojas,Neural networks: a systematic introduction,5481,2013, books.google.com,,"… available hardware for neural networks. We are still struggling with neural network theory, … 
+start our journey into the fascinating world of artificial neural networks without further delay. …",https://books.google.com/books?hl=en&lr=&id=4rESBwAAQBAJ&oi=fnd&pg=PA3&dq=Neural+Networks&ots=VCgdgR4VoT&sig=LRUOc7VDtlnakXg442u_DEHb8Aw,422
+90,"Z Li, F Liu, W Yang, S Peng…","A survey of convolutional neural networks: analysis, applications, and prospects",4736,2021, ieeexplore.ieee.org, … on neural networks and …,"… most representative neural networks in the field of deep learning. Computer vision based 
+on CNN … The emergence of CNNs cannot be separated from artificial neural networks (ANNs). …",https://ieeexplore.ieee.org/abstract/document/9451544/,947
+30,MH Hassoun,Fundamentals of artificial neural networks,4183,1995, books.google.com,,"… account of artificial neural network paradigms by … by neural network researchers. Such a 
+systematic and unified treatment, although sadly lacking in most recent texts on neural networks, …",https://books.google.com/books?hl=en&lr=&id=Otk32Y3QkxQC&oi=fnd&pg=PR19&dq=Neural+Networks&ots=de3TeGChQ7&sig=DHuq6HTrztuklWJqbef7TrkvHkc,135
+43,CC Aggarwal,Neural networks and deep learning,4148,2018, Springer,,"… of neural networks is an exciting one and evokes comparisons with science fiction, neural 
+networks … The neural network abstraction can be viewed as a modular approach of enabling …",https://link.springer.com/content/pdf/10.1007/978-3-031-29642-0.pdf,518
+77,X Yao,Evolving artificial neural networks,4010,1999, ieeexplore.ieee.org, Proceedings of the IEEE,"Learning and evolution are two fundamental forms of adaptation. There has been a great 
+interest in combining learning and evolution with artificial neural networks (ANNs) in recent …",https://ieeexplore.ieee.org/abstract/document/784219/,149
+57,"A Vedaldi, K Lenc",Matconvnet: Convolutional neural networks for matlab,3576,2015, dl.acm.org, Proceedings of the 23rd ACM international …,"MatConvNet is an open source implementation of Convolutional Neural Networks (CNNs) 
+with a deep integration in the MATLAB environment. The toolbox is designed with an …",https://dl.acm.org/doi/abs/10.1145/2733373.2807412,325
+2,K Gurney,An introduction to neural networks,3441,2018, taylorfrancis.com,,"… The term “Neural networks” is a very evocative one. It suggests machines that are … One of 
+the main tasks of this book is to demystify neural networks and show how, while they indeed …",https://www.taylorfrancis.com/books/mono/10.1201/9781315273570/introduction-neural-networks-kevin-gurney,430
+75,"A Cochocki, R Unbehauen",Neural networks for optimization and signal processing,2872,1993, dl.acm.org,,"… Artificial neural networks can be employed to solve a wide spectrum of problems in … 
+mathematics of neurocomputing, a review of neural network models and an analysis of their …",https://dl.acm.org/doi/abs/10.5555/562697,87
+97,"ZH Zhou, J Wu, W Tang",Ensembling neural networks: many could be better than all,2790,2002, Elsevier, Artificial intelligence,"… neural networks are jointly used to solve a problem. In this paper, the relationship between 
+the ensemble and its component neural networks is … of all of the neural networks at hand. This …",https://www.sciencedirect.com/science/article/pii/S000437020200190X,116
+10,B Yegnanarayana,Artificial neural networks,2436,2009, books.google.com,,"… problem to suit an existing neural network architecture is considered for illustration. The 
+chapter also analyzes issues in the development of neural network models for practical problems…",https://books.google.com/books?hl=en&lr=&id=RTtvUVU_xL4C&oi=fnd&pg=PR9&dq=Neural+Networks&ots=Gea1ylELOC&sig=rtt6PdmnE1f4Q5Deg4ebDA2GzNQ,143
+4,JA Anderson,An introduction to neural networks,2209,1995, books.google.com,,"… This book introduces some important neural network algorithms and has been used as a 
+textbook for a college-level neural network course. The main emphasis is on the biology and …",https://books.google.com/books?hl=en&lr=&id=_ib4vPdB76gC&oi=fnd&pg=PP11&dq=Neural+Networks&ots=WdcwO9COSe&sig=gwFveI7MfBazCeOy2OlGHm5CW8E,71
+17,"WT Miller, RS Sutton, PJ Werbos",Neural networks for control,1804,1995, books.google.com,,"… the art in the use of neural networks for control. By neural networks we mean engineered 
+computational … Today neural networks are actively explored in artificial intelligence, psychology, …",https://books.google.com/books?hl=en&lr=&id=prjMtIr_yT8C&oi=fnd&pg=PR2&dq=Neural+Networks&ots=-4P3ow-9mm&sig=kqVOxsWhECoHMUveew52epDSFxk,58
+53,"B Cheng, DM Titterington",Neural networks: A review from a statistical perspective,1750,1994, JSTOR, Statistical science,"… statistical readership about Artificial Neural Networks (ANNs), … In each case, we describe 
+the neural network architectures … ), Hopfield-type recurrent networks (including probabilistic …",https://www.jstor.org/stable/2246275,55
+54,"K Mehrotra, CK Mohan, S Ranka",Elements of artificial neural networks,1672,1997, books.google.com,,"… The neural network of an animal is part of its nervous system, containing a large number of 
+… in neural networks, and address four important questions regarding neural network systems. …",https://books.google.com/books?hl=en&lr=&id=6d68Y4Wq_R4C&oi=fnd&pg=PR13&dq=Neural+Networks&ots=6uB9S1G2B7&sig=AZzDHT7oETVhKAbRzngkxK_JPNo,58
+36,"LR Medsker, L Jain",Recurrent neural networks,1610,2001, academia.edu, Design and Applications,"… Recurrent neural networks have been an interesting and important part of neural network … 
+This book is a summary of work on recurrent neural networks and is exemplary of current …",https://www.academia.edu/download/31279335/___Recurrent_Neural_Networks_Design_And_Applicatio(BookFi.org).pdf,64
+60,D Graupe,Principles of artificial neural networks,1594,2013, books.google.com,,"… the main claim of Neural Networks, namely the claim of its … neural networks are and will 
+play a major role. This case study also compares performances of two different neural networks …",https://books.google.com/books?hl=en&lr=&id=Zz27CgAAQBAJ&oi=fnd&pg=PR7&dq=Neural+Networks&ots=wHdkPCXPJM&sig=SnLyk_EcQc92kaVhNa_MDb-TqkM,123
+33,J Heaton,Introduction to neural networks with Java,1580,2008, books.google.com,,"… neural network programming using Java. It focuses on the feedforward neural network, but 
+also covers Hopfield neural networks… Chapter 1 provides an overview of neural networks. You …",https://books.google.com/books?hl=en&lr=&id=Swlcw7M4uD8C&oi=fnd&pg=PR21&dq=Neural+Networks&ots=TMx8P5hZx-&sig=yKWC4d10MY3VieCm1LIQNiSaPcA,88
+95,"PM Atkinson, ARL Tatnall",Introduction neural networks in remote sensing,1508,1997, Taylor & Francis, International Journal of remote sensing,"… of neural networks in remote sensing. The feed-forward back-propagation multi-layer perceptron 
+(MLP) is the type of neural network … some other types of neural network are mentioned. …",https://www.tandfonline.com/doi/abs/10.1080/014311697218700,52
+5,"B Müller, J Reinhardt, MT Strickland",Neural networks: an introduction,1441,2012, books.google.com,,"… neural network models. Even in the most successful areas of application of neural networks, 
+ie … recognition has not yet been solved by neural networks in a satisfactory way, although we …",https://books.google.com/books?hl=en&lr=&id=on0QBwAAQBAJ&oi=fnd&pg=PA3&dq=Neural+Networks&ots=e4tFJVDATc&sig=FD20tQA4aHFTyA95m46Zn1bIQuk,103
+7,"S Haykin, N Network",A comprehensive foundation,1430,2004, ieeexplore.ieee.org, Neural networks,"Written from an engineering perspective, NEURAL NETWORKS provides a comprehensive, 
+up-… and is filled with examples so that readers can see real applications of neural networks. …",https://ieeexplore.ieee.org/iel4/91/8807/x0153119.pdf,65
+3,CM Bishop,Neural networks and their applications,1406,1994, pubs.aip.org, Review of scientific instruments,"… , and where neural network techniques have much to offer. Of the many neural network 
+models … respectively as the multilayer perceptron and the radial basis function network. These …",https://pubs.aip.org/aip/rsi/article-abstract/65/6/1803/682910,44
+20,K Swingler,Applying neural networks: a practical guide,1282,1996, books.google.com,,"… neural network technology to real world applications. With this book and a neural network 
+… able to confidently run and manage a neural computing based project. The base techniques …",https://books.google.com/books?hl=en&lr=&id=bq0YnP4BNKsC&oi=fnd&pg=PA3&dq=Neural+Networks&ots=BYGwKQgNOh&sig=rwRHHW3KCFW-CEWvnmPTj6B38HQ,43
+59,"J Zupan, J Gasteiger",Neural networks for chemists: an introduction,1241,1993, dl.acm.org,,"… fully understood concept of neural networks. The authors pinpoint the five most widely used 
+… apply neural networks to their problems, either with a commercial neural network package …",https://dl.acm.org/doi/abs/10.5555/562575,38
+26,SC Wang,Artificial neural network,1225,2003, Springer, Interdisciplinary computing in java programming,"… fiction, we, in this chapter, consider artificial neural networks as universal function 
+approximators. Especially, we introduce neural networks which are suited for time series forecasts. …",https://link.springer.com/chapter/10.1007/978-1-4615-0377-4_5,53
+8,H Adeli,Neural networks in civil engineering: 1989–2000,1151,2001, Wiley Online Library, Computer‐Aided Civil and Infrastructure Engineering,"… neural network application in civil/structural engineering was published in this journal in 
+1989. This article reviews neural network … Neural networks articles published in other civil engi…",https://onlinelibrary.wiley.com/doi/abs/10.1111/0885-9507.00219,46
+65,J Wu,Introduction to convolutional neural networks,1138,2017, project.inria.fr, National Key Lab for Novel Software Technology …,"… This is a note that describes how a Convolutional Neural Network (CNN) operates from a … 
+The Convolutional Neural Network (CNN) has shown excellent performance in many …",https://project.inria.fr/quidiasante/files/2021/06/CNN.pdf,126
+27,G Dreyfus,Neural networks: methodology and applications,1129,2005, books.google.com,,"… of neural networks and related machine-learning techniques is definitely not due to brain 
+imitation. In the present book, we show that artificial neural networks … neural networks contribute …",https://books.google.com/books?hl=en&lr=&id=-feS13CoyS4C&oi=fnd&pg=PR17&dq=Neural+Networks&ots=2jLepSkGBq&sig=5vwL6NdXANO0AIDgO-Gij6_ExEQ,54
+35,F Crick,The recent excitement about neural networks,1126,1989, apsc450computationalneuroscience …, Nature,"… recent computer algorithms for neural networks seemed to promise a … neural nets are 
+unrealistic in important respects. THERE has been a lot of excitement recently about neural nets…",https://apsc450computationalneuroscience.wordpress.com/wp-content/uploads/2019/01/crick1989.pdf,30
+12,"A Novikov, D Podoprikhin, A Osokin…",Tensorizing neural networks,1124,2015, proceedings.neurips.cc, Advances in neural …,"… We will refer to a neural network with one or … neural network with 1024 hidden units and 
+replace both fully-connected layers by the TT-layers. By setting all the TT-ranks in the network to …",https://proceedings.neurips.cc/paper/2015/hash/6855456e2fe46a9d49d3d3af4f57443d-Abstract.html,102
+62,"KL Priddy, PE Keller",Artificial neural networks: an introduction,1105,2005, books.google.com,,"… descriptions for many of the artificial neural networks presented in this book, are cited in the 
+… neural-network algorithms is provided in the appendixes as well. Artificial neural networks …",https://books.google.com/books?hl=en&lr=&id=BrnHR7esWmkC&oi=fnd&pg=PP13&dq=Neural+Networks&ots=UA2yVmbFMU&sig=DBZga7pCMNJn0g7f83TjKRS9keA,53
+48,A Krogh,What are artificial neural networks?,1102,2008, nature.com, Nature biotechnology,"… Artificial neural networks are inspired by the early models of sensory processing by the 
+brain. An artificial neural network can be created by simulating a network of model neurons …",https://www.nature.com/articles/nbt1386,61
+22,"F Günther, S Fritsch",neuralnet: Training of neural networks,1077,2010, digitalcommons.unl.edu,,"… This makes artificial neural networks a valuable statistical tool… to train the neural network 
+and the neural network learns an … corresponding neuron, and all data pass the neural network …",https://digitalcommons.unl.edu/r-journal/316/,67
+85,BD Ripley,Neural networks and related methods for classification,1030,1994, Wiley Online Library, Journal of the Royal Statistical Society: Series B …,"… , machine learning and neural networks as well as multivariate … contains surprisingly little 
+about neural networks, but this … in neural networks are not about the networks per se (Section 2) …",https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1994.tb01990.x,32
+87,BC Csáji,Approximation with artificial neural networks,1008,2001, researchgate.net, Faculty of Sciences  Etvs Lornd University  Hungary,"… be solved with neural networks? First we examine the feedforward neural networks without 
+… Next we show that every boolean function can be computed by a feedforward neural network …",https://www.researchgate.net/profile/Balazs-Csaji/publication/357888472_Approximation_with_Artificial_Neural_Networks/links/61e5b56c5779d35951b55282/Approximation-with-Artificial-Neural-Networks.pdf,40
+70,"M McCord-Nelson, WT Illingworth",A practical guide to neural nets,994,1991, dl.acm.org,,"… In an earlier review (review 9301-0009), I compared introductory books on artificial neural 
+networks (ANNs) published during the last couple of years. A common weakness of all nine …",https://dl.acm.org/doi/abs/10.5555/103993,28
+61,B Hkdh,Neural networks in materials science,961,1999, jstage.jst.go.jp, ISIJ international,"… Neural network analysis is a form of regression or classification … to neural networks and 
+contains a review of someapp]ications of the technique in the context of materia]s science. …",https://www.jstage.jst.go.jp/article/isijinternational1989/39/10/39_10_966/_article/-char/ja/,36
+80,"G Bebis, M Georgiopoulos",Feed-forward neural networks,933,1994, ieeexplore.ieee.org, Ieee Potentials,"… network size for a given application. Network size involves in the case of layered neural 
+network architectures, the number of layers in a network, the number of nodes per layer, and the …",https://ieeexplore.ieee.org/abstract/document/329294/,29
+99,R Yuste,From the neuron doctrine to neural networks,914,2015, nature.com, Nature reviews neuroscience,"… The subsequent growth of neural network models is discussed, highlighting results obtained 
+with new multineuronal recording methods. I suggest that neuronal network models could …",https://www.nature.com/articles/nrn3962,83
+6,"J Zou, Y Han, SS So",Overview of artificial neural networks,817,2009, Springer, Artificial neural networks: methods and applications,"… neural network gives birth to an artificial neural network (ANN). In this chapter, we first discuss 
+the biological neural networks … Finally, we review several examples of neural networks. …",https://link.springer.com/protocol/10.1007/978-1-60327-101-1_2,48
+72,JJ Hopfield,Artificial neural networks,785,1988, ieeexplore.ieee.org, IEEE Circuits and Devices Magazine,"… To understand how neural networks compute, we will examine the electronic circuit of an 
+artificial neural network. The elements of the hardware (Fig. 4) are a set of amplifiers with …",https://ieeexplore.ieee.org/abstract/document/8118/,21
+31,"A Lapedes, R Farber",How neural nets work,770,1987, proceedings.neurips.cc, Neural information processing …,"… neural network operation and relates neural networks to well … been displayed in neural 
+network's capabilities to perform a … done on the ability of neural networks to process floating point …",https://proceedings.neurips.cc/paper/1987/hash/093f65e080a295f8076b1c5722a46aa2-Abstract.html,20
+39,"D Anderson, G McNeill",Artificial neural networks technology,754,1992, academia.edu, Kaman Sciences Corporation,"… neural network models make today's neural networks just simple abstractions of the real 
+neural networks … As this research continues, more powerful self learning networks may become …",https://www.academia.edu/download/33786328/Artificial_Neural_Networks_Technology.pdf,22
+25,T Khanna,Foundations of neural networks,750,1990, dl.acm.org,,"… neural networks as emphasized in Rumelhart and McClelland [4,5]. The emphasis in this 
+review is on neurally inspired computers or artificial neural networks (… ) of neural networks for …",https://dl.acm.org/doi/abs/10.5555/103991,21
+98,"M Feindt, U Kerzel",The NeuroBayes neural network package,750,2006, Elsevier, Nuclear Instruments and Methods in Physics Research …,"… We present a sophisticated neural network package based on Bayesian statistics which can 
+… The network provides numerous possibilities to automatically preprocess the input variables …",https://www.sciencedirect.com/science/article/pii/S0168900205022679,38
+23,GE Hinton,How neural networks learn from experience,739,1992, JSTOR, Scientific American,"… by creating networks of artificial neurons. We con struct these neural networks by first trying 
+… our models are necessarily gross idealizations of real networks of neurons. Naturally, we en …",https://www.jstor.org/stable/24939221,22
+11,"DE Rumelhart, B Widrow, MA Lehr",The basic ideas in neural networks,721,1994, go.gale.com, Communications of the ACM,"… of such neural network systems; … neuron as the basic processing unit. Each such processing 
+unit is characterized by an activity level (representing the state of polarization of a neuron…",https://go.gale.com/ps/i.do?id=GALE%7CA15061351&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00010782&p=AONE&sw=w,23
+15,"J Yu, L Yang, N Xu, J Yang, T Huang",Slimmable neural networks,718,2018, arxiv.org, arXiv preprint arXiv:1812.08928,"… We present a simple and general method to train a single neural network executable at 
+different … individual networks with different width configurations, we train a shared network with …",https://arxiv.org/abs/1812.08928,90
+29,"A Krenker, J Bešter, A Kos",Introduction to the artificial neural networks,702,2011, researchgate.net, Artificial Neural Networks …,"… Although the working principles and simple set of rules of artificial neuron looks like nothing 
+… them into artificial neural networks (Fig. 2.). These artificial neural networks use simple fact …",https://www.researchgate.net/profile/Kenji-Suzuki-2/publication/319316102_Artificial_Neural_Networks_-_Methodological_Advances_and_Biomedical_Applications/links/59a42f16aca272a6461bb35e/Artificial-Neural-Networks-Methodological-Advances-and-Biomedical-Applications.pdf#page=15,47
+56,"AD Dongare, RR Kharde, AD Kachare",Introduction to artificial neural network,666,2012, Citeseer, International Journal of …,"… Neural Network (ANN) as a tool for analysis of different parameters of a system. An Artificial 
+Neural Network … The neuron performs two functions, namely, collection of inputs & generation …",https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=04d0b6952a4f0c7203577afc9476c2fcab2cba06,48
+37,"B Warner, M Misra",Understanding neural networks as statistical tools,648,1996, Taylor & Francis, The american statistician,"… neural networks. We compare the performance of regression analysis with that of neural 
+networks on … We show that neural networks act as a type of nonparametric regression model, …",https://www.tandfonline.com/doi/abs/10.1080/00031305.1996.10473554,22
+50,J Bouvrie,Notes on convolutional neural networks,642,2006, mit.edu,,"… network automatically provides some degree of translation invariance. This particular kind 
+of neural network … of classical backpropagation in fully connected networks, followed by a …",http://web.mit.edu/jvb/www/papers/cnn_tutorial.pdf,32
+89,D Saad,On-line learning in neural networks,636,1999, dl.acm.org,,"… This paper focuses on online learning procedures for locally recurrent neural nets with 
+emphasis on multilayer perceptron (MLP) with infinite impulse response (IIR) synapses and its …",https://dl.acm.org/doi/abs/10.5555/304710,24
+19,"Y Wu, J Feng",Development and application of artificial neural network,627,2018, Springer, Wireless Personal Communications,"… Therefore, this paper reviews and summarizes artificial neural network, and hopes that … 
+neural network. This paper first reviews the development history of artificial neural network and its …",https://link.springer.com/article/10.1007/s11277-017-5224-x,78
+9,J Lawrence,Introduction to neural networks,605,1993, dl.acm.org,,"… The true neural network story starts with chapter 6, “Neural Network Theory,” and 
+proceeds with two chapters on neural network models—an overview of models in chapter 7 …",https://dl.acm.org/doi/abs/10.5555/184210,18
+21,DM Skapura,Building neural networks,592,1996, books.google.com,,"… information processing, a review chapter in which I summarize the operation of the most 
+popular neural network processing models, a chapter dedicated to the practical issues of …",https://books.google.com/books?hl=en&lr=&id=RaRbNBqGR1oC&oi=fnd&pg=PA1&dq=Neural+Networks&ots=2lfASpdrF8&sig=GOcBTQmozQFtiiPhU9zFiUYt5FI,20
+71,"J Gasteiger, J Zupan",Neural networks in chemistry,557,1993, Wiley Online Library, Angewandte Chemie International …,"… In this review the term neural networks always refers to “artificial neural networks”, because 
+these were developed in order to emulate the biological neural networks of the human brain. …",https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.199305031,17
+81,"HH Aghdam, EJ Heravi",Guide to convolutional neural networks,555,2017, Springer, New York  NY: Springer,"… In order to design a neural network, one must have the basic knowledge about the 
+underlying process of neural network and training algorithms. Implementing a neural network …",https://link.springer.com/content/pdf/10.1007/978-3-319-57550-6.pdf,62
+13,AI Galushkin,Neural networks theory,544,2007, books.google.com,,"… neural networks operating on nonstationary patterns, selection of initial conditions for neural 
+network adjustment, design of neural … neural network functional liability, and neural network …",https://books.google.com/books?hl=en&lr=&id=ULds8NuzLtkC&oi=fnd&pg=PA1&dq=Neural+Networks&ots=0licMl9ecm&sig=jDQq1fNPwW0sHbdlKiSp4KYsO70,29
+40,S Walczak,Artificial neural networks,504,0,global.com,,"This chapter examines the history of artificial neural networks research through the present 
+day. The components of artificial neural network architectures and both unsupervised and …",https://www.igi-global.com/chapter/artificial-neural-networks/183727,0
+14,"E Grossi, M Buscema",Introduction to artificial neural networks,474,2007, journals.lww.com, European journal of gastroenterology & …,"The coupling of computer science and theoretical bases such as nonlinear dynamics and 
+chaos theory allows the creation of ‘intelligent’agents, such as artificial neural networks (ANNs)…",https://journals.lww.com/eurojgh/FullText/2007/12000/Introduction_to_artificial_neural_networks.5.aspx,25
+49,C Gershenson,Artificial neural networks for beginners,464,2003, arxiv.org, arXiv preprint cs/0308031,"… There are a wide variety of ANNs that are used to model real neural networks, and study … 
+This exercise is to become familiar with artificial neural network concepts. Build a network …",https://arxiv.org/abs/cs/0308031,20
+16,"M Alber, S Lapuschkin, P Seegerer, M Hägele…",iNNvestigate neural networks!,462,2019, jmlr.org, Journal of machine …,"… the most complex neural network architectures. Despite these arguments neural networks are 
+… analysis of image classifications for variety of state-of-the-art neural network architectures. …",http://www.jmlr.org/papers/v20/18-540.html,66
+64,"DB Fogel, LJ Fogel, VW Porto",Evolving neural networks,447,1990, Springer, Biological cybernetics,"… Neural networks are parallel processing structures that provide the capability to perform various 
+pattern recognition tasks. A network … for training a general neural network. This approach …",https://link.springer.com/article/10.1007/BF00199581,12
+76,"MW Craven, JW Shavlik",Using neural networks for data mining,447,1997, Elsevier, Future generation computer systems,"… In Section 2, we consider the applicability of neuralnetwork methods to the task of data … to 
+consider using neural networks for such tasks, and we discuss why trained neural networks are …",https://www.sciencedirect.com/science/article/pii/S0167739X97000228,15
+67,"KL Du, MNS Swamy",Neural networks in a softcomputing framework,441,2006, books.google.com,,"… , we, however, decided to write an advanced textbook on neural networks for graduate 
+students. More specifically, neural networks can be used in system identification, control, …",https://books.google.com/books?hl=en&lr=&id=FUA4BcSCRt4C&oi=fnd&pg=PR23&dq=Neural+Networks&ots=S-CkshnYfK&sig=REBU3qH0NtOoZwCW7n4C2bMYpS8,22
+96,"AN Michel, JA Farrell, W Porod",Qualitative analysis of neural networks,426,1989, ieeexplore.ieee.org, IEEE Transactions on Circuits …,"… networks. The results of the present paper are primarily concerned with the analysis of the 
+recall abilities of neural networks (by … in neural network design and in neural network learning …",https://ieeexplore.ieee.org/abstract/document/20200/,12
+84,D Hammerstrom,Neural networks at work,402,1993, ieeexplore.ieee.org, IEEE spectrum,"The benefits of neural networks and the types of application for which they are suited are 
+outlined. Four representative applications are described in enough detail to show how they …",https://ieeexplore.ieee.org/abstract/document/214579/,12
+38,"P Picton, P Picton",What is a neural network?,398,1994, Springer,,"… Neural networks are pattern classifiers, but not all pattern classifiers are neural networks. 
+The next step is therefore to introduce some other features that distinguish neural networks …",https://link.springer.com/content/pdf/10.1007/978-1-349-13530-1_1.pdf,12
+63,PJ Antsaklis,Neural networks for control systems,395,1990, nd.edu, IEEE Transactions on Neural Networks,"… to neural networks is given in [l], where the emphasis is toward pattern recognition, an area 
+that is particularly well suited for neural network applications. Neural networks have been the …",https://www3.nd.edu/~pantsakl/Publications/80-CSM90.pdf,11
+74,"M Caudill, C Butler",Understanding neural networks; computer explorations,378,1992, dl.acm.org,,"… of Recurrent Neural Network architectures. We explored the chaotic nature of state-of-the-art 
+Recurrent Neural Networks: Vanilla Recurrent Network and Recurrent Highway Networks. …",https://dl.acm.org/doi/abs/10.5555/573651,11
+58,S Grossberg,Recurrent neural networks,367,2013, scholarpedia.org, Scholarpedia,"… Since this work focused on individual neurons rather than neural networks, it will not be … 
+of neural networks that form the foundation of most current biological neural network research (…",http://scholarpedia.org/article/Recurrent_neural_network,28
+24,"MT Hagan, HB Demuth",Neural networks for control,364,1999, ieeexplore.ieee.org, Proceedings of the 1999 American …,"… neural networks and to explain how they can be used in control systems. We introduce the 
+multilayer perceptron neural network … Care must be taken, when training perceptron networks, …",https://ieeexplore.ieee.org/abstract/document/786109/,13
+93,D Hammerstrom,Working with neural networks,362,1993, ieeexplore.ieee.org, IEEE spectrum,"… These topics are the focus of this article, the second of two on neural networks [see “Neural 
+networks at work,” June, pp. 26-321. Like other pattern recognition techniques, neural …",https://ieeexplore.ieee.org/abstract/document/222230/,11
+34,P Peretto,An introduction to the modeling of neural networks,354,1992, books.google.com,,"… The second part is devoted to the dynamics of neuronal states, and … neural networks in 
+artificial intelligence, expert systems, optimization problems, and the construction of actual neural …",https://books.google.com/books?hl=en&lr=&id=DsT8oq1giP4C&oi=fnd&pg=PR13&dq=Neural+Networks&ots=6kzsjftfUx&sig=-VBAHQstz3_fB6SMr3DpnzhHnfg,10
+1,"H Abdi, D Valentin, B Edelman",Neural networks,336,1999, books.google.com,,"… Because neural network models have strong relationships with statistical models, we also 
+discuss the interpretation of neural networks as statistical models in each chapter. The models …",https://books.google.com/books?hl=en&lr=&id=ZEID3w9STOUC&oi=fnd&pg=PP7&dq=Neural+Networks&ots=sALyzYXFWL&sig=4wMgiZnM5HtJEeC10aiyPBqHqyU,12
+32,"M Kim, P Smaragdis",Bitwise neural networks,330,2016, arxiv.org, arXiv preprint arXiv:1601.06071,"… a neural network that efficiently represents a set of Boolean functions between all binary 
+inputs and outputs, we propose a process for developing and deploying neural networks whose …",https://arxiv.org/abs/1601.06071,33
+45,HS Stern,Neural networks in applied statistics,320,1996, Taylor & Francis, Technometrics,"… The multilayer feedforward neural network uses a nonlinear function of the predictors to … 
+specifying a neural network model and evaluate the accuracy of neural network models relative …",https://www.tandfonline.com/doi/abs/10.1080/00401706.1996.10484497,11
+79,"K Xu, J Li, M Zhang, SS Du, K Kawarabayashi…",What can neural networks reason about?,319,2019, arxiv.org, arXiv preprint arXiv …,"… We begin by introducing notations and summarizing common neural networks for reasoning 
+tasks. Let S denote the universe, ie, a configuration/set of objects to reason about. Each …",https://arxiv.org/abs/1905.13211,46
+94,"O Moselhi, T Hegazy, P Fazio",Neural networks as tools in construction,310,1991, ascelibrary.org, Journal of construction engineering …,"… Neural networks research in AI has recently provided … In this paper, neural networks 
+are introduced as a promising … Basic neural network architectures are described, and their …",https://ascelibrary.org/doi/abs/10.1061/(ASCE)0733-9364(1991)117:4(606),9
+52,"GX Ritter, P Sussner",An introduction to morphological neural networks,283,1996, ieeexplore.ieee.org, Proceedings of 13th International …,"… network In this paper we introduce a novel class of neural networks, called morphological 
+neural networks… of the sum of products, morphological network computation is nonlinear before …",https://ieeexplore.ieee.org/abstract/document/547657/,9
+46,RE Uhrig,Introduction to artificial neural networks,274,1995, ieeexplore.ieee.org,21st Annual Conference …,"… Indeed, neural networks exhibit characteristics and … This paper presents a brief tutorial on 
+neural networks and … of a network of neurons, commonly called neural networks. The brain …",https://ieeexplore.ieee.org/abstract/document/483329/,9
+42,H Abdi,A neural network primer,261,1994, World Scientific, Journal of Biological Systems,"… networks: the very popular back-propagation network, and the radial basis function network, 
+a relative newcomer to the field of neural networks … Most neural networks can be interpreted …",https://www.worldscientific.com/doi/abs/10.1142/S0218339094000179,8
+51,"G Desjardins, K Simonyan…",Natural neural networks,240,2015, proceedings.neurips.cc, Advances in neural …,"… of the neural network weights by implicitly whitening the representation obtained at each 
+layer, while preserving the feed-forward computation of the network. Such networks can be …",https://proceedings.neurips.cc/paper_files/paper/2015/hash/2de5d16682c3c35007e4e92982f1a2ba-Abstract.html,22
+47,"Z Zhang, Z Zhang",Artificial neural network,234,2018, Springer, Multivariate time series analysis in climate and …,"… is connected to every neuron in the next layer, then this kind of neural network is called fully 
+… network is the network with one hidden layer and one output layer. If such network has m …",https://link.springer.com/chapter/10.1007/978-3-319-67340-0_1,29
+86,"E Domany, JL van Hemmen, K Schulten",Models of neural networks I,222,2012, books.google.com,,"… Each neuron is itself a complex device which compares and … of information processing in 
+neural networks have developed at … We intend the new series Physics of Neural Networks to be …",https://books.google.com/books?hl=en&lr=&id=ASbqCAAAQBAJ&oi=fnd&pg=PA1&dq=Neural+Networks&ots=6dP1Chezuf&sig=5YWUW5uFQkZHWmtnQ-WmPYi7oTM,16
+18,PA Jansson,Neural networks: An overview,220,1991, ACS Publications, Analytical chemistry,"… “neural network” bring a hopeful vision to scientists and engineers … The neural network 
+exemplifies the paradox that the … Irrespective of the ebb and flow of neural-net enthusiasm, two …",https://pubs.acs.org/doi/pdf/10.1021/ac00006a739,6
+69,"PD Wasserman, T Schwartz",Neural networks. II. What are they and why is everybody so interested in them now?,219,1988, ieeexplore.ieee.org, IEEE expert,"… A brief history of neural network research is followed by a discussion of their architectures 
+… every other neural network training algorithm, is described. The outlook for neural nets is …",https://ieeexplore.ieee.org/abstract/document/2091/,6
+55,GJ Taylor,Neural networks and their applications,214,1996, dl.acm.org,,"… and strength of the subject of neural networks in solving hard problems. … the applications of 
+neural networks in automotive and … papers on the applications of neural networks to finance. …",https://dl.acm.org/doi/abs/10.5555/547948,7
+91,XS Zhang,Neural networks in optimization,146,2000, books.google.com,,"… We not only anticipate that there will be neural computers with intelligence but we also 
+believe that the research results of artificial neural networks might lead to new algorithms on von …",https://books.google.com/books?hl=en&lr=&id=VpcMhviVDfMC&oi=fnd&pg=PR9&dq=Neural+Networks&ots=ZxKnf5bTHI&sig=hmhpjOxI7j8W-B43ZEv4XFqzop0,6
+92,U an der Heiden,Analysis of neural networks,101,2013, books.google.com,,"… treatment of activity in neural networks from a mathematical point of … Moreover there are other 
+approaches to neural network … average behavior of neurons or neuron pools. In this respect …",https://books.google.com/books?hl=en&lr=&id=5u3uCAAAQBAJ&oi=fnd&pg=PA1&dq=Neural+Networks&ots=EQ68AJtQk4&sig=CoI9m95Ik86DlyuniocoHPLWwU0,8
