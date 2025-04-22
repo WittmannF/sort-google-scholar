@@ -79,6 +79,20 @@ class TestSortGS(unittest.TestCase):
         ]
         self.assertEqual(top_5_titles, expected_titles)
 
+    def test_pdf_links(self):
+        """Check if the PDF column exists and the first PDF matches expected filename"""
+        df = self.df_top_10_cli
+
+        # Check if the 'PDF' column exists
+        self.assertIn("PDF", df.columns)
+
+        # Check if the first PDF contains the expected filename
+        first_pdf = df.PDF.values[0]
+        self.assertTrue(
+            "9781107057135_foreword_pdf_1.pdf" in first_pdf,
+            f"Expected PDF filename not found in: {first_pdf}",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
