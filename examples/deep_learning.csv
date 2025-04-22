@@ -1,112 +1,200 @@
-Rank,Author,Title,Citations,Year,Source,cit/year
-62,"He, X Zhang, S Ren, J Sun",Deep residual learning for image recognition,18458,2016,http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html,4614
-1,"LeCun, Y Bengio, G Hinton",Deep learning,13142,2015,https://www.nature.com/articles/nature14539,2628
-68," Hinton, S Osindero, YW Teh",A fast learning algorithm for deep belief nets,9883,2006,https://www.mitpressjournals.org/doi/abs/10.1162/neco.2006.18.7.1527,706
-2,"Goodfellow, Y Bengio, A Courville",Deep learning,6615,2016,https://books.google.com/books?hl=en&lr=&id=omivDQAAQBAJ&oi=fnd&pg=PR5&dq=deep+learning&ots=MMR_iorIOX&sig=wHAl1WnrksxOnqR3LWsuMvjaQ0o,1654
-57,Bengio,Learning deep architectures for AI,6352,2009,http://www.nowpublishers.com/article/Details/MAL-006,577
-3,Schmidhuber,Deep learning in neural networks: An overview,4866,2015,https://www.sciencedirect.com/science/article/pii/S0893608014002135,973
-6,"Mnih, K Kavukcuoglu, D Silver, A Graves…",Playing atari with deep reinforcement learning,2021,2013,https://arxiv.org/abs/1312.5602,289
-110,"Dean, G Corrado, R Monga, K Chen…",Large scale distributed deep networks,1798,2012,http://papers.nips.cc/paper/4687-large-scale-distributed-deep-networks,225
-8,"Erhan, Y Bengio, A Courville, PA Manzagol…",Why does unsupervised pre-training help deep learning?,1598,2010,http://www.jmlr.org/papers/v11/erhan10a.html,160
-9,"Sutskever, J Martens, GE Dahl, GE Hinton",On the importance of initialization and momentum in deep learning.,1532,2013,http://www.jmlr.org/proceedings/papers/v28/sutskever13.pdf,219
-4,"Ngiam, A Khosla, M Kim, J Nam, H Lee…",Multimodal deep learning,1477,2011,http://ai.stanford.edu/~ang/papers/icml11-MultimodalDeepLearning.pdf,164
-7,"Deng, D Yu",Deep learning: methods and applications,1399,2014,http://www.nowpublishers.com/article/Details/SIG-039,233
-11,"Dong, CC Loy, K He, X Tang",Learning a deep convolutional network for image super-resolution,1257,2014,https://link.springer.com/chapter/10.1007/978-3-319-10593-2_13,210
-10,"Liu, P Luo, X Wang, X Tang",Deep learning face attributes in the wild,1133,2015,http://openaccess.thecvf.com/content_iccv_2015/html/Liu_Deep_Learning_Face_ICCV_2015_paper.html,227
-15,"Sun, X Wang, X Tang","Deep learning face representation from predicting 10,000 classes",1064,0,https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Sun_Deep_Learning_Face_2014_CVPR_paper.html,1
-14,"Sun, Y Chen, X Wang, X Tang",Deep learning face representation by joint identification-verification,1040,2014,http://papers.nips.cc/paper/5416-deep-learning-face-representation-by-joint-identification-verification,173
-19,"Glorot, A Bordes, Y Bengio",Domain adaptation for large-scale sentiment classification: A deep learning approach,1037,2011,http://www.iro.umontreal.ca/~lisa/bib/pub_subject/language/pointeurs/ICML2011_sentiment.pdf,115
-28,"Litjens, T Kooi, BE Bejnordi, AAA Setio, F Ciompi…",A survey on deep learning in medical image analysis,1024,2017,https://www.sciencedirect.com/science/article/pii/S1361841517301135,341
-17, Nielsen,Neural networks and deep learning,1007,2015,http://static.latexstudio.net/article/2018/0912/neuralnetworksanddeeplearning.pdf,201
-22,"Lee, P Pham, Y Largman, AY Ng",Unsupervised feature learning for audio classification using convolutional deep belief networks,908,2009,http://papers.nips.cc/paper/3674-unsupervised-feature-learning-for,83
-61,"Gulshan, L Peng, M Coram, MC Stumpe, D Wu…",Development and validation of a deep learning algorithm for detection of diabetic retinopathy in retinal fundus photographs,859,2016,https://jamanetwork.com/journals/jama/fullarticle/2588763?guestAccessKey=e95d1518-94df-41f3-a32c-f5ee30e7f3b1,215
-18,"Zhang, S Bengio, M Hardt, B Recht…",Understanding deep learning requires rethinking generalization,746,2016,https://arxiv.org/abs/1611.03530,186
-38,"Gal, Z Ghahramani",Dropout as a bayesian approximation: Representing model uncertainty in deep learning,744,2016,http://www.jmlr.org/proceedings/papers/v48/gal16.pdf,186
-35,"Lv, Y Duan, W Kang, Z Li…",Traffic flow prediction with big data: a deep learning approach,721,2015,https://ieeexplore.ieee.org/abstract/document/6894591/,144
-53,"Alipanahi, A Delong, MT Weirauch, BJ Frey",Predicting the sequence specificities of DNA-and RNA-binding proteins by deep learning,710,2015,https://www.nature.com/articles/nbt.3300,142
-33,"Arel, DC Rose, TP Karnowski",Deep machine learning-a new frontier in artificial intelligence research,680,2010,https://www.researchgate.net/profile/Thomas_Karnowski/publication/224183837_Deep_Machine_Learning_-_A_New_Frontier_in_Artificial_Intelligence_Research_Research_Frontier/links/570bb11b08aee06603519bf8/Deep-Machine-Learning-A-New-Frontier-in-Artificial-Intelligence-Research-Research-Frontier.pdf,68
-31,"Papernot, P McDaniel, S Jha…",The limitations of deep learning in adversarial settings,665,2016,https://ieeexplore.ieee.org/abstract/document/7467366/,166
-24,Chollet,Xception: Deep learning with depthwise separable convolutions,659,2017,http://openaccess.thecvf.com/content_cvpr_2017/html/Chollet_Xception_Deep_Learning_CVPR_2017_paper.html,220
-27,"Long, Y Cao, J Wang, MI Jordan",Learning transferable features with deep adaptation networks,647,2015,http://www.jmlr.org/proceedings/papers/v37/long15.pdf,129
-37,"Ahmed, M Jones, TK Marks",An improved deep learning architecture for person re-identification,643,2015,http://openaccess.thecvf.com/content_cvpr_2015/html/Ahmed_An_Improved_Deep_2015_CVPR_paper.html,129
-44," Huang, X He, J Gao, L Deng, A Acero…",Learning deep structured semantic models for web search using clickthrough data,635,2013,https://dl.acm.org/citation.cfm?id=2505665,91
-13," Le, J Ngiam, A Coates, A Lahiri…",On optimization methods for deep learning,631,2011,https://dl.acm.org/citation.cfm?id=3104516,70
-51," Qi, H Su, K Mo, LJ Guibas",Pointnet: Deep learning on point sets for 3d classification and segmentation,617,2017,http://openaccess.thecvf.com/content_cvpr_2017/html/Qi_PointNet_Deep_Learning_CVPR_2017_paper.html,206
-20,"Chetlur, C Woolley, P Vandermersch…",cudnn: Efficient primitives for deep learning,616,2014,https://arxiv.org/abs/1410.0759,103
-40,"Wang, DY Yeung",Learning a deep compact image representation for visual tracking,594,2013,http://papers.nips.cc/paper/5192-learning-a-deep-compact-image-representation-for-visual-tracking,85
-21,"Weston, F Ratle, H Mobahi, R Collobert",Deep learning via semi-supervised embedding,593,2012,https://link.springer.com/chapter/10.1007/978-3-642-35289-8_34,74
-25,Martens,Deep learning via Hessian-free optimization.,588,2010,http://www.cs.toronto.edu/~asamir/cifar/HFO_James.pdf,59
-26,"Gupta, A Agrawal, K Gopalakrishnan…",Deep learning with limited numerical precision,578,2015,http://www.jmlr.org/proceedings/papers/v37/gupta15.pdf,116
-36,"Chen, Z Lin, X Zhao, G Wang…",Deep learning-based classification of hyperspectral data,575,2014,https://ieeexplore.ieee.org/abstract/document/6844831/,96
-58," Chan, K Jia, S Gao, J Lu, Z Zeng…",PCANet: A simple deep learning baseline for image classification?,566,2015,https://ieeexplore.ieee.org/abstract/document/7234886/,113
-16,"Bengio, IJ Goodfellow, A Courville",Deep learning,546,2015,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.672.7118&rep=rep1&type=pdf,109
-41,"Lenz, H Lee, A Saxena",Deep learning for detecting robotic grasps,538,2015,https://journals.sagepub.com/doi/abs/10.1177/0278364914549607,108
-32,Bengio,Deep learning of representations for unsupervised and transfer learning,517,2012,http://www.jmlr.org/proceedings/papers/v27/bengio12a/bengio12a.pdf,65
-43,"Wang, Y Song, T Leung, C Rosenberg…",Learning fine-grained image similarity with deep ranking,507,0,https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Wang_Learning_Fine-grained_Image_2014_CVPR_paper.html,0
-39,"Wang, N Wang, DY Yeung",Collaborative deep learning for recommender systems,503,2015,https://dl.acm.org/citation.cfm?id=2783273,101
-30,"Coates, B Huval, T Wang, D Wu, B Catanzaro…",Deep learning with COTS HPC systems,493,2013,http://www.jmlr.org/proceedings/papers/v28/coates13.pdf,70
-69,"Zhou, OG Troyanskaya",Predicting effects of noncoding variants with deep learning–based sequence model,486,2015,https://www.nature.com/nmeth/journal/v12/n10/abs/nmeth.3547.html,97
-83,"Deng, G Hinton, B Kingsbury",New types of deep neural network learning for speech recognition and related applications: An overview,483,2013,https://ieeexplore.ieee.org/abstract/document/6639344/,69
-46,"Tokui, K Oono, S Hido, J Clayton",Chainer: a next-generation open source framework for deep learning,475,2015,http://learningsys.org/papers/LearningSys_2015_paper_33.pdf,95
-29,"Denil, B Shakibi, L Dinh, N De Freitas",Predicting parameters in deep learning,465,2013,http://papers.nips.cc/paper/5025-predicting-parameters-in-deep-learning,66
-54,"Greenspan, B Van Ginneken…",Guest editorial deep learning in medical imaging: Overview and future promise of an exciting new technique,460,2016,https://ieeexplore.ieee.org/abstract/document/7463094/,115
-73,Entwistle,Promoting deep learning through teaching and assessment: conceptual frameworks and educational contexts,455,2003,http://www.leeds.ac.uk/educol/documents/00003220.htm,27
-52,"Socher, B Huval, B Bath, CD Manning…",Convolutional-recursive deep learning for 3d object classification,451,2012,http://papers.nips.cc/paper/4773-convolutional-recursive-deep-learning-for-3d-object-classification.pdf,56
-71,"Wan, D Wang, SCH Hoi, P Wu, J Zhu…",Deep learning for content-based image retrieval: A comprehensive study,449,2014,https://dl.acm.org/citation.cfm?id=2654948,75
-70," Najafabadi, F Villanustre…",Deep learning applications and challenges in big data analytics,442,2015,https://journalofbigdata.springeropen.com/articles/10.1186/s40537-014-0007-7,88
-85,"Levine, P Pastor, A Krizhevsky…",Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection,438,2018,https://journals.sagepub.com/doi/abs/10.1177/0278364917710318,219
-42,"Ouyang, X Wang",Joint deep learning for pedestrian detection,437,2013,http://openaccess.thecvf.com/content_iccv_2013/html/Ouyang_Joint_Deep_Learning_2013_ICCV_paper.html,62
-63,"Deng, J Li, JT Huang, K Yao, D Yu…",Recent advances in deep learning for speech research at Microsoft,430,2013,https://ieeexplore.ieee.org/abstract/document/6639345/,61
-66,"Madry, A Makelov, L Schmidt, D Tsipras…",Towards deep learning models resistant to adversarial attacks,426,2017,https://arxiv.org/abs/1706.06083,142
-75, Weigel,Deep learning for a digital age: Technology's untapped potential to enrich higher education.,420,2002,https://eric.ed.gov/?id=ED457787,23
-48,"Baccouche, F Mamalet, C Wolf, C Garcia…",Sequential deep learning for human action recognition,419,2011,https://link.springer.com/chapter/10.1007/978-3-642-25446-8_4,47
-81,"Baldi, P Sadowski, D Whiteson",Searching for exotic particles in high-energy physics with deep learning,418,2014,https://www.nature.com/articles/ncomms5308,70
-72,"Hu, J Lu, YP Tan",Discriminative deep metric learning for face verification in the wild,411,2014,http://openaccess.thecvf.com/content_cvpr_2014/html/Hu_Discriminative_Deep_Metric_2014_CVPR_paper.html,68
-55,"Zhao, W Ouyang, H Li…",Saliency detection by multi-context deep learning,404,2015,http://openaccess.thecvf.com/content_cvpr_2015/html/Zhao_Saliency_Detection_by_2015_CVPR_paper.html,81
-64," Chen, X Lin",Big data deep learning: challenges and perspectives,398,2014,https://ieeexplore.ieee.org/abstract/document/6817512/,66
-93," Keskar, D Mudigere, J Nocedal…",On large-batch training for deep learning: Generalization gap and sharp minima,393,2016,https://arxiv.org/abs/1609.04836,98
-47,Warburton,Deep learning and education for sustainability,392,2003,https://www.emeraldinsight.com/doi/pdf/10.1108/14676370310455332,23
-50,"Abadi, A Chu, I Goodfellow, HB McMahan…",Deep learning with differential privacy,380,2016,https://dl.acm.org/citation.cfm?id=2978318,95
-49,Tang,Deep learning using linear support vector machines,373,2013,https://arxiv.org/abs/1306.0239,53
-86,"Längkvist, L Karlsson, A Loutfi",A review of unsupervised feature learning and deep learning for time-series modeling,368,2014,https://www.sciencedirect.com/science/article/pii/S0167865514000221,61
-97,"Chilimbi, Y Suzue, J Apacible…",Project adam: Building an efficient and scalable deep learning training system,359,2014,https://www.usenix.org/conference/osdi14/technical-sessions/presentation/chilimbi,60
-79,"Shen, G Wu, HI Suk",Deep learning in medical image analysis,359,2017,https://www.annualreviews.org/doi/abs/10.1146/annurev-bioeng-071516-044442,120
-87,"Guo, Y Liu, A Oerlemans, S Lao, S Wu, MS Lew",Deep learning for visual understanding: A review,358,2016,https://www.sciencedirect.com/science/article/pii/S0925231215017634,90
-102,"Severyn, A Moschitti",Learning to rank short text pairs with convolutional deep neural networks,357,2015,https://dl.acm.org/citation.cfm?id=2767738,71
-80,Bengio,Deep learning of representations: Looking forward,344,2013,https://link.springer.com/chapter/10.1007/978-3-642-39593-2_1,49
-103," Huang, H Lee…",Learning hierarchical representations for face verification with convolutional deep belief networks,330,2012,https://ieeexplore.ieee.org/abstract/document/6247968/,41
-60," Cheng, L Koc, J Harmsen, T Shaked…",Wide & deep learning for recommender systems,328,2016,https://dl.acm.org/citation.cfm?id=2988454,82
-105,"Bengio, AC Courville, P Vincent",Unsupervised feature learning and deep learning: A review and new perspectives,323,2012,https://docs.huihoo.com/deep-learning/Representation-Learning-A-Review-and-New-Perspectives-v1.pdf,40
-109,"K Yamins, JJ DiCarlo",Using goal-driven deep learning models to understand sensory cortex,316,2016,https://www.nature.com/articles/nn.4244,79
-59,"Hoffer, N Ailon",Deep metric learning using triplet network,316,2015,https://link.springer.com/chapter/10.1007/978-3-319-24261-3_7,63
-91," Bronstein, J Bruna, Y LeCun…",Geometric deep learning: going beyond euclidean data,316,2017,https://ieeexplore.ieee.org/abstract/document/7974879/,105
-90,"Sohn, H Lee, X Yan",Learning structured output representation using deep conditional generative models,311,2015,http://papers.nips.cc/paper/5775-learning-structured-output-representation-using-deep-conditional,62
-65,"Shokri, V Shmatikov",Privacy-preserving deep learning,299,2015,https://dl.acm.org/citation.cfm?id=2813687,60
-99,"Dumoulin, F Visin",A guide to convolution arithmetic for deep learning,295,2016,https://arxiv.org/abs/1603.07285,74
-77,"Angermueller, T Pärnamaa, L Parts…",Deep learning for computational biology,293,2016,http://msb.embopress.org/content/12/7/878.abstract,73
-76,Kawaguchi,Deep learning without poor local minima,286,2016,http://papers.nips.cc/paper/6111-deep-learning-without-poor-local-minima,72
-98,Barrett,Researching and evaluating digital storytelling as a deep learning tool,282,2006,https://www.learntechlib.org/p/22117/,20
-88,"Erin Liong, J Lu, G Wang, P Moulin…",Deep hashing for compact binary codes learning,277,0,https://www.cv-foundation.org/openaccess/content_cvpr_2015/html/Liong_Deep_Hashing_for_2015_CVPR_paper.html,0
-108,"Huang, G Song, H Hong, K Xie",Deep architecture for traffic flow prediction: deep belief networks with multitask learning,274,2014,https://ieeexplore.ieee.org/abstract/document/6786503/,46
-84,"Min, B Lee, S Yoon",Deep learning in bioinformatics,271,2017,https://academic.oup.com/bib/article-abstract/18/5/851/2562808,90
-74,"Cho, LK Saul",Kernel methods for deep learning,269,2009,http://papers.nips.cc/paper/3628-kernel-methods-for-deep-learning,24
-94,"Mobahi, R Collobert, J Weston",Deep learning from temporal coherence in video,250,2009,https://dl.acm.org/citation.cfm?id=1553469,23
-107,"Hamel, D Eck",Learning features from music audio with deep belief networks.,248,2010,http://musicweb.ucsd.edu/~sdubnov/Mu270d/DeepLearning/FeaturesAudioEck.pdf,25
-95,Rushton,Formative assessment: a key to deep learning?,241,2005,https://www.tandfonline.com/doi/abs/10.1080/01421590500129159,16
-92,"Sun, X Wang, X Tang",Hybrid deep learning for face verification,241,0,https://www.cv-foundation.org/openaccess/content_iccv_2013/html/Sun_Hybrid_Deep_Learning_2013_ICCV_paper.html,0
-104,"Yu, KM Hermann, P Blunsom, S Pulman",Deep learning for answer sentence selection,239,2014,https://arxiv.org/abs/1412.1632,40
-106,"Zhu, P Luo, X Wang, X Tang",Deep learning identity-preserving face space,224,0,https://www.cv-foundation.org/openaccess/content_iccv_2013/html/Zhu_Deep_Learning_Identity-Preserving_2013_ICCV_paper.html,0
-96," Huang, M Kim…",Deep learning for monaural speech separation,217,2014,https://ieeexplore.ieee.org/abstract/document/6853860/,36
-82,"Bergstra, F Bastien, O Breuleux, P Lamblin…",Theano: Deep learning on gpus with python,177,2011,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.678.1889&rep=rep1&type=pdf,20
-101,Yang,Deep learning,150,2016,http://home.sogang.ac.kr/sites/gsinfotech/study/yjh160724/Lists/b8/Attachments/9/DeepLearning.pdf,38
-56,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=40&q=deep+learning&hl=en&as_sdt=0,5",0
-100,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=80&q=deep+learning&hl=en&as_sdt=0,5",0
-89,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=70&q=deep+learning&hl=en&as_sdt=0,5",0
-78,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=60&q=deep+learning&hl=en&as_sdt=0,5",0
-67,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=50&q=deep+learning&hl=en&as_sdt=0,5",0
-45,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=30&q=deep+learning&hl=en&as_sdt=0,5",0
-34,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=20&q=deep+learning&hl=en&as_sdt=0,5",0
-23,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=10&q=deep+learning&hl=en&as_sdt=0,5",0
-12,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=deep+learning&hl=en&as_sdt=0,5",0
-5,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=deep+learning&hl=en&as_sdt=0,5",0
-111,Author not found,Could not catch title,0,0,"Look manually at: https://scholar.google.com/scholar?start=90&q=deep+learning&hl=en&as_sdt=0,5",0
+Rank,Author,Title,Citations,Year,Publisher,Venue,Content,Source,cit/year
+1,"Y LeCun, Y Bengio, G Hinton",Deep learning,94375,2015, nature.com, nature,"… Deep learning allows computational models that are composed of multiple processing 
+layers to learn … Deep learning discovers intricate structure in large data sets by using the …",https://www.nature.com/articles/nature14539,8580
+2,"I Goodfellow, Y Bengio, A Courville, Y Bengio",Deep learning,75799,2016, synapse.koreamed.org,,"Kwang Gi Kim https://doi. org/10.4258/hir. 2016.22. 4.351 ing those who are beginning their 
+careers in deep learning and artificial intelligence research. The other target audience …",https://synapse.koreamed.org/pdf/10.4258/hir.2016.22.4.351,7580
+38,J Schmidhuber,Deep learning in neural networks: An overview,24645,2015, Elsevier, Neural networks,"… deep supervised learning (also recapitulating the history of backpropagation), unsupervised 
+learning, reinforcement learning & … for short programs encoding deep and large networks. …",https://www.sciencedirect.com/science/article/pii/S0893608014002135,2240
+11,"L Deng, D Yu",Deep learning: methods and applications,6273,2014, nowpublishers.com, Foundations and trends® in signal processing,"… This was accomplished using a special form of the deep neural net, … of deep learning in 
+ASR, this book also provides an overview of a sweeping range of upto-date deep learning …",https://www.nowpublishers.com/article/Details/SIG-039,523
+50,MA Nielsen,Neural networks and deep learning,6099,2015, aliosmangokcan.com,,"… deep learning. They’ve been developed further, and today deep neural networks and deep 
+learning … chapter we’ll be in position to understand what deep learning is, and why it matters. …",http://aliosmangokcan.com/images/notes/yapay_sinir_agi_derin_ogrenme_pdf_ders_notu_e-book.pdf,554
+46,"E Strubell, A Ganesh, A McCallum",Energy and policy considerations for modern deep learning research,4645,2020, ojs.aaai.org, … of the AAAI conference on artificial …,"… In this article, we summarize previous work characterizing the energy required to train 
+and develop recent deep learning models for NLP, and share conclusions and recommendations …",https://ojs.aaai.org/index.php/AAAI/article/view/7123,774
+37,"J Ngiam, A Khosla, M Kim, J Nam, H Lee, AY Ng",Multimodal deep learning.,4385,2011, academia.edu, ICML,"… deep networks to learn features over multiple modalities. We present a series of tasks for 
+multimodal learning and show how to train deep networks that learn … modality feature learning, …",https://www.academia.edu/download/74090107/icml11-MultimodalDeepLearning.pdf,292
+48,"A Voulodimos, N Doulamis, A Doulamis…",Deep learning for computer vision: A brief review,4310,2018, Wiley Online Library, Computational …,"… deep learning schemes used in computer vision problems, that is, Convolutional Neural 
+Networks, Deep Boltzmann Machines and Deep Belief … in designing deep learning schemes for …",https://onlinelibrary.wiley.com/doi/abs/10.1155/2018/7068349,539
+22,"A Kamilaris, FX Prenafeta-Boldú",Deep learning in agriculture: A survey,4179,2018, Elsevier, Computers and electronics in agriculture,"… employ deep learning … deep learning with other existing popular techniques, in respect to 
+differences in classification or regression performance. Our findings indicate that deep learning …",https://www.sciencedirect.com/science/article/pii/S0168169917308803,522
+68,CC Aggarwal,Neural networks and deep learning,4148,2018, Springer,,"… label of “deep learning.” Although … deep neural architectures than was previously possible. 
+The resulting success has changed the broader perception of the potential of deep learning. …",https://link.springer.com/content/pdf/10.1007/978-3-031-29642-0.pdf,518
+83,"C Sun, A Shrivastava, S Singh…",Revisiting unreasonable effectiveness of data in deep learning era,3385,2017, openaccess.thecvf.com, Proceedings of the …,"… Specifically, we focus on understanding the relationship between data and visual deep 
+learning. There have been some efforts to understand this relationship. For example, Oquab et al…",http://openaccess.thecvf.com/content_iccv_2017/html/Sun_Revisiting_Unreasonable_Effectiveness_ICCV_2017_paper.html,376
+12,"C Janiesch, P Zschech, K Heinrich",Machine learning and deep learning,3041,2021, Springer, Electronic markets,"… Machine learning describes the capacity of systems to learn … Deep learning is a machine 
+learning concept based on … , deep learning models outperform shallow machine learning …",https://link.springer.com/article/10.1007/s12525-021-00475-2,608
+7,"Y Guo, Y Liu, A Oerlemans, S Lao, S Wu, MS Lew",Deep learning for visual understanding: A review,2967,2016, Elsevier, Neurocomputing,"… In Section 3, we describe the achievements of deep learning schemes in various computer 
+vision applications, ie image classification, object detection, image retrieval, semantic …",https://www.sciencedirect.com/science/article/pii/S0925231215017634,297
+62,"S Gupta, A Agrawal…",Deep learning with limited numerical precision,2780,2015, proceedings.mlr.press, … machine learning,"… To a large extent, the success of deep learning techniques is contingent upon the … computing 
+infrastructure designed specifically for training deep neural networks. Some notable efforts …",https://proceedings.mlr.press/v37/gupta15.html,253
+69,"Z Niu, G Zhong, H Yu",A review on the attention mechanism of deep learning,2680,2021, Elsevier, Neurocomputing,"… Attention has arguably become one of the most important concepts in the deep learning field. 
+… Finally, we discuss the interpretability that attention brings to deep learning and present its …",https://www.sciencedirect.com/science/article/pii/S092523122100477X,536
+30,"A Gulli, S Pal",Deep learning with Keras,2383,2017, books.google.com,,"… , machine learning, and distributed processing. He is currently working on image classification 
+and similarity using deep learning … This was an incredible opportunity and a great learning …",https://books.google.com/books?hl=en&lr=&id=20EwDwAAQBAJ&oi=fnd&pg=PP1&dq=Deep+Learning&ots=lJcA7kgTS0&sig=oe-E1GdxeYRRROFcQoXXD2SGiUg,265
+85,"T Ching, DS Himmelstein…",Opportunities and obstacles for deep learning in biology and medicine,2370,2018, royalsocietypublishing.org, Journal of the …,"… We examine applications of deep learning to a variety … deep learning's application to 
+biomedical science and discuss the unique challenges that biomedical data pose for deep learning …",https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2017.0387,296
+3,"Y Bengio, I Goodfellow, A Courville",Deep learning,2329,2017, academia.edu,,"… The idea of learning the right representation for the data provides one perspective on deep 
+learning. Another perspective on deep learning is that it allows the computer to learn a multi-…",https://www.academia.edu/download/62266271/Deep_Learning20200303-80130-1s42zvt.pdf,259
+35,Y Gal,Uncertainty in deep learning,2217,2016, 106.54.215.74,,"… Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep 
+Learning ICML2016 A deep neural network (NN) with arbitrary depth and non-linearities …",http://106.54.215.74/2019/20190729-liuzy.pdf,222
+34,"S Min, B Lee, S Yoon",Deep learning in bioinformatics,1966,2017, academic.oup.com, Briefings in bioinformatics,"… interests include machine learning and deep learning for bio… deep learning in bioinformatics 
+studies. To the best of our knowledge, we are one of the first groups to review deep learning …",https://academic.oup.com/bib/article-pdf/doi/10.1093/bib/bbw068/25581102/bbw068.pdf,218
+61,"Z Zhang, P Cui, W Zhu",Deep learning on graphs: A survey,1927,2020, ieeexplore.ieee.org, IEEE Transactions on Knowledge and …,"… However, applying deep learning to the ubiquitous graph data … deep learning methods to 
+graphs, resulting in beneficial … review the different types of deep learning methods on graphs. …",https://ieeexplore.ieee.org/abstract/document/9039675/,321
+45,"M Ren, W Zeng, B Yang…",Learning to reweight examples for robust deep learning,1809,2018, proceedings.mlr.press, … on machine learning,"… -learning algorithm for reweighting training examples and training more robust deep learning 
+… Our method can be directly applied to any deep learning architecture and is expected to …",http://proceedings.mlr.press/v80/ren18a.html,226
+64,"C Angermueller, T Pärnamaa, L Parts…",Deep learning for computational biology,1754,2016, embopress.org, Molecular systems …,"… Modern machine learning methods, such as deep learning, promise to leverage very 
+large … We provide background of what deep learning is, and the settings in which it can be …",https://www.embopress.org/doi/abs/10.15252/msb.20156651,175
+91,G Marcus,Deep learning: A critical appraisal,1721,2018, arxiv.org, arXiv preprint arXiv:1801.00631,"… in the popular press, I present ten concerns for deep learning, and suggest that deep learning 
+must be supplemented by other techniques if we are to reach artificial general intelligence. …",https://arxiv.org/abs/1801.00631,215
+87,"A Zhang, ZC Lipton, M Li, AJ Smola",Dive into deep learning,1715,2023, books.google.com,,"… to learn why deep learning has … of deep learning principles but also detailed algorithms 
+with hands-on programming code, and moreover, a state-of-the-art introduction to deep learning …",https://books.google.com/books?hl=en&lr=&id=vfDiEAAAQBAJ&oi=fnd&pg=PR17&dq=Deep+Learning&ots=ZQffGqEzpn&sig=Ab6-vtGTuNPh6olWvXe0FWKW6Fw,572
+29,"M Denil, B Shakibi, L Dinh…",Predicting parameters in deep learning,1713,2013, proceedings.neurips.cc, Advances in neural …,"… significant redundancy in the parameterization of several deep learning models. Given only 
+a few … We train several different architectures by learning only a small number of weights and …",https://proceedings.neurips.cc/paper/2013/hash/7fec306d1e665bc9c748b5d2b99a6e97-Abstract.html,132
+76,"B Neyshabur, S Bhojanapalli…",Exploring generalization in deep learning,1571,2017, proceedings.neurips.cc, Advances in neural …,"With a goal of understanding what drives generalization in deep networks, we consider 
+several recently suggested explanations, including norm-based control, sharpness and …",https://proceedings.neurips.cc/paper/2017/hash/10ce03a1ed01077e3e289f3e53c72813-Abstract.html,175
+33,"J Patterson, A Gibson",Deep learning: A practitioner's approach,1472,2017, books.google.com,,"… 'll learn methods and strategies for training deep network architectures and running deep 
+learning … With this book, our goal is to democratize deep learning (and machine learning) and …",https://books.google.com/books?hl=en&lr=&id=qrcuDwAAQBAJ&oi=fnd&pg=PR2&dq=Deep+Learning&ots=6omIsvgpLS&sig=AqBwg4-4zMHT630Z6GnRG71Jhj4,164
+89,"S Dong, P Wang, K Abbas",A survey on deep learning and its applications,1402,2021, Elsevier, Computer Science Review,"… of deep learning. Firstly, it introduces the global development and the current situation of 
+deep learning. … models of deep learning, such as stacked auto encoder, deep belief network, …",https://www.sciencedirect.com/science/article/pii/S1574013721000198,280
+39,"QV Le, J Ngiam, A Coates, A Lahiri…",On optimization methods for deep learning,1386,2011, dl.acm.org, … on machine learning,"… The predominant methodology in training deep learning … , debug and scale up deep learning 
+algorithms with SGDs. In … up the process of pretraining deep algorithms. In our experiments, …",https://dl.acm.org/doi/abs/10.5555/3104482.3104516,92
+88,"S Khan, T Yairi",A review on the application of deep learning in system health management,1233,2018, Elsevier, Mechanical systems and signal processing,"… Deep learning has gained … of deep learning within the field. Various architectures and 
+related theories are discussed to clarify its potential. Based on the reviewed work, deep learning …",https://www.sciencedirect.com/science/article/pii/S0888327017306064,154
+9,"LC Yan, B Yoshua, H Geoffrey",Deep learning,1149,2015, udrc.eng.ed.ac.uk, nature,… From shallow to deep … From shallow to deep … From shallow to deep …,http://udrc.eng.ed.ac.uk/sites/udrc.eng.ed.ac.uk/files/attachments/Deep%20Learning%20and%20its%20application%20to%20CV%20and%20NLP_0.pdf,104
+16,"PP Shinde, S Shah",A review of machine learning and deep learning applications,1146,2018, ieeexplore.ieee.org, 2018 Fourth international conference on …,"… So far few applications of deep learning … deep learning. A review of these past and future 
+application domains, sub-domains, and applications of machine learning and deep learning …",https://ieeexplore.ieee.org/abstract/document/8697857/,143
+99,"H Purwins, B Li, T Virtanen, J Schlüter…",Deep learning for audio signal processing,968,2019, ieeexplore.ieee.org, IEEE Journal of …,"… of deep learn- ing, this paper provides a review of the state-of-the-art deep learning techniques 
+… , log-mel spectra and raw waveform) and deep learning models are reviewed, including …",https://ieeexplore.ieee.org/abstract/document/8678825/,138
+77,"N Ravi, J Reizenstein, D Novotny, T Gordon…",Accelerating 3d deep learning with pytorch3d,934,2020, arxiv.org, arXiv preprint arXiv …,"… deep learning remains relatively underexplored. We believe that some of this disparity is due 
+to the engineering challenges involved in 3D deep learning, … research in 3D deep learning. …",https://arxiv.org/abs/2007.08501,156
+18,P Kim,Matlab deep learning,930,2017, Springer, With machine learning  neural networks and artificial …,"… The fact that Deep Learning is a type of Machine Learning is very important, and that is why 
+we … Learning before discussing the concept of Deep Learning. What Is Machine Learning? …",https://link.springer.com/content/pdf/10.1007/978-1-4842-2845-6.pdf,103
+70,JN Kutz,Deep learning in fluid dynamics,912,2017, cambridge.org, Journal of Fluid Mechanics,"It was only a matter of time before deep neural networks (DNNs) – deep learning – made 
+their mark in turbulence modelling, or more broadly, in the general area of high-dimensional, …",https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/deep-learning-in-fluid-dynamics/F2EDDAB89563DE5157FC4B8342AD9C70,101
+73,"J Zou, M Huss, A Abid, P Mohammadi, A Torkamani…",A primer on deep learning in genomics,901,2019, nature.com, Nature …,"… The primer is intended for bioinformaticians who are interested in applying deep learning … 
+of deep learning in genomics. However, we do not provide a survey of deep learning in the …",https://www.nature.com/articles/s41588-018-0295-5,129
+65,"P Mamoshina, A Vieira, E Putin…",Applications of deep learning in biomedicine,837,2016, ACS Publications, Molecular …,"… (4) Deep learning is a broad class of machine learning … Here, we review deep learning 
+as a versatile biomedical … studies that have used deep learning, while highlighting areas of …",https://pubs.acs.org/doi/abs/10.1021/acs.molpharmaceut.5b00982,84
+49,"NC Thompson, K Greenewald, K Lee…",The computational limits of deep learning,836,2020, assets.pubpub.org, arXiv preprint arXiv …,"… deep learning is so computationally expensive, we analyze its statistical and computational 
+scaling in theory. We show that deep learning is … burden of deep learning models is scaling …",https://assets.pubpub.org/9c76pmmn/11686018723236.pdf,139
+27,"Y Bengio, Y Lecun, G Hinton",Deep learning for AI,802,2021, dl.acm.org, Communications of the ACM,"… We reviewed the basic concepts and some of the breakthrough achievements of deep 
+learning several years ago.Here we briefly describe the origins of deep learning, describe a few …",https://dl.acm.org/doi/abs/10.1145/3448250,160
+13,J Heaton,"Ian goodfellow, yoshua bengio, and aaron courville: Deep learning: The mit press, 2016, 800 pp, isbn: 0262035618",743,2018, Springer, Genetic programming and evolvable machines,"… Deep learning’s application to diverse cases ranging from self-driving cars to … deep learning 
+foundation for any AI researcher. Neural networks are the primary algorithm of deep learning…",https://link.springer.com/article/10.1007/s10710-017-9314-z,93
+55,"C Cao, F Liu, H Tan, D Song, W Shu…",Deep learning and its applications in biomedicine,731,2018, academic.oup.com, Genomics …,"… The aim of this paper is to provide an overview of deep learning techniques and some of the 
+… deep learning. We then describe two main components of deep learning, ie, deep learning …",https://academic.oup.com/gpb/article-abstract/16/1/17/7225050,91
+72,JCB Gamboa,Deep learning for time-series analysis,682,2017, arxiv.org, arXiv preprint arXiv:1701.01887,"… of Deep Learning new models of unsupervised learning of … : a review of the main Deep 
+Learning techniques is presented, and … The results make it clear that Deep Learning has a lot to …",https://arxiv.org/abs/1701.01887,76
+81,P Ongsulee,"Artificial intelligence, machine learning and deep learning",671,2017, ieeexplore.ieee.org, 2017 15th international conference on ICT and …,"… and social media users, the machine can learn to distinguish the pattern and makes a … 
+of machine learning and its methodologies. Furthermore, the field of deep learning which is …",https://ieeexplore.ieee.org/abstract/document/8259629/,75
+75,"K Kawaguchi, LP Kaelbling, Y Bengio",Generalization in deep learning,663,2017, cambridge.org, arXiv preprint arXiv …,"… Abstract: This chapter provides theoretical insights into why and how deep learning can … 
+for deep learning. On the basis of theoretical observations, we propose new open problems. …",https://www.cambridge.org/core/services/aop-cambridge-core/content/view/91C17D047D1CF7B0B80DCF12C52D8C72/stamped-9781316516782c2_112-148.pdf/generalization_in_deep_learning.pdf,74
+4,JD Kelleher,Deep learning,649,2019, books.google.com,,"… a deep learning system… deep learning enables data-driven decisions by identifying and 
+extracting patterns from large datasets; its ability to learn from complex data makes deep learning …",https://books.google.com/books?hl=en&lr=&id=ZU6qDwAAQBAJ&oi=fnd&pg=PR5&dq=Deep+Learning&ots=XWx7FFXG85&sig=CHEtrkOht82iGzu88hYaCNdVkIk,93
+44,"M Wainberg, D Merico, A Delong, BJ Frey",Deep learning in biomedicine,634,2018, nature.com, Nature biotechnology,"… machine learning and then focus on the subfield of deep learning. We go beyond retrospective 
+reviews of deep learning … Finally, we give our outlook for the prospects for deep learning …",https://www.nature.com/articles/nbt.4233,79
+43,"S Christin, É Hervet, N Lecomte",Applications for deep learning in ecology,612,2019, Wiley Online Library, Methods in Ecology and …,"… However, to our knowledge, we currently lack an insightful overview on when deep learning 
+could be useful to ecologists. This review shows that the flexibility of deep learning can …",https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.13256,87
+79,"J Byrd, Z Lipton",What is the effect of importance weighting in deep learning?,595,2019, proceedings.mlr.press, … conference on machine learning,"… from recent developments in the theory of deep learning. In particular we are motivated by 
+… cover only shallow linear, deep linear, and deep convolutional linear neural networks, our …",https://proceedings.mlr.press/v97/byrd19a.html,85
+42,"AC Mater, ML Coote",Deep learning in chemistry,588,2019, ACS Publications, Journal of chemical information and …,"… pertinent information and then learn the patterns represented in … This review aims to explain 
+the concepts of deep learning to … growing movement of deep learning accelerated chemistry. …",https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00266,84
+94,"J Nixon, MW Dusenberry, L Zhang…",Measuring Calibration in Deep Learning.,571,2019, openaccess.thecvf.com, CVPR …,"The reliability of a machine learning model’s confidence in its predictions is critical for high-risk 
+applications. Calibration—the idea that a model’s predicted probabilities of outcomes …",http://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Nixon_Measuring_Calibration_in_Deep_Learning_CVPRW_2019_paper.pdf,82
+71,"M Fullan, J Quinn, J McEachen",Deep learning: Engage the world change the world,555,2017, books.google.com,,"… This book elevates deep learning from an instructional tool to … It is built on the deep belief 
+that all students can learn if school … Deep Learning’s power lies in providing practical advice to …",https://books.google.com/books?hl=en&lr=&id=njY9DwAAQBAJ&oi=fnd&pg=PP1&dq=Deep+Learning&ots=8pwEO7dFrN&sig=ojik4ZpQiya5JfEU2KD4_Kqken4,62
+19,TJ Sejnowski,The deep learning revolution,554,2018, books.google.com,,"… deep learning and the background needed to understand its origins; part II explains learning 
+… ; and part III explores the impact that deep learning is having on our lives and what impact it …",https://books.google.com/books?hl=en&lr=&id=9xZxDwAAQBAJ&oi=fnd&pg=PR7&dq=Deep+Learning&ots=SIOeP4tAUh&sig=voGkNSkDvTrO5ysPgc6X84W7cYQ,69
+56,"L Zhou, C Zhang, F Liu, Z Qiu…",Application of deep learning in food: a review,525,2019, Wiley Online Library, Comprehensive reviews in …,"… of deep learning and detailedly described the structure of some popular architectures of deep 
+… We surveyed dozens of articles that used deep learning as the data analysis tool to solve …",https://ift.onlinelibrary.wiley.com/doi/abs/10.1111/1541-4337.12492,75
+59,"K Sharifani, M Amini",Machine learning and deep learning: A review of methods and applications,492,2023, papers.ssrn.com, World Information Technology and …,"… learning and deep learning, their differences, applications, and their impact on various 
+industries. Machine learning and deep learning are … of machine learning and deep learning, their …",https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4458723,164
+80,"J Evermann, JR Rehse, P Fettke",Predicting process behaviour using deep learning,479,2017, Elsevier, Decision Support Systems,"… , this paper describes an application of deep learning with recurrent neural networks to the 
+… , and also a novel application of deep learning methods. The approach is evaluated on two …",https://www.sciencedirect.com/science/article/pii/S0167923617300635,53
+6,"A Mathew, P Amudha, S Sivakumari",Deep learning techniques: an overview,474,2021, Springer, Advanced Machine Learning …,"… of deep learning, various approaches to deep learning, architectures of deep learning, … 
+the performance of traditional machine learning algorithms and deep learning algorithms [6]…",https://link.springer.com/chapter/10.1007/978-981-15-3383-9_54,95
+53,"M Hardt, T Ma",Identity matters in deep learning,452,2016, arxiv.org, arXiv preprint arXiv:1611.04231,"An emerging design principle in deep learning is that each layer of a deep artificial neural 
+network should be able to easily express the identity transformation. This idea not only …",https://arxiv.org/abs/1611.04231,45
+14,"X Du, Y Cai, S Wang, L Zhang",Overview of deep learning,451,2016, ieeexplore.ieee.org, 2016 31st Youth Academic …,"… Therefore, we can find out that deep learning approaches have reduced the demands for … 
+several typical deep learning models in Section III and several deep learning frameworNs in …",https://ieeexplore.ieee.org/abstract/document/7804882/,45
+36,"H Wang, B Raj",On the origin of deep learning,449,2017, arxiv.org, arXiv preprint arXiv:1702.07800,"… While this paper primarily discusses deep learning models, optimization of deep architecture 
+is an inevitable topic in this society. Section 7 is devoted to a brief summary of optimization …",https://arxiv.org/abs/1702.07800,50
+52,S Webb,Deep learning for biology,438,2018, nature.com, Nature,"… “For the first time, we’ll have a data set where we can apply deep learning and look at 
+whether deep learning can uncover a relationship between the things we can measure in a dish …",https://www.nature.com/articles/d41586-018-02174-z,55
+58,"N Sharma, R Sharma, N Jindal",Machine learning and deep learning applications-a vision,414,2021, Elsevier, Global Transitions Proceedings,"… ) is a subgroup of machine learning. Deep learning had been analysed and implemented in 
+… provide insight survey for machine learning along with deep learning applications in various …",https://www.sciencedirect.com/science/article/pii/S2666285X21000042,83
+100,"Y Matsuo, Y LeCun, M Sahani, D Precup, D Silver…","Deep learning, reinforcement learning, and world models",410,2022, Elsevier, Neural Networks,"… Deep learning (DL) and reinforcement learning (RL) … in the “Deep Learning and Reinforcement 
+Learning” session of … advances of deep learning and reinforcement learning algorithms. …",https://www.sciencedirect.com/science/article/pii/S0893608022001150,102
+86,"DA Roberts, S Yaida, B Hanin",The principles of deep learning theory,407,2022, cambridge.org,,"… With the emergence of deep learning, AI-powered engineering wonders have entered our … 
+deep learning is still partial. This is one of the first books devoted to the theory of deep learning…",https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F1326B1DCDD25E55D4EFDC5DD60DA445/9781316519332pre_i-iv.pdf/frontmatter.pdf,102
+47,"PL Bartlett, A Montanari, A Rakhlin",Deep learning: a statistical viewpoint,404,2021, cambridge.org, Acta numerica,"… that arise in extending these insights to realistic deep learning settings. … in deep learning. 
+Although it is not the focus here, another important aspect of deep learning concerns how deep …",https://www.cambridge.org/core/journals/acta-numerica/article/deep-learning-a-statistical-viewpoint/7BCB89D860CEDDD5726088FAD64F2A5A,81
+66,"X Hu, L Chu, J Pei, W Liu, J Bian",Model complexity of deep learning: A survey,379,2021, Springer, Knowledge and Information Systems,"… studies on model complexity in deep learning. Model complexity of deep learning can be 
+categorized into … We also discuss the applications of deep learning model complexity including …",https://link.springer.com/article/10.1007/s10115-021-01605-0,76
+10,"X Hao, G Zhang, S Ma",Deep learning,363,2016, World Scientific, International Journal of Semantic …,"Deep learning is a branch of machine learning that tries to model high-level abstractions of 
+data … This paper provides an overview of deep learning in neural networks including popular …",https://www.worldscientific.com/doi/abs/10.1142/S1793351X16500045,36
+51,CD Manning,Computational linguistics and deep learning,356,2015, direct.mit.edu, Computational Linguistics,"… Although there have been gains from deep learning approaches… deep learning: (1) It just 
+has to be wonderful for our field for the smartest and most influential people in machine learning …",https://direct.mit.edu/coli/article-abstract/41/4/701/1512,32
+5,N Rusk,Deep learning,348,2016, nature.com, Nature Methods,"… Deep learning does not depend on prior data processing and automatically extracts features… 
+example, a deep neural network tasked with interpreting shapes would learn to recognize …",https://www.nature.com/articles/nmeth.3707.,35
+60,"X Wang, Y Zhao, F Pourpanah",Recent advances in deep learning,327,2020, Springer, International Journal of Machine Learning …,"… , various deep architectures with different learning paradigm … To show some recent advances 
+of deep learning to some extent… categories: (1) deep architectures and conventional neural …",https://link.springer.com/article/10.1007/s13042-020-01096-5,54
+32,"MA Wani, FA Bhat, S Afzal, AI Khan",Advances in deep learning,311,2020, Springer,,"… deep learning architecture for face recognition problem. A comparison of the performance 
+of supervised deep learning … analysis of deep learning and non-deep learning methods is …",https://link.springer.com/content/pdf/10.1007/978-981-13-6794-6.pdf,52
+15,SJD Prince,Understanding deep learning,310,2023, books.google.com,,"… to this field understand the principles behind deep learning. The book is neither terribly … 
+deep learning to novel situations where there is no existing recipe for success. Machine learning …",https://books.google.com/books?hl=en&lr=&id=rvyxEAAAQBAJ&oi=fnd&pg=PR13&dq=Deep+Learning&ots=1i9jvW5hQS&sig=BfdBQICohMp2Fl2FjeEgKJGoGIc,103
+20,"J Howard, S Gugger",Deep Learning for Coders with fastai and PyTorch,282,2020, books.google.com,,"… As artificial intelligence has moved into the era of deep learning, it behooves all of us to 
+learn as much as possible about how it works. Deep Learning for Coders provides a terrific way …",https://books.google.com/books?hl=en&lr=&id=yATuDwAAQBAJ&oi=fnd&pg=PP1&dq=Deep+Learning&ots=NLnxlu4IZL&sig=bZbDQMR5OobRUzfJj6TFN4pdQGk,47
+57,"CM Bishop, H Bishop",Deep learning: Foundations and concepts,276,2023, books.google.com,,"… However, these same attributes mean that deep learning … societal aspects of the use of deep 
+learning, as these topics are of … and to learn about the responsible use of deep learning and …",https://books.google.com/books?hl=en&lr=&id=0uTgEAAAQBAJ&oi=fnd&pg=PR5&dq=Deep+Learning&ots=dtrcKKjPYQ&sig=uCpGdLaUOSaAoeJQQkfGAg6Ah3E,92
+98,"B Norgeot, BS Glicksberg, AJ Butte",A call for deep-learning healthcare,276,2019, nature.com, Nature medicine,"… Here we argue that now is the time to create smarter healthcare systems in which the 
+best treatment decisions are computationally learned from electronic health record data by …",https://www.nature.com/articles/s41591-018-0320-3,39
+26,"TW Smith, SA Colby",Teaching for deep learning,265,2007, Taylor & Francis, The clearing house: A journal of educational …,"… a definition of surface and deep learning and describe the structure of the observed learning 
+outcome taxonomy, which was used to evaluate depth of learning. The authors also provide …",https://www.tandfonline.com/doi/abs/10.3200/TCHS.80.5.205-210,14
+74,T Serre,"Deep learning: the good, the bad, and the ugly",264,2019, annualreviews.org, Annual review of vision science,"… Recent developments in a branch of machine learning known as deep learning have … 
+The goal of this review is to provide a comprehensive overview of recent deep learning …",https://www.annualreviews.org/content/journals/10.1146/annurev-vision-091718-014951,38
+93,O Calin,Deep learning architectures,247,2020, Springer,,"… learning and mathematical statistics of deep learning, or the mathematics relevant to the 
+computational complexity of deep learning, … be represented by deep learning neural networks. …",https://link.springer.com/content/pdf/10.1007/978-3-030-36721-3.pdf,41
+92,"J Fan, C Ma, Y Zhong",A selective overview of deep learning,237,2020, pmc.ncbi.nlm.nih.gov, Statistical science: a review journal of …,"… Along the way, we highlight new characteristics of deep learning (including depth … deep 
+learning, many of which are only suggestive. While a complete understanding of deep learning …",https://pmc.ncbi.nlm.nih.gov/articles/PMC8300482/,40
+97,"J Berner, P Grohs, G Kutyniok…",The modern mathematics of deep learning,237,2021, cambridge.org, arXiv preprint arXiv …,"… deep learning. This field emerged around a list of research questions that were not answered 
+within the classical framework of learning … role of depth in deep architectures, the apparent …",https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7C3874F83A5D934E5FDC984B8457D553/stamped-9781316516782c1_1-111.pdf/modern_mathematics_of_deep_learning.pdf,47
+8,J Schmidhuber,Deep learning,210,2015, scholarpedia.org, Scholarpedia,"… , may learn to solve problems of potentially unlimited depth, for example, by learning to store 
+in … Some NNs can quickly learn to solve certain deep but simple problems through random …",http://www.scholarpedia.org/article/Deep_Learning,19
+25,"M Khan, B Jan, H Farman, J Ahmad, H Farman…",Deep learning methods and applications,209,2019, Springer, Deep learning …,"… deep learning paradigm, their intricate details, and their applications in various fields. Deep 
+learning … learning algorithms. It has made it possible as well as practical to integrate machine …",https://link.springer.com/chapter/10.1007/978-981-13-3459-7_3,30
+82,"W Wang, M Zhang, G Chen, HV Jagadish, BC Ooi…",Database meets deep learning: Challenges and opportunities,199,2016, dl.acm.org, ACM Sigmod …,"… However, databases and deep learning are different in … deep learning systems from a 
+database perspective, and analyze database applications that may benefit from deep learning …",https://dl.acm.org/doi/abs/10.1145/3003665.3003669,20
+90,"MR Minar, J Naher",Recent advances in deep learning: An overview,186,2018, arxiv.org, arXiv preprint arXiv:1807.08169,"… Considering the popularity and expansion of Deep Learning in recent years, we present 
+a brief overview of Deep Learning as well as Neural Networks (NN), and its major advances …",https://arxiv.org/abs/1807.08169,23
+24,FQ Lauzon,An introduction to deep learning,178,2012, ieeexplore.ieee.org, 2012 11th international conference on information …,"… Besides briefly introducing deep learning, the main contribution of this … , deep learning 
+along with the theory behind SdA were briefly introduced. Test result shows that a deep learning …",https://ieeexplore.ieee.org/abstract/document/6310529/,13
+28,KG Kim,Book review: Deep learning,172,2016, synapse.koreamed.org, Healthcare informatics research,"… The hierarchy of concepts allows the computer to learn complicated concepts by building … 
+be many layers deep. This book introduces a broad range of topics in relation to deep learning. …",https://synapse.koreamed.org/articles/1075818,17
+31,"L Arnold, S Rebecchi, S Chevallier…",An introduction to deep learning,166,2011, hal.science, … symposium on artificial …,"… As part of a two-stage learning scheme involving multiple … deep learning special session 
+details the state-of-the-art models and summarizes the current understanding of this learning …",https://hal.science/hal-01352061/,11
+40,U Michelucci,Applied deep learning,159,2018, Springer,based approach to understanding Deep neural …,"Why another book on applied deep learning? That is the question I asked myself before 
+starting to write this volume. After all, do a Google search on the subject, and you will be …",https://link.springer.com/content/pdf/10.1007/978-1-4842-3790-8.pdf,20
+54,"N Vo, N Jacobs, J Hays",Revisiting im2gps in the deep learning era,158,2017, openaccess.thecvf.com, Proceedings of the IEEE …,"… Image Geolocalization using Deep Learning Given a large training data of images with 
+GPS labels, we examine two deep learning approaches for geolocalization. For both cases we …",http://openaccess.thecvf.com/content_iccv_2017/html/Vo_Revisiting_IM2GPS_in_ICCV_2017_paper.html,18
+17,"G Hinton, Y LeCun, Y Bengio",Deep learning,148,2015, helper.ipam.ucla.edu, Nature,"… A breakthrough that makes deep learning efficient • To learn deep nets efficiently, we need 
+to learn one layer of features at a time. This does not work well if we assume that the latent …",http://helper.ipam.ucla.edu/publications/gss2012/gss2012_10596.pdf,13
+96,"Y LeCun, M Ranzato",Deep learning tutorial,147,2013, Citeseer, … in international conference on machine learning  …,"… There is no opposition between graphical models and deep learning. Many deep 
+learning models are formulated as factor graphs Some graphical models use deep …",https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=c14dd0861e4333306e880d63255433db25beb9d5,11
+21,"S Nikolenko, A Kadurin, E Arkhangelskaya",Deep learning,146,2018, logic.pdmi.ras.ru, SPb.: Peter,"• Aaaand... that’s it! We can now take the gradients of any complicated composition of 
+simple functions.• Which is all we need to apply gradient descent!• The libraries–theano, …",https://logic.pdmi.ras.ru/~sergey/teaching/mlharbour17/18-dl-regularization.pdf,18
+78,"K Huang, A Hussain, QF Wang, R Zhang","Deep learning: fundamentals, theory and applications",137,2019, Springer,,"… Chapters 4 and 5 describe application of deep learning methods … via deep learning, and 
+describes two powerful learning models … Chapter 5 addresses deep learning technologies in a …",https://link.springer.com/content/pdf/10.1007/978-3-030-06073-2.pdf,20
+41,"M Coşkun, Ö Yıldırım, A Uçar, Y Demır",An overview of popular deep learning methods,137,2017, dergipark.org.tr, European Journal of …,"… in deep learning, one of the state of the art approaches in machine learning, in terms of 
+its history and current applications as a brief introduction to the subject. Deep learning has …",https://dergipark.org.tr/en/pub/ejt/issue/34562/403498,15
+95,"A Mosavi, S Ardabili, AR Varkonyi-Koczy",List of deep learning models,137,2019, Springer, International conference on …,"… deep learning methods and their notable applications. In every section, one deep learning 
+… The description of each deep learning method and the function of each building block is …",https://link.springer.com/chapter/10.1007/978-3-030-36841-8_20,20
+23,AW Trask,Grokking deep learning,130,2019, books.google.com,,"… barrier to entry to the practice of deep learning. You don’t just … ’ll even learn about moreadvanced 
+deep learning concepts … deep learning so that you can master a major deep learning …",https://books.google.com/books?hl=en&lr=&id=0zczEAAAQBAJ&oi=fnd&pg=PT34&dq=Deep+Learning&ots=-lBl_TqJAH&sig=WzEOsLBQvYJZBECFjQHjv6YLMgQ,19
+63,C Buckner,Deep learning: A philosophical introduction,125,2019, Wiley Online Library, Philosophy compass,"… Deep learning is currently the most prominent and widely … This is remarkable, given that 
+deep learning neural networks … It argues that deep learning neural networks differ importantly …",https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/phc3.12625,18
+84,"M Paluszek, S Thomas",Practical Matlab deep learning,122,2020, Springer,Based Approach  Michael Paluszek and …,"… Deep learning systems are usually in the latter category. We’ll next give a brief history of 
+deep learning … In our book, we will apply MATLAB deep learning to a wide range of problems …",https://link.springer.com/content/pdf/10.1007/978-1-4842-7912-0.pdf,20
+67,MM Waldrop,What are the limits of deep learning?,120,2019, pnas.org, Proceedings of the National Academy of Sciences,"… New York University and one of deep learning’s most vocal skeptics. … deep learning was 
+magic. Now people are realizing that it’s not magic.” Still, there’s no denying that deep learning …",https://www.pnas.org/doi/abs/10.1073/pnas.1821594116,17

@@ -2,14 +2,14 @@
 
 # -*- coding: utf-8 -*-
 """
-This code creates a database with a list of publications data from Google 
+This code creates a database with a list of publications data from Google
 Scholar.
 The data acquired from GS is Title, Citations, Links and Rank.
 It is useful for finding relevant papers by sorting by the number of citations
-This example will look for the top 100 papers related to the keyword, 
+This example will look for the top 100 papers related to the keyword,
 so that you can rank them by the number of citations
 
-As output this program will plot the number of citations in the Y axis and the 
+As output this program will plot the number of citations in the Y axis and the
 rank of the result in the X axis. It also, optionally, export the database to
 a .csv file.
 
@@ -22,6 +22,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from time import sleep
 import warnings
+import random
+import os
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # Solve conflict between raw_input and input on Python 2 and Python 3
 import sys
@@ -30,7 +39,7 @@ if sys.version[0]=="3": raw_input=input
 # Default Parameters
 KEYWORD = 'machine learning' # Default argument if command line is empty
 NRESULTS = 100 # Fetch 100 articles
-CSVPATH = '.' # Current folder
+CSVPATH = os.getcwd() # Current folder as default path
 SAVECSV = True
 SORTBY = 'Citations'
 PLOT_RESULTS = False
@@ -39,6 +48,8 @@ now = datetime.datetime.now()
 ENDYEAR = now.year # Current year
 DEBUG=False # debug mode
 MAX_CSV_FNAME = 255
+LANG = 'All'
+
 
 
 
@@ -48,13 +59,17 @@ YEAR_RANGE = '' #&as_ylo={start_year}&as_yhi={end_year}'
 #GSCHOLAR_URL_YEAR = GSCHOLAR_URL+YEAR_RANGE
 STARTYEAR_URL = '&as_ylo={}'
 ENDYEAR_URL = '&as_yhi={}'
+LANG_URL = '&lr={}'
+
 ROBOT_KW=['unusual traffic from your computer network', 'not a robot']
 
 def get_command_line_args():
     # Command line arguments
     parser = argparse.ArgumentParser(description='Arguments')
-    parser.add_argument('--kw', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """)
+    parser.add_argument('kw', type=str, help="""Keyword to be searched. Use double quote followed by simple quote to search for an exact keyword. Example: "'exact keyword'" """, default=KEYWORD)
     parser.add_argument('--sortby', type=str, help='Column to be sorted by. Default is by the columns "Citations", i.e., it will be sorted by the number of citations. If you want to sort by citations per year, use --sortby "cit/year"')
+    parser.add_argument('--langfilter', nargs='+', type=str, help='Only languages listed are permitted to pass the filter. List of supported language codes: zh-CN, zh-TW, nl, en, fr, de, it, ja, ko, pl, pt, es, tr')
+
     parser.add_argument('--nresults', type=int, help='Number of articles to search on Google Scholar. Default is 100. (carefull with robot checking if value is too high)')
     parser.add_argument('--csvpath', type=str, help='Path to save the exported csv file. By default it is the current folder')
     parser.add_argument('--notsavecsv', action='store_true', help='By default results are going to be exported to a csv file. Select this option to just print results but not store them')
@@ -65,6 +80,11 @@ def get_command_line_args():
 
     # Parse and read arguments and assign them to variables if exists
     args, _ = parser.parse_known_args()
+
+    # Check if no arguments were provided and print help if so
+    if len(sys.argv) == 1:
+        parser.print_help()
+        sys.exit(0)
 
     keyword = KEYWORD
     if args.kw:
@@ -86,6 +106,10 @@ def get_command_line_args():
     if args.sortby:
         sortby=args.sortby
 
+    langfilter = LANG
+    if args.langfilter:
+        langfilter = args.langfilter
+
     plot_results = False
     if args.plotresults:
         plot_results = True
@@ -97,12 +121,13 @@ def get_command_line_args():
     end_year = ENDYEAR
     if args.endyear:
         end_year=args.endyear
-    
+
     debug = DEBUG
     if args.debug:
         debug = True
 
-    return keyword, nresults, save_csv, csvpath, sortby, plot_results, start_year, end_year, debug
+    return keyword, nresults, save_csv, csvpath, sortby, langfilter, plot_results, start_year, end_year, debug
+
 
 def get_citations(content):
     out = 0
@@ -124,25 +149,16 @@ def get_year(content):
     return int(out)
 
 def setup_driver():
-    try:
-        from selenium import webdriver
-        from selenium.webdriver.chrome.options import Options
-        from selenium.common.exceptions import StaleElementReferenceException
-    except Exception as e:
-        print(e)
-        print("Please install Selenium and chrome webdriver for manual checking of captchas")
-
     print('Loading...')
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
-    driver = webdriver.Chrome(chrome_options=chrome_options)
+    driver = webdriver.Chrome(options=chrome_options)
     return driver
 
 def get_author(content):
-    for char in range(0,len(content)):
-        if content[char] == '-':
-            out = content[2:char-1]
-            break
+    content = content.replace('\xa0', ' ')  # Replaces the non-breaking space with a regular space
+    if len(content)>0:
+        out = content.split(" - ")[0]
     return out
 
 def get_element(driver, xpath, attempts=5, _count=0):
@@ -152,7 +168,7 @@ def get_element(driver, xpath, attempts=5, _count=0):
         return element
     except Exception as e:
         if _count<attempts:
-            sleep(1)
+            sleep(random.uniform(0.5, 3))
             get_element(driver, xpath, attempts=attempts, _count=_count+1)
         else:
             print("Element not found")
@@ -163,22 +179,35 @@ def get_content_with_selenium(url):
         driver = setup_driver()
     driver.get(url)
 
-    # Get element from page
-    el = get_element(driver, "/html/body")
-    c = el.get_attribute('innerHTML')
+    while True:
+        # Wait for a specific element that indicates the page has loaded
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        )
 
-    if any(kw in el.text for kw in ROBOT_KW):
-        raw_input("Solve captcha manually and press enter here to continue...")
-        el = get_element(driver, "/html/body")
+        # Get the body element
+        el = driver.find_element(By.TAG_NAME, "body")
+
         c = el.get_attribute('innerHTML')
-
+        if any(kw in el.text for kw in ROBOT_KW):
+            raw_input("Solve captcha manually and press enter here to continue...")
+        else:
+            break
 
     return c.encode('utf-8')
 
+def format_strings(strings):
+    if len(strings) == 1:
+        return f'lang_{strings[0]}'
+    else:
+        return '%7C'.join(f'lang_{s}' for s in strings)
 
 def main():
     # Get command line arguments
-    keyword, number_of_results, save_database, path, sortby_column, plot_results, start_year, end_year, debug = get_command_line_args()
+    keyword, number_of_results, save_database, path, sortby_column, langfilter, plot_results, start_year, end_year, debug = get_command_line_args()
+
+    print("Running with the following parameters:")
+    print(f"Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Permitted Languages: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}")
 
     # Create main URL based on command line arguments
     if start_year:
@@ -188,6 +217,10 @@ def main():
 
     if end_year != now.year:
         GSCHOLAR_MAIN_URL = GSCHOLAR_MAIN_URL + ENDYEAR_URL.format(end_year)
+
+    if langfilter != 'All':
+        formatted_filters = format_strings(langfilter)
+        GSCHOLAR_MAIN_URL = GSCHOLAR_MAIN_URL + LANG_URL.format(formatted_filters)
 
     if debug:
         GSCHOLAR_MAIN_URL='https://web.archive.org/web/20210314203256/'+GSCHOLAR_URL
@@ -204,6 +237,7 @@ def main():
     author = []
     venue = []
     publisher = []
+    content = []  # Add new list for content
     rank = [0]
 
     # Get content from number_of_results URLs
@@ -231,7 +265,6 @@ def main():
 
         # Get stuff
         mydivs = soup.findAll("div", { "class" : "gs_or" })
-
         for div in mydivs:
             try:
                 links.append(div.find('h3').find('a').get('href'))
@@ -270,14 +303,20 @@ def main():
             except:
                 venue.append("Venue not fount")
 
+            try:
+                content_div = div.find('div', {'class': 'gs_rs'})
+                content.append(content_div.text if content_div else "Content not found")
+            except:
+                content.append("Content not found")
+
             rank.append(rank[-1]+1)
 
-        # Delay 
-        sleep(0.5)
+        # Delay
+        sleep(random.uniform(0.5, 3))
 
     # Create a dataset and sort by the number of citations
-    data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, links)), index = rank[1:],
-                        columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Source'])
+    data = pd.DataFrame(list(zip(author, title, citations, year, publisher, venue, content, links)), index = rank[1:],
+                        columns=['Author', 'Title', 'Citations', 'Year', 'Publisher', 'Venue', 'Content', 'Source'])
     data.index.name = 'Rank'
 
     # Avoid years that are higher than the current year by clipping it to end_year
@@ -305,9 +344,10 @@ def main():
 
     # Save results
     if save_database:
-        fpath_csv = os.path.join(path,keyword.replace(' ','_')+'.csv')
+        fpath_csv = os.path.join(path,keyword.replace(' ','_').replace(':','_')+'.csv')
         fpath_csv = fpath_csv[:MAX_CSV_FNAME]
         data_ranked.to_csv(fpath_csv, encoding='utf-8')
+        print('Results saved to', fpath_csv)
 
 if __name__ == '__main__':
         main()

@@ -1,0 +1,28 @@
+[project]
+name='sortgs'
+version='1.0.7'
+authors=[{name='Fernando Marcos Wittmann'}]
+description='A Python tool to rank Google Scholar publications by citations.'
+readme = 'README.md'
+urls={github='https://github.com/WittmannF/sort-google-scholar'}
+dependencies=[
+    'beautifulsoup4',
+    'matplotlib',
+    'pandas',
+    'requests',
+    'selenium',
+]
+scripts = {sortgs='sortgs:main'}
+classifiers=[
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+requires-python='>=3.8'
+
+[build-system]
+requires = ['setuptools']
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where =["src"]

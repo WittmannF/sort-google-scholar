@@ -1,101 +1,201 @@
-Rank,Author,Title,Citations,Year,Source,cit/year
-3, Hart,Nonintrusive appliance load monitoring,1691,1992,https://ieeexplore.ieee.org/abstract/document/192069/,63
-7,"Zeifman, K Roth",Nonintrusive appliance load monitoring: Review and outlook,629,2011,https://ieeexplore.ieee.org/abstract/document/5735484/,79
-1,"Zoha, A Gluhak, MA Imran, S Rajasegarar",Non-intrusive load monitoring approaches for disaggregated energy sensing: A survey,466,2012,https://www.mdpi.com/1424-8220/12/12/16838htm,67
-68,"Moser, F Rosenberg, S Dustdar",Non-intrusive monitoring and service adaptation for WS-BPEL,365,2008,https://dl.acm.org/citation.cfm?id=1367607,33
-5," Norford, SB Leeb",Non-intrusive electrical load monitoring in commercial buildings based on steady-state and transient load-detection algorithms,304,1996,https://pdfs.semanticscholar.org/d6b1/43ad1c53a9c5263b62e5534ef899425a23bd.pdf,13
-18," Leeb, SR Shaw, JL Kirtley",Transient event detection in spectral envelope estimates for nonintrusive load monitoring,297,1995,https://ieeexplore.ieee.org/abstract/document/400897/,12
-2,"Parson, S Ghosh, MJ Weal, A Rogers",Non-Intrusive Load Monitoring Using Prior Models of General Appliance Types.,247,2012,http://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/viewFile/4809/5163/,35
-16," Shaw, SB Leeb, LK Norford…",Nonintrusive load monitoring and diagnostics in power systems,215,2008,https://ieeexplore.ieee.org/iel5/19/4407674/04463663.pdf,20
-4,"Batra, J Kelly, O Parson, H Dutta…",NILMTK: an open source toolkit for non-intrusive load monitoring,210,2014,https://dl.acm.org/citation.cfm?id=2602051,42
-72,"McLaughlin, P McDaniel, W Aiello",Protecting consumer privacy from electric load monitoring,187,2011,https://dl.acm.org/citation.cfm?id=2046720,23
-6,"Anderson, A Ocneanu, D Benitez, D Carlson, A Rowe…",Could not catch title,186,0,"Look manually at: https://scholar.google.com/scholar?start=0&q=non+intrusive+load+monitoring&hl=en&as_sdt=0,5",0
-28,"Drenker, A Kader",Nonintrusive monitoring of electric loads,182,1999,https://ieeexplore.ieee.org/abstract/document/795138/,9
-74," Marceau, R Zmeureanu",Nonintrusive load disaggregation computer program to estimate the energy consumption of major end uses in residential buildings,181,2000,https://www.sciencedirect.com/science/article/pii/S0196890499001739,10
-29,"Suzuki, S Inagaki, T Suzuki…",Nonintrusive appliance load monitoring based on integer programming,164,2008,https://ieeexplore.ieee.org/abstract/document/4655131/,15
-40," Hart, EC Kern Jr, FC Schweppe",Non-intrusive appliance monitor apparatus,159,1989,https://patents.google.com/patent/US4858141A/en,5
-20," Berges, E Goldman, HS Matthews…",Enhancing electricity audits in residential buildings with nonintrusive load monitoring,141,2010,https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1530-9290.2010.00280.x,16
-96,"Wang, G Zheng",Residential appliances identification and monitoring by a nonintrusive method,131,2012,https://ieeexplore.ieee.org/abstract/document/6032723/,19
-23," Leeb, JL Kirtley Jr",Transient event detector for use in nonintrusive load monitoring systems,128,1996,https://patents.google.com/patent/US5483153A/en,6
-57," Chang, KL Chen, YP Tsai…",A new measurement method for power signatures of nonintrusive demand monitoring and load identification,128,2012,https://ieeexplore.ieee.org/abstract/document/6112713/,18
-11,"Beckel, W Kleiminger, R Cicchetti, T Staake…",The ECO data set and the performance of non-intrusive load monitoring algorithms,115,2014,https://dl.acm.org/citation.cfm?id=2674064,23
-86,"Marchiori, D Hakkarinen, Q Han…",Circuit-level load monitoring for household energy management,115,2011,https://ieeexplore.ieee.org/abstract/document/5582070/,14
-76," Lee, GSK Fung, HY Lam…",Exploration on load signatures,113,2004,https://pdfs.semanticscholar.org/49c3/e69a148136868331539207f8dc2f660990ca.pdf,8
-9,"Figueiredo, A De Almeida, B Ribeiro",Home electrical signal disaggregation for non-intrusive load monitoring (NILM) systems,101,2012,https://www.sciencedirect.com/science/article/pii/S0925231212003359,14
-65,"Chen, S Barker, A Subbaswamy, D Irwin…",Non-intrusive occupancy monitoring using smart meters,95,2013,https://dl.acm.org/citation.cfm?id=2528294,16
-24," Cole, A Albicki",Data extraction for effective non-intrusive identification of residential power loads,92,1998,https://ieeexplore.ieee.org/abstract/document/676838/,4
-42,"Berges, E Goldman, HS Matthews…",User-centered nonintrusive electricity load monitoring for residential buildings,89,2011,https://ascelibrary.org/doi/abs/10.1061/(ASCE)CP.1943-5487.0000108,11
-22," Chang, CL Lin, JK Lee",Load identification in nonintrusive load monitoring using steady-state and turn-on transient energy algorithms,89,2010,https://ieeexplore.ieee.org/abstract/document/5472008/,10
-33,"Parson, S Ghosh, M Weal, A Rogers",An unsupervised training method for non-intrusive appliance load monitoring,88,2014,https://www.sciencedirect.com/science/article/pii/S0004370214001003,18
-44,"Najmeddine, KEK Drissi, C Pasquier…",State of art on load monitoring methods,86,2008,https://ieeexplore.ieee.org/abstract/document/4762669/,8
-14,"Hassan, F Javed, N Arshad",An Empirical Investigation of VI Trajectory Based Load Signatures for Non-Intrusive Load Monitoring.,86,2014,https://ieeexplore.ieee.org/iel7/5165411/5446437/06575197.pdf,17
-75,"Dong, PCM Meira, W Xu…",Non-intrusive signature extraction for major residential loads,85,2013,https://ieeexplore.ieee.org/abstract/document/6471276/,14
-91," Cole, A Albicki",Algorithm for nonintrusive identification of residential appliances,85,1998,https://ieeexplore.ieee.org/abstract/document/704019/,4
-10," Anderson, ME Bergés, A Ocneanu…",Event detection for non intrusive load monitoring,83,2012,https://ieeexplore.ieee.org/abstract/document/6389367/,12
-83, Leeb,A conjoint pattern recognition approach to nonintrusive load monitoring,82,1993,https://dspace.mit.edu/bitstream/handle/1721.1/12607/28260591-MIT.pdf?sequence=2,3
-92,"Cole, A Albicki",Nonintrusive identification of electrical loads in a three-phase environment based on harmonic content,81,2000,https://ieeexplore.ieee.org/abstract/document/846806/,4
-32, Chang,Non-intrusive demand monitoring and load identification for energy management systems based on transient feature analyses,78,2012,https://www.mdpi.com/1996-1073/5/11/4569,11
-36,Pihala,Non-intrusive appliance load monitoring system based on a modern kWh-meter,74,1998,https://www.vtt.fi/inf/pdf/publications/1998/P356.pdf,4
-31," Roos, IE Lane, EC Botha…",Using neural networks for non-intrusive monitoring of industrial electrical loads,72,1994,https://ieeexplore.ieee.org/abstract/document/351862/,3
-88,"Makonin, F Popowich, IV Bajić, B Gill…",Exploiting hmm sparsity to perform online real-time nonintrusive load monitoring,68,2016,https://ieeexplore.ieee.org/abstract/document/7317784/,23
-62,"Cox, SB Leeb, SR Shaw…",Transient event detection for nonintrusive load monitoring and demand side management using voltage distortion,67,2006,https://ieeexplore.ieee.org/abstract/document/1620777/,5
-80, Lee,Electric load information system based on non-intrusive power monitoring,66,2003,https://dspace.mit.edu/handle/1721.1/29633,4
-69,"Berges, E Goldman, HS Matthews…",Training load monitoring algorithms on highly sub-metered home electricity consumption data,63,2008,https://ieeexplore.ieee.org/abstract/document/6073013/,6
-46," Leeb, UA Khan, SR Shaw",Multiprocessing transient event detector for use in a nonintrusive electrical load monitoring system,62,1998,https://patents.google.com/patent/US5717325A/en,3
-39," Chang, HT Yang, CL Lin",Load identification in neural networks for a non-intrusive monitoring of industrial electrical loads,62,2007,https://link.springer.com/chapter/10.1007/978-3-540-92719-8_60,5
-37," Tsai, YH Lin",Modern development of an adaptive non-intrusive appliance load monitoring system in electricity energy conservation,61,2012,https://www.sciencedirect.com/science/article/pii/S0306261911007240,9
-13," Figueiredo, A De Almeida, B Ribeiro",An experimental study on electrical signature identification of non-intrusive load monitoring (nilm) systems,61,2011,https://link.springer.com/10.1007%2F978-3-642-20267-4_4,8
-53,"Makonin, F Popowich",Nonintrusive load monitoring (NILM) performance evaluation,60,2015,https://link.springer.com/article/10.1007/s12053-014-9306-2,15
-15," Wong, YA Şekercioğlu…",Recent approaches to non-intrusive load monitoring techniques in residential settings,59,2013,https://ieeexplore.ieee.org/abstract/document/6611501/,10
-12," Chang, CL Lin, HT Yang",Load recognition for different loads with the same real power and reactive power in a non-intrusive load-monitoring system,59,2008,https://ieeexplore.ieee.org/abstract/document/4537137/,5
-66,"Basu, V Debusschere, S Bacha…",Nonintrusive load monitoring: A temporal multilabel classification approach,57,2015,https://ieeexplore.ieee.org/abstract/document/6915905/,14
-47," Yang, HH Chang, CL Lin",Design a neural network for features selection in non-intrusive monitoring of industrial electrical loads,56,2007,https://ieeexplore.ieee.org/abstract/document/4281579/,5
-89," Shaw, CB Abler, RF Lepard…",Instrumentation for high performance nonintrusive electrical load monitoring,52,1998,http://solarenergyengineering.asmedigitalcollection.asme.org/article.aspx?articleid=1455858,2
-41,"Bonfigli, S Squartini, M Fagiani…",Unsupervised algorithms for non-intrusive load monitoring: An up-to-date overview,51,2015,https://ieeexplore.ieee.org/abstract/document/7165334/,13
-17," Bergman, D Jin, JP Juen, N Tanaka…",Distributed non-intrusive load monitoring,50,2011,https://ieeexplore.ieee.org/abstract/document/5759180/,6
-70,"Zhao, L Stankovic, V Stankovic",On a training-less solution for non-intrusive appliance load monitoring using graph signal processing,50,2016,https://ieeexplore.ieee.org/abstract/document/7457610/,17
-26," Bijker, X Xia, J Zhang",Active power residential non-intrusive appliance load monitoring system,49,2009,https://ieeexplore.ieee.org/abstract/document/5308244/,5
-19,"DeNucci, R Cox, SB Leeb, J Paris…",Diagnostic indicators for shipboard systems using non-intrusive load monitoring,47,2005,https://ieeexplore.ieee.org/abstract/document/1524708/,3
-85,"Parson, S Ghosh, M Weal, A Rogers",Using hidden markov models for iterative non-intrusive appliance monitoring,47,2011,https://eprints.soton.ac.uk/272990/,6
-60,"Liao, G Elafoudi, L Stankovic…",Non-intrusive appliance load monitoring using low-resolution smart meter data,45,2014,https://ieeexplore.ieee.org/abstract/document/7007702/,9
-27,"He, W Lin, N Liu, RG Harley…",Incorporating non-intrusive load monitoring into building level demand response,43,2013,https://ieeexplore.ieee.org/abstract/document/6670133/,7
-100," Lin, MS Tsai",An advanced home energy management system facilitated by nonintrusive load monitoring with automated multiobjective power scheduling,42,2015,https://ieeexplore.ieee.org/abstract/document/7015635/,10
-21,"Duarte, P Delmar, KW Goossen…",Non-intrusive load monitoring based on switching voltage transients and wavelet transforms,41,2012,https://ieeexplore.ieee.org/abstract/document/6378333/,6
-51," Tabatabaei, S Dick, W Xu",Toward Non-Intrusive Load Monitoring via Multi-Label Classification.,40,2017,https://ieeexplore.ieee.org/iel7/5165411/5446437/07498597.pdf,20
-25," Lin, MS Tsai",Non-intrusive load monitoring by novel neuro-fuzzy classification considering uncertainties,40,2014,https://ieeexplore.ieee.org/abstract/document/6880402/,8
-38,"Andrews, D Benitez, B Raghunathan…",Method for non-intrusive load monitoring using a hybrid systems state estimation approach,39,2012,https://patents.google.com/patent/US8209062B2/en,6
-64,Parson,Unsupervised training methods for non-intrusive appliance load monitoring from smart meter data,38,2014,https://eprints.soton.ac.uk/364263/,8
-34,Pattem,Unsupervised disaggregation for non-intrusive load monitoring,37,2012,https://ieeexplore.ieee.org/abstract/document/6406788/,5
-50,"Onoda, G Rätsch, KR Müller",Applying support vector machines and boosting to a non-intrusive monitoring system for household electric appliances with inverters,36,2000,http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.40.222,2
-30,"Batra, O Parson, M Berges, A Singh…",A comparison of non-intrusive load monitoring methods for commercial and residential buildings,35,2014,https://arxiv.org/abs/1408.6595,7
-95,"Ridi, C Gisler, J Hennebert",A survey on intrusive load monitoring for appliance recognition,34,2014,https://ieeexplore.ieee.org/abstract/document/6977348/,7
-63," Park, M Ravi, SM Seo, JH Shin",Apparatus and method for non-intrusive load monitoring (nilm),33,2014,https://patents.google.com/patent/US20140142724A1/en,7
-48,"Basu, V Debusschere, A Douza",Time series distance-based methods for non-intrusive load monitoring in residential buildings,32,2015,https://www.sciencedirect.com/science/article/pii/S0378778815002133,8
-71,"Cominola, M Giuliani, D Piga, A Castelletti…",A hybrid signature-based iterative disaggregation algorithm for non-intrusive load monitoring,30,2017,https://www.sciencedirect.com/science/article/pii/S030626191631488X,15
-56,"Giri, M Bergés",An energy estimation framework for event-based methods in Non-Intrusive Load Monitoring,28,2015,https://www.sciencedirect.com/science/article/pii/S0196890414010164,7
-45,"Jin, E Tebekaemi, M Berges…",Robust adaptive event detection in non-intrusive load monitoring for energy aware smart facilities,28,2011,https://ieeexplore.ieee.org/abstract/document/5947314/,4
-73,"Paris, JS Donnal, SB Leeb",NilmDB: The non-intrusive load monitor database,27,2014,https://ieeexplore.ieee.org/abstract/document/6847241/,5
-43,"Egarter, A Sobe, W Elmenreich",Evolving non-intrusive load monitoring,25,2013,https://link.springer.com/10.1007/978-3-642-37192-9_19,4
-35, Kamat,Fuzzy logic based pattern recognition technique for non-intrusive load monitoring,24,2004,https://ieeexplore.ieee.org/abstract/document/1414824/,2
-54, Chang,Load identification of non-intrusive load-monitoring system in smart home,23,2010,http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.455.3952&rep=rep1&type=pdf,3
-59,"Batra, H Dutta, A Singh",INDiC: Improved Non-intrusive Load Monitoring Using Load Division and Calibration.,23,2013,https://pdfs.semanticscholar.org/bf40/957484a88de1335cf6c8892fdf15176b5c45.pdf,4
-79, Ramsey Jr,Shipboard applications of non-intrusive load monitoring,23,2004,http://www.dtic.mil/docs/citations/ADA425750,2
-81,Paris,A framework for non-intrusive load monitoring and diagnostics,22,2006,https://dspace.mit.edu/handle/1721.1/37081,2
-49," Su, KL Lian, HH Chang",Feature selection of non-intrusive load monitoring system using STFT and wavelet transform,22,2011,https://ieeexplore.ieee.org/abstract/document/6104631/,3
-61," Trung, O Zammit, E Dekneuvel…",An innovative non-intrusive load monitoring system for commercial and industrial application,21,2012,https://ieeexplore.ieee.org/abstract/document/6404221/,3
-55,"Benyoucef, P Klein, T Bier",Smart Meter with non-intrusive load monitoring for use in Smart Homes,21,2010,https://ieeexplore.ieee.org/abstract/document/5771810/,2
-52," Chang, PC Chien, LS Lin, N Chen",Feature extraction of non-intrusive load-monitoring system using genetic algorithm in smart meters,21,2011,https://www.computer.org/csdl/proceedings/icebe/2011/4518/00/4518a299-abs.html,3
-97,"Yoshimoto, Y Nakano, Y Amano…",Non-intrusive appliances load monitoring system using neural networks,19,2000,https://pdfs.semanticscholar.org/7e36/22620e8158ce01f3f8c34d93cdd4e14203af.pdf,1
-58," Barsim, R Streubel, B Yang",An approach for unsupervised non-intrusive load monitoring of residential appliances,19,2014,https://pdfs.semanticscholar.org/1b16/68f4345635756ebe1ee507460db88e00e798.pdf,4
-99," Esa, MP Abdullah, MY Hassan",A review disaggregation method in Non-intrusive Appliance Load Monitoring,18,2016,https://www.sciencedirect.com/science/article/pii/S1364032116303392,6
-67,"Paris, ZN Remscrim, K Douglas, SB Leeb, RW Cox…",Scalability of non-intrusive load monitoring for shipboard applications,18,2009,https://dspace.mit.edu/handle/1721.1/97005,2
-77," Mitchell, RW Cox, J Paris…",Shipboard Fluid System Diagnostic Indicators Using Non‐Intrusive Load Monitoring,16,2007,https://www.ingentaconnect.com/content/asne/nej/2007/00000119/00000002/art00023,1
-98,"Jin, E Tebekaemi, M Berges…",A time-frequency approach for event detection in non-intrusive load monitoring,16,2011,https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8050/80501U/A-time-frequency-approach-for-event-detection-in-non-intrusive/10.1117/12.884385.short,2
-78,"Kelly, N Batra, O Parson, H Dutta…",Nilmtk v0. 2: a non-intrusive load monitoring toolkit for large scale data sets: demo abstract,16,2014,https://dl.acm.org/citation.cfm?id=2675024,3
-90,"Parson, G Fisher, A Hersey, N Batra, J Kelly, A Singh…",Dataport and nilmtk: A building data set designed for non-intrusive load monitoring,15,2015,https://eprints.soton.ac.uk/381304/,4
-84,"Niu, H Jia",Transient event detection algorithm for non-intrusive load monitoring,15,2011,http://en.cnki.com.cn/Article_en/CJFDTotal-DLXT201109007.htm,2
-93,"Wild, KS Barsim, B Yang",A new unsupervised event detector for non-intrusive load monitoring,15,2015,https://ieeexplore.ieee.org/abstract/document/7418159/,4
-82," Figueiredo, A de Almeida, B Ribeiro…",Extracting features from an electrical signal of a non-intrusive load monitoring system,15,2010,https://link.springer.com/chapter/10.1007/978-3-642-15381-5_26,2
-87,"Singh, A Majumdar",Deep Sparse Coding for Non–Intrusive Load Monitoring,14,2018,https://ieeexplore.ieee.org/abstract/document/7847445/,14
-94,"Wang, D Lei, J Yong, L Zeng…",An online load identification algorithm for non-intrusive load monitoring in homes,12,2013,https://ieeexplore.ieee.org/abstract/document/6529753/,2
-8,"Gonçalves, A Ocneanu, A Pandya, M Tragut",Non-Intrusive Load Monitoring,0,0,http://ayesha.lti.cs.cmu.edu/mlsp/courses/fall2010/projects/reports/Hugo.Gonsalves.pdf,0
+Rank,Author,Title,Citations,Year,Publisher,Venue,Content,Source,cit/year
+2,"A Zoha, A Gluhak, MA Imran, S Rajasegarar",Non-intrusive load monitoring approaches for disaggregated energy sensing: A survey,1250,2012, mdpi.com, Sensors,"… Fine-grained energy monitoring can be achieved by deploying … Non-Intrusive Load 
+Monitoring (NILM) is an attractive method for … We review the state-of-the art load signatures and …",https://www.mdpi.com/1424-8220/12/12/16838,89
+4,"N Batra, J Kelly, O Parson, H Dutta…",NILMTK: An open source toolkit for non-intrusive load monitoring,705,2014, dl.acm.org, Proceedings of the 5th …,"… Non-intrusive load monitoring, or energy disaggregation, aims to separate household … To 
+address this challenge, we present the Non-intrusive Load Monitoring Toolkit (NILMTK); an …",https://dl.acm.org/doi/abs/10.1145/2602044.2602051,59
+29,"C Zhang, M Zhong, Z Wang, N Goddard…",Sequence-to-point learning with neural networks for non-intrusive load monitoring,671,2018, ojs.aaai.org, Proceedings of the AAAI …,"Energy disaggregation (aka nonintrusive load monitoring, NILM), a single-channel blind 
+source separation problem, aims to decompose the mains which records the whole house …",https://ojs.aaai.org/index.php/AAAI/article/view/11873,84
+49,A Filip,Blued: A fully labeled public dataset for event-based nonintrusive load monitoring research,588,2011, inferlab.org, 2nd workshop on data mining applications in …,"… In general, two main energy disaggregation approaches exist for non-intrusive load 
+monitoring: event-based and non event-based. A good review of the existing approaches can be …",https://www.inferlab.org/wp-content/uploads/2012/08/2012_anderson_SustKDD.pdf,39
+18,"O Parson, S Ghosh, M Weal, A Rogers",Non-intrusive load monitoring using prior models of general appliance types,502,2012, ojs.aaai.org, Proceedings of the AAAI …,"Non-intrusive appliance load monitoring is the process of disaggregating a household's 
+total electricity consumption into its contributing appliances. In this paper we propose an …",https://ojs.aaai.org/index.php/AAAI/article/view/8162,36
+21,"C Beckel, W Kleiminger, R Cicchetti, T Staake…",The ECO data set and the performance of non-intrusive load monitoring algorithms,452,2014, dl.acm.org, Proceedings of the 1st …,"Non-intrusive load monitoring (NILM) is a popular approach to estimate appliance-level 
+electricity consumption from aggregate consumption data of households. Assessing the …",https://dl.acm.org/doi/abs/10.1145/2674061.2674064,38
+45,"S Makonin, F Popowich, IV Bajić, B Gill…",Exploiting HMM sparsity to perform online real-time nonintrusive load monitoring,451,2015, ieeexplore.ieee.org, IEEE Transactions on …,"… an adaptive non-intrusive appliance load monitoring system in … nal disaggregation for 
+non-intrusive load monitoring (NILM) … buildings with nonintrusive load monitoring,” J. Ind. Ecol., …",https://ieeexplore.ieee.org/abstract/document/7317784/,41
+53,"SB Leeb, SR Shaw, JL Kirtley",Transient event detection in spectral envelope estimates for nonintrusive load monitoring,445,1995, ieeexplore.ieee.org, IEEE Transactions on Power …,"… transient event detector for use in a nonintrusive load monitor (NILM). The NILM determines 
+the operating schedule of the major electrical loads in a building from measurements made …",https://ieeexplore.ieee.org/abstract/document/400897/,14
+33,"T Hassan, F Javed, N Arshad",An empirical investigation of VI trajectory based load signatures for non-intrusive load monitoring,414,2013, ieeexplore.ieee.org, IEEE Transactions on Smart …,"… Abstract—Choice of load signature or feature space is one of … choices for non—intrusive 
+load monitoring or energy disaggregation problem. Electrical power quantities, harmonic load …",https://ieeexplore.ieee.org/abstract/document/6575197/,32
+25,"SM Tabatabaei, S Dick, W Xu",Toward non-intrusive load monitoring via multi-label classification,355,2016, ieeexplore.ieee.org, IEEE Transactions on Smart …,"… The technique of non-intrusive load monitoring was first developed by Hart [100] at MIT in 
+the 1980s. In this work, appliance signatures were the height of rising and falling edges in the …",https://ieeexplore.ieee.org/abstract/document/7498597/,36
+5,"SR Shaw, SB Leeb, LK Norford…",Nonintrusive load monitoring and diagnostics in power systems,342,2008, ieeexplore.ieee.org, IEEE transactions on …,"… transient-based nonintrusive load monitoring that is practical … nonintrusive monitoring, where 
+little or no initial parameter information may be available. Last, nonintrusive load monitoring …",https://ieeexplore.ieee.org/abstract/document/4463663/,19
+24,"M D'Incecco, S Squartini…",Transfer learning for non-intrusive load monitoring,317,2019, ieeexplore.ieee.org, IEEE Transactions on …,"Non-intrusive load monitoring (NILM) is a technique to recover source appliances from only 
+the recorded mains in a household. NILM is unidentifiable and thus a challenge problem …",https://ieeexplore.ieee.org/abstract/document/8818314/,45
+17,"KD Anderson, ME Berges, A Ocneanu…",Event detection for non intrusive load monitoring,273,2012, ieeexplore.ieee.org,38th …,"… Abstract-Monitoring electricity consumption in the home is an important way to help 
+reduce energy usage and Non-Intrusive Load Monitoring (NILM) techniques are a promising …",https://ieeexplore.ieee.org/abstract/document/6389367/,20
+34,"S Makonin, F Popowich",Nonintrusive load monitoring (NILM) performance evaluation: A unified approach for accuracy reporting,260,2015, Springer, Energy Efficiency,"… Load identification in nonintrusive load monitoring using steady-state and turn-on 
+transient energy algorithms. In 2010 14th International Conference on Computer Supported …",https://link.springer.com/article/10.1007/s12053-014-9306-2,24
+57,"ME Berges, E Goldman, HS Matthews…",Enhancing electricity audits in residential buildings with nonintrusive load monitoring,257,2010, Wiley Online Library, Journal of industrial …,"… We then discuss how nonintrusive load monitoring (NILM), a technique for identifying 
+individual loads from the total power consumption of the building, can be used to support and …",https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1530-9290.2010.00280.x,16
+47,"M Figueiredo, A De Almeida, B Ribeiro",Home electrical signal disaggregation for non-intrusive load monitoring (NILM) systems,244,2012, Elsevier, Neurocomputing,"… Studies have shown that individual loads … non-intrusive load monitoring (NILM) approach. 
+In this paper, we focus on the feature extraction and pattern recognition tasks for non-intrusive …",https://www.sciencedirect.com/science/article/pii/S0925231212003359,17
+66,"R Gopinath, M Kumar, CPC Joshua…",Energy management using non-intrusive load monitoring techniques–State-of-the-art and future research directions,240,2020, Elsevier, Sustainable Cities and …,"… Therefore, efforts are being made to monitor and manage energy … , non-intrusive load 
+monitoring (NILM) technique has become a popular and emerging approach to monitor events (on/…",https://www.sciencedirect.com/science/article/pii/S2210670720306326,40
+87,"Y Liu, X Wang, W You",Non-intrusive load monitoring by voltage–current trajectory enabled transfer learning,235,2018, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… transfer learning method for non-intrusive load monitoring. With proper trajectory 
+preprocessing and color encoding techniques, different electric loads can be differentiated by the …",https://ieeexplore.ieee.org/abstract/document/8580416/,29
+14,"L Pereira, N Nunes","Performance evaluation in non‐intrusive load monitoring: datasets, metrics, and tools—A review",232,2018, Wiley Online Library, Wiley Interdisciplinary Reviews: data …,"Non‐intrusive load monitoring (also known as NILM or energy disaggregation) is the 
+process of estimating the energy consumption of individual appliances from electric power …",https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1265,29
+13,"SS Hosseini, K Agbossou, S Kelouwani…",Non-intrusive load monitoring through home energy management systems: A comprehensive review,232,2017, Elsevier, … and Sustainable Energy …,"… This paper presents a comprehensive study conducted to reveal significant inevitabilities 
+of a well organized Non-intrusive Load Monitoring (NILM) that aids Smart Home (SH) idea to …",https://www.sciencedirect.com/science/article/pii/S1364032117307359,26
+11,"K Basu, V Debusschere, S Bacha…",Nonintrusive load monitoring: A temporal multilabel classification approach,211,2014, ieeexplore.ieee.org, IEEE Transactions …,"… The possibility of applying a temporal multilabel classification approach in the domain of 
+non-intrusive load monitoring is explored (non-event based method). A novel set of meta-…",https://ieeexplore.ieee.org/abstract/document/6915905/,18
+58,"A Faustine, NH Mvungi, S Kaijage…",A survey on non-intrusive load monitoring methodies and techniques for energy disaggregation problem,208,2017, arxiv.org, arXiv preprint arXiv …,"… The worldwide recent adoption of smart-meter in smart-grid, has led to the rise of Non-Intrusive 
+Load Monitoring (NILM); which enables estimation of appliance-specific power …",https://arxiv.org/abs/1703.00785,23
+48,"J Kim, TTH Le, H Kim",Nonintrusive load monitoring based on advanced deep learning and novel signature,201,2017, Wiley Online Library, Computational intelligence and …,"… Monitoring electricity consumption in the home is an important way to help reduce energy … 
+Nonintrusive Load Monitoring (NILM) is existing technique which helps us monitor electricity …",https://onlinelibrary.wiley.com/doi/abs/10.1155/2017/4216281,22
+51,"R Bonfigli, A Felicetti, E Principi, M Fagiani…",Denoising autoencoders for non-intrusive load monitoring: improvements and comparative evaluation,200,2018, Elsevier, Energy and …,"Non-Intrusive Load Monitoring (NILM) is the task of determining the appliances individual 
+contributions to the aggregate power consumption by using a set of electrical parameters …",https://www.sciencedirect.com/science/article/pii/S0378778817314457,25
+22,"AL Wang, BX Chen, CG Wang, D Hua",Non-intrusive load monitoring algorithm based on features of V–I trajectory,193,2018, Elsevier, Electric Power Systems Research,"Non-intrusive load monitoring (NILM) can monitor the status of electrical appliances on-line 
+and provide detailed power consumption data, which is the basis for customers to perform …",https://www.sciencedirect.com/science/article/pii/S0378779617304911,24
+65,"S Welikala, C Dinesh, MPB Ekanayake…",Incorporating appliance usage patterns for non-intrusive load monitoring and load forecasting,192,2017, ieeexplore.ieee.org, … on Smart Grid,"… of a Load Monitoring (LM) method that can predict the amount of flexible load available at … 
+In contrast, Non-Intrusive Load Monitoring (NILM) approaches, in which only the total power …",https://ieeexplore.ieee.org/abstract/document/8039522/,21
+16,"O Parson, G Fisher, A Hersey, N Batra…",Dataport and NILMTK: A building data set designed for non-intrusive load monitoring,186,2015, ieeexplore.ieee.org, 2015 ieee global …,"Non-intrusive load monitoring (NILM), or energy disaggregation, is the process of using signal 
+processing and machine learning to separate the energy consumption of a building into …",https://ieeexplore.ieee.org/abstract/document/7418187/,17
+36,"YH Lin, MS Tsai",Development of an improved time–frequency analysis-based nonintrusive load monitor for load demand identification,181,2013, ieeexplore.ieee.org, IEEE Transactions on Instrumentation and …,"… In addition, the construction of this type of load monitoring approaches is a complex task to 
+consumers. Therefore, to simplify the load monitoring approach, researchers developed NILM …",https://ieeexplore.ieee.org/abstract/document/6675823/,14
+38,"S Singh, A Majumdar",Deep sparse coding for non–intrusive load monitoring,180,2017, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… of Dataport dataset available in NILMTK (non-intrusive load monitoring toolkit) format, which 
+contains 1 … Her research includes non intrusive load monitoring and machine learning. …",https://ieeexplore.ieee.org/abstract/document/7847445/,20
+19,"R Bonfigli, S Squartini, M Fagiani…",Unsupervised algorithms for non-intrusive load monitoring: An up-to-date overview,176,2015, ieeexplore.ieee.org, 2015 IEEE 15th …,"… One of the hottest topic in this field is represented by Non-Intrusive Load Monitoring (NILM): 
+it refers to those techniques aimed at decomposing the consumption aggregated data …",https://ieeexplore.ieee.org/abstract/document/7165334/,16
+91,"A Cominola, M Giuliani, D Piga, A Castelletti…",A hybrid signature-based iterative disaggregation algorithm for non-intrusive load monitoring,174,2017, Elsevier, Applied energy,"… Non-Intrusive Load Monitoring (NILM) techniques provide this information by decomposing 
+the aggregated electric load … defined non-intrusive, NILM methods often require an intrusive …",https://www.sciencedirect.com/science/article/pii/S030626191631488X,19
+1,"PA Schirmer, I Mporas",Non-intrusive load monitoring: A review,174,2022, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… of Load Monitoring (LM) using energy disaggregation, also referred to as Non-Intrusive Load 
+Monitoring (… of vi trajectory based load signatures for non-intrusive load monitoring,” IEEE …",https://ieeexplore.ieee.org/abstract/document/9820770/,44
+39,"C Nalmpantis, D Vrakas",Machine learning approaches for non-intrusive load monitoring: from qualitative to quantitative comparation,163,2019, Springer, Artificial Intelligence Review,"… Non-intrusive load monitoring (NILM) is the prevailing method used to monitor the energy 
+profile of a domestic building and disaggregate the total power consumption into consumption …",https://link.springer.com/article/10.1007/s10462-018-9613-7,23
+93,"MA Devlin, BP Hayes",Non-intrusive load monitoring and classification of activities of daily living using residential smart meter data,162,2019, ieeexplore.ieee.org, IEEE transactions on consumer …,"… [3] MA Devlin and BP Hayes, “Non-intrusive load monitoring using electricity smart meter data: 
+A … Linge, “Low-complexity non-intrusive load monitoring using unsupervised learning and …",https://ieeexplore.ieee.org/abstract/document/8721550/,23
+28,"JM Gillis, SM Alshareef…",Nonintrusive load monitoring using wavelet design and machine learning,155,2015, ieeexplore.ieee.org, IEEE Transactions on …,"… Habetler, “Incorporating nonintrusive load monitoring into … Gomez-Luna, “Non-intrusive load 
+monitoring based on switching … selection of non-intrusive load monitoring system using STFT …",https://ieeexplore.ieee.org/abstract/document/7110380/,14
+70,"Q Liu, KM Kamoto, X Liu, M Sun…",Low-complexity non-intrusive load monitoring using unsupervised learning and generalized appliance models,153,2019, ieeexplore.ieee.org, IEEE Transactions on …,"… , semi-intrusive, or nonintrusive. Intrusive Load Monitoring (ILM) monitors energy … via 
+smart meters that are attached to each appliance or device that needs monitoring. Semi-…",https://ieeexplore.ieee.org/abstract/document/8603750/,22
+40,"N Batra, O Parson, M Berges, A Singh…",A comparison of non-intrusive load monitoring methods for commercial and residential buildings,153,2014, arxiv.org, arXiv preprint arXiv …,"Non intrusive load monitoring (NILM), or energy disaggregation, is the process of … measured 
+at single point into the building's constituent loads. Previous research in the field has mostly …",https://arxiv.org/abs/1408.6595,13
+44,"YH Lin, MS Tsai",Non-intrusive load monitoring by novel neuro-fuzzy classification considering uncertainties,153,2014, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… ment System, a Non-intrusive Load Monitoring (NILM) system as an energy audit identifies 
+power-intensive household appliances non-intrusively. In this paper, an NILM system with a …",https://ieeexplore.ieee.org/abstract/document/6880402/,13
+41,"C Shin, S Joo, J Yim, H Lee, T Moon…",Subtask gated networks for non-intrusive load monitoring,151,2019, ojs.aaai.org, Proceedings of the AAAI …,"… To be precise, we can formulate on/off classification as a subtask for non-intrusive load 
+monitoring. Let oi = (… Nonintrusive load monitoring using prior models of general appliance types. …",https://ojs.aaai.org/index.php/AAAI/article/view/3908,22
+23,"MB Figueiredo, A De Almeida, B Ribeiro",An experimental study on electrical signature identification of non-intrusive load monitoring (nilm) systems,150,2011, Springer, Adaptive and Natural …,"… a certain moment in time, a non-intrusive load monitoring system uses only the voltage and 
+… The main steps in a non-intrusive load monitoring system are: a) the acquisition of electrical …",https://link.springer.com/chapter/10.1007/978-3-642-20267-4_4,10
+68,"K Chen, Y Zhang, Q Wang, J Hu…",Scale-and context-aware convolutional non-intrusive load monitoring,145,2019, ieeexplore.ieee.org, IEEE Transactions on …,"… By detecting load malfunction and recommending energy reduction programs, cost-effective 
+non-intrusive load monitoring provides intelligent demand-side management for utilities and …",https://ieeexplore.ieee.org/abstract/document/8897031/,21
+97,"C Klemenjak, C Kovatsch, M Herold, W Elmenreich",A synthetic energy dataset for non-intrusive load monitoring in households,140,2020, nature.com, Scientific data,"… Introduced in 2 , Non-Intrusive Load Monitoring (NILM) … level (monitored at the mains) 
+and individual loads, which is … consumption dataset for Non-Intrusive Load Monitoring (NILM) …",https://www.nature.com/articles/s41597-020-0434-6,23
+32,"H Rashid, P Singh, V Stankovic, L Stankovic",Can non-intrusive load monitoring be used for identifying an appliance's anomalous behaviour?,134,2019, Elsevier, Applied energy,"… At the same time, for applications such as energy feedback, Non-intrusive load monitoring 
+(NILM) has been recognised as a scalable and practical alternative to submetering. However, …",https://www.sciencedirect.com/science/article/pii/S0306261919300613,19
+95,"JM Gillis, WG Morsi",Non-intrusive load monitoring using semi-supervised machine learning and wavelet design,134,2016, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… wavelet design applied to non-intrusive load monitoring. Co-training of two machine learning 
+classifiers is used to automate the process of learning the load pattern after designing new …",https://ieeexplore.ieee.org/abstract/document/7430361/,13
+10,"YF Wong, YA Şekercioğlu…",Recent approaches to non-intrusive load monitoring techniques in residential settings,133,2013, ieeexplore.ieee.org, … Applications in Smart …,"… In order to achieve that, load monitoring methods are normally used. In recent years, non-intrusive 
+load monitoring (NILM) approaches are gaining popularity due to their minimal …",https://ieeexplore.ieee.org/abstract/document/6611501/,10
+79,"HH Chang, CL Lin, JK Lee",Load identification in nonintrusive load monitoring using steady-state and turn-on transient energy algorithms,133,2010, ieeexplore.ieee.org, The 2010 14th International …,"… -monitoring systems will focus on more significant issues, … of instruments using non-intrusive 
+load monitoring (NILM) … of nonintrusive load-monitoring system results for load identification …",https://ieeexplore.ieee.org/abstract/document/5472008/,8
+78,"Y Yang, J Zhong, W Li, TA Gulliver…",Semisupervised multilabel deep learning based nonintrusive load monitoring in smart grids,129,2019, ieeexplore.ieee.org, IEEE Transactions on …,"… Stankovic, “Non-intrusive load disaggregation using graph … [8] JM Gillis and WG Morsi, 
+“Non-intrusive load monitoring using … Dick, “Residential household non-intrusive load monitoring …",https://ieeexplore.ieee.org/abstract/document/8911216/,18
+61,"FM Wittmann, JC López…",Nonintrusive load monitoring algorithm using mixed-integer linear programming,122,2018, ieeexplore.ieee.org, IEEE Transactions on …,"… The advantage of nonintrusive identification is the reduced … of nonintrusive load monitoring 
+(NILM), also known as, load … pattern recognition based non-intrusive load monitoring for a …",https://ieeexplore.ieee.org/abstract/document/8370743/,15
+69,"M Lu, Z Li",A hybrid event detection approach for non-intrusive load monitoring,121,2019, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… of smart meters has made appliance load monitoring (ALM) a promising way to cut energy 
+consumption. A meter-level system, namely non-intrusive load monitoring (NILM), is a practi…",https://ieeexplore.ieee.org/abstract/document/8745491/,17
+59,"D He, W Lin, N Liu, RG Harley…",Incorporating non-intrusive load monitoring into building level demand response,120,2013, ieeexplore.ieee.org, IEEE Transactions on …,"… for every socket or load. This paper present an attractive alternative called “non-intrusive” 
+load monitoring, which equips the monitoring system with intelligence to identify the loads. The …",https://ieeexplore.ieee.org/abstract/document/6670133/,9
+42,"Z Yue, CR Witzig, D Jorde, HA Jacobsen",Bert4nilm: A bidirectional transformer model for non-intrusive load monitoring,120,2020, dl.acm.org,Intrusive Load Monitoring,"Non-intrusive load monitoring (NILM) based energy disaggregation is the decomposition of 
+a system's energy into the consumption of its individual appliances. Previous work on deep …",https://dl.acm.org/doi/abs/10.1145/3427771.3429390,20
+7,"M Zhuang, M Shahidehpour, Z Li","An overview of non-intrusive load monitoring: Approaches, business applications, and challenges",119,2018, ieeexplore.ieee.org, … international conference on …,"… EJ Aladesanmi, “Non-intrusive load monitoring and identification for energy management 
+system … AL Wang, BX Chen, CG Wang, and DD Hua, “Non-intrusive load monitoring algorithm …",https://ieeexplore.ieee.org/abstract/document/8601534/,15
+3,"J Revuelta Herrero, Á Lozano Murciego…",Non intrusive load monitoring (nilm): A state of the art,117,2018, Springer, Trends in Cyber …,"… has led to interest in monitoring load techniques in order to … of the art in Non Intrusive Load 
+Monitoring from its beginning, … literature in other to perform Non Intrusive Load Monitoring. …",https://link.springer.com/chapter/10.1007/978-3-319-61578-3_12,15
+46,"HH Chang, CL Lin, HT Yang",Load recognition for different loads with the same real power and reactive power in a non-intrusive load-monitoring system,114,2008, ieeexplore.ieee.org, 2008 12th International …,"… instrumentation systems employ meters for each load to be monitored. These meters may … 
+non-intrusive load monitoring (NILM) is expected. To develop such a system, a number of load …",https://ieeexplore.ieee.org/abstract/document/4537137/,6
+73,"Z Zheng, H Chen, X Luo",A supervised event-based non-intrusive load monitoring for non-linear appliances,111,2018, mdpi.com, Sustainability,"Smart meters generate a massive volume of energy consumption data which can be analyzed 
+to recover some interesting and beneficial information. Non-intrusive load monitoring (…",https://www.mdpi.com/2071-1050/10/4/1001,14
+82,"C Athanasiadis, D Doukas, T Papadopoulos…",A scalable real-time non-intrusive load monitoring system for the estimation of household appliance power consumption,104,2021, mdpi.com, Energies,"… One such service is non-intrusive load monitoring (NILM). NILM is a process to break down 
+the electricity consumption on an appliance level by analyzing the total aggregated data …",https://www.mdpi.com/1996-1073/14/3/767,21
+77,"K Basu, V Debusschere, A Douzal-Chouakria…",Time series distance-based methods for non-intrusive load monitoring in residential buildings,103,2015, Elsevier, Energy and …,"… Non-intrusive load monitoring (NILM) deals with the disaggregation of individual appliances 
+from the total load at the smart meter level. This work proposes a generic methodology …",https://www.sciencedirect.com/science/article/pii/S0378778815002133,9
+26,"HK Iqbal, FH Malik, A Muhammad, MA Qureshi…",A critical review of state-of-the-art non-intrusive load monitoring datasets,99,2021, Elsevier, Electric Power Systems …,"Nowadays Non-Intrusive Load Monitoring (NILM) is considered a hot topic among 
+researchers. The energy disaggregation datasets are used as the benchmark to validate the …",https://www.sciencedirect.com/science/article/pii/S0378779620307197,20
+85,"JM Alcalá, J Ureña, Á Hernández, D Gualda",Assessing human activity in elderly people using non-intrusive load monitoring,98,2017, mdpi.com, Sensors,"… In this work, a novel technique to monitor the human activity, based on non-intrusive load 
+monitoring (NILM), is presented. The proposal uses only smart meter data, which leads to …",https://www.mdpi.com/1424-8220/17/2/351,11
+8,"EJ Aladesanmi, KA Folly",Overview of non-intrusive load monitoring and identification techniques,96,2015, Elsevier,PapersOnLine,"… Load monitoring techniques can generally be grouped into intrusive and non-intrusive 
+load monitoring. Intrusive load monitoring provides accurate results and would allow each …",https://www.sciencedirect.com/science/article/pii/S2405896315030566,9
+6,"C Klemenjak, P Goldsborough",Non-intrusive load monitoring: A review and outlook,92,2016, arxiv.org, arXiv preprint arXiv:1610.01191,"… With the roll-out of smart meters the importance of effective nonintrusive load monitoring (NILM) 
+techniques has risen rapidly. NILM estimates the power consumption of individual …",https://arxiv.org/abs/1610.01191,9
+80,"W Kong, ZY Dong, DJ Hill, F Luo…",Improving nonintrusive load monitoring efficiency via a hybrid programing method,89,2016, ieeexplore.ieee.org, IEEE Transactions on …,"… based load signatures for non-intrusive load monitoring,” IEEE Trans. Smart Grid, vol. 5, 
+no. … Bondyopadhyay, “Non intrusive load monitoring: A temporal multi-label classification …",https://ieeexplore.ieee.org/abstract/document/7508980/,9
+60,"CL Athanasiadis, TA Papadopoulos, DI Doukas",Real-time non-intrusive load monitoring: A light-weight and scalable approach,87,2021, Elsevier, Energy and Buildings,"Non-intrusive load monitoring (NILM) is a topic that lately attracts both the academic and the 
+industrial interest. NILM is used to reveal useful information regarding the consumption …",https://www.sciencedirect.com/science/article/pii/S0378778821008070,17
+81,"B Wild, KS Barsim, B Yang",A new unsupervised event detector for non-intrusive load monitoring,78,2015, ieeexplore.ieee.org, 2015 IEEE global conference on …,"… Event detection plays an important role in today’s NonIntrusive Load Monitoring (NILM) 
+systems faced more and more with nonlinear and variable loads. For this purpose, the paper …",https://ieeexplore.ieee.org/abstract/document/7418159/,7
+76,"C Liu, A Akintayo, Z Jiang, GP Henze, S Sarkar",Multivariate exploration of non-intrusive load monitoring via spatiotemporal pattern network,76,2018, Elsevier, Applied Energy,"… Non-intrusive load monitoring (NILM) of electrical demand for the purpose of identifying 
+load components has thus far mostly been studied using univariate data, eg, using only whole …",https://www.sciencedirect.com/science/article/pii/S0306261917317397,10
+31,"J Paris, JS Donnal, SB Leeb",NilmDB: The non-intrusive load monitor database,75,2014, ieeexplore.ieee.org, IEEE Transactions on Smart Grid,"… store the vast quantities of data generated by a typical non-intrusive load monitoring system, 
+which can easily exceed samples per monitored system, per year, equivalent to terabytes of …",https://ieeexplore.ieee.org/abstract/document/6847241/,6
+37,"Y Himeur, A Alsalemi, F Bensaali…","Recent trends of smart nonintrusive load monitoring in buildings: A review, open challenges, and future directions",75,2022, Wiley Online Library, … Journal of Intelligent …,"… objective is through adopting “intrusive load monitoring (ILM),” … into play, namely, “nonintrusive 
+load monitoring (NILM),” … , in which Hart has monitored specific appliances' loads via a …",https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22876,19
+88,"S Dash, NC Sahoo",Electric energy disaggregation via non-intrusive load monitoring: A state-of-the-art systematic review,74,2022, Elsevier, Electric Power Systems Research,"… The search resulted in about 2000 articles with the keywords like Non-Intrusive load 
+monitoring, Nonintrusive Appliance Load Monitoring, NILM, NALM, Energy Disaggregator, or …",https://www.sciencedirect.com/science/article/pii/S0378779622007398,18
+20,"DC Bergman, D Jin, JP Juen, N Tanaka, CA Gunter…",Distributed non-intrusive load monitoring,71,2011, ieeexplore.ieee.org, ISGT …,"… readings are used to identify loads generated by specific appliances, provides a practical 
+strategy for load shed verification in residences. Nonintrusive load shed verification (NLSV) …",https://ieeexplore.ieee.org/abstract/document/5759180/,5
+71,"C Dinesh, S Welikala, Y Liyanage, MPB Ekanayake…",Non-intrusive load monitoring under residential solar power influx,70,2017, Elsevier, Applied energy,"This paper proposes a novel Non-Intrusive Load Monitoring (NILM) method for a consumer 
+premises with a residentially installed solar plant. This method simultaneously identifies the …",https://www.sciencedirect.com/science/article/pii/S0306261917311157,8
+63,"J Zhang, X Chen, WWY Ng, CS Lai…",New appliance detection for nonintrusive load monitoring,69,2019, ieeexplore.ieee.org, IEEE Transactions on …,"… Load monitoring helps to understand the energy consumption of … load monitoring, that is, 
+intrusive load monitoring (ILM) and … [16] JM Gillis and WG Morsi, “Non-intrusive load monitoring …",https://ieeexplore.ieee.org/abstract/document/8712434/,10
+89,"Y Himeur, A Alsalemi, F Bensaali, A Amira",Effective non-intrusive load monitoring of buildings based on a novel multi-descriptor fusion with dimensionality reduction,68,2020, Elsevier, Applied Energy,"… Accordingly, non-intrusive load monitoring has been investigated in various academic and 
+… aggregated load. This paper presents an efficient non-intrusive load monitoring framework …",https://www.sciencedirect.com/science/article/pii/S0306261920313416,11
+100,"S Henriet, U Şimşekli, B Fuentes, G Richard",A generative model for non-intrusive load monitoring in commercial buildings,67,2018, Elsevier, Energy and Buildings,"… Whilst having similarities with the Non Intrusive Load Monitoring (NILM) tasks for residential 
+buildings, the nature of the signals that are collected from large commercial buildings …",https://www.sciencedirect.com/science/article/pii/S0378778818305644,8
+52,"D Egarter, A Sobe, W Elmenreich",Evolving non-intrusive load monitoring,63,2013, Springer,5  2013 …,"… Non-intrusive load monitoring (NILM) identifies used appliances in a total power load 
+according to their individual load characteristics. In this paper we propose an evolutionary …",https://link.springer.com/chapter/10.1007/978-3-642-37192-9_19,5
+74,"K He, D Jakovetic, B Zhao, V Stankovic…",A generic optimisation-based approach for improving non-intrusive load monitoring,62,2019, ieeexplore.ieee.org, … on Smart Grid,"… renewed interest in electrical load disaggregation, or non-intrusive load monitoring (NILM). … 
+the estimated appliance contribution from the total load, and then move on to disaggregate …",https://ieeexplore.ieee.org/abstract/document/8669739/,9
+27,"S Welikala, N Thelasingha, M Akram, PB Ekanayake…",Implementation of a robust real-time non-intrusive load monitoring solution,59,2019, Elsevier, Applied energy,"This paper presents the formulation and practical implementation of a spectral decomposition 
+based, Real-Time Non-Intrusive Load Monitoring (RT-NILM) solution. Many of the NILM …",https://www.sciencedirect.com/science/article/pii/S0306261919301849,8
+94,"B Buddhahai, W Wongseree, P Rakkwamsuk",A non-intrusive load monitoring system using multi-label classification approach,55,2018, Elsevier, Sustainable cities and …,"This paper proposes an experimental design process for the application of energy disaggregation 
+using multi-label classification. The classification approach has recently shown to be a …",https://www.sciencedirect.com/science/article/pii/S2210670717315366,7
+86,"X Shi, H Ming, S Shakkottai, L Xie, J Yao",Nonintrusive load monitoring in residential households with low-resolution data,50,2019, Elsevier, Applied Energy,"… Nonintrusive load monitoring (NILM) aims to estimate the device-level energy consumption 
+from the load … Because the majority of households can only provide load data at a normal …",https://www.sciencedirect.com/science/article/pii/S0306261919309407,7
+12,"I Abubakar, SN Khalid, MW Mustafa…",An overview of non-intrusive load monitoring methodologies,47,2015, ieeexplore.ieee.org, … IEEE conference on …,"… and other activities of the load. The load monitoring in which multiple sensors measure the 
+power consumption of each appliance is known as the intrusive load monitoring. This process …",https://ieeexplore.ieee.org/abstract/document/7409513/,4
+43,"DPB Renaux, F Pottker, HC Ancelmo, AE Lazzaretti…",A dataset for non-intrusive load monitoring: Design and implementation,47,2020, mdpi.com, Energies,"A NILM dataset is a valuable tool in the development of Non-Intrusive Load Monitoring 
+techniques, as it provides a means of evaluation of novel techniques and algorithms, as well as …",https://www.mdpi.com/1996-1073/13/20/5371,8
+99,"H Hwang, S Kang",Nonintrusive load monitoring using an LSTM with feedback structure,44,2022, ieeexplore.ieee.org, IEEE Transactions on Instrumentation and …,"… Cardenas, “Non-intrusive load monitoring through home energy management systems: A … 
+Hua, “Non-intrusive load monitoring algorithm based on features of VI trajectory,” Electr. …",https://ieeexplore.ieee.org/abstract/document/9761881/,11
+84,"T Todic, V Stankovic, L Stankovic",An active learning framework for the low-frequency non-intrusive load monitoring problem,42,2023, Elsevier, Applied Energy,"With the widespread deployment of smart meters worldwide, quantification of energy used 
+by individual appliances via Non-Intrusive Load Monitoring (NILM), ie, virtual submetering, is …",https://www.sciencedirect.com/science/article/pii/S0306261923004427,14
+56,"G Bucci, F Ciancetta, E Fiorucci, S Mari…",State of art overview of Non-Intrusive Load Monitoring applications in smart grids,37,2021, Elsevier, Measurement …,"… Nowadays, non-intrusive load monitoring (NILM) systems represent an effective alternative 
+to monitoring individual appliances' consumption, avoiding the costs and spatial constraints …",https://www.sciencedirect.com/science/article/pii/S2665917421001082,7
+75,"JS Kang, M Yu, L Lu, B Wang, Z Bao",Adaptive non-intrusive load monitoring based on feature fusion,36,2022, ieeexplore.ieee.org, IEEE Sensors Journal,"… However, most of the load monitoring methods regard this task as a multi-classification … 
+loads that did not participate in training. In this paper, an adaptive non-intrusive load monitoring …",https://ieeexplore.ieee.org/abstract/document/9724173/,9
+55,"A Meier, D Cautley",Practical limits to the use of non-intrusive load monitoring in commercial buildings,33,2021, Elsevier, Energy and Buildings,"… Non-intrusive load monitoring (NILM) is the application of … end loads operating during 
+each interval. The promise of NILM to deliver detailed end-use data at low cost and non-intrusively …",https://www.sciencedirect.com/science/article/pii/S0378778821005922,7
+9,H Liu,Non-intrusive load monitoring,30,2020, Springer, Theory  Technologies and Applications. Science Press …,"… As an effective way to get fine-grained information, load monitoring techniques are of great 
+importance for the efficiency improvement. Non-intrusive load monitoring is based on the …",https://link.springer.com/content/pdf/10.1007/978-981-15-1860-7.pdf,5
+98,"H Yin, K Zhou, S Yang",Non-intrusive load monitoring by load trajectory and multi-feature based on DCNN,25,2023, ieeexplore.ieee.org, IEEE Transactions on Industrial …,"… monitoring network in practice scenarios [9]. However, nonintrusive load monitoring (NILM) … 
+electronic signatures to monitor and identify appliancelevel states and power load effectively. …",https://ieeexplore.ieee.org/abstract/document/10032209/,8
+90,"S Chen, B Zhao, M Zhong, W Luan…",Nonintrusive load monitoring based on self-supervised learning,25,2023, ieeexplore.ieee.org, IEEE Transactions on …,"… into intrusive way and non-intrusive way. Note that intrusive load monitoring requires extra 
+… Alternatively, the concept of non-intrusive load monitoring (NILM) was proposed by Hart [5] …",https://ieeexplore.ieee.org/abstract/document/10049493/,8
+64,"RS Butner, DJ Reid, MG Hoffman, G Sullivan…",Non-intrusive load monitoring assessment: literature review and laboratory protocol,23,2013, osti.gov,,"… Initially the PNNL team identified a number of candidate nonintrusive load monitoring (NILM) 
+technologies available or under development for use in residential homes, with 16 in total, …",https://www.osti.gov/biblio/1095438,2
+35,"S Mari, G Bucci, F Ciancetta, E Fiorucci, A Fioravanti",A review of non-intrusive load monitoring applications in industrial and residential contexts,18,2022, mdpi.com, Energies,"… This article analyzes in detail how the information derived from Non-Intrusive Load 
+Monitoring (NILM) systems can be used in order to create Energy Management Systems (EMS), …",https://www.mdpi.com/1996-1073/15/23/9011,4
+30,"D Xiao-Ping, Z Gui-Qing, W Qing-Lai, P Wei…",A survey on the non-intrusive load monitoring,17,2022, researchgate.net, Acta Automatica …,"… non-intrusive load monitoring. First, the mathematical model and basic framework of non-intrusive 
+load monitoring … pre-processing process, load disaggregation models and algorithms, …",https://www.researchgate.net/profile/Xiaoping-Deng-2/publication/361222076_A_Survey_on_the_Non-intrusive_Load_Monitoring/links/63f466b30d98a97717a685e6/A-Survey-on-the-Non-intrusive-Load-Monitoring.pdf,4
+50,"C Wang, Z Wu, W Peng, W Liu, L Xiong, T Wu…",Adaptive modeling for non-intrusive load monitoring,17,2022, Elsevier, International Journal of …,"… Under this circumstance, load monitoring and its related systems have become a … load 
+monitoring can be divided into Intrusive Load Monitoring (ILM) and Non-Intrusive Load Monitoring …",https://www.sciencedirect.com/science/article/pii/S014206152200028X,4
+92,"KK Kee, YS Lim, J Wong…",Non-intrusive load monitoring (nilm)–a recent review with cloud computing,16,2019, ieeexplore.ieee.org, 2019 IEEE International …,"… The host PC with NILM system for load monitoring and result visualisation on energy … 
+Luo, “A supervised event-based nonintrusive load monitoring for non-linear appliances,” …",https://ieeexplore.ieee.org/abstract/document/9057316/,2
+72,"S Welikala, C Dinesh, MPB Ekanayake…",A real-time non-intrusive load monitoring system,16,2016, ieeexplore.ieee.org, … on Industrial and …,"A complete real-time (RT) implementation of a NonIntrusive Load Monitoring (NILM) system 
+based on uncorrelated spectral components of the active power consumption signal is …",https://ieeexplore.ieee.org/abstract/document/8263057/,2
+96,"M Salani, M Derboni, D Rivola, V Medici, L Nespoli…",Non intrusive load monitoring for demand side management,15,2020, Springer, Energy …,"… In the context of a pilot project, the Lugaggia Innovation Community (LIC), we address the 
+problem of non-intrusive load monitoring for the purpose of demand side management on low …",https://link.springer.com/article/10.1186/s42162-020-00128-2,2
+67,"I Abubakar, SN Khalid, MW Mustafa…",Recent approaches and applications of non-intrusive load monitoring,15,2016, eprints.utm.my, ARPN journal of …,"… and other activities of the load. The load monitoring in which multiple sensors measure the 
+power consumption of each appliance is known as the intrusive load monitoring. This process …",http://eprints.utm.my/72721/1/S.N.Khalid2016_Recentapproachesandapplicationsof.pdf,2
+83,"X Guo, C Wang, T Wu, R Li, H Zhu, H Zhang",Detecting the novel appliance in non-intrusive load monitoring,11,2023, Elsevier, Applied Energy,"… In terms of energy consumption monitoring, traditional Intrusive Load Monitoring (ILM) is 
+carried … Non-Intrusive Load Monitoring (NILM) [3], on the other hand, requires only aggregated …",https://www.sciencedirect.com/science/article/pii/S0306261923005573,4
+54,"N Shabbir, K Vassiljeva, H Nourollahi Hokmabad…",Comparative analysis of machine learning techniques for non-intrusive load monitoring,10,2024, mdpi.com, Electronics,"… As energy consumption monitoring becomes increasingly vital in the transition towards … and 
+deployment of ML techniques in Non-Intrusive Load Monitoring systems. This paper presents …",https://www.mdpi.com/2079-9292/13/8/1420,5
+15,"G Tanoni, E Principi, S Squartini",Non-Intrusive Load Monitoring in industrial settings: A systematic review,9,2024, Elsevier, Renewable and Sustainable Energy …,"… Non-Intrusive Load Monitoring (NILM), a technique that disaggregates consumption at the 
+device level, has been identified as a key strategy in this context. Although NILM has been …",https://www.sciencedirect.com/science/article/pii/S1364032124004295,4
+62,"O Al-Khadher, A Mukhtaruddin…",An implementation framework overview of non-intrusive load monitoring,5,2023, hrcak.srce.hr, Journal of Sustainable …,"… non-intrusive load monitoring's implementation, addressing the stages of non-intrusive load 
+monitoring … employed in non-intrusive load monitoring systems to achieve load identification …",https://hrcak.srce.hr/clanak/452180,2
