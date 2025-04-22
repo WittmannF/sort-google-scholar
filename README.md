@@ -194,11 +194,16 @@ This guide will walk you through the process of installing Docker, pulling the `
 
 
 ## Contributing
-Just run:
+We use `pytest` for our test suite. To run all tests, install pytest and run:
+```bash
+pip install pytest
+pytest
 ```
-$python -m unittest
+or:
+```bash
+python -m pytest
 ```
-And check if all tests passes. Alternativelly send a PR, github actions will run the tests for you.
+Ensure all tests pass before submitting a PR; GitHub Actions will also execute the test suite on each push.
 
 ## About Robot Check
 Google Scholar may block access after too many repetitive requests due to CAPTCHA checks. If this issue arrises, selenium will be used to attempt to fetch the results. You might be asked to solve a CAPTCHA manually. Ideally, you should use a VPN to avoid this issue. When using selenium, you might need to install chromedriver. You can download it from https://developer.chrome.com/docs/chromedriver/downloads and add it to your PATH.
@@ -206,6 +211,14 @@ Google Scholar may block access after too many repetitive requests due to CAPTCH
 ## LICENSE
 - MIT
 
+## Updates
+Main branch has been renamed from master. Update it locally by running:
+```sh
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
 ## 💖 Support the Project
 
 If you find this project helpful and would like to support its development, consider making a donation. Your support is greatly appreciated!
