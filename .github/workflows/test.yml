@@ -27,4 +27,4 @@ jobs:
     - name: Run pytest
       run: pytest
     - name: Test CLI Command
-      run: sortgs 'machine learning' --nresults 10
+      run: sortgs 'machine learning' --debug --nresults 10
