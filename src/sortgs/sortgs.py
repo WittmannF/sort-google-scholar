@@ -462,7 +462,7 @@ def main():
 
     # Save results
     if save_database:
-        csv_file_name = f"{keyword.replace(' ', '_').replace(':', '_')}.csv"
+        csv_file_name = f"{keyword.replace(' ', '_').replace(':', '_').replace("\"", "'")}.csv"
         csv_path = Path(path) / csv_file_name
         # Truncate filename if too long
         if len(csv_path.name) > MAX_CSV_FNAME:
