@@ -50,6 +50,7 @@ ENDYEAR = now.year  # Current year
 DEBUG = False  # debug mode
 MAX_CSV_FNAME = 255
 LANG = "All"
+PLOT_RESULTS = False
 
 
 # Websession Parameters
@@ -154,7 +155,7 @@ def get_command_line_args():
     if args.langfilter:
         langfilter = args.langfilter
 
-    plot_results = False
+    plot_results = PLOT_RESULTS
     if args.plotresults:
         plot_results = True
 
@@ -266,20 +267,16 @@ def get_pdf_link(div):
     return None
 
 
-def main():
-    # Get command line arguments
-    (
-        keyword,
-        number_of_results,
-        save_database,
-        path,
-        sortby_column,
-        langfilter,
-        plot_results,
-        start_year,
-        end_year,
-        debug,
-    ) = get_command_line_args()
+def main(keyword=KEYWORD,
+         number_of_results=NRESULTS,
+         save_database=SAVECSV,
+         path=CSVPATH,
+         sortby_column=SORTBY,
+         langfilter=LANG,
+         plot_results=PLOT_RESULTS,
+         start_year=STARTYEAR,
+         end_year=ENDYEAR,
+         debug=False):
 
     logger.info(
         f"Running with parameters: Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Permitted Languages: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}"
@@ -462,7 +459,8 @@ def main():
 
     # Save results
     if save_database:
-        csv_file_name = f"{keyword.replace(' ', '_').replace(':', '_').replace("\"", "'")}.csv"
+        clean_filename = keyword.replace(" ", "_").replace(":", "_").replace('\"', "'")
+        csv_file_name = f'{clean_filename}.csv'
         csv_path = Path(path) / csv_file_name
         # Truncate filename if too long
         if len(csv_path.name) > MAX_CSV_FNAME:
@@ -472,4 +470,18 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    args = (
+        keyword,
+        number_of_results,
+        save_database,
+        path,
+        sortby_column,
+        langfilter,
+        plot_results,
+        start_year,
+        end_year,
+        debug,
+    ) = get_command_line_args()
+
+
+    main(*args)

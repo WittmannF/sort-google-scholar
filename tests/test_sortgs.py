@@ -2,13 +2,13 @@ import os
 from pathlib import Path
 import pandas as pd
 import pytest
+from src.sortgs import sortgs
 
 
 @pytest.fixture
 def df_top_10_cli(tmp_path):
     """Run sortgs CLI to get top 10 results sorted by citations."""
-    cmd = f"sortgs 'machine learning' --debug --nresults 10 --endyear 2022 --csvpath {tmp_path}"
-    os.system(cmd)
+    sortgs.main(keyword="machine learning", debug=True, number_of_results=10, end_year=2022, path=tmp_path)
     csv_file = Path(tmp_path) / "machine_learning.csv"
     assert csv_file.exists(), f"CSV file not created: {csv_file}"
     return pd.read_csv(csv_file)
@@ -16,9 +16,8 @@ def df_top_10_cli(tmp_path):
 
 @pytest.fixture
 def df_top_sorted_cit_per_year_cli(tmp_path):
-    """Run sortgs CLI to get top 10 results sorted by citations per year."""
-    cmd = f"sortgs 'machine learning' --debug --nresults 10 --endyear 2022 --sortby 'cit/year' --csvpath {tmp_path}"
-    os.system(cmd)
+    """Run sortgs CLI toeget top 10 results sorted by citations per year."""
+    sortgs.main(keyword="machine learning", debug=True, number_of_results=10, end_year=2022, sortby_column="cit/year", path=tmp_path)
     csv_file = Path(tmp_path) / "machine_learning.csv"
     assert csv_file.exists(), f"CSV file not created: {csv_file}"
     return pd.read_csv(csv_file)
@@ -55,12 +54,8 @@ def test_csv_exists(df_top_10_cli):
 
 
 def test_cli_cit_per_year_sorted(df_top_sorted_cit_per_year_cli):
-    top_citations = [
-        int(c) for c in df_top_sorted_cit_per_year_cli.Citations.values[:5]
-    ]
-    top_cit_per_year = [
-        int(c) for c in df_top_sorted_cit_per_year_cli["cit/year"].values[:5]
-    ]
+    top_citations = [int(c) for c in df_top_sorted_cit_per_year_cli.Citations.values[:5]]
+    top_cit_per_year = [int(c) for c in df_top_sorted_cit_per_year_cli["cit/year"].values[:5]]
     assert [top_citations, top_cit_per_year] == [
         [2853, 3166, 2416, 598, 948],
         [571, 352, 302, 85, 79],
@@ -92,6 +87,4 @@ def test_top_5_titles(df_top_10_cli):
 def test_pdf_links(df_top_10_cli):
     assert "PDF" in df_top_10_cli.columns
     first_pdf = df_top_10_cli.PDF.values[0]
-    assert "9781107057135_foreword_pdf_1.pdf" in first_pdf, (
-        f"Expected PDF filename not found in: {first_pdf}"
-    )
+    assert "9781107057135_foreword_pdf_1.pdf" in first_pdf, f"Expected PDF filename not found in: {first_pdf}"
