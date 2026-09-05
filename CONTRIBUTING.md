@@ -91,78 +91,75 @@ The single source of truth is `[project].version` in `pyproject.toml`. After cha
 uv lock
 ```
 
-Commit both `pyproject.toml` and `uv.lock`. Do **not** use `.bumpversion.cfg` / bump2version (removed; it pointed at a deleted `setup.py`).
+Commit both `pyproject.toml` and `uv.lock`. Do not use bump2version / a leftover `.bumpversion.cfg` (that tool pointed at a deleted `setup.py`).
 
-PyPI rejects a second upload of the same version. If `1.0.8` is already published, bump again (`1.0.9`, …) before another release.
+PyPI rejects a second upload of the same version. Bump before every publish.
 
-## Release: merge to `main` and publish 1.0.8
+Typical bumps:
 
-Do this only when the release candidate (for example PR #69) is green and you intend users to `pip install` the new build.
+- **patch** (`x.y.Z`) — bug fix, docs, tooling that users should get via `pip install -U`
+- **minor** (`x.Y.0`) — new CLI flag or optional behavior, backward compatible
+- **major** (`X.0.0`) — breaking CLI or CSV contract
 
-### 1. Confirm the version on the branch you will merge
+## Releasing
+
+Ship from `main` only, and only when you intend users to `pip install` the new build. CI on the merged PR should be green.
+
+### 1. Bump and lock
+
+Set the new version in `pyproject.toml`, then:
 
 ```bash
-grep '^version' pyproject.toml    # expect 1.0.8
+uv lock
 uv run pytest
+grep '^version' pyproject.toml
 ```
 
-### 2. Merge into `dev`, then into `main`
+Commit `pyproject.toml` and `uv.lock` on the feature branch (or a small chore PR into `dev`).
 
-GitHub UI or:
+### 2. Land on `dev`, then `main`
+
+Open or merge the PR into `dev` on GitHub so review and Actions stay attached. Then merge `dev` into `main` (another PR or a local merge). Fast-forward when you can. Do not force-push `dev` or `main`.
 
 ```bash
-git checkout dev
-git pull origin dev
-git merge --ff-only wittmann/direct-ua-and-tooling   # or merge the PR via gh
-git push origin dev
-
 git checkout main
 git pull origin main
 git merge origin/dev
 git push origin main
 ```
 
-Prefer merging the PR on GitHub so CI and review stay attached. Fast-forward when you can; do not force-push `main`.
+### 3. Tag the commit on `main`
 
-### 3. Tag the release commit on `main`
+The tag must point at the commit that contains the version you are publishing (`X.Y.Z` below):
 
 ```bash
 git checkout main
 git pull origin main
-git tag -a v1.0.8 -m "sortgs 1.0.8"
-git push origin v1.0.8
+git tag -a "vX.Y.Z" -m "sortgs X.Y.Z"
+git push origin "vX.Y.Z"
 ```
-
-The tag must point at the commit that contains `version = "1.0.8"`.
 
 ### 4. Publish to PyPI
 
-The workflow [Publish Python Package to PyPI](.github/workflows/deploy-to-pypi.yml) is **manual** (`workflow_dispatch`). It builds with `python -m build` and uploads with Twine using `secrets.PYPI_API_TOKEN`. On GitHub: **Actions** → that workflow → **Run workflow**.
+The workflow [Publish Python Package to PyPI](.github/workflows/deploy-to-pypi.yml) is **manual** (`workflow_dispatch`). It runs `python -m build` and Twine with `secrets.PYPI_API_TOKEN` (username `__token__`).
 
-1. Confirm the secret `PYPI_API_TOKEN` exists on the GitHub repo (a PyPI API token; Twine username is `__token__`).
-2. GitHub → **Actions** → **Publish Python Package to PyPI** → **Run workflow**.
-3. Run it from the `main` branch (the commit you just tagged).
+1. Confirm that secret exists on the GitHub repository.
+2. **Actions** → **Publish Python Package to PyPI** → **Run workflow**.
+3. Run it from `main` (the tagged commit).
 
-Optional local publish (same token; do not commit it):
+Optional local publish (do not commit the token):
 
 ```bash
 uv build
-# inspect dist/sortgs-1.0.8-py3-none-any.whl and the sdist
 uvx twine check dist/*
 uvx twine upload dist/*
 ```
 
 ### 5. Verify
 
-- [ ] https://pypi.org/project/sortgs/1.0.8/
-- [ ] In a clean environment: `pip install sortgs==1.0.8 && sortgs --help`
-- [ ] Optional: GitHub → **Releases** → draft from tag `v1.0.8` (UA fix, uv/offline tests, empty-CSV-on-block). Leave SearchApi (#67) out of the notes unless that PR is also in `main`.
-
-### What this release is (1.0.8)
-
-- Direct path sends a browser User-Agent; blocked + failed Selenium no longer writes a fake empty CSV.
-- Dev install is uv; default tests are offline.
-- **Not** included unless separately merged: SearchApi `--provider`, affiliate README, citation-count work.
+- [ ] `https://pypi.org/project/sortgs/X.Y.Z/`
+- [ ] Clean env: `pip install sortgs==X.Y.Z && sortgs --help`
+- [ ] Optional GitHub Release from tag `vX.Y.Z`, listing only what is actually on `main`
 
 ## What not to put in a PR
 
