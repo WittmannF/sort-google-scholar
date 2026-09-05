@@ -34,7 +34,7 @@ source .venv/bin/activate   # optional; uv run … is enough
 uv run sortgs --help
 ```
 
-Python floor is **3.10**. Local pin is **3.12**. CI runs 3.10, 3.12, and 3.13 against `uv.lock` (`--frozen`).
+Python floor is **3.10** (`requires-python`). Local pin and CI are **3.12**. Older versions are not exercised in Actions.
 
 If you change `[project].dependencies` or `[dependency-groups]`, run `uv lock` and commit `uv.lock`.
 
