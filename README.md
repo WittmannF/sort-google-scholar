@@ -181,18 +181,12 @@ This guide will walk you through the process of installing Docker, pulling the `
 
 ## Contributing
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for uv setup, tests, pull requests, and the `main` / PyPI release checklist. Short version:
+
 ```bash
 uv sync --group dev
 uv run pytest
 ```
-
-The default suite is offline. Network tests (Web Archive) are marked `live`:
-
-```bash
-RUN_LIVE_TESTS=1 uv run pytest -m live
-```
-
-Ensure the default suite passes before submitting a PR. GitHub Actions runs that suite on each push.
 
 ## About Robot Check
 Google Scholar may block access after too many repetitive requests due to CAPTCHA checks. The direct path sends a browser User-Agent so a plain `requests` call is less likely to be rejected as `python-requests`. If a block page still appears, Selenium is used as a fallback. You might be asked to solve a CAPTCHA manually. If both paths fail, sortgs exits with status 1 and does not write an empty CSV.
