@@ -8,7 +8,7 @@ sortgs is a Python tool for ranking Google Scholar publications by the number of
 - **Code Version:** [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/WittmannF/sort-google-scholar/blob/master/examples/run_sortgs_on_colab.ipynb)— *For developers who want full control of what's behind the scenes!* 💻
 
 > 💡 **All you need** is a Google Account to get started.  
-> ⚠️ **Note**: Google Scholar may block access after too many repetitive requests due to CAPTCHA checks, so proceed mindfully!
+> ⚠️ **Note**: Google Scholar may block access after too many repetitive requests due to CAPTCHA checks, so proceed mindfully! See the [optional SearchApi provider](#optional-searchapi-provider) for automated retrieval and its current limitations.
 
 ## 📚 Colab No-Code Instructions
 https://github.com/user-attachments/assets/25de7bad-2a5d-4bcf-b486-faa1d7a29eb3
@@ -34,6 +34,97 @@ sortgs "your keyword"
 
 Replace `"your keyword"` with any keyword you'd like to search for. A CSV file with the name `your_keyword.csv` will be created in your current directory.
 
+## Optional SearchApi provider
+
+For automated workflows or searches affected by Google Scholar CAPTCHA checks,
+SearchApi provides an optional retrieval path using your own API key, without
+launching a browser. The default direct Google Scholar workflow remains available.
+The Python Selenium dependency is still installed, but is not used by this provider.
+
+**Current limitation (September 2026):** our live SearchApi checks returned papers
+but omitted citation counts, including for well-known cited papers. Missing counts
+are exported as `0` for compatibility; **this does not mean a paper has no citations**.
+The CLI warns when an entire response lacks counts. Citation ranking is meaningful
+only when the provider supplies them. The complete public “Phantom physics” example
+is covered by offline tests that verify all ten citation counts, both ranking
+options and every CSV field. This upstream limitation needs resolution
+before treating SearchApi as a complete replacement for citation-based ranking.
+
+Create a SearchApi account through our [affiliate link](https://www.searchapi.io/?via=wittmannf),
+then obtain your API key from the account dashboard.
+
+**Disclosure:** SearchApi sponsors this integration. The maintainer may also earn
+a commission if you purchase a subscription through the affiliate link.
+
+For the unreleased implementation, install from this checkout with `uv pip install -e .`
+in your virtual environment. A previously published package/image may not support these options.
+
+```bash
+export SEARCH_API_KEY="YOUR_API_KEY"
+sortgs "machine learning" --provider searchapi --nresults 100
+```
+
+`YOUR_API_KEY` is a placeholder. Configure the real value privately in your environment
+or secret manager. sortgs does not load `.env` automatically; `.env.example` only
+documents the variable. Never put a real key into a saved notebook or source file.
+A missing key fails before any request. Merely setting a key never selects SearchApi,
+and there is no automatic switch between providers.
+
+The existing year/language filters, `--sortby`, CSV options and `--plotresults` apply.
+`--debug` uses the Web Archive and cannot be combined with SearchApi. Both providers
+require a positive `--nresults`. Unknown arguments trigger a warning; check spelling,
+especially `--provider`, since ignored arguments do not select the provider.
+
+SearchApi retrieves up to 20 results per page. With full pages, 10/20/50/100/101
+results require 1/1/3/5/6 searches. The final page is truncated locally to the requested
+count; the legacy direct path can exceed the requested count. Queries with short or
+repeated pages may return fewer rows. By default, up to two additional pages are
+allowed. To set a different ceiling explicitly:
+
+```bash
+sortgs "machine learning" --provider searchapi --nresults 100 --searchapi-max-pages 10
+```
+
+Warnings distinguish source exhaustion, repeated results and the page ceiling. A
+limited one-time retry is made for connection-establishment timeouts and HTTP
+502/503/504, subject to the server's retry guidance. Read timeouts and HTTP 429 are
+not automatically retried. A failed later page does not write or overwrite a CSV;
+earlier successful requests may already have used credits.
+
+Our development searches were charged one credit each, including a successful
+zero-result response. Requests and charges may vary with service terms; see
+[SearchApi pricing](https://www.searchapi.io/pricing) and
+[Scholar API documentation](https://www.searchapi.io/docs/google-scholar).
+The runtime does not send affiliate identifiers or add analytics.
+
+### Colab and Docker
+
+In Colab, install a version containing the integration, add `SEARCH_API_KEY` in the
+Secrets panel, grant the notebook access, and load it without printing it:
+
+```python
+import os
+from google.colab import userdata
+
+os.environ["SEARCH_API_KEY"] = userdata.get("SEARCH_API_KEY")
+!sortgs "machine learning" --provider searchapi
+```
+
+This is a manual CLI setup; existing no-code notebooks do not expose a provider selector.
+
+For Docker, use an image containing this integration and forward an already exported
+host variable without putting its value in the command. `SORTGS_IMAGE` below should
+identify that image; the published image is not assumed to include unreleased code:
+
+```bash
+docker run --rm -e SEARCH_API_KEY \
+  -v "$PWD/sortgs-results:/app" "$SORTGS_IMAGE" \
+  "machine learning" --provider searchapi
+```
+
+The repository Dockerfile installs the package from PyPI, so building it before a
+package release does not test local source changes.
+
 ## Misc
 For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
 
@@ -42,7 +133,8 @@ For a feedback, send me an email: fernando [dot] wittmann [at] gmail [dot] com
 ```bash
 usage: sortgs [-h] [--sortby SORTBY] [--nresults NRESULTS] [--csvpath CSVPATH]
               [--notsavecsv] [--plotresults] [--startyear STARTYEAR]
-              [--endyear ENDYEAR] [--debug] kw
+              [--endyear ENDYEAR] [--debug] [--provider {direct,searchapi}]
+              [--searchapi-max-pages SEARCHAPI_MAX_PAGES] kw
 
 positional arguments:
   kw                    Keyword to be searched. Use double quote followed by
@@ -69,6 +161,10 @@ optional arguments:
   --startyear STARTYEAR
                         Start year when searching. Default is None
   --endyear ENDYEAR     End year when searching. Default is current year
+  --provider {direct,searchapi}
+                        Retrieval provider (default: direct).
+  --searchapi-max-pages SEARCHAPI_MAX_PAGES
+                        Explicit page ceiling for SearchApi.
   --debug               Debug mode. Used for unit testing. It will get pages
                         stored on web archive
 ```

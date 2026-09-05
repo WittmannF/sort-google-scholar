@@ -1,0 +1,415 @@
+{
+  "search_metadata": {
+    "id": "search_rWMBG04LgyPXTKzRpb6NQzqD",
+    "status": "Success",
+    "created_at": "2024-10-08T06:55:43Z",
+    "request_time_taken": 1.2,
+    "parsing_time_taken": 0.02,
+    "total_time_taken": 1.22,
+    "request_url": "https://scholar.google.com/scholar?q=Phantom+physics&hl=en",
+    "html_url": "https://www.searchapi.io/api/v1/searches/search_rWMBG04LgyPXTKzRpb6NQzqD.html",
+    "json_url": "https://www.searchapi.io/api/v1/searches/search_rWMBG04LgyPXTKzRpb6NQzqD"
+  },
+  "search_parameters": {
+    "engine": "google_scholar",
+    "q": "Phantom physics",
+    "hl": "en"
+  },
+  "search_information": {
+    "query_displayed": "Phantom physics",
+    "total_results": 689000,
+    "page": 1,
+    "time_taken_displayed": 0.07
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "The phantoms of medical and health physics",
+      "data_cid": "cX6u1hAvnZoJ",
+      "link": "https://link.springer.com/content/pdf/10.1007/978-1-4614-8304-5.pdf",
+      "publication": "LA DeWerd, M Kissick - 2014 - Springer",
+      "snippet": "… Phantoms, devices that represent the human body, have been used in medical physics and health physics … Consequently, physicists developed phantoms to simulate patients in order to …",
+      "type": "BOOK",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "11141112802552217201",
+          "total": 192,
+          "link": "https://scholar.google.com/scholar?cites=11141112802552217201&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "11141112802552217201",
+          "total": 5,
+          "link": "https://scholar.google.com/scholar?cluster=11141112802552217201&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:cX6u1hAvnZoJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "authors": [
+        {
+          "name": "M Kissick",
+          "id": "fq1Ms90AAAAJ",
+          "link": "https://scholar.google.com/citations?user=fq1Ms90AAAAJ&hl=en&oi=sra"
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "title": "Development of a high resolution voxelised head phantom for medical physics applications",
+      "data_cid": "9FYxZRwjPnsJ",
+      "link": "https://www.sciencedirect.com/science/article/pii/S1120179717300078",
+      "publication": "V Giacometti, S Guatelli, M Bazalova-Carter… - Physica Medica, 2017 - Elsevier",
+      "snippet": "… in medical physics [1]. Anthropomorphic computational phantoms have undergone an evolution from simple stylized phantoms to voxelised phantoms and, more recently, to hybrid …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "8880574120084985588",
+          "total": 34,
+          "link": "https://scholar.google.com/scholar?cites=8880574120084985588&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "8880574120084985588",
+          "total": 11,
+          "link": "https://scholar.google.com/scholar?cluster=8880574120084985588&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:9FYxZRwjPnsJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "sciencedirect.com",
+        "format": "PDF",
+        "link": "https://www.sciencedirect.com/science/article/am/pii/S1120179717300078"
+      },
+      "authors": [
+        {
+          "name": "M Bazalova-Carter",
+          "id": "Mi-GqMEAAAAJ",
+          "link": "https://scholar.google.com/citations?user=Mi-GqMEAAAAJ&hl=en&oi=sra"
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "title": "Rhizophora spp. As potential phantom material in medical physics applications–A review",
+      "data_cid": "Bb56HRtkApAJ",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0969806X21003819",
+      "publication": "SH Zuber, MFM Yusof, NAA Hashikin… - Radiation Physics and …, 2021 - Elsevier",
+      "snippet": "… phantom material and recent development of Rhizophora spp. phantom in medical physics … Phantom for use in medical physics applications and radiation dosimetry study requires close …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "10376966559036521989",
+          "total": 11,
+          "link": "https://scholar.google.com/scholar?cites=10376966559036521989&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "10376966559036521989",
+          "total": 3,
+          "link": "https://scholar.google.com/scholar?cluster=10376966559036521989&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:Bb56HRtkApAJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "authors": [
+        {
+          "name": "SH Zuber",
+          "id": "76FZb5IAAAAJ",
+          "link": "https://scholar.google.com/citations?user=76FZb5IAAAAJ&hl=en&oi=sra"
+        },
+        {
+          "name": "MFM Yusof",
+          "id": "8sOCX2QAAAAJ",
+          "link": "https://scholar.google.com/citations?user=8sOCX2QAAAAJ&hl=en&oi=sra"
+        },
+        {
+          "name": "NAA Hashikin",
+          "id": "KbV29igAAAAJ",
+          "link": "https://scholar.google.com/citations?user=KbV29igAAAAJ&hl=en&oi=sra"
+        }
+      ]
+    },
+    {
+      "position": 4,
+      "title": "Design, development, and implementation of the radiological physics center's pelvis and thorax anthropomorphic quality assurance phantoms",
+      "data_cid": "kDYwi6LsXJIJ",
+      "link": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.2737158",
+      "publication": "DS Followill, DAR Evans, C Cherry, A Molineu… - … physics, 2007 - Wiley Online Library",
+      "snippet": "… heterogeneous anthropomorphic quality assurance phantoms for use in verifying … phantoms and to demonstrate the reproducibility of measurements generated with them. The phantoms …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "10546564610258908816",
+          "total": 137,
+          "link": "https://scholar.google.com/scholar?cites=10546564610258908816&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "10546564610258908816",
+          "total": 12,
+          "link": "https://scholar.google.com/scholar?cluster=10546564610258908816&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:kDYwi6LsXJIJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "academia.edu",
+        "format": "PDF",
+        "link": "https://www.academia.edu/download/95674369/e8a3b83f981b521c1ee319c7185b28c25ca5.pdf"
+      }
+    },
+    {
+      "position": 5,
+      "title": "MCHP (Monte Carlo+ human phantom): platform to facilitate teaching nuclear radiation physics",
+      "data_cid": "L-LB9l5dvMIJ",
+      "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0257638",
+      "publication": "M Shahmohammadi Beni, H Watabe, D Krstic… - PLoS …, 2021 - journals.plos.org",
+      "snippet": "… Phantoms) for teaching such abstract concepts in an undergraduate nuclear radiation physics … Laboratory (ORNL) adult male human phantom that we have previously developed [1] as …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "14032193201427833391",
+          "total": 10,
+          "link": "https://scholar.google.com/scholar?cites=14032193201427833391&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "14032193201427833391",
+          "total": 15,
+          "link": "https://scholar.google.com/scholar?cluster=14032193201427833391&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:L-LB9l5dvMIJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5",
+        "cached_page_link": "https://scholar.googleusercontent.com/scholar?q=cache:L-LB9l5dvMIJ:scholar.google.com/+Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "plos.org",
+        "format": "PDF",
+        "link": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0257638&type=printable"
+      },
+      "authors": [
+        {
+          "name": "M Shahmohammadi Beni",
+          "id": "fygwwZsAAAAJ",
+          "link": "https://scholar.google.com/citations?user=fygwwZsAAAAJ&hl=en&oi=sra"
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "title": "Phantom thermodynamics",
+      "data_cid": "f6yPVtqxO7gJ",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0550321304005516",
+      "publication": "PF Gonzalez-Diaz, CL Sigüenza - Nuclear Physics B, 2004 - Elsevier",
+      "snippet": "… stuff to be made up of superlight axions [7], or defining the phantom spacetime to be … of cosmic phantom energy. The influence that the presence of black holes may have on the phantom …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "13275399877917912191",
+          "total": 171,
+          "link": "https://scholar.google.com/scholar?cites=13275399877917912191&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "13275399877917912191",
+          "total": 11,
+          "link": "https://scholar.google.com/scholar?cluster=13275399877917912191&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:f6yPVtqxO7gJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "arxiv.org",
+        "format": "PDF",
+        "link": "https://arxiv.org/pdf/astro-ph/0407421"
+      }
+    },
+    {
+      "position": 7,
+      "title": "Experimental validation of deterministic Acuros XB algorithm for IMRT and VMAT dose calculations with the Radiological Physics Center's head and neck phantom",
+      "data_cid": "CTCcCxCIcpYJ",
+      "link": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3692180",
+      "publication": "T Han, F Mourtada, K Kisling, J Mikell… - … physics, 2012 - Wiley Online Library",
+      "snippet": "… Physics Center (RPC) head and neck (H&N) phantom was … created on the RPC H&N phantom in the Eclipse treatment … Each treatment plan was delivered to the RPC phantom three …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "10840876855529844745",
+          "total": 88,
+          "link": "https://scholar.google.com/scholar?cites=10840876855529844745&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "10840876855529844745",
+          "total": 10,
+          "link": "https://scholar.google.com/scholar?cluster=10840876855529844745&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:CTCcCxCIcpYJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "nih.gov",
+        "format": "HTML",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337663/"
+      },
+      "authors": [
+        {
+          "name": "K Kisling",
+          "id": "ATP6PEgAAAAJ",
+          "link": "https://scholar.google.com/citations?user=ATP6PEgAAAAJ&hl=en&oi=sra"
+        }
+      ]
+    },
+    {
+      "position": 8,
+      "title": "Composition of MRI phantom equivalent to human tissues",
+      "data_cid": "A_FuMutPnYEJ",
+      "link": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.2047807",
+      "publication": "H Kato, M Kuroda, K Yoshimura, A Yoshida… - … physics, 2005 - Wiley Online Library",
+      "snippet": "… phantoms (called the CAG phantom and the CAGN phantom), … The conductivity of the CAGN phantom is equivalent to that of … composition of the corresponding phantoms are provided in …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "9339709073818317059",
+          "total": 144,
+          "link": "https://scholar.google.com/scholar?cites=9339709073818317059&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "9339709073818317059",
+          "total": 10,
+          "link": "https://scholar.google.com/scholar?cluster=9339709073818317059&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:A_FuMutPnYEJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "osti.gov",
+        "format": "HTML",
+        "link": "https://www.osti.gov/etdeweb/biblio/20726391"
+      }
+    },
+    {
+      "position": 9,
+      "title": "An exponential growth of computational phantom research in radiation protection, imaging, and radiotherapy: a review of the fifty-year history",
+      "data_cid": "sjJm8sp8qAoJ",
+      "link": "https://iopscience.iop.org/article/10.1088/0031-9155/59/18/R233/meta",
+      "publication": "XG Xu - Physics in Medicine & Biology, 2014 - iopscience.iop.org",
+      "snippet": "… This review identifies a clear progression of computational phantom complexity which can … performed for medical physics studies. To illustrate the impact of computational phantoms, a …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "768000947558691506",
+          "total": 332,
+          "link": "https://scholar.google.com/scholar?cites=768000947558691506&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "768000947558691506",
+          "total": 8,
+          "link": "https://scholar.google.com/scholar?cluster=768000947558691506&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:sjJm8sp8qAoJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "nih.gov",
+        "format": "HTML",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4169876/"
+      },
+      "authors": [
+        {
+          "name": "XG Xu",
+          "id": "dMkZjf8AAAAJ",
+          "link": "https://scholar.google.com/citations?user=dMkZjf8AAAAJ&hl=en&oi=sra"
+        }
+      ]
+    },
+    {
+      "position": 10,
+      "title": "Investigation of the feasibility of relative 3D dosimetry in the Radiologic Physics Center Head and Neck IMRT phantom using Presage/optical‐CT",
+      "data_cid": "dB5yMLawUokJ",
+      "link": "https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.3148534",
+      "publication": "H Sakhalkar, D Sterling, J Adamovics, G Ibbott… - … physics, 2009 - Wiley Online Library",
+      "snippet": "… the Radiologic Physics Center (RPC) Head and Neck (H&N) IMRT phantom. Performance … of the RPC H&N phantom to 3D dosimetry. The RPC phantom was taken through the entire …",
+      "inline_links": {
+        "cited_by": {
+          "cites_id": "9895165627829722740",
+          "total": 73,
+          "link": "https://scholar.google.com/scholar?cites=9895165627829722740&as_sdt=2005&sciodt=0,5&hl=en"
+        },
+        "versions": {
+          "cluster_id": "9895165627829722740",
+          "total": 9,
+          "link": "https://scholar.google.com/scholar?cluster=9895165627829722740&hl=en&as_sdt=0,5"
+        },
+        "related_articles_link": "https://scholar.google.com/scholar?q=related:dB5yMLawUokJ:scholar.google.com/&scioq=Phantom+physics&hl=en&as_sdt=0,5"
+      },
+      "resource": {
+        "name": "nih.gov",
+        "format": "HTML",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2832043/"
+      },
+      "authors": [
+        {
+          "name": "D Sterling",
+          "id": "rwHKHigAAAAJ",
+          "link": "https://scholar.google.com/citations?user=rwHKHigAAAAJ&hl=en&oi=sra"
+        }
+      ]
+    }
+  ],
+  "related_searches": [
+    {
+      "query": "phantoms of medical and health physics",
+      "highlighted": [
+        "of medical and health"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=1&q=phantoms+of+medical+and+health+physics&qst=ir"
+    },
+    {
+      "query": "potential phantom material medical physics applications",
+      "highlighted": [
+        "potential",
+        "material medical",
+        "applications"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=2&q=potential+phantom+material+medical+physics+applications&qst=ir"
+    },
+    {
+      "query": "nuclear radiation physics human phantom",
+      "highlighted": [
+        "nuclear radiation",
+        "human"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=3&q=nuclear+radiation+physics+human+phantom&qst=ir"
+    },
+    {
+      "query": "phantom physics simulation",
+      "highlighted": [
+        "simulation"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=4&q=phantom+physics+simulation&qst=il"
+    },
+    {
+      "query": "head phantom medical physics applications",
+      "highlighted": [
+        "head",
+        "medical",
+        "applications"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=5&q=head+phantom+medical+physics+applications&qst=ir"
+    },
+    {
+      "query": "phantom physics mri",
+      "highlighted": [
+        "mri"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=6&q=phantom+physics+mri&qst=il"
+    },
+    {
+      "query": "phantom physics imaging",
+      "highlighted": [
+        "imaging"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=7&q=phantom+physics+imaging&qst=il"
+    },
+    {
+      "query": "phantom physics machine learning",
+      "highlighted": [
+        "machine learning"
+      ],
+      "link": "https://scholar.google.com/scholar?hl=en&as_sdt=0,5&qsp=8&q=phantom+physics+machine+learning&qst=il"
+    }
+  ],
+  "pagination": {
+    "current": 1,
+    "next": "https://scholar.google.com/scholar?start=10&q=Phantom+physics&hl=en&as_sdt=0,5",
+    "other_pages": {
+      "2": "https://scholar.google.com/scholar?start=10&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "3": "https://scholar.google.com/scholar?start=20&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "4": "https://scholar.google.com/scholar?start=30&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "5": "https://scholar.google.com/scholar?start=40&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "6": "https://scholar.google.com/scholar?start=50&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "7": "https://scholar.google.com/scholar?start=60&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "8": "https://scholar.google.com/scholar?start=70&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "9": "https://scholar.google.com/scholar?start=80&q=Phantom+physics&hl=en&as_sdt=0,5",
+      "10": "https://scholar.google.com/scholar?start=90&q=Phantom+physics&hl=en&as_sdt=0,5"
+    }
+  }
+}
