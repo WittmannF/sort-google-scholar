@@ -1,28 +1,55 @@
 [project]
-name='sortgs'
-version='1.0.7'
-authors=[{name='Fernando Marcos Wittmann'}]
-description='A Python tool to rank Google Scholar publications by citations.'
-readme = 'README.md'
-urls={github='https://github.com/WittmannF/sort-google-scholar'}
-dependencies=[
-    'beautifulsoup4',
-    'matplotlib',
-    'pandas',
-    'requests',
-    'selenium',
+name = "sortgs"
+version = "1.0.7"
+authors = [{ name = "Fernando Marcos Wittmann" }]
+description = "A Python tool to rank Google Scholar publications by citations."
+readme = "README.md"
+urls = { github = "https://github.com/WittmannF/sort-google-scholar" }
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "matplotlib>=3.8",
+    "pandas>=2.2",
+    "requests>=2.32",
+    "selenium>=4.20",
 ]
-scripts = {sortgs='sortgs:main'}
-classifiers=[
-    'Programming Language :: Python :: 3',
-    'License :: OSI Approved :: MIT License',
-    'Operating System :: OS Independent',
+scripts = { sortgs = "sortgs:main" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
 ]
-requires-python='>=3.8'
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "ruff>=0.8",
+]
 
 [build-system]
-requires = ['setuptools']
+requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-where =["src"]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -m 'not live'"
+markers = [
+    "live: hits the network (Web Archive or Scholar); excluded from the default run",
+]
+
+[tool.ruff]
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/sortgs/sortgs.py" = ["E722"]

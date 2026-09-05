@@ -129,31 +129,17 @@ Loading next 20 results
 ```
 
 ## Step-by-Step Installation
-1. Install Python 3 and its dependencies from **Requirements** (suggestion: use Ananconda https://www.anaconda.com/distribution/)
-2. In the terminal (or cmd if using Windows), run `pip install sortgs`
-3. Use the command `sortgs "your keyword"` (replace "your keyword" to any keyword that you'd like to search)
-4. A CSV file with the name `your_keyword.csv` should be created. 
+1. Install Python 3.10+ (a published release uses `pip install sortgs`)
+2. From a checkout, use [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync --group dev
+uv run sortgs "your keyword"
+```
+
+3. A CSV file with the name `your_keyword.csv` should be created.
 
 If those steps are too complicated for you, send me an email with a list of keyworks that you'd like them ranked to: fernando [dot] wittmann [at] gmail [dot] com
-
-## Conda Environment Setup
-
-### Creating the Environment
-```
-conda env create -f conda_environment.yml
-```
-
-### Reset the environment
-```
-conda deactivate
-conda remove --name sortgs --all
-conda env create -f environment.yml
-```
-
-### Activate the environment
-```
-conda activate sortgs
-```
 
 ## Running Project Using Docker
 
@@ -194,19 +180,26 @@ This guide will walk you through the process of installing Docker, pulling the `
 
 
 ## Contributing
-We use `pytest` for our test suite. To run all tests, install pytest and run:
+
 ```bash
-pip install pytest
-pytest
+uv sync --group dev
+uv run pytest
 ```
-or:
+
+The default suite is offline. Network tests (Web Archive) are marked `live`:
+
 ```bash
-python -m pytest
+RUN_LIVE_TESTS=1 uv run pytest -m live
 ```
-Ensure all tests pass before submitting a PR; GitHub Actions will also execute the test suite on each push.
+
+Ensure the default suite passes before submitting a PR. GitHub Actions runs that suite on each push.
 
 ## About Robot Check
-Google Scholar may block access after too many repetitive requests due to CAPTCHA checks. If this issue arrises, selenium will be used to attempt to fetch the results. You might be asked to solve a CAPTCHA manually. Ideally, you should use a VPN to avoid this issue. When using selenium, you might need to install chromedriver. You can download it from https://developer.chrome.com/docs/chromedriver/downloads and add it to your PATH.
+Google Scholar may block access after too many repetitive requests due to CAPTCHA checks. The direct path sends a browser User-Agent so a plain `requests` call is less likely to be rejected as `python-requests`. If a block page still appears, Selenium is used as a fallback. You might be asked to solve a CAPTCHA manually. If both paths fail, sortgs exits with status 1 and does not write an empty CSV.
+
+Google Colab shared IPs are often blocked, and the hosted runtime does not start the Chrome session this project uses. Prefer a local run, or a VPN, if Colab returns an empty table.
+
+When using Selenium locally, you might need Chrome and a matching chromedriver. See https://developer.chrome.com/docs/chromedriver/downloads.
 
 ## LICENSE
 - MIT

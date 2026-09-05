@@ -3,6 +3,8 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
+pytestmark = pytest.mark.live
+
 
 @pytest.fixture
 def df_top_10_cli(tmp_path):
