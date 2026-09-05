@@ -61,6 +61,15 @@ ENDYEAR_URL = "&as_yhi={}"
 LANG_URL = "&lr={}"
 
 ROBOT_KW = ["unusual traffic from your computer network", "not a robot"]
+REQUEST_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/128.0.0.0 Safari/537.36"
+    ),
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -190,6 +199,18 @@ def get_citations(content: str) -> int:
     return int(match.group(1)) if match else 0
 
 
+def is_robot_html(content: bytes) -> bool:
+    """Return True when Scholar HTML is a block/CAPTCHA page, not a result list."""
+    text = content.decode("utf-8", errors="replace")
+    return any(kw in text for kw in ROBOT_KW)
+
+
+def build_session() -> requests.Session:
+    session = requests.Session()
+    session.headers.update(REQUEST_HEADERS)
+    return session
+
+
 def get_year(content: str) -> int:
     """Extract publication year from content using regex."""
     match = re.search(r"\b(19|20)\d{2}\b", content)
@@ -301,9 +322,7 @@ def main():
     if debug:
         GSCHOLAR_MAIN_URL = "https://web.archive.org/web/20210314203256/" + GSCHOLAR_URL
 
-    # Start new session
-    session = requests.Session()
-    # headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    session = build_session()
 
     # Variables
     links = []
@@ -316,6 +335,7 @@ def main():
     content = []  # Add new list for content
     pdf_links = []  # New list for PDF links
     rank = [0]
+    blocked_unrecovered = False
 
     # Get content from number_of_results URLs
     for n in range(0, number_of_results, 10):
@@ -327,16 +347,23 @@ def main():
         #    url=GSCHOLAR_URL_YEAR.format(str(n), keyword.replace(' ','+'), start_year=start_year, end_year=end_year)
 
         logger.info("Loading next %d results", n + 10)
-        page = session.get(url)  # , headers=headers)
+        page = session.get(url)
         c = page.content
-        if any(kw in c.decode("ISO-8859-1") for kw in ROBOT_KW):
+        if is_robot_html(c):
             logger.warning("Robot check detected, using Selenium fallback")
             try:
                 c = get_content_with_selenium(url)
-            except Exception as e:
+            except Exception:
                 logger.exception(
                     "Failed to fetch content with Selenium for URL: %s", url
                 )
+                blocked_unrecovered = True
+                sleep(random.uniform(0.5, 3))
+                continue
+            if is_robot_html(c):
+                blocked_unrecovered = True
+                sleep(random.uniform(0.5, 3))
+                continue
 
         # Create parser
         soup = BeautifulSoup(c, "html.parser", from_encoding="utf-8")
@@ -402,6 +429,12 @@ def main():
 
         # Delay
         sleep(random.uniform(0.5, 3))
+
+    if not title and blocked_unrecovered:
+        logger.error(
+            "No results: Google Scholar blocked the requests path and Selenium could not recover. No CSV was written."
+        )
+        raise SystemExit(1)
 
     # Create a dataset and sort by the number of citations
     data = pd.DataFrame(
