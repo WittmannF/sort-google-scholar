@@ -13,7 +13,7 @@ dependencies = [
     "requests>=2.32",
     "selenium>=4.20",
 ]
-scripts = { sortgs = "sortgs:main" }
+scripts = { sortgs = "sortgs.sortgs:main" }
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",

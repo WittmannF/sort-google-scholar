@@ -358,9 +358,11 @@ def main():
                     "Failed to fetch content with Selenium for URL: %s", url
                 )
                 blocked_unrecovered = True
+                sleep(random.uniform(0.5, 3))
                 continue
             if is_robot_html(c):
                 blocked_unrecovered = True
+                sleep(random.uniform(0.5, 3))
                 continue
 
         # Create parser

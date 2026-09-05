@@ -87,12 +87,14 @@ def test_direct_baseline(monkeypatch, tmp_path):
 def test_blocked_pages_do_not_write_empty_csv(monkeypatch, tmp_path):
     target = tmp_path / "test.csv"
     target.write_text("existing output", encoding="utf-8")
+    sleeps = []
 
     session = cli.build_session()
     session.get = lambda url, **kwargs: SimpleNamespace(
         content=BLOCKED.read_bytes(), status_code=429
     )
     monkeypatch.setattr(cli, "build_session", lambda: session)
+    monkeypatch.setattr(cli, "sleep", lambda seconds: sleeps.append(seconds))
     monkeypatch.setattr(
         cli,
         "get_content_with_selenium",
@@ -106,3 +108,4 @@ def test_blocked_pages_do_not_write_empty_csv(monkeypatch, tmp_path):
         cli.main()
     assert caught.value.code == 1
     assert target.read_text(encoding="utf-8") == "existing output"
+    assert len(sleeps) == 2

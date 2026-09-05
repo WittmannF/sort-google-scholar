@@ -49,7 +49,7 @@ That is the default suite: units and offline integrations. It must not hit Googl
 Network / Archive tests live in `tests/test_sortgs.py` and are marked `live`. They are excluded unless you ask for them:
 
 ```bash
-RUN_LIVE_TESTS=1 uv run pytest -m live
+uv run pytest -m live
 ```
 
 Do not use `os.system` in new tests. Prefer calling functions, or `main()` with a mocked `sys.argv`. Mark anything that needs the internet as `live`.
