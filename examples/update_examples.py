@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os
-import re
 
 # List of keywords extracted from existing CSV files
 keywords = [

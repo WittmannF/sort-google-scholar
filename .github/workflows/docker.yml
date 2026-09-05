@@ -3,7 +3,7 @@ name: Docker Build and Test
 on:
   push:
     branches:
-      - "master"
+      - "main"
 
 jobs:
   build:
@@ -45,11 +45,11 @@ jobs:
 
       # Pull and test the production image (only for master branch pushes)
       - name: Pull the image from Docker Hub (production)
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         run: docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/sort-google-scholar:latest
 
       - name: Test Docker Image (production)
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         run: docker run --rm ${{ secrets.DOCKER_HUB_USERNAME }}/sort-google-scholar:latest "deep learning" --nresults 20
 
       # Pull and test the test image (only for PRs)

@@ -1,30 +1,21 @@
 name: Test SortGS
 on:
   push:
-    branches: [ master, dev ]
+    branches: [main, dev]
   pull_request:
-    branches: [ master, dev ]
-  schedule:
-    - cron: '0 0 1 * *' # Run at 00:00 on the first of every month
+    branches: [main, dev]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ['3.10', '3.11']
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install the package
-      run: pip install -e .
-    - name: Test with unittest
-      run: python -m unittest
-    - name: Test CLI Command
-      run: sortgs 'machine learning' --nresults 10
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - name: Install and run offline tests
+        env:
+          MPLBACKEND: Agg
+        run: |
+          uv sync --group dev --frozen
+          uv run pytest
