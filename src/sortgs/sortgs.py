@@ -27,6 +27,14 @@ import random
 import re
 import logging
 import sys
+import os
+
+from .publication import (
+    get_author as get_author,
+    get_year as get_year,
+    parse_publication,
+)
+from .searchapi import SearchApiError, fetch_searchapi_results
 from pathlib import Path
 
 from selenium import webdriver
@@ -122,8 +130,42 @@ def get_command_line_args():
         help="Debug mode. Used for unit testing. It will get pages stored on web archive",
     )
 
+    parser.add_argument(
+        "--provider",
+        choices=("direct", "searchapi"),
+        default="direct",
+        help="Retrieval provider; SearchApi requires SEARCH_API_KEY and uses credits",
+    )
+    parser.add_argument(
+        "--searchapi-max-pages",
+        type=int,
+        help="SearchApi page ceiling (default: ceil(nresults/20) + 2)",
+    )
+
     # Parse and read arguments and assign them to variables if exists
-    args, _ = parser.parse_known_args()
+    args, unknown = parser.parse_known_args()
+    if unknown:
+        logger.warning(
+            "Unrecognized arguments were ignored. Check --help and the spelling of --provider."
+        )
+    if args.nresults is not None and args.nresults <= 0:
+        parser.error("--nresults must be positive")
+    if args.searchapi_max_pages is not None:
+        if args.searchapi_max_pages <= 0 or args.provider != "searchapi":
+            parser.error(
+                "--searchapi-max-pages requires SearchApi and a positive value"
+            )
+    if args.provider == "searchapi":
+        if args.debug:
+            parser.error(
+                "--debug uses the Web Archive and cannot be combined with SearchApi"
+            )
+        if not args.kw.strip():
+            parser.error("SearchApi requires a nonempty query")
+        if args.startyear is not None and args.startyear > (
+            args.endyear if args.endyear is not None else ENDYEAR
+        ):
+            parser.error("--startyear must not exceed --endyear")
 
     # Check if no arguments were provided and print help if so
     if len(sys.argv) == 1:
@@ -181,6 +223,8 @@ def get_command_line_args():
         start_year,
         end_year,
         debug,
+        args.provider,
+        args.searchapi_max_pages,
     )
 
 
@@ -190,24 +234,12 @@ def get_citations(content: str) -> int:
     return int(match.group(1)) if match else 0
 
 
-def get_year(content: str) -> int:
-    """Extract publication year from content using regex."""
-    match = re.search(r"\b(19|20)\d{2}\b", content)
-    return int(match.group(0)) if match else 0
-
-
 def setup_driver() -> webdriver.Chrome:
     logger.info("Initializing WebDriver")
     chrome_options = Options()
     chrome_options.add_argument("disable-infobars")
     driver = webdriver.Chrome(options=chrome_options)
     return driver
-
-
-def get_author(content: str) -> str:
-    """Extract the author string from content."""
-    clean_content = content.replace("\xa0", " ")
-    return clean_content.split(" - ")[0] if clean_content else ""
 
 
 def get_element(driver, xpath: str, attempts: int = 5, _count: int = 0):
@@ -266,25 +298,10 @@ def get_pdf_link(div):
     return None
 
 
-def main():
-    # Get command line arguments
-    (
-        keyword,
-        number_of_results,
-        save_database,
-        path,
-        sortby_column,
-        langfilter,
-        plot_results,
-        start_year,
-        end_year,
-        debug,
-    ) = get_command_line_args()
-
-    logger.info(
-        f"Running with parameters: Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Permitted Languages: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}"
-    )
-
+def fetch_direct_results(
+    keyword, number_of_results, langfilter, start_year, end_year, debug
+):
+    """Retrieve direct Scholar results using the existing HTML/Selenium path."""
     # Create main URL based on command line arguments
     if start_year:
         GSCHOLAR_MAIN_URL = GSCHOLAR_URL + STARTYEAR_URL.format(start_year)
@@ -362,32 +379,14 @@ def main():
                 )
                 citations.append(0)
 
-            try:
-                year.append(get_year(div.find("div", {"class": "gs_a"}).text))
-            except:
-                logger.warning("Year not found for %s, appending 0", title[-1])
-                year.append(0)
-
-            try:
-                author.append(get_author(div.find("div", {"class": "gs_a"}).text))
-            except:
-                author.append("Author not found")
-
-            try:
-                publisher.append(div.find("div", {"class": "gs_a"}).text.split("-")[-1])
-            except:
-                publisher.append("Publisher not found")
-
-            try:
-                venue.append(
-                    " ".join(
-                        div.find("div", {"class": "gs_a"})
-                        .text.split("-")[-2]
-                        .split(",")[:-1]
-                    )
-                )
-            except:
-                venue.append("Venue not fount")
+            publication_div = div.find("div", {"class": "gs_a"})
+            fields = parse_publication(
+                publication_div.text if publication_div is not None else None
+            )
+            author.append(fields[0])
+            year.append(fields[1])
+            venue.append(fields[2])
+            publisher.append(fields[3])
 
             try:
                 content_div = div.find("div", {"class": "gs_rs"})
@@ -433,6 +432,55 @@ def main():
     )
     data.index.name = "Rank"
 
+    return data
+
+
+def main():
+    # Get command line arguments
+    (
+        keyword,
+        number_of_results,
+        save_database,
+        path,
+        sortby_column,
+        langfilter,
+        plot_results,
+        start_year,
+        end_year,
+        debug,
+        provider,
+        max_pages,
+    ) = get_command_line_args()
+
+    logger.info(
+        f"Running with parameters: Keyword: {keyword}, Number of results: {number_of_results}, Save database: {save_database}, Path: {path}, Sort by: {sortby_column}, Permitted Languages: {langfilter}, Plot results: {plot_results}, Start year: {start_year}, End year: {end_year}, Debug: {debug}"
+    )
+
+    if provider == "searchapi":
+        api_key = os.environ.get("SEARCH_API_KEY", "").strip()
+        if not api_key:
+            logger.error(
+                "Set SEARCH_API_KEY in your environment before selecting SearchApi."
+            )
+            raise SystemExit(2)
+        try:
+            data = fetch_searchapi_results(
+                keyword,
+                number_of_results,
+                langfilter,
+                start_year,
+                end_year,
+                api_key,
+                max_pages=max_pages,
+            )
+        except SearchApiError as error:
+            logger.error("%s", error)
+            raise SystemExit(1) from None
+    else:
+        data = fetch_direct_results(
+            keyword, number_of_results, langfilter, start_year, end_year, debug
+        )
+
     # Avoid years that are higher than the current year by clipping it to end_year
     data["cit/year"] = data["Citations"] / (
         end_year + 1 - data["Year"].clip(upper=end_year)
@@ -454,7 +502,7 @@ def main():
 
     # Plot by citation number
     if plot_results:
-        plt.plot(rank[1:], citations, "*")
+        plt.plot(data.index, data["Citations"], "*")
         plt.ylabel("Number of Citations")
         plt.xlabel("Rank of the keyword on Google Scholar")
         plt.title("Keyword: " + keyword)

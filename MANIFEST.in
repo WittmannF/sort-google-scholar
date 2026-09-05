@@ -1,0 +1,2 @@
+include .env.example
+recursive-include tests/fixtures *.html *.json *.md

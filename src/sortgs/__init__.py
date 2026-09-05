@@ -1,1 +1,1 @@
-from sortgs.sortgs import main
+from sortgs.sortgs import main as main

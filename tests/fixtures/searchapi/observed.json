@@ -1,0 +1,33 @@
+{
+  "search_metadata": {
+    "status": "Success"
+  },
+  "organic_results": [
+    {
+      "position": 1,
+      "title": "Machine learning",
+      "data_cid": "EQ8shYj8Ai8J",
+      "link": "https://books.google.com/books?hl=en&lr=&id=ctM-EAAAQBAJ&oi=fnd&pg=PR6&dq=machine+learning&ots=o_QpZ2Xq4m&sig=-88S974bHggDZzmqpclxn1C10BA",
+      "publication": "ZH Zhou - 2021 - books.google.com",
+      "snippet": "… from data is called learning or training. The … machine learning is to find or approximate ground-truth. In this book, models are sometimes called learners, which are machine learning …",
+      "inline_links": {}
+    },
+    {
+      "position": 2,
+      "title": "Machine learning: Trends, perspectives, and prospects",
+      "data_cid": "pdcI9r5sCJcJ",
+      "link": "https://www.science.org/doi/abs/10.1126/science.aaa8415",
+      "publication": "MI Jordan, TM Mitchell - Science, 2015 - science.org",
+      "snippet": "Machine learning addresses the question of how to build computers that improve … Recent progress in machine learning has been driven both by the development of new learning …",
+      "inline_links": {},
+      "resource": {
+        "name": "cmu.edu",
+        "format": "PDF",
+        "link": "http://www.cs.cmu.edu/~tom/pubs/Science-ML-2015.pdf"
+      }
+    }
+  ],
+  "pagination": {
+    "next": "https://scholar.google.com/example"
+  }
+}

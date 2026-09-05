@@ -28,3 +28,21 @@ jobs:
       run: pytest
     - name: Test CLI Command
       run: sortgs 'machine learning' --debug --nresults 10
+
+  offline:
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.8', '3.10', '3.11']
+    steps:
+    - uses: actions/checkout@v4
+    - uses: astral-sh/setup-uv@v6
+    - name: Install and run deterministic tests
+      env:
+        MPLBACKEND: Agg
+      run: |
+        uv venv --python ${{ matrix.python-version }} .venv
+        source .venv/bin/activate
+        uv pip install -e . pytest
+        pytest -q tests/test_offline.py tests/test_searchapi.py
