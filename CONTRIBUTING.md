@@ -103,9 +103,13 @@ Typical bumps:
 
 ## Releasing
 
-Ship from `main` only, and only when you intend users to `pip install` the new build. CI on the merged PR should be green.
+Day-to-day work lands on `dev`. **`main` is the release line.** A push or merge into `main` runs [Publish Python Package to PyPI](.github/workflows/deploy-to-pypi.yml) and uploads the version in `pyproject.toml`. A merge into `dev` does not publish.
 
-### 1. Bump and lock
+Bump the version **before** that `main` merge. PyPI rejects a second upload of the same number; the workflow uses `--skip-existing`, so a later `main` push without a bump will pass and do nothing.
+
+`workflow_dispatch` remains as a manual retry (Actions → that workflow → Run workflow on `main`).
+
+### 1. Bump and lock (on `dev`)
 
 Set the new version in `pyproject.toml`, then:
 
@@ -115,11 +119,11 @@ uv run pytest
 grep '^version' pyproject.toml
 ```
 
-Commit `pyproject.toml` and `uv.lock` on the feature branch (or a small chore PR into `dev`).
+Commit `pyproject.toml` and `uv.lock` on the feature branch and merge into `dev`. CI on `dev` should be green.
 
-### 2. Land on `dev`, then `main`
+### 2. Merge `dev` into `main`
 
-Open or merge the PR into `dev` on GitHub so review and Actions stay attached. Then merge `dev` into `main` (another PR or a local merge). Fast-forward when you can. Do not force-push `dev` or `main`.
+That push is the publish. Fast-forward when you can. Do not force-push `main`.
 
 ```bash
 git checkout main
@@ -128,9 +132,11 @@ git merge origin/dev
 git push origin main
 ```
 
-### 3. Tag the commit on `main`
+Prefer a GitHub PR `dev` → `main` so the release is reviewable. Confirm `secrets.PYPI_API_TOKEN` exists (Twine username `__token__`).
 
-The tag must point at the commit that contains the version you are publishing (`X.Y.Z` below):
+### 3. Optional tag and GitHub Release
+
+Not required for PyPI. Useful as a label on `main`:
 
 ```bash
 git checkout main
@@ -139,13 +145,11 @@ git tag -a "vX.Y.Z" -m "sortgs X.Y.Z"
 git push origin "vX.Y.Z"
 ```
 
-### 4. Publish to PyPI
+### 4. Verify
 
-The workflow [Publish Python Package to PyPI](.github/workflows/deploy-to-pypi.yml) is **manual** (`workflow_dispatch`). It runs `python -m build` and Twine with `secrets.PYPI_API_TOKEN` (username `__token__`).
-
-1. Confirm that secret exists on the GitHub repository.
-2. **Actions** → **Publish Python Package to PyPI** → **Run workflow**.
-3. Run it from `main` (the tagged commit).
+- [ ] Actions run **Publish Python Package to PyPI** on the `main` push and succeeded
+- [ ] `https://pypi.org/project/sortgs/X.Y.Z/`
+- [ ] Clean env: `pip install sortgs==X.Y.Z && sortgs --help`
 
 Optional local publish (do not commit the token):
 
@@ -154,12 +158,6 @@ uv build
 uvx twine check dist/*
 uvx twine upload dist/*
 ```
-
-### 5. Verify
-
-- [ ] `https://pypi.org/project/sortgs/X.Y.Z/`
-- [ ] Clean env: `pip install sortgs==X.Y.Z && sortgs --help`
-- [ ] Optional GitHub Release from tag `vX.Y.Z`, listing only what is actually on `main`
 
 ## What not to put in a PR
 
