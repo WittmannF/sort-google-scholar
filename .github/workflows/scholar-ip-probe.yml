@@ -1,0 +1,21 @@
+# Manual probe: is Google Scholar blocked from GitHub-hosted runners?
+# Does not run on push/PR. Does not publish anything.
+name: Scholar IP probe
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - name: Probe Scholar from this runner
+        env:
+          MPLBACKEND: Agg
+        run: |
+          uv sync --group dev --frozen
+          uv run python examples/scholar_ip_probe.py
