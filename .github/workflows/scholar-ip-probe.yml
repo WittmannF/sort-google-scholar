@@ -4,6 +4,8 @@ name: Scholar IP probe
 
 on:
   workflow_dispatch:
+  push:
+    branches: [wittmann/scholar-ip-probe]
 
 jobs:
   probe:
